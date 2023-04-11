@@ -21,6 +21,13 @@ body {
   font-family: "AVF";
 }
 
+.navi {
+  background-image: radial-gradient(circle, #fff 50%, transparent 2%);
+  background-position: center -200px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 .main,
 .footer {
   padding: 20px 30px;
