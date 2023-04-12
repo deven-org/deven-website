@@ -1,0 +1,99 @@
+  @font-face {
+    font-family: "november";
+    font-style: normal;
+    font-weight: 500;
+    font-display: auto;
+    src: url("../fonts/november.ttf");
+  }
+
+  @font-face {
+    font-family: "AVF";
+    font-style: light;
+    font-weight: 300;
+    font-display: auto;
+    src: url("../fonts/AVF.ttf");
+  }
+
+//   background: linear-gradient(0deg, #F1DE00, #F1DE00),
+// linear-gradient(0deg, #000000, #000000),
+// linear-gradient(0deg, #2154D6, #2154D6);
+
+
+body {
+    background:black;
+    max-width: 960px;
+    margin: 0 auto;
+    line-height: 1.8em;
+    font-size: 1em;
+    font-family: "AVF";
+}
+
+.navi{
+    background-image: radial-gradient(circle, #fff 50%, transparent 2%);
+    background-position: center -200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.main,
+.footer {
+    padding: 20px 30px;
+    background: #fff;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+.navi {
+  display: flex;
+  height: 20rem;
+}
+
+.nav {
+    display: inline-block;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 2rem;
+    margin: 1rem auto 2rem;
+    height: 1.8rem;
+}
+
+.main {
+    padding-bottom: 80px;
+}
+
+em {
+    font-weight: 900;
+    font-style: underline;
+}
+
+// .navi {
+   
+// }
+
+// .main {
+// }
+
+// .footer {
+// }
+
+// Headline
+.log-title {
+    font-family: "november";
+    font-size: 2.5em;
+    line-height: 3.2em;
+    text-align: center;
+    // color: #F1DE00;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item:not(:last-of-type) {
+    margin-right: 1em;
+}
+
+.nav-item a{
+    color: black;
+    text-decoration: none;
+}

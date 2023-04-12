@@ -1,0 +1,16 @@
+{
+  "title": "DEVEN - Developer Enhancement",
+  "url": "https://deven-org.github.io/",
+  "description": "Developer standards and best practices.",
+  "feed": {
+    "subtitle": "Developer for Developer to make your (work) life easier!",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://deven-org.github.io/feed/feed.xml",
+    "id": "https://deven-org.github.io/"
+  },
+  "author": {
+    "name": "Ola Gasidlo-Brändel",
+    "email": "ogb@fastmail.com"
+  }
+}
