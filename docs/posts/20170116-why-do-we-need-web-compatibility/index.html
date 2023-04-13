@@ -5,21 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why do we need Web Compatibility</title>
     <meta name="Description" content="Why do we need standards for a healthy web">
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="alternate" href="." type="application/atom+xml" title="">
   </head>
   <body>
-    <header class="navi">
-      <ul class="nav"><li class="nav-item"><a href="/">Home</a></li><li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Contribute</a></li>
-        <li class="nav-item"><a href="#">Latest News</a></li>
-      </ul>
+    <header>
+      <div class="semi-circle"></div>
+      <nav>
+        <ul class="nav-main">
+          <li><a href="#" class="logo">Deven</a></li><li class="nav-item"><a href="/" class="nav-main-item">Home</a></li><li >
+            <a href="#" class="subnav-parent nav-main-item">Discover <i class="arrow"></i></a> 
+            <div class="subnav">        
+              <ul>
+                <li><a href="#" >About</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Latest News</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" class="nav-main-item">Blog</a></li>
+          <li><a href="#" class="nav-main-item">Contributors</a></li>
+        </ul>
+      </nav>
+      <div><h1 id="logo">Deven</h1></div>
+      <!--<div class="shapes-container">
+        <h1>asdad</h1>
+        <div class="shape shape-product-eng">asdasds</div>
+        <div class="shape shape-standard">asdasds</div>
+        <div class="shape shape-developer">asdasds</div>
+        <div class="shape shape-enablement">asdasds</div>
+        <div class="shape shape-opensource">asdasds</div>
+      </div>-->
     </header>
 
+    <!-- 
     <main class="tmpl-post main">
-      Current page: /posts/20170116-why-do-we-need-web-compatibility/ <br/>
+     <!--Current page: /posts/20170116-why-do-we-need-web-compatibility/ <br/>
       <time class="postlist-date" datetime="2017-01-16">
 	16 Jan 2017
 </time>
@@ -51,7 +73,7 @@
 <p><a href="https://github.com/karlcow">@karlcow</a></p>
 <h3 id="please%2C-stop..." tabindex="-1">Please, stop... <a class="bookmark" href="#please%2C-stop...">#</a></h3>
 <p>We need to stop hacking things. Your voice matters to show browser vendors that we need interoperable specs, not different implementations. We as developers need tools that work from the get go in the right way.</p>
-<img class="post-item-image" src="https://media.giphy.com/media/wpoLqr5FT1sY0/giphy.gif" alt="Dog typing on keyboard." /> 
+<img class="post-item-image" src="https://media.giphy.com/media/wpoLqr5FT1sY0/giphy.gif" alt="Dog typing on keyboard." />
 <p>Clean code is valuable for everyone. Not just because updating hacked code is hard and you get yourself in a bigger mess everytime you do something. But also, because it takes us forever to find those browser quirks and learn things, we shouldn't need to know. Just think about how much time and frustration you had to go through, while you fought with those type of bugs?!</p>
 <p>We should have a web that works for everyone. Make it not just user-, but developer-friendly.</p>
 <h3 id="benefits-of-reporting-%3C3" tabindex="-1">Benefits of reporting &lt;3 <a class="bookmark" href="#benefits-of-reporting-%3C3">#</a></h3>
@@ -71,9 +93,37 @@ But you can help also with checking out bugs, finding solutions or share your kn
 
 
     </main>
+    -->
+    <main>
+      <section class="section">
+        <h1>Cool Stuff</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus vitae arcu non elementum. Proin ac metus purus. Pellentesque sodales magna quis diam aliquam, in congue ligula tempus. Quisque interdum rhoncus nisi vel feugiat. Donec vel erat eget magna scelerisque pretium. Suspendisse imperdiet a massa vitae vestibulum. In vitae molestie tortor, at vehicula arcu. Pellentesque viverra nisi felis. Curabitur risus nunc, pellentesque vel euismod quis, fermentum at diam.
+      </section>
 
-    <footer class="footer">
-      <p><em>This is an <a href="https://www.11ty.io/">Eleventy project</a>.</em></p>
+      <section class="section">
+        <h1>Tools</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus vitae arcu non elementum. Proin ac metus purus. Pellentesque sodales magna quis diam aliquam, in congue ligula tempus. Quisque interdum rhoncus nisi vel feugiat. Donec vel erat eget magna scelerisque pretium. Suspendisse imperdiet a massa vitae vestibulum. In vitae molestie tortor, at vehicula arcu. Pellentesque viverra nisi felis. Curabitur risus nunc, pellentesque vel euismod quis, fermentum at diam.
+      </section>
+    
+      <section class="section">
+        <h1>Current Team</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus vitae arcu non elementum. Proin ac metus purus. Pellentesque sodales magna quis diam aliquam, in congue ligula tempus. Quisque interdum rhoncus nisi vel feugiat. Donec vel erat eget magna scelerisque pretium. Suspendisse imperdiet a massa vitae vestibulum. In vitae molestie tortor, at vehicula arcu. Pellentesque viverra nisi felis. Curabitur risus nunc, pellentesque vel euismod quis, fermentum at diam.
+      </section>
+    </main>
+    <footer class="section">
+      <div class="footer--semi-circle"></div>
+      <div class="footer--item">
+        Main icon
+      </div>
+      <div class="footer--item">
+        Blog coming soon
+      </div>
+      <div class="footer--item">
+        Subsbribe via RSS
+      </div>
+      <div class="footer--item footer--bar">
+      <p ><em>This is an <a href="https://www.11ty.io/">Eleventy project</a>.</em></p>
+      </div>
     </footer>
 
     

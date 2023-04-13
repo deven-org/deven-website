@@ -1,0 +1,40 @@
+@use 'themes';
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+footer .footer--semi-circle {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  padding-bottom: 100%;
+  border-radius: 100%;
+  background-color: themes.$footer-background;
+
+  ::after {
+    content: '';
+    display: flex;
+    align-items: start;
+    position: absolute;
+  }
+}
+
+footer .footer--item {
+  border: 1px solid red;
+  height: 100%;
+}
+
+footer .footer--bar {
+  border-top: 1px solid themes.$footer-bar;
+  width: 100%;
+  max-width: 960px;
+}
