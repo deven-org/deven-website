@@ -1,0 +1,13 @@
+@use 'themes';
+@use 'typography';
+@use 'mixins' as *;
+
+.section--hello {
+  box-sizing: border-box;
+  padding: var(--xxl);
+}
+
+.section--hello p {
+  font-size: var(--text-md);
+  font-weight: bold;
+}

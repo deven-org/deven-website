@@ -1,0 +1,13 @@
+.section {
+  width: 80%;
+}
+
+.section--full {
+  width: 100%;
+  @extend .section;
+}
+
+.section--light {
+  background-color: white !important;
+  border-radius: var(--md);
+}

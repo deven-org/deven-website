@@ -110,10 +110,21 @@ small {
 }
 
 p {
+  font-family: 'AVF';
   line-height: var(--body-line-height);
 }
 
 .logo {
   font-family: 'november';
   @extend .text--xl;
+}
+
+.deven-word {
+  font-family: 'november';
+  font-size: calc(var(--text-xxl) * 2);
+}
+
+.section-title {
+  font-family: 'november';
+  font-size: var(--text-xxxl);
 }

@@ -8,7 +8,7 @@ footer {
   justify-content: flex-end;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  height: 500px;
 }
 
 footer .footer--semi-circle {
@@ -30,7 +30,6 @@ footer .footer--semi-circle {
 
 footer .footer--item {
   border: 1px solid red;
-  height: 100%;
 }
 
 footer .footer--bar {

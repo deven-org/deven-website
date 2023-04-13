@@ -1,0 +1,19 @@
+@use 'themes';
+@use 'typography';
+@use 'mixins' as *;
+
+.section--tool {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: var(--lg);
+  gap: var(--sm);
+}
+
+.section--tool h1 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: var(--lg);
+  text-align: center;
+}
