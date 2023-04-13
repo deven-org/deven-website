@@ -1,0 +1,55 @@
+@use 'themes';
+@use 'typography';
+@use 'mixins' as *;
+
+.section--team {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 var(--lg);
+  gap: var(--smg);
+  height: 100%;
+}
+
+.section--team h2 {
+  padding: 0 0 var(--lg) 0;
+  text-align: center;
+}
+
+.section--team .team-container {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--md);
+}
+
+.section--team .team-container .team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--md) 0;
+  text-decoration: none;
+  color: themes.$text-color;
+  text-align: center;
+}
+
+.section--team .team-container .team-member .team-member--avatar {
+  background-color: themes.$background-light-2;
+  border-radius: 50%;
+  height: var(--xxl);
+  width: var(--xxl);
+}
+
+.section--team .team-container .team-member .team-member--name {
+  padding: var(--md) 0 0 0;
+  font-weight: 900;
+  @extend .font-color-light;
+}
+
+.section--team .team-container .team-member .team-member--description {
+  padding: var(--sm) 0 0 0;
+  @extend .font-color-light-2;
+}

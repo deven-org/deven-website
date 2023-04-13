@@ -1,26 +1,12 @@
-@font-face {
-  font-family: "november";
-  font-style: normal;
-  font-weight: 500;
-  font-display: auto;
-  src: url("../fonts/november.ttf");
-}
-@font-face {
-  font-family: "AVF";
-  font-style: light;
-  font-weight: 300;
-  font-display: auto;
-  src: url("../fonts/AVF.ttf");
-}
-body {
-  background: black;
-  max-width: 960px;
-  margin: 0 auto;
-  line-height: 1.8em;
-  font-size: 1em;
-  font-family: "AVF";
-}
+@use 'layout';
+@use 'mixins';
+@use 'misc';
+@use 'typography';
+@use 'components';
 
+// @use 'themes';
+
+/*
 .navi {
   background-image: radial-gradient(circle, #fff 50%, transparent 2%);
   background-position: center -200px;
@@ -59,11 +45,13 @@ em {
   font-style: underline;
 }
 
+// Headline
 .log-title {
-  font-family: "november";
+  font-family: 'november';
   font-size: 2.5em;
   line-height: 3.2em;
   text-align: center;
+  // color: #F1DE00;
 }
 
 .nav-item {
@@ -78,3 +66,4 @@ em {
   color: black;
   text-decoration: none;
 }
+*/

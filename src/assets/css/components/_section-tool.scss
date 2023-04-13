@@ -1,0 +1,62 @@
+@use 'themes';
+@use 'typography';
+@use 'mixins' as *;
+
+.section--tool {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: var(--xl) var(--lg);
+  gap: var(--smg);
+  height: 100%;
+}
+
+.section--tool h2 {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 0 var(--lg) 0;
+  text-align: center;
+}
+
+.section--tool .tools-container {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section--tool .tools-container .tool {
+  display: flex;
+  height: 100%;
+  min-height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--md) 0;
+  border-bottom: 1px solid themes.$color-border;
+  text-decoration: none;
+  color: themes.$text-color;
+}
+
+.section--tool .tools-container .tool h3 {
+  font-size: calc(var(--text-xxl) * 2);
+  font-weight: 900;
+  text-align: left;
+  align-self: center;
+}
+
+.section--tool .tools-container .tool .arrow-circle {
+  display: inline-block;
+  width: var(--xl);
+  height: var(--xl);
+  border-radius: 50%;
+  background-color: themes.$arrow-background-color;
+
+  :after {
+    content: '';
+  }
+}
+
+.section--tool .tools-container .tool:hover .arrow-circle {
+  background-color: themes.$arrow-background-color-hover;
+}

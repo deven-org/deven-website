@@ -1,0 +1,37 @@
+@use 'themes';
+@use 'typography';
+@use 'mixins' as *;
+
+.section--mission {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--xl) var(--lg);
+  gap: var(--smg);
+  min-width: 100%;
+  width: 100%;
+}
+
+.section--mission .section--mission-circle {
+  z-index: -1;
+  width: 60%;
+  padding-bottom: 60%;
+  border-radius: 100%;
+  background-color: themes.$background-light-2;
+
+  ::after {
+    content: '';
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.section--mission .mission {
+  background-color: themes.$background-secondary-color;
+}
+
+.section--mission .vision {
+  background-color: themes.$footer-background;
+  margin-left: -10%;
+}

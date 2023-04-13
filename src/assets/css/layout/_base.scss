@@ -1,0 +1,41 @@
+@use 'mixins' as *;
+@use 'themes';
+
+body {
+  max-width: 960px;
+  background-color: themes.$background-color;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+
+  gap: var(--xxl);
+  flex-direction: column;
+}
+/*
+  background: themes.$background-secondary-color;
+  border: 1px solid red;
+  padding: 7rem 9rem;
+  border-radius: var(--lg);
+  @include devices('mobile') {
+    padding: var(--lg);
+    margin: var(--lg);
+  }
+*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--xxl);
+}
+
+footer {
+  margin-top: auto;
+}
+
+@include devices(tablet) {
+}
+
+@include devices(mobile) {
+}

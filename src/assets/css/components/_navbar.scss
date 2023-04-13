@@ -1,0 +1,129 @@
+@use 'themes';
+@use 'typography';
+@use 'mixins' as *;
+
+nav {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: themes.$background-light-2;
+  @extend .m-t-md;
+  @include devices('mobile') {
+    display: none;
+  }
+}
+
+nav .nav-main {
+  justify-content: center;
+  align-items: center;
+  background-color: themes.$background-light-2;
+  padding: var(--sm) var(--lg) var(--sm) var(--lg);
+}
+
+nav .nav-main .logo {
+  @extend .text--xxxl;
+  color: themes.$on-background-secondary-color;
+  text-decoration: none;
+  line-height: var(--text-md);
+}
+
+nav .nav-main {
+  background-color: themes.$background-secondary-color;
+  border-radius: 30px;
+  display: flex;
+  gap: var(--lg);
+}
+
+nav .nav-main li {
+  @extend .p-t-xs;
+}
+
+nav .nav-main li .nav-main-item {
+  color: themes.$on-background-secondary-color;
+  text-decoration: none;
+  font-size: var(--text-md);
+}
+
+.subnav-parent .arrow {
+  @extend .up;
+  transition: all 0.5s ease;
+}
+
+.subnav-open .arrow {
+  @extend .down;
+}
+
+.subnav-parent:hover + .subnav {
+  display: block;
+  transform: rotate(10deg);
+  opacity: 1;
+  z-index: 9999;
+  transition: all 0.5s ease;
+}
+
+.subnav:hover {
+  display: block;
+  transform: rotate(10deg);
+  opacity: 1;
+  z-index: 9999;
+  transition: all 0.5s ease;
+}
+
+.subnav-parent:hover {
+  @extend .subnav-open;
+}
+
+.subnav-open .subnav {
+  display: block;
+  transform: rotate(10deg);
+  opacity: 1;
+  z-index: 9999;
+  transition: all 1s ease;
+}
+
+.subnav:hover {
+  display: block;
+}
+
+.subnav {
+  z-index: -9999;
+  position: absolute;
+  left: 6rem;
+  opacity: 0;
+  top: 120%;
+  left: 30%;
+  transform-origin: 50%;
+  transition: all 0.5s ease;
+}
+
+.subnav ul {
+  background-color: themes.$background-color;
+  border-radius: 3rem;
+  display: flex;
+  gap: var(--md);
+  @extend .p-l-md, .p-r-md, .p-t-sm, .p-b-md;
+}
+
+.subnav ul li a {
+  color: themes.$on-background-color !important;
+  text-decoration: none !important;
+  @extend .text--xs;
+}
+
+.arrow {
+  border: solid themes.$on-background-secondary-color;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  @extend .p-xs, .m-l-sm, .text--lg;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

@@ -5,22 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEVENorg</title>
     <meta name="Description" content="">
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="alternate" href="." type="application/atom+xml" title="">
   </head>
   <body>
-    <header class="navi">
-      <ul class="nav"><li class="nav-item nav-item-active"><a href="/">Home</a></li><li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Contribute</a></li>
-        <li class="nav-item"><a href="#">Latest News</a></li>
-      </ul>
+    <header>
+      <div class="semi-circle"></div>
+      <nav>
+        <ul class="nav-main">
+          <li><a href="#" class="logo">Deven</a></li><li class="nav-item nav-item-active"><a href="/" class="nav-main-item">Home</a></li><li >
+            <a href="#" class="subnav-parent nav-main-item">Discover <i class="arrow"></i></a> 
+            <div class="subnav">        
+              <ul>
+                <li><a href="#" >About</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Latest News</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" class="nav-main-item">Blog</a></li>
+          <li><a href="#" class="nav-main-item">Contributors</a></li>
+        </ul>
+      </nav>
+      <div><h1 id="logo">Deven</h1></div>
+      <!--<div class="shapes-container">
+        <h1>asdad</h1>
+        <div class="shape shape-product-eng">asdasds</div>
+        <div class="shape shape-standard">asdasds</div>
+        <div class="shape shape-developer">asdasds</div>
+        <div class="shape shape-enablement">asdasds</div>
+        <div class="shape shape-opensource">asdasds</div>
+      </div>-->
     </header>
 
+    <!-- 
     <main class="tmpl-home main">
       Current page: / <br/>
-      
+      <section class="section">
+
 <h1 class="log-title">DEVENorg</h1>
 <p>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -36,11 +59,94 @@ It is a long established fact that a reader will be distracted by the readable c
 <p>
 uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 </p>
+</div>
 
     </main>
+    -->
+    <main>
+      <section class="section--full section--light section--hello">
+        <p><span class="deven-word">Hello</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus vitae arcu non elementum.
+        Proin ac metus purus. Pellentesque sodales magna quis diam aliquam, in congue ligula tempus. 
+        Quisque interdum rhoncus nisi vel feugiat. Donec vel erat eget magna scelerisque pretium. 
+        Suspendisse imperdiet a massa vitae vestibulum. In vitae molestie tortor, at vehicula arcu. 
+        Pellentesque viverra nisi felis. Curabitur risus nunc, pellentesque vel euismod quis, fermentum at diam.
+        </p>
+      </section>
 
-    <footer class="footer">
-      <p><em>This is an <a href="https://www.11ty.io/">Eleventy project</a>.</em></p>
+      <section class="section--full section--mission">
+        <div class="section--mission-circle mission">aasdsdd</div>
+        <div class="section--mission-circle vision">asd</div>
+      </section>
+
+      <section class="section--full">
+        <h1>Cool Stufs</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus vitae arcu non elementum. Proin ac metus purus. Pellentesque sodales magna quis diam aliquam, in congue ligula tempus. Quisque interdum rhoncus nisi vel feugiat. Donec vel erat eget magna scelerisque pretium. Suspendisse imperdiet a massa vitae vestibulum. In vitae molestie tortor, at vehicula arcu. Pellentesque viverra nisi felis. Curabitur risus nunc, pellentesque vel euismod quis, fermentum at diam.
+      </section> 
+      
+      <section class="section section--light section--tool">
+        <h2 class="section-title">Tools</h3>
+        <div class="tools-container">
+          <a href="#" class="tool">
+            <h3>Documentation Skeleton</h3>
+            <div class="arrow-circle"></div>
+          </a>
+          <a href="#" class="tool">
+            <h3>Telemetry</h3>
+            <div class="arrow-circle"></div>
+          </a>
+          <a href="#" class="tool">
+            <h3>BO1LER</h3>
+            <div class="arrow-circle"></div>
+          </a>
+        </div>
+      </section>
+    
+      <section class="section--full section--team">
+        <h2 class="section-title section-title-light">Current Team</h2>
+        <div class="team-container">
+          <div class="team-member">
+            <div class="team-member--avatar"></div>
+            <div class="team-member--name">Lorem Ipsum</div>
+            <div class="team-member--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+          <div class="team-member">
+            <div class="team-member--avatar"></div>
+            <div class="team-member--name">Lorem Ipsum</div>
+            <div class="team-member--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+          <div class="team-member">
+            <div class="team-member--avatar"></div>
+            <div class="team-member--name">Lorem Ipsum</div>
+            <div class="team-member--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+          <div class="team-member">
+            <div class="team-member--avatar"></div>
+            <div class="team-member--name">Lorem Ipsum</div>
+            <div class="team-member--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+          <div class="team-member">
+            <div class="team-member--avatar"></div>
+            <div class="team-member--name">Lorem Ipsum</div>
+            <div class="team-member--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer--semi-circle"></div>
+      <div class="footer--item">
+        Main icon
+      </div>
+      <div class="footer--item">
+        Blog coming soon
+      </div>
+      <div class="footer--item">
+        Subsbribe via RSS
+      </div>
+      <div class="footer--item footer--bar">
+      <p ><em>This is an <a href="https://www.11ty.io/">Eleventy project</a>.</em></p>
+      </div>
     </footer>
 
     

@@ -1,0 +1,69 @@
+@use 'themes';
+@use 'typography';
+@use 'mixins' as *;
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  gap: var(--xl);
+  width: 100%;
+  height: 600px;
+  @include devices('mobile') {
+    gap: var(--xxs);
+    padding-top: var(--xl);
+  }
+}
+
+.semi-circle {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  transform: translateY(-50%);
+  width: 960px;
+  padding-bottom: 100%;
+  border-radius: 100%;
+  background-color: themes.$background-light-2;
+
+  ::after {
+    content: '';
+    display: flex;
+    align-items: start;
+    position: absolute;
+    width: 100px;
+    top: 50px;
+    height: 100px;
+  }
+}
+
+#logo {
+  @extend .logo;
+  font-size: 12rem;
+  color: themes.$logo-color;
+  @include devices('mobile') {
+    font-size: 4rem;
+    padding-top: var(--sm);
+  }
+}
+
+.shapes-container {
+  display: flex;
+  gap: var(--md);
+}
+
+.shape {
+  display: block;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+  border: 10px solid red;
+
+  @include devices('mobile') {
+    font-size: 4rem;
+    padding-top: var(--md);
+  }
+}
