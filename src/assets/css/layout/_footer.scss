@@ -46,6 +46,13 @@ footer {
   .footer--text {
     font-family: november;
     color: white;
-    font-size: var(--text-xl);
+    font-size: var(--text-xxl);
+  }
+
+  .footer--button {
+    background-color: #f1de00;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: avf;
   }
 }
