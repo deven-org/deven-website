@@ -1,4 +1,5 @@
 @use 'mixins' as *;
+@use 'themes';
 
 @font-face {
   font-family: 'november';
@@ -126,5 +127,10 @@ p {
 
 .section-title {
   font-family: 'november';
-  font-size: var(--text-xxxl);
+  font-size: calc(var(--text-xxl) * 2);
+}
+
+.section-title-light {
+  @extend .section-title;
+  color: themes.$logo-color;
 }
