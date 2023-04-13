@@ -1,6 +1,8 @@
 @use 'themes';
+@use 'typography';
 
 footer {
+  $self: &;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -9,31 +11,43 @@ footer {
   position: relative;
   overflow: hidden;
   height: 500px;
-}
 
-footer .footer--semi-circle {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  top: 0%;
-  padding-bottom: 100%;
-  border-radius: 100%;
-  background-color: themes.$footer-background;
-
-  ::after {
-    content: '';
-    display: flex;
-    align-items: start;
+  .footer--semi-circle {
+    z-index: -1;
     position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding-bottom: 100%;
+    border-radius: 100%;
+    background-color: themes.$footer-background;
   }
-}
+  // ::after {
+  //   content: '';
+  //   display: flex;
+  //   align-items: start;
+  //   position: absolute;
+  // }
 
-footer .footer--item {
-  border: 1px solid red;
-}
+  .footer--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 
-footer .footer--bar {
-  border-top: 1px solid themes.$footer-bar;
-  width: 100%;
-  max-width: 960px;
+  .footer--item {
+    border: 1px solid red;
+  }
+
+  .footer--bar {
+    border-top: 1px solid themes.$footer-bar;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  .footer--text {
+    font-family: november;
+    color: white;
+    font-size: var(--text-xl);
+  }
 }
