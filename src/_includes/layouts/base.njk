@@ -12,14 +12,38 @@
   </head>
   <body>
     <header class="navi">
-      <ul class="nav">
-        {%- for nav in collections.nav | reverse -%}
-        <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
-        {%- endfor -%}
-        <li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Contribute</a></li>
-        <li class="nav-item"><a href="#">Latest News</a></li>
-      </ul>
+      <nav class="nav" role="navigation" aria-label="Main">
+        <ul class="nav-links">
+          {%- for nav in collections.nav | reverse -%}
+          <li class="nav-item logo"><a href="#">Deven</a></li>
+          {# <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li> #}
+          {%- endfor -%}
+          <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %} subnav-button hidden" id="subnav" onclick="toggleSubnav()">
+            <a href="#">Discover<div class="subnav-chevron"></div></a>
+            <div class="subnav-container">
+              <div class="subnav-content" id="subnav">
+                <ul>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Tools</a>
+                  </li>
+                  <li>
+                    <a href="#">Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Latest News</a>
+                  </li>
+                </ul>
+                <div class="close-btn" onclick="closeSubnav()"></div>
+              </div>
+              </div>
+              </li>
+          <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="#">Blog</a></li>
+          <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="#">Contributers</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }} main"{% endif %}>
@@ -31,6 +55,28 @@
       <p><em>This is an <a href="https://www.11ty.io/">Eleventy project</a>.</em></p>
     </footer>
 
+    <script>
+    function toggleSubnav() {
+    var subnavLink = document.querySelector("#subnav a");
+    var subnav = document.getElementById("subnav");
+
+    document.addEventListener('click', function(event) {
+      const clickedInside = subnavLink.contains(event.target);
+      if (clickedInside) {
+        subnav.classList.remove("hidden");
+      } else {
+        subnav.classList.add("hidden");
+      }
+    });
+    }
+    function closeSubnav() {
+      document.addEventListener('click', function(event) {
+        var closeBtn = document.querySelector("#subnav .close-btn");
+        var subnavContainer = document.querySelector("#subnav");
+        subnavContainer.classList.add("hidden");
+      });
+    }
+    </script>
     
   </body>
 </html>

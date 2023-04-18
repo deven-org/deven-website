@@ -12,6 +12,20 @@
   font-display: auto;
   src: url("../fonts/AVF.ttf");
 }
+@font-face {
+  font-family: "space-grotesk-light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: auto;
+  src: url("../fonts/space-grotesk.ttf");
+}
+@font-face {
+  font-family: "space-grotesk-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: auto;
+  src: url("../fonts/space-grotesk.ttf");
+}
 body {
   background: black;
   max-width: 960px;
@@ -42,12 +56,186 @@ body {
 }
 
 .nav {
-  display: inline-block;
+  max-width: 800px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+.nav .nav-links {
+  display: flex;
+  flex-direction: row;
   background: #fff;
   border-radius: 20px;
   padding: 5px 2rem;
   margin: 1rem auto 2rem;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+.nav .nav-links .nav-item {
+  display: inline-block;
+  font-family: "space-grotesk-light";
+}
+.nav .nav-links .nav-item:not(:last-of-type) {
+  margin-right: 15px;
+}
+@media (min-width: 768px) {
+  .nav .nav-links .nav-item:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}
+.nav .nav-links .nav-item.nav-item-active {
+  font-family: "space-grotesk-bold";
+}
+.nav .nav-links .nav-item.logo {
+  font-family: "november";
+}
+.nav .nav-links .nav-item.logo a {
+  font-size: 26px;
+}
+.nav .nav-links .nav-item a {
+  color: #111111;
+  text-decoration: none;
+  font-size: 12px;
+}
+.nav .nav-links .nav-item a:hover {
+  color: #8E8E8E;
+}
+@media (min-width: 768px) {
+  .nav .nav-links .nav-item a {
+    font-size: 1rem;
+  }
+}
+.nav .nav-links .subnav-button > a .subnav-chevron {
+  margin-left: 8px;
+  margin-top: -3px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .nav .nav-links .subnav-button > a .subnav-chevron {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+}
+.nav .nav-links .subnav-button > a:hover .subnav-chevron {
+  border-color: #8E8E8E;
+}
+.nav .nav-links .subnav-button:not(.hidden) a {
+  color: #8E8E8E;
+}
+.nav .nav-links .subnav-button .subnav-container {
+  position: absolute;
+  transform: rotate(7deg);
+  margin: 2rem 0 0 -1.3rem;
   height: 1.8rem;
+  padding-top: 30px;
+  top: 0px;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .nav .nav-links .subnav-button .subnav-container {
+    padding-top: 35px;
+  }
+}
+.nav .nav-links .subnav-button .subnav-container.hidden {
+  display: none;
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content {
+  background: #111111;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 5px 0.8rem;
+  margin: 1rem auto 2rem;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .nav .nav-links .subnav-button .subnav-container .subnav-content {
+    padding: 5px 2rem;
+  }
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul {
+  padding: 5px 0rem 5px 0rem;
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul li {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 10px;
+  font-family: "space-grotesk-light";
+}
+@media (min-width: 768px) {
+  .nav .nav-links .subnav-button .subnav-container .subnav-content ul li {
+    margin-right: 2em;
+  }
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul li:last-of-type {
+  margin-right: 0;
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul li a {
+  color: white;
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul li a:hover {
+  color: #8E8E8E;
+}
+@media (min-width: 768px) {
+  .nav .nav-links .subnav-button .subnav-container .subnav-content ul li a {
+    font-size: 12px;
+  }
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn {
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn::before, .nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: white;
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn::before {
+  transform: rotate(45deg);
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn::after {
+  transform: rotate(-45deg);
+}
+@media (min-width: 768px) {
+  .nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn {
+    margin-left: 1.5rem;
+  }
+}
+.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn:hover::before, .nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn:hover::after {
+  background: #8E8E8E;
+}
+.nav .nav-links .subnav-button.hidden .subnav-container {
+  display: none;
+}
+.nav .nav-links .subnav-button:hover .subnav-button {
+  color: #8E8E8E;
+}
+.nav .nav-links .subnav-button.hidden .subnav-chevron {
+  margin-top: -3px;
+  transform: rotate(45deg);
+  border-color: black;
+}
+.nav .nav-links .subnav-button:not(.hidden) .subnav-chevron {
+  margin-top: 2px;
+  transform: rotate(-135deg);
+  border-color: #8E8E8E;
 }
 
 .main {
@@ -64,17 +252,4 @@ em {
   font-size: 2.5em;
   line-height: 3.2em;
   text-align: center;
-}
-
-.nav-item {
-  display: inline-block;
-}
-
-.nav-item:not(:last-of-type) {
-  margin-right: 1em;
-}
-
-.nav-item a {
-  color: black;
-  text-decoration: none;
 }
