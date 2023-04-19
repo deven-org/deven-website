@@ -83,6 +83,14 @@ body {
     font-family: "AVF";
 }
 
+.content-wrapper {
+  min-height: 100%;
+  padding-bottom: 50px;
+
+  /* Equal to height of footer */
+  margin-bottom: -40px;
+}
+
 .navi{
     background-image: radial-gradient(circle, #fff 50%, transparent 2%);
     background-position: center -200px;
@@ -90,8 +98,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.main,
-.footer {
+.main {
     padding: 20px 30px;
     background: #fff;
     margin-bottom: 2rem;
@@ -298,8 +305,23 @@ em {
 // .main {
 // }
 
-// .footer {
-// }
+.footer {
+  border-top: 1px solid #F7F7F7;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  p, a {
+    color: #F7F7F7;
+    font-size: 12px;
+    padding: 0px 5px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
 
 // Headline
 .log-title {

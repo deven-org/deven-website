@@ -11,38 +11,39 @@
     <link rel="alternate" href="." type="application/atom+xml" title="">
   </head>
   <body>
-    <header class="navi">
-      <nav class="nav" role="navigation" aria-label="Main">
-        <ul class="nav-links">
-          <li class="nav-item logo"><a href="/">Deven</a></li>
-          <li class="nav-item subnav-button hidden" id="subnav" onclick="toggleSubnav()">
-            <a href="#">Discover<div class="subnav-chevron"></div></a>
-            <div class="subnav-container">
-              <div class="subnav-content" id="subnav">
-                <ul>
-                  <li class="subnav-item">
-                    <a href="#latest-news">Latest News</a>
-                  </li>
-                  <li class="subnav-item">
-                    <a href="#team">Team</a>
-                  </li>
-                  <li class="subnav-item">
-                    <a href="#tools">Tools</a>
-                  </li>
-                  <li class="subnav-item">
-                    <a href="#about">About</a>
-                  </li>
-                </ul>
-                <div class="close-btn" onclick="closeSubnav()"></div>
+    <div class='content-wrapper'>
+      <header class="navi">
+        <nav class="nav" role="navigation" aria-label="Main">
+          <ul class="nav-links">
+            <li class="nav-item logo"><a href="/">Deven</a></li>
+            <li class="nav-item subnav-button hidden" id="subnav" onclick="toggleSubnav()">
+              <a href="#">Discover<div class="subnav-chevron"></div></a>
+              <div class="subnav-container">
+                <div class="subnav-content" id="subnav">
+                  <ul>
+                    <li class="subnav-item">
+                      <a href="#latest-news">Latest News</a>
+                    </li>
+                    <li class="subnav-item">
+                      <a href="#team">Team</a>
+                    </li>
+                    <li class="subnav-item">
+                      <a href="#tools">Tools</a>
+                    </li>
+                    <li class="subnav-item">
+                      <a href="#about">About</a>
+                    </li>
+                  </ul>
+                  <div class="close-btn" onclick="closeSubnav()"></div>
+                </div>
               </div>
-            </div>
-          </li><li class="nav-item" ><a href="/blog/">Blog</a></li><li class="nav-item" ><a href="/contributers/">Contributers</a></li><li class="nav-item" ><a href="/"></a></li></ul>
-      </nav>
-    </header>
+            </li><li class="nav-item" ><a href="/"></a></li><li class="nav-item" ><a href="/contributers/">Contributers</a></li><li class="nav-item" ><a href="/blog/">Blog</a></li></ul>
+        </nav>
+      </header>
 
-    <main class="tmpl-home main">
-      Current page: /404.html <br/>
-      <h1 id="content-not-found." tabindex="-1">Content not found. <a class="bookmark" href="#content-not-found.">#</a></h1>
+      <main class="tmpl-home main">
+        Current page: /404.html <br/>
+        <h1 id="content-not-found." tabindex="-1">Content not found. <a class="bookmark" href="#content-not-found.">#</a></h1>
 <p>Go <a href="/">home</a>.</p>
 <p>}
 Read more: <a href="https://www.11ty.io/docs/quicktips/not-found/">https://www.11ty.io/docs/quicktips/not-found/</a></p>
@@ -53,13 +54,19 @@ Read more: <a href="https://www.11ty.io/docs/quicktips/not-found/">https://www.1
 </ul>
 
 
-    </main>
+      </main>
+    
+    </div>
 
     <footer class="footer">
-      <p><em>This is an <a href="https://www.11ty.io/">Eleventy project</a>.</em></p>
+      <p id="copyright"></p>
+      <a href='/imprint'>Imprint</a>
     </footer>
 
     <script>
+      
+    document.getElementById('copyright').innerHTML = `&copy DEVEN ${new Date().getFullYear()}. All rights reserved.`;
+
     function toggleSubnav() {
     var subnavLink = document.querySelector("#subnav a");
     var subnav = document.getElementById("subnav");
