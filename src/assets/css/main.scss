@@ -202,11 +202,14 @@ body {
           }
           ul {
             padding: 5px 0rem 5px 0rem;
-            li {
+            li.subnav-item {
               display: inline-block;
               margin-right: 8px;
               font-size: 10px;
               font-family: "space-grotesk-light";
+              &.subnav-item-active {
+                font-family: "space-grotesk-bold";
+              }
               @include md {
                 margin-right: 2em;
               }

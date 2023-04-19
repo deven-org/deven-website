@@ -164,28 +164,31 @@ body {
 .nav .nav-links .subnav-button .subnav-container .subnav-content ul {
   padding: 5px 0rem 5px 0rem;
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul li {
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item {
   display: inline-block;
   margin-right: 8px;
   font-size: 10px;
   font-family: "space-grotesk-light";
 }
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item.subnav-item-active {
+  font-family: "space-grotesk-bold";
+}
 @media (min-width: 768px) {
-  .nav .nav-links .subnav-button .subnav-container .subnav-content ul li {
+  .nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item {
     margin-right: 2em;
   }
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul li:last-of-type {
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item:last-of-type {
   margin-right: 0;
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul li a {
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item a {
   color: white;
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul li a:hover {
+.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item a:hover {
   color: #8E8E8E;
 }
 @media (min-width: 768px) {
-  .nav .nav-links .subnav-button .subnav-container .subnav-content ul li a {
+  .nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item a {
     font-size: 12px;
   }
 }
