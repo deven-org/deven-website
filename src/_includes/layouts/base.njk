@@ -15,24 +15,31 @@
       <nav class="nav" role="navigation" aria-label="Main">
         <ul class="nav-links">
           <li class="nav-item logo"><a href="#">Deven</a></li>
-          {%- for nav in collections.nav | reverse -%}
-          <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
-          {%- endfor -%}
           <li class="nav-item subnav-button hidden" id="subnav" onclick="toggleSubnav()">
             <a href="#">Discover<div class="subnav-chevron"></div></a>
             <div class="subnav-container">
               <div class="subnav-content" id="subnav">
                 <ul>
-                  {%- for subnav in collections.subnav | reverse -%}
-                  <li class="subnav-item{% if subnav.url == page.url %} subnav-item-active{% endif %}" {% if subnav.url == page.url %} aria-current="page"{% endif %}>
-                    <a href="{{ subnav.url | url }}">{{ subnav.data.navtitle }}</a>
+                  <li class="subnav-item">
+                    <a href="#latest-news">Latest News</a>
                   </li>
-                  {%- endfor -%}
+                  <li class="subnav-item">
+                    <a href="#team">Team</a>
+                  </li>
+                  <li class="subnav-item">
+                    <a href="#tools">Tools</a>
+                  </li>
+                  <li class="subnav-item">
+                    <a href="#about">About</a>
+                  </li>
                 </ul>
                 <div class="close-btn" onclick="closeSubnav()"></div>
               </div>
             </div>
           </li>
+          {%- for nav in collections.nav | reverse -%}
+          <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
+          {%- endfor -%}
         </ul>
       </nav>
     </header>
