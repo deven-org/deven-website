@@ -1,0 +1,160 @@
+@charset "UTF-8";
+.home {
+  position: relative;
+}
+
+.main-header {
+  height: 52rem;
+  position: relative;
+  background-image: radial-gradient(circle at top, #fff 50%, transparent 50%);
+}
+
+.deven-headtext {
+  position: absolute;
+  left: 19rem;
+  top: -43rem;
+  font-family: "november";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10rem;
+  line-height: 5rem;
+  text-align: center;
+  /* Yellow */
+  color: #F1DE00;
+}
+
+.button-group {
+  position: absolute;
+  left: 2rem;
+  top: -28rem;
+}
+
+.pe-button {
+  background-color: blue;
+  border-radius: 100px;
+  text-align: center;
+  width: 16em;
+  height: 70px;
+  transform: rotate(-17.81deg);
+  color: #F7F7F7;
+}
+
+.stdtion-button {
+  background-color: white;
+  color: black;
+  border-radius: 100px;
+  text-align: center;
+  width: 16em;
+  height: 70px;
+  transform: rotate(7.82deg);
+  color: #000000;
+  z-index: 1;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.button-group1 {
+  position: absolute;
+  left: 22rem;
+  top: -28rem;
+}
+
+.abstract-text-span {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  left: 50%;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.ellipse span {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  left: 50%;
+  font-size: 45px;
+  line-height: 26px;
+}
+
+.dev-square {
+  position: absolute;
+  background-color: blue;
+  border-radius: 10%;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  transform: rotate(-20.32deg);
+  color: #F7F7F7;
+  margin-bottom: 25px;
+  left: 10rem;
+}
+
+.link-button {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F1DE00;
+  width: 120px;
+  height: 120px;
+  top: 10rem;
+  left: 7rem;
+}
+
+.enable-circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+  width: 200px;
+  height: 200px;
+  top: 8rem;
+  left: 18rem;
+  text-align: center;
+  transform: rotate(12.74deg);
+}
+
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000;
+  width: 120px;
+  height: 120px;
+  left: 21rem;
+  top: -32rem;
+}
+
+.four-point-star::after,
+.four-point-star::before {
+  position: absolute;
+  content: "✦";
+  font-size: 450px;
+}
+
+.four-point-star::after { /* The foreground star */
+  background: #F1DE00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #F1DE00;
+}
+
+.four-point-star {
+  position: absolute;
+  z-index: 1;
+  left: 43rem;
+  top: -32rem;
+}
+
+.four-point-star span {
+  position: absolute;
+  z-index: 2;
+  width: max-content;
+  transform: translate(130%, 50%);
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
