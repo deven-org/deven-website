@@ -1,78 +1,70 @@
-  @font-face {
-    font-family: "november";
-    font-style: normal;
-    font-weight: 500;
-    font-display: auto;
-    src: url("../fonts/november.ttf");
+@font-face {
+  font-family: "november";
+  font-style: normal;
+  font-weight: 500;
+  font-display: auto;
+  src: url("../fonts/november.ttf");
+}
+@font-face {
+  font-family: "AVF";
+  font-style: light;
+  font-weight: 300;
+  font-display: auto;
+  src: url("../fonts/AVF.ttf");
+}
+@font-face {
+  font-family: "space-grotesk-light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: auto;
+  src: url("../fonts/space-grotesk.ttf");
+}
+@font-face {
+  font-family: "space-grotesk-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: auto;
+  src: url("../fonts/space-grotesk.ttf");
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
   }
+}
 
-  @font-face {
-    font-family: "AVF";
-    font-style: light;
-    font-weight: 300;
-    font-display: auto;
-    src: url("../fonts/AVF.ttf");
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
   }
+}
 
-  @font-face {
-    font-family: "space-grotesk-light";
-    font-style: normal;
-    font-weight: 300;
-    font-display: auto;
-    src: url("../fonts/space-grotesk.ttf");
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
   }
+}
 
-  @font-face {
-    font-family: "space-grotesk-bold";
-    font-style: normal;
-    font-weight: 700;
-    font-display: auto;
-    src: url("../fonts/space-grotesk.ttf");
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
   }
-
-  // Small tablets and large smartphones (landscape view)
-  $screen-sm-min: 576px;
-
-  // Small tablets (portrait view)
-  $screen-md-min: 768px;
-
-  // Tablets and small desktops
-  $screen-lg-min: 992px;
-
-  // Large tablets and desktops
-  $screen-xl-min: 1200px;
-
-  // Small devices
-  @mixin sm {
-    @media (min-width: #{$screen-sm-min}) {
-        @content;
-    }
-  }
-
-  // Medium devices
-  @mixin md {
-    @media (min-width: #{$screen-md-min}) {
-        @content;
-    }
-  }
-
-  // Large devices
-  @mixin lg {
-    @media (min-width: #{$screen-lg-min}) {
-        @content;
-    }
-  }
-
-  // Extra large devices
-  @mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
-        @content;
-    }
-  }
-
-//   background: linear-gradient(0deg, #F1DE00, #F1DE00),
-// linear-gradient(0deg, #000000, #000000),
-// linear-gradient(0deg, #2154D6, #2154D6);
+}  
 
 body {
     background: black;
@@ -320,4 +312,125 @@ em {
     font-size: 2.5em;
     line-height: 3.2em;
     text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item:not(:last-of-type) {
+    margin-right: 1em;
+}
+
+.nav-item a{
+    color: black;
+    text-decoration: none;
+}
+
+.tools {
+  background: #F7F7F7;
+  border-radius: 30px;
+  padding: 2rem 1.5rem;
+  margin: 3rem 0;
+  @include md {
+    padding: 3rem 2.5rem;
+
+  }
+  h2 {
+    font-family: "november";
+    font-size: 1.8em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  ul {
+    margin-top: 1rem;
+    @include md {
+      margin-top: 3rem;
+    }
+    li {
+      padding: 20px 0px;
+      border-bottom: 1px solid #000000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        font-family: "space-grotesk-bold";
+        font-size: 1.2em;
+        line-height: 1.7em;
+        @include md {
+          font-size: 2.2em;
+          line-height: 1.5em;
+        }
+      }
+      button {
+        background: #2154D6;
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        a {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          &:hover {
+            text-decoration: underline;
+          }
+          svg {
+            position: absolute;
+          }
+          #slidePrev {
+            left: 11px;
+          }
+          #slideNext {
+            left: -50px;
+          }
+        }
+        &:hover > a #slidePrev {
+          -webkit-animation: slidePrev 0.75s forwards;
+          animation: slidePrev 0.75s forwards;
+          animation-iteration-count: 1;
+        }
+        &:hover > a #slideNext {
+          -webkit-animation: slideNext 0.75s forwards;
+          animation: slideNext 0.75s forwards;
+          animation-iteration-count: 1;
+        }
+      
+        @-webkit-keyframes slidePrev {
+            100% { left: 50px; }
+        }
+        
+        @keyframes slidePrev {
+            100% { left: 50px; }
+        }
+        
+        @-webkit-keyframes slideNext {
+            100% { left: 11px; }
+        }
+        
+        @keyframes slideNext {
+          100% { left: 11px; }
+        }
+      }
+      &:nth-child(even) {
+        button {
+        background: #F1DE00;
+          a {
+            svg {
+              path {
+                fill: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
