@@ -14,11 +14,6 @@
     src: url("../fonts/AVF.ttf");
   }
 
-//   background: linear-gradient(0deg, #F1DE00, #F1DE00),
-// linear-gradient(0deg, #000000, #000000),
-// linear-gradient(0deg, #2154D6, #2154D6);
-
-
 body {
     background:black;
     max-width: 960px;
@@ -29,7 +24,6 @@ body {
 }
 
 .navi{
-    //background-image: radial-gradient(circle, #fff 50%, transparent 2%);
     background-position: center -200px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -66,23 +60,11 @@ em {
     font-style: underline;
 }
 
-// .navi {
-   
-// }
-
-// .main {
-// }
-
-// .footer {
-// }
-
-// Headline
 .log-title {
     font-family: "november";
     font-size: 2.5em;
     line-height: 3.2em;
     text-align: center;
-    // color: #F1DE00;
 }
 
 .nav-item {

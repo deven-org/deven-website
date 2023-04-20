@@ -28,9 +28,7 @@
 
 .button-group{
     position: absolute;
-    left: 2rem;
-    top: -28rem;
-    //transform: translate(0%,-340%);
+    top: -30rem;
 }
 
 .pe-button{
@@ -57,9 +55,9 @@
     margin-left: 50px;
 }
 
-.button-group1 {
+.contributor-btn-group {
     position: absolute;
-    left: 22rem;
+    left: 18rem;
     top: -28rem;
 }
 
@@ -73,16 +71,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 26px;
-} 
-
-.ellipse span {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: max-content;
-    left: 50%;
-    font-size: 45px;
     line-height: 26px;
 } 
 
@@ -127,38 +115,38 @@
     background-color: #000;
     width: 120px;
     height: 120px;
-    left: 21rem;
-    top: -32rem;
+    left: 19rem;
+    top: -33rem;
 }
 
-.four-point-star::after,
-.four-point-star::before {
+.ellipse span {
     position: absolute;
-    content: "\2726";
-    font-size: 450px;
-}
-
-.four-point-star::after { /* The foreground star */
-    background: #F1DE00;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #F1DE00;
-}
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    left: 50%;
+    font-size: 45px;
+    line-height: 26px;
+} 
 
 .four-point-star {
     position: absolute;
     z-index: 1;
-    left: 43rem;
-    top: -32rem;
+    left: 39rem;
+    top: -42rem;
 }
 
-.four-point-star span {
-    position: absolute;
+.four-point-star svg {
+    width: 408px;
+    height: 408px;
+}
+
+.four-point-star text {
     z-index: 2;
     width: max-content;
-    transform: translate(130%, 50%);
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 26px;
+    color: #000;
 }
