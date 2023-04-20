@@ -1,0 +1,151 @@
+.intro {
+  background: #fff;
+  width: 100%;
+  color: #000000;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  position: relative;
+  border-radius: 20px;
+}
+
+.intro div {
+  padding: 18%;
+}
+
+.intitial-text {
+  font-size: 80px;
+}
+
+.rest-text {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.vision-mission {
+  position: relative;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+.mission {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+}
+
+.november-font {
+  font-family: "november";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.mission svg {
+  position: absolute;
+  width: 230px;
+  height: 129px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mission div {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-title {
+  font-size: 50px;
+  line-height: 55px;
+  text-align: center;
+}
+
+.circle-text {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.vision {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: #2154D6;
+  position: absolute;
+  top: 0%;
+  left: 45%;
+}
+
+.vision svg {
+  position: absolute;
+  width: 230px;
+  height: 129px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vision div {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mission-statement {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 30%;
+}
+
+.cool-stuff-star {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.cool-stuff-star svg {
+  position: absolute;
+}
+
+.cool-stuff-star text {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.statement {
+  width: 400px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  position: relative;
+  padding: 5%;
+  margin-top: -15%;
+}
+
+.statement p {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
