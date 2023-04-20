@@ -84,9 +84,7 @@ body {
 }
 
 .content-wrapper {
-  min-height: 100%;
-  padding-bottom: 50px;
-
+  min-height: 100vh;
   /* Equal to height of footer */
   margin-bottom: -40px;
 }
@@ -101,7 +99,7 @@ body {
 .main {
     padding: 20px 30px;
     background: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     border-radius: 20px;
 }
 
