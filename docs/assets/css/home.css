@@ -63,11 +63,11 @@
   transform: translate(-50%, -50%);
   width: max-content;
   left: 50%;
-  font-family: "Space Grotesk";
+  font-family: "space-grotesk-bold";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .dev-square {
@@ -140,7 +140,7 @@
 .four-point-star text {
   z-index: 2;
   width: max-content;
-  font-family: "Space Grotesk";
+  font-family: "space-grotesk-bold";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
