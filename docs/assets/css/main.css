@@ -279,6 +279,18 @@ em {
   text-align: center;
 }
 
+.imprint-container h1 {
+  color: #f7f7f7;
+  font-family: "space-grotesk-bold";
+  font-size: 25px;
+}
+.imprint-container p {
+  color: #f7f7f7;
+}
+.imprint-container p strong {
+  font-family: "space-grotesk-bold";
+}
+
 .nav-item {
   display: inline-block;
 }
