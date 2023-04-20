@@ -17,10 +17,9 @@
 }
 
 .rest-text {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
+    font-family: "space-grotesk-bold";
+    font-size: 22px;
+    line-height: 1.8rem;
 }
 
 .vision-mission {
@@ -65,14 +64,16 @@
 }
 
 .circle-text {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 300;
+    font-family: 'space-grotesk-light';
     font-size: 16px;
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.01em;
     color: #000000;
+}
+
+.circle-text.white, .circle-title.white {
+    color: #ffffff;
 }
 
 .vision {
@@ -104,7 +105,7 @@
 .mission-statement {
     position: relative;
     margin-top: 10%;
-    margin-bottom: 30%;
+    margin-bottom: 15%;
 }
 
 .cool-stuff-star {
@@ -118,9 +119,7 @@
 }
 
 .cool-stuff-star text {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'space-grotesk-bold';
     font-size: 25px;
     line-height: 120%;
     text-align: center;
@@ -140,9 +139,7 @@
 }
 
 .statement p {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'space-grotesk-bold';
     font-size: 20px;
     line-height: 130%;
     letter-spacing: 0.01em;

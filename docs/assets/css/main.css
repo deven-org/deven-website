@@ -301,6 +301,7 @@ em {
 @media (min-width: 768px) {
   .tools {
     padding: 3rem 2.5rem;
+    margin: 3rem 0 6rem 0;
   }
 }
 .tools h2 {
