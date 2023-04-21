@@ -3,15 +3,22 @@
 }
 
 .main-header {
-  height: 52rem;
+  height: 91vh;
   position: relative;
+}
+
+.white-circle {
   background-image: radial-gradient(circle at top, #fff 50%, transparent 50%);
+}
+
+.blue-circle {
+  background-image: radial-gradient(circle at top, #2154D6 50%, transparent 50%);
 }
 
 .deven-headtext {
   position: absolute;
   left: 19rem;
-  top: -43rem;
+  top: 10rem;
   font-family: "november";
   font-style: normal;
   font-weight: 400;
@@ -24,7 +31,7 @@
 
 .button-group {
   position: absolute;
-  top: -30rem;
+  top: 22rem;
 }
 
 .pe-button {
@@ -54,7 +61,7 @@
 .contributor-btn-group {
   position: absolute;
   left: 18rem;
-  top: -28rem;
+  top: 24rem;
 }
 
 .abstract-text-span {
@@ -112,7 +119,7 @@
   width: 120px;
   height: 120px;
   left: 19rem;
-  top: -33rem;
+  top: 20rem;
 }
 
 .ellipse span {
@@ -129,7 +136,7 @@
   position: absolute;
   z-index: 1;
   left: 39rem;
-  top: -42rem;
+  top: 10rem;
 }
 
 .four-point-star svg {

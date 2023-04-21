@@ -96,7 +96,9 @@ body {
 
 .navi {
   display: flex;
-  height: 52rem;
+  position: absolute;
+  z-index: 99;
+  transform: translate(50%, 0%);
 }
 
 .nav {
