@@ -102,8 +102,19 @@ main {
 .navi {
   display: flex;
   position: absolute;
+  top: 0px;
   z-index: 99;
   transform: translate(50%, 0%);
+}
+
+.main-header {
+  height: 60vh;
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
+  top: 0px;
 }
 
 .nav {

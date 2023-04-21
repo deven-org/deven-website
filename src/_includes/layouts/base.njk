@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/home.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/about.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/contributors.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
@@ -38,7 +39,6 @@
                     </ul>
                     <div class="close-btn" onclick="closeSubnav()"></div>
                   </div>
-                </div>
               </li>
               {%- for nav in collections.nav | reverse -%}
                 {% if nav.data.navtitle %}<li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>{% endif %}
@@ -46,14 +46,14 @@
             </ul>
           </nav>
         </header>
-      <main{% if templateClass %} class="{{ templateClass }} home"{% endif %}>
-        {{ content | safe }}
-      </main>
-
-    <footer class="footer">
-      <p id="copyright"></p>
-      <a href='/imprint'>Imprint</a>
-    </footer>
+        <main{% if templateClass %} class="{{ templateClass }} home"{% endif %}>
+          {{ content | safe }}
+        </main>
+        <footer class="footer">
+          <p id="copyright"></p>
+          <a href='/imprint'>Imprint</a>
+        </footer>
+    </div>
 
     <script>
       
