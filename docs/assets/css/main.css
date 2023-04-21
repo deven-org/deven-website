@@ -54,9 +54,12 @@ body {
   border-radius: 20px;
 }
 
+main {
+  margin-bottom: 80px;
+}
+
 .navi {
   display: flex;
-  height: 52rem;
 }
 
 .nav {
@@ -262,6 +265,7 @@ em {
   align-items: center;
   width: 100%;
   max-width: 960px;
+  margin: 0px auto;
 }
 .footer p, .footer a {
   color: #F7F7F7;

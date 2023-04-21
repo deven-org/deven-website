@@ -94,9 +94,12 @@ body {
     border-radius: 20px;
 }
 
+main {
+  margin-bottom: 80px;
+}
+
 .navi {
   display: flex;
-  height: 52rem;
 }
 
 .nav {
@@ -295,6 +298,7 @@ em {
   align-items: center;
   width: 100%;
   max-width: 960px;
+  margin: 0px auto;
   p, a {
     color: #F7F7F7;
     font-size: 12px;

@@ -3,9 +3,22 @@
 }
 
 .main-header {
+  background-image: radial-gradient(circle, #f7f7f7 600px, transparent 50%);
+  background-size: contain;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 1200px;
+  width: 100%;
+  top: -650px;
+  right: 0px;
+  left: 0px;
+  margin: 0px auto;
+  z-index: -1;
+}
+
+.navi {
   height: 52rem;
-  position: relative;
-  background-image: radial-gradient(circle at top, #fff 50%, transparent 50%);
 }
 
 .deven-headtext {
