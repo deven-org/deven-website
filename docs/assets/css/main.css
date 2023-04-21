@@ -42,7 +42,6 @@ body {
 }
 
 .navi {
-  background-image: radial-gradient(circle, #fff 50%, transparent 2%);
   background-position: center -200px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -57,7 +56,7 @@ body {
 
 .navi {
   display: flex;
-  height: 20rem;
+  height: 52rem;
 }
 
 .nav {
@@ -302,6 +301,7 @@ em {
 @media (min-width: 768px) {
   .tools {
     padding: 3rem 2.5rem;
+    margin: 3rem 0 6rem 0;
   }
 }
 .tools h2 {

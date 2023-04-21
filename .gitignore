@@ -2,6 +2,7 @@
 
 # Compiled Output
 /dist
+/docs
 
 # Dependencies
 /node_modules
