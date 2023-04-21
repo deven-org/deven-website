@@ -14,41 +14,38 @@
   </head>
   <body>
     <div class='content-wrapper'>
-      <div class='main-header'>
-      </div>
-      <header class="navi">
-        <nav class="nav" role="navigation" aria-label="Main">
-          <ul class="nav-links">
-            <li class="nav-item logo"><a href="/">Deven</a></li>
-            <li class="nav-item subnav-button hidden" id="subnav" onclick="toggleSubnav()">
-              <a href="#">Discover<div class="subnav-chevron"></div></a>
-              <div class="subnav-container">
-                <div class="subnav-content" id="subnav">
-                  <ul>
-                    <li class="subnav-item">
-                      <a href="#latest-news">Latest News</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="#team">Team</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="#tools">Tools</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="#about">About</a>
-                    </li>
-                  </ul>
-                  <div class="close-btn" onclick="closeSubnav()"></div>
+        <header class="navi">
+          <nav class="nav" role="navigation" aria-label="Main">
+            <ul class="nav-links">
+              <li class="nav-item logo"><a href="/">Deven</a></li>
+              <li class="nav-item subnav-button hidden" id="subnav" onclick="toggleSubnav()">
+                <a href="#">Discover<div class="subnav-chevron"></div></a>
+                <div class="subnav-container">
+                  <div class="subnav-content" id="subnav">
+                    <ul>
+                      <li class="subnav-item">
+                        <a href="#latest-news">Latest News</a>
+                      </li>
+                      <li class="subnav-item">
+                        <a href="#team">Team</a>
+                      </li>
+                      <li class="subnav-item">
+                        <a href="#tools">Tools</a>
+                      </li>
+                      <li class="subnav-item">
+                        <a href="#about">About</a>
+                      </li>
+                    </ul>
+                    <div class="close-btn" onclick="closeSubnav()"></div>
+                  </div>
                 </div>
-              </div>
-            </li>
-            {%- for nav in collections.nav | reverse -%}
-              {% if nav.data.navtitle %}<li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>{% endif %}
-            {%- endfor -%}
-          </ul>
-        </nav>
-      </header>
-
+              </li>
+              {%- for nav in collections.nav | reverse -%}
+                {% if nav.data.navtitle %}<li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>{% endif %}
+              {%- endfor -%}
+            </ul>
+          </nav>
+        </header>
       <main{% if templateClass %} class="{{ templateClass }} home"{% endif %}>
         {{ content | safe }}
       </main>

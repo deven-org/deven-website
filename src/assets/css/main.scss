@@ -95,11 +95,15 @@ body {
 }
 
 main {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+  min-height: calc(100vh - 80px);
 }
 
 .navi {
   display: flex;
+  position: absolute;
+  z-index: 99;
+  transform: translate(50%, 0%);
 }
 
 .nav {
@@ -119,13 +123,11 @@ main {
     .nav-item {
       display: inline-block;
       font-family: "space-grotesk-light";
-      &:not(:last-of-type) {
-        margin-right: 15px;
-      }
+      .nav .nav-links .nav-item {
+        margin: 0px 15px;
+    }
       @include md {
-        &:not(:last-of-type) {
-          margin-right: 30px;
-        }
+        margin: 0px 15px;
       }
       &.nav-item-active {
         font-family: "space-grotesk-bold";

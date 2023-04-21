@@ -1,16 +1,15 @@
 .main-header {
-    background-image: radial-gradient(circle, #f7f7f7 600px, transparent 50%);
-    background-size: contain;
-    background-position: 0px;
-    background-repeat: no-repeat;
+    height: 90vh;
     position: absolute;
-    height: 1200px;
     width: 100%;
-    top: -650px;
     right: 0px;
     left: 0px;
-    margin: 0px auto;
+    top: 0px;
     z-index: -1;
+}
+
+.white-circle {
+    background-image: radial-gradient(circle at top, #fff 50%, transparent 50%);
 }
 
 .content-wrapper {
@@ -22,7 +21,7 @@
 .people-icon {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    padding-top: 120px;
     svg {
         max-width: 200px;
     }

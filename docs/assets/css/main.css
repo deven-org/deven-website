@@ -55,11 +55,15 @@ body {
 }
 
 main {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+  min-height: calc(100vh - 80px);
 }
 
 .navi {
   display: flex;
+  position: absolute;
+  z-index: 99;
+  transform: translate(50%, 0%);
 }
 
 .nav {
@@ -82,12 +86,12 @@ main {
   display: inline-block;
   font-family: "space-grotesk-light";
 }
-.nav .nav-links .nav-item:not(:last-of-type) {
-  margin-right: 15px;
+.nav .nav-links .nav-item .nav .nav-links .nav-item {
+  margin: 0px 15px;
 }
 @media (min-width: 768px) {
-  .nav .nav-links .nav-item:not(:last-of-type) {
-    margin-right: 30px;
+  .nav .nav-links .nav-item {
+    margin: 0px 15px;
   }
 }
 .nav .nav-links .nav-item.nav-item-active {
