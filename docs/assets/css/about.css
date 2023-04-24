@@ -217,24 +217,3 @@
   margin: 0;
   color: #F7F7F7;
 }
-
-.contributors-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  padding: 14px 20px;
-  background-color: #F1DE00;
-  color: #000;
-  cursor: pointer;
-  border-radius: 100px;
-  width: 158px;
-  margin: 0 auto;
-}
-
-.contributors-btn span {
-  font-family: "space-grotesk-bold";
-  font-size: 16px;
-  margin-right: 5px;
-  line-height: 140%;
-}
