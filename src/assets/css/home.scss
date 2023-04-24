@@ -1,26 +1,10 @@
-.home {
-    position: relative; 
-}
 
-.main-header {
-    height: 91vh;
-    position: relative;
-}
-
-.white-circle {
-    background-image: radial-gradient(circle at top, #fff 50%, transparent 50%);
-}
-
-.blue-circle {
-    background-image: radial-gradient(circle at top, #2154D6 50%, transparent 50%);
-}
 
 .deven-headtext{
-    position: absolute;
-    left: 19rem;
-    top: 10rem;
-    font-family: 'november';
+    position: relative;
+    font-family: "november";
     font-style: normal;
+    margin-top: 10rem;
     font-weight: 400;
     font-size: 10rem;
     line-height: 5rem;
@@ -30,12 +14,14 @@
 }
 
 .abstract-geometry{
-
+    position: relative;
+    display: flex;
+    margin-bottom: 15rem;
 }
 
 .button-group{
-    position: absolute;
-    top: 22rem;
+    position: relative;
+    margin-top: 12rem;
 }
 
 .pe-button{
@@ -63,9 +49,9 @@
 }
 
 .contributor-btn-group {
-    position: absolute;
-    left: 18rem;
-    top: 24rem;
+    position: relative;
+    margin-left: 0rem;
+    margin-top: 12rem;
 }
 
 .abstract-text-span {
@@ -117,13 +103,15 @@
 }
 
 .ellipse {
+    background-color: #000;
+    margin-left: 4rem;
+    margin-top: 9rem;
     position: absolute;
     border-radius: 50%;
-    background-color: #000;
     width: 120px;
     height: 120px;
-    left: 19rem;
-    top: 20rem;
+    top: -1rem;
+    left: 14rem;
 }
 
 .ellipse span {
@@ -137,10 +125,10 @@
 } 
 
 .four-point-star {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    left: 39rem;
-    top: 10rem;
+    margin-left: 21rem;
+    margin-top: -3rem;
 }
 
 .four-point-star svg {

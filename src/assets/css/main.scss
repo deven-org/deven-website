@@ -94,11 +94,27 @@ body {
     border-radius: 20px;
 }
 
+main {
+  margin-bottom: 30px;
+  min-height: calc(100vh - 80px);
+}
+
 .navi {
   display: flex;
   position: absolute;
+  top: 0px;
   z-index: 99;
   transform: translate(50%, 0%);
+}
+
+.main-header {
+  height: 60vh;
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
+  top: 0px;
 }
 
 .nav {
@@ -118,13 +134,11 @@ body {
     .nav-item {
       display: inline-block;
       font-family: "space-grotesk-light";
-      &:not(:last-of-type) {
-        margin-right: 15px;
-      }
+      .nav .nav-links .nav-item {
+        margin: 0px 15px;
+    }
       @include md {
-        &:not(:last-of-type) {
-          margin-right: 30px;
-        }
+        margin: 0px 15px;
       }
       &.nav-item-active {
         font-family: "space-grotesk-bold";
@@ -297,6 +311,7 @@ em {
   align-items: center;
   width: 100%;
   max-width: 960px;
+  margin: 0px auto;
   p, a {
     color: #F7F7F7;
     font-size: 12px;
