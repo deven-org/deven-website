@@ -1,0 +1,25 @@
+.blog-eye {
+    margin-top: 12%;
+    svg {
+        width:250px;
+        height:158px; 
+    }
+}
+
+.coming-soon-text {
+    font-size: 50px;
+    line-height: 55px;
+    color: #F7F7F7;
+}
+
+.blue-circle {
+    background-image: radial-gradient(circle at top, #2154D6 50%, transparent 50%);
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
