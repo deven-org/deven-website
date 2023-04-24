@@ -1,0 +1,34 @@
+.project-title {
+    font-family: "november";
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 5rem;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+.project-info-panel {
+    background: #fff;
+    width: 100%;
+    color: #000000;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    position: relative;
+    border-radius: 20px;
+    .wrapper {
+        padding: 6rem 8rem;
+        h2 {
+            font-family: "space-grotesk-bold";
+            color: #000000;
+            font-size: 1.8rem;
+            padding-bottom: 3rem;
+        }
+        p {
+            font-family: "space-grotesk-light";
+            font-size: 1rem;
+            color: #000000;
+            display: block;
+            padding: 0.5rem 0;
+        }
+    }
+}
