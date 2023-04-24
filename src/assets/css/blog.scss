@@ -1,0 +1,84 @@
+.blog-eye {
+    svg {
+        width:250px;
+        height:158px; 
+    }
+}
+
+.coming-soon-text {
+    font-size: 50px;
+    line-height: 55px;
+    color: #F7F7F7;
+}
+
+.blue-circle {
+    background-image: radial-gradient(circle at top, #2154D6 50%, transparent 50%);
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 12%;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px; 
+    margin-top: 20%;
+    .project-title {
+        font-family: "november";
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 5rem;
+        text-align: center;
+        color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .project-info-panel {
+        background: #fff;
+        width: 100%;
+        color: #000000;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        position: relative;
+        max-width: 640px;
+        border-radius: 20px;
+        margin: 0px auto 40px auto;
+        .wrapper {
+            padding: 4rem;
+            h2 {
+                font-family: "space-grotesk-bold";
+                color: #000000;
+                font-size: 1.8rem;
+                padding-bottom: 2rem;
+            }
+            p {
+                font-family: "space-grotesk-light";
+                font-size: 1rem;
+                color: #000000;
+                display: block;
+                padding: 0.5rem 0;
+            }
+        }
+        .coming-soon {
+            font-family: "november";
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 5rem;
+            text-align: center;
+            color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+    }
+}
