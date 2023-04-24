@@ -1,5 +1,4 @@
 .blog-eye {
-    margin-top: 12%;
     svg {
         width:250px;
         height:158px; 
@@ -22,4 +21,30 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-top: 12%;
+}
+
+.boiler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px; 
+    margin-top: 20%;
+}
+
+.boiler-title {
+    font-size: 50px;
+    line-height: 55px;
+    color: #F7F7F7;
+}
+
+.boiler-intro {
+    background: #F7F7F7;
+    border-radius: 30px;
+    padding: 5%;
+    width: 640px;
+    font-family: 'space-grotesk-light';
+    font-size: 16px;
+    line-height: 140%;
 }
