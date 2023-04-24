@@ -1,10 +1,14 @@
 .project-title {
     font-family: "november";
     font-weight: 400;
-    font-size: 49px;
+    font-size: 45px;
     line-height: 5rem;
     text-align: center;
     color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 90px;
 }
 
 .project-info-panel {
@@ -14,14 +18,16 @@
     line-height: 130%;
     letter-spacing: 0.01em;
     position: relative;
+    max-width: 640px;
     border-radius: 20px;
+    margin: 0px auto 40px auto;
     .wrapper {
-        padding: 6rem 8rem;
+        padding: 4rem;
         h2 {
             font-family: "space-grotesk-bold";
             color: #000000;
             font-size: 1.8rem;
-            padding-bottom: 3rem;
+            padding-bottom: 2rem;
         }
         p {
             font-family: "space-grotesk-light";
@@ -31,4 +37,17 @@
             padding: 0.5rem 0;
         }
     }
+}
+
+.coming-soon {
+    font-family: "november";
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 5rem;
+    text-align: center;
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
