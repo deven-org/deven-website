@@ -30,6 +30,17 @@
     font-family: "space-grotesk-bold";
     font-size: 22px;
     line-height: 1.8rem;
+    .emoji-circle {
+        width: 33px;
+        position: relative;
+        height: 33px;
+        line-height: 33px;
+        border-radius: 50%;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        background: #2154D6;
+    }
 }
 
 .vision-mission {
