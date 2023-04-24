@@ -41,7 +41,7 @@
         color: #f7f7f7;
         display: flex;
         justify-content: center;
-        padding: 70px 0px 80px 0px;
+        padding: 100px 0px 80px 0px;
     }
     .project-info {
         width: 100%;
@@ -76,6 +76,10 @@
                 display: block;
                 font-size: 0.9em;
             }
+            img {
+                max-width: 100%;
+                margin-top: 2rem;
+            }
         }
         &.light {
             background: #fff;
@@ -90,23 +94,44 @@
             background: #000000;
             .wrapper {
                 padding: 3rem 0 0 0;
-                h2, p {
+                h2, p, a {
                     color: #f7f7f7;
                 }
             }
         }
-        
-        .coming-soon {
-            font-family: "november";
-            font-weight: 400;
-            font-size: 45px;
-            line-height: 5rem;
-            text-align: center;
-            color: #f7f7f7;
-            display: flex;
-            justify-content: center;
-            padding-top: 30px;
-            padding-bottom: 60px;
+    }
+}
+
+.coming-soon {
+    font-family: "november";
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 5rem;
+    text-align: center;
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.share-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5rem;
+    p {
+        color: #ffffff;
+        margin-right: 0.7rem;
+        font-size: 0.9em;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        li {
+            margin-right: 0.5rem;
+            line-height: normal;
         }
     }
 }
