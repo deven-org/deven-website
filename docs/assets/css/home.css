@@ -2,7 +2,7 @@
   position: relative;
   font-family: "november";
   font-style: normal;
-  margin-top: 10rem;
+  margin-top: 12rem;
   font-weight: 400;
   font-size: 10rem;
   line-height: 5rem;
@@ -34,8 +34,7 @@
 }
 
 .stdtion-button {
-  background-color: white;
-  color: black;
+  background-color: #f7f7f7;
   border-radius: 100px;
   text-align: center;
   width: 16em;
