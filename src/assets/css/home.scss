@@ -1,22 +1,81 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
 
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// extra Large tablets and desktops
+$screen-xxl-min: 1600px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) and (max-width: #{$screen-xxl-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min} ) {
+        @content;
+    }
+  }
 
 .deven-headtext{
     position: relative;
     font-family: "november";
     font-style: normal;
-    margin-top: 12rem;
     font-weight: 400;
     font-size: 10rem;
     line-height: 5rem;
     text-align: center;
     /* Yellow */
     color: #F1DE00;
+    top: 20%;
 }
 
 .abstract-geometry{
     position: relative;
     display: flex;
-    margin-bottom: 15rem;
+    //margin-bottom: 5rem;
+    top: 15%;
+    @include xxl {
+        top: 30%;
+   }
+
+   @include xl {
+    top: 20%;
+    }
+
+    @include lg {
+        top: 15%;
+    }
 }
 
 .button-group{
