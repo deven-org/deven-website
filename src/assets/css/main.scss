@@ -97,6 +97,7 @@ body {
 main {
   margin-bottom: 30px;
   min-height: calc(100vh - 80px);
+ 
 }
 
 .navi {
@@ -344,13 +345,27 @@ em {
 }
 
 .footer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  flex-direction: column;
+    justify-content: flex-end;  
+}
+
+.footer-circle {
+  height: 90vh;
+  background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+}
+
+.footer-content {
   border-top: 1px solid #F7F7F7;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 960px;
+  width: 90%;
+  max-width: 930px;
   margin: 0px auto;
   p, a {
     color: #F7F7F7;
