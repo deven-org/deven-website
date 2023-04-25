@@ -68,13 +68,21 @@ main {
 }
 
 .main-header {
-  height: 60vh;
+  height: 90vh;
   position: absolute;
   width: 100%;
   right: 0px;
   left: 0px;
-  z-index: -1;
   top: 0px;
+  z-index: -1;
+}
+
+.white-circle {
+  background-image: radial-gradient(circle at top, #fff 50%, transparent 50%);
+}
+
+.blue-circle {
+  background-image: radial-gradient(circle at top, #2154D6 50%, transparent 50%);
 }
 
 .nav {
@@ -273,21 +281,35 @@ em {
 }
 
 .footer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-circle {
+  height: 90vh;
+  background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+}
+
+.footer-content {
   border-top: 1px solid #F7F7F7;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 960px;
+  width: 90%;
+  max-width: 930px;
   margin: 0px auto;
 }
-.footer p, .footer a {
+.footer-content p, .footer-content a {
   color: #F7F7F7;
   font-size: 12px;
   padding: 0px 5px;
 }
-.footer a {
+.footer-content a {
   text-decoration: none;
 }
 
@@ -296,6 +318,30 @@ em {
   font-size: 2.5em;
   line-height: 3.2em;
   text-align: center;
+}
+
+.imprint-container {
+  height: calc(100vh - 120px - 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imprint-container .imprint-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imprint-container .imprint-box h1 {
+  color: #f7f7f7;
+  font-family: "space-grotesk-bold";
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.imprint-container .imprint-box p {
+  color: #f7f7f7;
+}
+.imprint-container .imprint-box p strong {
+  font-family: "space-grotesk-bold";
 }
 
 .nav-item {

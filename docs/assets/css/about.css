@@ -171,7 +171,6 @@
 .current-team {
   position: relative;
   margin-top: 15%;
-  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,6 +240,7 @@
   border-radius: 100px;
   width: 158px;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 .contributors-btn a {
