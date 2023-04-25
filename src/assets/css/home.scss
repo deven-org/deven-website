@@ -1,26 +1,85 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
 
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// extra Large tablets and desktops
+$screen-xxl-min: 1600px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) and (max-width: #{$screen-xxl-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min} ) {
+        @content;
+    }
+  }
 
 .deven-headtext{
     position: relative;
     font-family: "november";
     font-style: normal;
-    margin-top: 10rem;
     font-weight: 400;
     font-size: 10rem;
     line-height: 5rem;
     text-align: center;
     /* Yellow */
     color: #F1DE00;
+    top: 20%;
 }
 
 .abstract-geometry{
     position: relative;
     display: flex;
-    margin-bottom: 15rem;
+    //margin-bottom: 5rem;
+    top: 15%;
+    @include xxl {
+        top: 30%;
+   }
+
+   @include xl {
+    top: 20%;
+    }
+
+    @include lg {
+        top: 15%;
+    }
 }
 
 .pe-button{
-    background-color: blue;
+    background-color: #2154D6;
     border-radius: 100px;
     text-align: center;
     width: 16em;
@@ -30,8 +89,7 @@
 }
 
 .stdtion-button{
-    background-color: white;
-    color: black;
+    background-color: #f7f7f7;
     border-radius: 100px;
     text-align: center;
     width: 16em;
@@ -46,7 +104,7 @@
 .contributor-btn-group {
     position: relative;
     margin-left: 0rem;
-    margin-top: 12rem;
+    margin-top: 12rem; 
 }
 
 .abstract-text-span {
@@ -69,7 +127,7 @@
 
 .dev-square {
     position: absolute;
-    background-color: blue;
+    background-color: #2154D6;
     border-radius: 10%;
     text-align: center;
     width: 200px;
@@ -106,11 +164,11 @@
     background-color: #000;
     margin-left: 4rem;
     margin-top: 9rem;
+    top: -1rem;
     position: absolute;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    top: -1rem;
     left: 14rem;
 }
 
