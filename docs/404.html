@@ -21,21 +21,21 @@
             <ul class="nav-links">
               <li class="nav-item logo"><a href="/">Deven</a></li>
               <li class="nav-item subnav-button hidden" id="subnav" onclick="toggleSubnav()">
-                <a href="#">Discover<div class="subnav-chevron"></div></a>
+                <a>Discover<div class="subnav-chevron"></div></a>
                 <div class="subnav-container">
                   <div class="subnav-content" id="subnav">
                     <ul>
                       <li class="subnav-item">
-                        <a href="#latest-news">Latest News</a>
+                        <a href="/#about-deven">About</a>
                       </li>
                       <li class="subnav-item">
-                        <a href="#team">Team</a>
+                        <a href="/#tools">Tools</a>
                       </li>
                       <li class="subnav-item">
-                        <a href="#tools">Tools</a>
+                        <a href="/#latest-news">Latest News</a>
                       </li>
                       <li class="subnav-item">
-                        <a href="#about">About</a>
+                        <a href="/#team">Team</a>
                       </li>
                     </ul>
                     <div class="close-btn" onclick="closeSubnav()"></div>
@@ -66,7 +66,7 @@
             <div class="dev-square">
                 <span class="abstract-text-span">developer</span>
             </div>
-            <a href="#intro-deven">
+            <a href="#about-deven">
                 <div class="link-button">
                     <span class="abstract-text-span">
                         <svg width="26" height="37" viewBox="0 0 26 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,10 +88,11 @@
     </div>
 </div>
 <div>
-    <div id="intro-deven" class="intro">
+
+    <div id="about-deven" class="intro">
         <div>
             <span class="intitial-text november-font">Hello</span>
-            <span class="rest-text"> there, fellow developer! Engineering can be a lot of fun, right? We know it's not always a walk in the <span style='background: blue;border-radius: 50%'>&#127795;</span>, though. Sometimes you may <span style='background: blue;border-radius: 50%; width: 40px;height:40px'>&#127939;</span> into obstacles because of missing or complicated processes. That's where <span style="color: #F1DE00" class="november-font">DEVEN</span> <span class="dev-enable">DEVelopment ENablement</span> comes in – an <span style="color: #2154D6" class="november-font">open-source</span> project that’s designed to make your work life smoother and your projects healthier.</span>
+            <span class="rest-text"> there, fellow developer! Engineering can be a lot of fun, right? We know it's not always a walk in the <span class='emoji-circle'>&#127795;</span>, though. Sometimes you may <span class='emoji-circle'>&#127939;</span> into obstacles because of missing or complicated processes. That's where <span style="color: #F1DE00" class="november-font">DEVEN</span> <span class="dev-enable">DEVelopment ENablement</span> comes in – an <span style="color: #2154D6" class="november-font">open-source</span> project that’s designed to make your work life smoother and your projects healthier.</span>
         </div>
     </div>
     <div class="vision-mission">
@@ -130,7 +131,9 @@
             </p>
         </div>
     </div>
-    <div class="tools">
+
+
+    <div class="tools" id='tools'>
         <h2>Tools</h2>
         <ul>
             <li>
@@ -162,7 +165,7 @@
             <li>
                 <h3>BO1LER</h3>
                 <button>
-                <a href='./'>
+                <a href='./boiler'>
                     <svg width="18" height="18" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg" id="slidePrev">
                     <path d="M23.35 25.9L21.4 23.95L29.6 15.75L31.15 14.65L31 14.15L29.1 14.35H0V11.55H29.1L31 11.75L31.15 11.25L29.6 10.15L21.4 1.95L23.35 0L35.3 11.95V13.95L23.35 25.9Z" fill="#F7F7F7"/>
                     </svg>
@@ -174,7 +177,8 @@
             </li>
         </ul>
     </div>
-    <div class="current-team">
+
+    <div class="current-team" id='team'>
         <div class="team-title"> 
             <span class="november-font">current  team</span>
         </div>
@@ -215,7 +219,7 @@
                 </div>
             </div>
         </div>
-        <a href='./contributors' class="contributors-btn">
+        <a href='./contributors' class="cta-btn">
             <span>Contributors →</span>
         </a>
     </div>
@@ -223,7 +227,7 @@
 
 
         </main>
-        <footer class="footer footer-circle">
+        <footer class="footer footer-circle" id="latest-news">
           <div  class="blog-content">
             <div class="blog">
                 <div class="blog-eye">
@@ -235,7 +239,7 @@
                 <div class="coming-soon-text">
                     <span class="november-font">Blog coming soon...</span>
                 </div>
-                <div class="contributors-btn">
+                <div class="cta-btn">
                     Subscribe via RSS
                 </div>
             </div>

@@ -1,0 +1,255 @@
+.intro {
+  background: #f7f7f7;
+  width: 100%;
+  color: #000000;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  position: relative;
+  border-radius: 20px;
+}
+
+.intro div {
+  padding: 18%;
+}
+
+.intitial-text {
+  font-size: 80px;
+}
+
+.dev-enable {
+  display: inline-block;
+  background: #F1DE00;
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 16px;
+  padding: 0px 5px;
+  vertical-align: bottom;
+}
+
+.rest-text {
+  font-family: "space-grotesk-bold";
+  font-size: 22px;
+  line-height: 1.8rem;
+}
+.rest-text .emoji-circle {
+  width: 33px;
+  position: relative;
+  height: 33px;
+  line-height: 33px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  background: #2154D6;
+}
+
+.vision-mission {
+  position: relative;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+.mission {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: #f7f7f7;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.november-font {
+  font-family: "november";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.mission svg {
+  width: 230px;
+  height: 129px;
+  margin-top: 3rem;
+}
+
+.mission div {
+  position: relative;
+  padding: 0.5rem 8rem;
+}
+
+.circle-title {
+  font-size: 50px;
+  line-height: 55px;
+  text-align: center;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.circle-text {
+  font-family: "space-grotesk-light";
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.circle-text.white, .circle-title.white {
+  color: #ffffff;
+}
+
+.vision {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: #2154D6;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  top: 0%;
+  left: 45%;
+}
+
+.vision svg {
+  width: 230px;
+  height: 129px;
+  margin-top: 3rem;
+}
+
+.vision div {
+  position: relative;
+  padding: 0.5rem 8rem;
+}
+
+.mission-statement {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+.cool-stuff-star {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.cool-stuff-star svg {
+  position: absolute;
+}
+
+.cool-stuff-star text {
+  font-family: "space-grotesk-bold";
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.statement {
+  width: 400px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  position: relative;
+  padding: 5%;
+  margin-top: -15%;
+}
+
+.statement p {
+  font-family: "space-grotesk-bold";
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.current-team {
+  position: relative;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.team-title {
+  color: #F1DE00;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 10% auto;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.member-pic {
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  background: #F7F7F7;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.member-name {
+  font-family: "space-grotesk-bold";
+  font-size: 16px;
+  margin: 0;
+  color: #F7F7F7;
+}
+
+.member-title {
+  font-family: "space-grotesk-light";
+  font-size: 16px;
+  margin: 0;
+  color: #F7F7F7;
+}
+
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "space-grotesk-bold";
+  padding: 14px 20px;
+  background-color: #F1DE00;
+  color: #000;
+  cursor: pointer;
+  border-radius: 100px;
+  width: 158px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.cta-btn a {
+  font-family: "space-grotesk-bold";
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  margin-right: 5px;
+  line-height: 140%;
+}
+.cta-btn:hover {
+  background-color: #f7f7f7;
+  transition: background-color 500ms;
+}
