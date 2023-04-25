@@ -117,6 +117,10 @@ main {
   left: 0px;
   top: 0px;
   z-index: -1;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .white-circle {
