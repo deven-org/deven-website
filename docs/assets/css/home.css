@@ -60,6 +60,11 @@
   line-height: 22px;
 }
 
+.button-group {
+  position: relative;
+  margin-top: 12rem;
+}
+
 .dev-square {
   position: absolute;
   background-color: blue;

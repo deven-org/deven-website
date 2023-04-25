@@ -108,12 +108,12 @@ main {
   line-height: 140%;
 }
 
-.button-group {
+.buttons-inline {
   margin: 2rem 0;
   justify-content: flex-start;
   display: flex;
 }
-.button-group .cta-btn {
+.buttons-inline .cta-btn {
   margin: 0px 2rem 0px 0px;
 }
 
