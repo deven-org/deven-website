@@ -50,7 +50,7 @@
         <main{% if templateClass %} class="{{ templateClass }} home"{% endif %}>
           {{ content | safe }}
         </main>
-        <footer{% if comingSoonClass %} class="footer {{ comingSoonClass }}"{% endif %}>
+        <footer{% if comingSoonClass %} class="footer {{ comingSoonClass }}"{% endif %} id="latest-news">
           <div {% if not comingSoonClass %} style="display:none;" {% endif %} class="blog-content">
             <div class="blog">
                 <div class="blog-eye">
