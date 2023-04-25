@@ -19,8 +19,7 @@
 
 .button-group {
   position: relative;
-  margin-top: 13rem;
-  margin-left: -2rem;
+  margin-top: 12rem;
 }
 
 .pe-button {
@@ -48,8 +47,8 @@
 
 .contributor-btn-group {
   position: relative;
-  margin-left: 6rem;
-  margin-top: 13rem;
+  margin-left: 0rem;
+  margin-top: 12rem;
 }
 
 .abstract-text-span {
@@ -102,8 +101,9 @@
 
 .ellipse {
   background-color: #000;
-  margin-left: 6rem;
-  margin-top: 11rem;
+  margin-left: 4rem;
+  margin-top: 9rem;
+  top: -1rem;
   position: absolute;
   border-radius: 50%;
   width: 120px;
