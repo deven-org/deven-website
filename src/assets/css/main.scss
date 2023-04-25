@@ -102,10 +102,11 @@ main {
 
 .navi {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0px;
   z-index: 99;
-  transform: translate(50%, 0%);
+  right: 0;
+  left: 0;
 }
 
 .main-header {
@@ -119,7 +120,7 @@ main {
 }
 
 .white-circle {
-  background-image: radial-gradient(circle at top, #fff 50%, transparent 50%);
+  background-image: radial-gradient(circle at top, #f7f7f7 50%, transparent 50%);
 }
 
 .blue-circle {
@@ -134,7 +135,7 @@ main {
     display: flex;
     flex-direction: row;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 5px 2rem;
     margin: 1rem auto 2rem;
     justify-content: center;

@@ -21,11 +21,12 @@
 
 .button-group{
     position: relative;
-    margin-top: 12rem;
+    margin-top: 13rem;
+    margin-left: -2rem;
 }
 
 .pe-button{
-    background-color: blue;
+    background-color: #2154D6;
     border-radius: 100px;
     text-align: center;
     width: 16em;
@@ -50,8 +51,8 @@
 
 .contributor-btn-group {
     position: relative;
-    margin-left: 0rem;
-    margin-top: 12rem;
+    margin-left: 6rem;
+    margin-top: 13rem;
 }
 
 .abstract-text-span {
@@ -69,7 +70,7 @@
 
 .dev-square {
     position: absolute;
-    background-color: blue;
+    background-color: #2154D6;
     border-radius: 10%;
     text-align: center;
     width: 200px;
@@ -104,13 +105,12 @@
 
 .ellipse {
     background-color: #000;
-    margin-left: 4rem;
-    margin-top: 9rem;
+    margin-left: 6rem;
+    margin-top: 11rem;
     position: absolute;
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    top: -1rem;
     left: 14rem;
 }
 
