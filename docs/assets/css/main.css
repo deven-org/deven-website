@@ -281,21 +281,35 @@ em {
 }
 
 .footer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-circle {
+  height: 90vh;
+  background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+}
+
+.footer-content {
   border-top: 1px solid #F7F7F7;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 960px;
+  width: 90%;
+  max-width: 930px;
   margin: 0px auto;
 }
-.footer p, .footer a {
+.footer-content p, .footer-content a {
   color: #F7F7F7;
   font-size: 12px;
   padding: 0px 5px;
 }
-.footer a {
+.footer-content a {
   text-decoration: none;
 }
 
