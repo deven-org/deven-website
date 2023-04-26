@@ -1,21 +1,18 @@
----
-pathPrefix:  htmlBaseUrl + '/deven-website/'
----
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/assets/css/reset.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/home.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/about.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/contributors.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/prism-base16-monokai.dark.css' | url }}">
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <title>Telemetry</title>
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/contributors.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="." type="application/atom+xml" title="">
   </head>
   <body>
     <div class='content-wrapper'>
@@ -43,18 +40,29 @@ pathPrefix:  htmlBaseUrl + '/deven-website/'
                     </ul>
                     <div class="close-btn" onclick="closeSubnav()"></div>
                   </div>
-              </li>
-              {%- for nav in collections.nav | reverse -%}
-                {% if nav.data.navtitle %}<li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>{% endif %}
-              {%- endfor -%}
-            </ul>
+              </li><li class="nav-item" ><a href="/blog-post/">Blog</a></li><li class="nav-item" ><a href="/contributors/">Contributors</a></li></ul>
           </nav>
         </header>
-        <main{% if templateClass %} class="{{ templateClass }} home"{% endif %}>
-          {{ content | safe }}
+        <main class="tmpl-blog home">
+          
+<div class="main-header blue-circle"></div>
+ 
+<div class="project-wrapper">
+    <h1 class="project-title">Telemetry</h1>
+
+    <div class="project-info-panel">
+        <div class="wrapper">
+            <h2>What is it?</h2>
+            <p>We know that keeping track of engineering processes in large organizations is hard. As a developer, it can be frustrating to spend too much time on tasks that slow you down or don't add any value.<p>
+            <p>That's why we developed Telemetry - a tool that uses Git SaaS-based bots to track anonymized data and help us identify areas where we can improve our processes.  It helps us confirm our assumptions and identify areas that need improvement, so our engineers can focus on more valuable tasks.</p> 
+            <p>If you're interested in improving your own projects, consider implementing a similar tool.</p>
+        </div>
+    </div>
+    <h2 class="coming-soon">more info coming soon...</h2>
+</div>
         </main>
-        <footer{% if comingSoonClass %} class="footer {{ comingSoonClass }}"{% endif %} id="latest-news">
-          <div {% if not comingSoonClass %} style="display:none;" {% endif %} class="blog-content">
+        <footer id="latest-news">
+          <div  style="display:none;"  class="blog-content">
             <div class="blog">
                 <div class="blog-eye">
                 <svg viewBox="0 0 250 158" fill="none" xmlns="http://www.w3.org/2000/svg">

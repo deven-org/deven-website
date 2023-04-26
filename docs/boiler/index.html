@@ -1,21 +1,18 @@
----
-pathPrefix:  htmlBaseUrl + '/deven-website/'
----
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/assets/css/reset.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/home.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/about.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/contributors.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/prism-base16-monokai.dark.css' | url }}">
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <title>Boiler</title>
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/contributors.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="." type="application/atom+xml" title="">
   </head>
   <body>
     <div class='content-wrapper'>
@@ -43,18 +40,34 @@ pathPrefix:  htmlBaseUrl + '/deven-website/'
                     </ul>
                     <div class="close-btn" onclick="closeSubnav()"></div>
                   </div>
-              </li>
-              {%- for nav in collections.nav | reverse -%}
-                {% if nav.data.navtitle %}<li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>{% endif %}
-              {%- endfor -%}
-            </ul>
+              </li><li class="nav-item" ><a href="/blog-post/">Blog</a></li><li class="nav-item" ><a href="/contributors/">Contributors</a></li></ul>
           </nav>
         </header>
-        <main{% if templateClass %} class="{{ templateClass }} home"{% endif %}>
-          {{ content | safe }}
+        <main class="tmpl-blog home">
+          
+<div class="main-header blue-circle"></div>
+ 
+<div class="project-wrapper">
+    <h1 class="project-title">Boiler</h1>
+
+    <div class="project-info-panel">
+        <div class="wrapper">
+            <h2>What is it?</h2>
+            <p>
+                Have you ever spent countless hours building a design system for a project, only to have to do it all over again for the next one? We know the feeling.
+            </p>
+            <p>
+                That's why we've put our heads together to create B01LER - a user-friendly, token-based design system boilerplate that helps your team easily create cohesive and consistent designs across all platforms and products. B01LER streamlines the design process and saves time by providing pre-built design components, best practices, and a flexible architecture that can be customized to meet your brand's unique needs.
+            </p>
+            <p>
+                On top of that, it makes collaboration between engineering and design teams much easier and clearer. With B01LER, your teams can work smarter and create better products in less time.
+            </p>
+        </div>
+    <h2 class="coming-soon">more info coming soon...</h2>
+</div>
         </main>
-        <footer{% if comingSoonClass %} class="footer {{ comingSoonClass }}"{% endif %} id="latest-news">
-          <div {% if not comingSoonClass %} style="display:none;" {% endif %} class="blog-content">
+        <footer id="latest-news">
+          <div  style="display:none;"  class="blog-content">
             <div class="blog">
                 <div class="blog-eye">
                 <svg viewBox="0 0 250 158" fill="none" xmlns="http://www.w3.org/2000/svg">
