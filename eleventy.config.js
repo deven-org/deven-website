@@ -8,8 +8,6 @@ const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-
 
 module.exports = eleventyConfig => {
   // Collections
@@ -25,9 +23,6 @@ module.exports = eleventyConfig => {
 
   // Adds syntax highlighting
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
-
-  // prefixPath
-  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
 
   /* Markdown Plugins */
