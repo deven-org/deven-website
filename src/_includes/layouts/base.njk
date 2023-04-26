@@ -24,21 +24,21 @@ pathPrefix:  htmlBaseUrl + '/deven-website/'
             <ul class="nav-links">
               <li class="nav-item logo"><a href="/">Deven</a></li>
               <li class="nav-item subnav-button hidden" id="subnav" onclick="toggleSubnav()">
-                <a href="#">Discover<div class="subnav-chevron"></div></a>
+                <a>Discover<div class="subnav-chevron"></div></a>
                 <div class="subnav-container">
                   <div class="subnav-content" id="subnav">
                     <ul>
                       <li class="subnav-item">
-                        <a href="#latest-news">Latest News</a>
+                        <a href="/#about-deven">About</a>
                       </li>
                       <li class="subnav-item">
-                        <a href="#team">Team</a>
+                        <a href="/#tools">Tools</a>
                       </li>
                       <li class="subnav-item">
-                        <a href="#tools">Tools</a>
+                        <a href="/#latest-news">Latest News</a>
                       </li>
                       <li class="subnav-item">
-                        <a href="#about">About</a>
+                        <a href="/#team">Team</a>
                       </li>
                     </ul>
                     <div class="close-btn" onclick="closeSubnav()"></div>
@@ -53,7 +53,7 @@ pathPrefix:  htmlBaseUrl + '/deven-website/'
         <main{% if templateClass %} class="{{ templateClass }} home"{% endif %}>
           {{ content | safe }}
         </main>
-        <footer{% if comingSoonClass %} class="footer {{ comingSoonClass }}"{% endif %}>
+        <footer{% if comingSoonClass %} class="footer {{ comingSoonClass }}"{% endif %} id="latest-news">
           <div {% if not comingSoonClass %} style="display:none;" {% endif %} class="blog-content">
             <div class="blog">
                 <div class="blog-eye">
@@ -65,7 +65,7 @@ pathPrefix:  htmlBaseUrl + '/deven-website/'
                 <div class="coming-soon-text">
                     <span class="november-font">Blog coming soon...</span>
                 </div>
-                <div class="contributors-btn">
+                <div class="cta-btn">
                     Subscribe via RSS
                 </div>
             </div>

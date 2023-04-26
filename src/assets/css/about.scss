@@ -1,5 +1,5 @@
 .intro {
-    background: #fff;
+    background: #f7f7f7;
     width: 100%;
     color: #000000;
     line-height: 130%;
@@ -30,6 +30,17 @@
     font-family: "space-grotesk-bold";
     font-size: 22px;
     line-height: 1.8rem;
+    .emoji-circle {
+        width: 33px;
+        position: relative;
+        height: 33px;
+        line-height: 33px;
+        border-radius: 50%;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        background: #2154D6;
+    }
 }
 
 .vision-mission {
@@ -42,8 +53,12 @@
     width: 550px;
     height: 550px;
     border-radius: 50%;
-    background: #fff;
+    background: #f7f7f7;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .november-font {
@@ -53,24 +68,20 @@
 }
 
 .mission svg {
-    position: absolute;
-    width:230px;
-    height:129px;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 129px;
+    margin-top: 3rem;
 }
 .mission div {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    padding: 0.5rem 8rem;
 }
 
 .circle-title {
     font-size: 50px;
     line-height: 55px;
     text-align: center;
+    padding: 0.5rem 0 1rem 0;
 }
 
 .circle-text {
@@ -92,24 +103,23 @@
     border-radius: 50%;
     background: #2154D6;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     top: 0%;
     left: 45%;
 }
 
 .vision svg {
-    position: absolute;
-    width:230px;
-    height:129px;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 129px;
+    margin-top: 3rem;
 } 
 
 .vision div {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    padding: 0.5rem 8rem;
 }
 
 .mission-statement {
@@ -177,21 +187,20 @@
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 100%;
-    margin: 10% auto;
+    margin: 10% auto 8% auto;
   }
   
   .team-member {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 10px 10px 30px 10px;
   }
   
   .member-pic {
     border-radius: 50%;
     width: 170px;
     height: 170px;
-    background: #F7F7F7;
   }
   
   .member-info {
@@ -216,11 +225,11 @@
     color: #F7F7F7;
   }
 
-  .contributors-btn {
+  .cta-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    font-family: 'space-grotesk-bold';
     padding: 14px 20px;
     background-color: #F1DE00;
     color: #000;
@@ -229,11 +238,16 @@
     width: 158px;
     margin: 0 auto;
     text-decoration: none;
+    a {
+        font-family: 'space-grotesk-bold';
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+        margin-right: 5px;
+        line-height: 140%;
+    }
+    &:hover {
+        background-color: #f7f7f7;
+        transition: background-color 500ms;
+    }
   }
-  
-  .contributors-btn span {
-    font-family: 'space-grotesk-bold';
-    font-size: 16px;
-    margin-right: 5px;
-    line-height: 140%;
-}
