@@ -27,8 +27,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 75px;
-  margin-top: 20%;
+  padding-top: 70px;
+  gap: 40px 0px;
+  margin-top: 0%;
 }
 .project-wrapper .project-title {
   font-family: "november";
@@ -39,36 +40,65 @@
   color: #f7f7f7;
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding: 100px 0px 80px 0px;
 }
-.project-wrapper .project-info-panel {
-  background: #fff;
+.project-wrapper .project-info {
   width: 100%;
-  color: #000000;
   line-height: 130%;
   letter-spacing: 0.01em;
   position: relative;
   max-width: 640px;
   border-radius: 20px;
-  margin: 0px auto 40px auto;
+  margin: 0px auto;
 }
-.project-wrapper .project-info-panel .wrapper {
-  padding: 4rem;
-}
-.project-wrapper .project-info-panel .wrapper h2 {
+.project-wrapper .project-info .wrapper h2 {
   font-family: "space-grotesk-bold";
-  color: #000000;
   font-size: 1.8rem;
   padding-bottom: 2rem;
 }
-.project-wrapper .project-info-panel .wrapper p {
+.project-wrapper .project-info .wrapper p {
   font-family: "space-grotesk-light";
   font-size: 1rem;
-  color: #000000;
   display: block;
   padding: 0.5rem 0;
 }
-.project-wrapper .project-info-panel .coming-soon {
+.project-wrapper .project-info .wrapper p strong {
+  font-family: "space-grotesk-bold";
+}
+.project-wrapper .project-info .wrapper code {
+  color: black;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  font-family: "space-grotesk-bold";
+  padding: 1rem 1.5rem;
+  margin: 20px auto;
+  display: block;
+  font-size: 0.9em;
+}
+.project-wrapper .project-info .wrapper img {
+  max-width: 100%;
+  margin-top: 2rem;
+}
+.project-wrapper .project-info.light {
+  background: #fff;
+}
+.project-wrapper .project-info.light .wrapper {
+  padding: 4rem;
+}
+.project-wrapper .project-info.light .wrapper h2, .project-wrapper .project-info.light .wrapper p {
+  color: #000000;
+}
+.project-wrapper .project-info.dark {
+  background: #000000;
+}
+.project-wrapper .project-info.dark .wrapper {
+  padding: 3rem 0 0 0;
+}
+.project-wrapper .project-info.dark .wrapper h2, .project-wrapper .project-info.dark .wrapper p, .project-wrapper .project-info.dark .wrapper a {
+  color: #f7f7f7;
+}
+
+.coming-soon {
   font-family: "november";
   font-weight: 400;
   font-size: 45px;
