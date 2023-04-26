@@ -102,10 +102,11 @@ main {
 
 .navi {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0px;
   z-index: 99;
-  transform: translate(50%, 0%);
+  right: 0;
+  left: 0;
 }
 
 .main-header {
@@ -116,10 +117,14 @@ main {
   left: 0px;
   top: 0px;
   z-index: -1;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .white-circle {
-  background-image: radial-gradient(circle at top, #fff 50%, transparent 50%);
+  background-image: radial-gradient(circle at top, #f7f7f7 50%, transparent 50%);
 }
 
 .blue-circle {
@@ -166,7 +171,7 @@ main {
     display: flex;
     flex-direction: row;
     background: #fff;
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 5px 2rem;
     margin: 1rem auto 2rem;
     justify-content: center;
@@ -194,6 +199,7 @@ main {
         color: #111111;
         text-decoration: none;
         font-size: 12px;
+        cursor: pointer;
         &:hover {
             color: #8E8E8E;
         }
@@ -383,6 +389,31 @@ em {
     font-size: 2.5em;
     line-height: 3.2em;
     text-align: center;
+}
+
+.imprint-container {
+  // Calculate height by subtracting navigation and footer heights
+  height: calc(100vh - 120px - 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .imprint-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: #f7f7f7;
+      font-family: "space-grotesk-bold";
+      font-size: 25px;
+      padding-bottom: 20px;
+    }
+    p {
+      color: #f7f7f7;
+      strong {
+      font-family: "space-grotesk-bold";
+      }
+    }
+  }
 }
 
 .nav-item {
