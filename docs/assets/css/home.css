@@ -32,11 +32,6 @@
   }
 }
 
-.button-group {
-  position: relative;
-  margin-top: 12rem;
-}
-
 .pe-button {
   background-color: #2154D6;
   border-radius: 100px;
@@ -77,6 +72,11 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+}
+
+.button-group {
+  position: relative;
+  margin-top: 12rem;
 }
 
 .dev-square {

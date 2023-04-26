@@ -90,6 +90,38 @@ main {
   background-image: radial-gradient(circle at top, #2154D6 50%, transparent 50%);
 }
 
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 14px 20px;
+  background-color: #F1DE00;
+  color: #000;
+  cursor: pointer;
+  border-radius: 100px;
+  width: 158px;
+  margin: 0 auto;
+}
+
+.cta-btn a {
+  font-family: "space-grotesk-bold";
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 5px;
+  line-height: 140%;
+}
+
+.buttons-inline {
+  margin: 2rem 0;
+  justify-content: flex-start;
+  display: flex;
+}
+.buttons-inline .cta-btn {
+  margin: 0px 2rem 0px 0px;
+}
+
 .nav {
   max-width: 800px;
   overflow: hidden;
