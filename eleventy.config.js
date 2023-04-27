@@ -26,9 +26,7 @@ module.exports = eleventyConfig => {
   // Adds syntax highlighting
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
-  // prefixPath
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
@@ -99,6 +97,7 @@ module.exports = eleventyConfig => {
       includes: "_includes",
       data: '_data',
       styles: 'css'
-    }
+    },
+    pathPrefix: "/deven-website/"
   };
 };
