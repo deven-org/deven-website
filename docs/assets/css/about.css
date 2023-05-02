@@ -45,20 +45,23 @@
 
 .vision-mission {
   position: relative;
-  margin-top: 20%;
-  margin-bottom: 10%;
+  margin-top: 5rem;
+  display: flex;
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .mission {
-  width: 550px;
-  height: 550px;
-  border-radius: 50%;
-  background: #f7f7f7;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 50%;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #f7f7f7;
+  aspect-ratio: 1/1;
 }
 
 .november-font {
@@ -68,27 +71,27 @@
 }
 
 .mission svg {
-  width: 230px;
-  height: 129px;
-  margin-top: 3rem;
+  width: auto;
+  height: 115px;
+  padding-top: 2rem;
 }
 
 .mission div {
   position: relative;
-  padding: 0.5rem 8rem;
+  padding: 0.5rem 5.8rem;
 }
 
 .circle-title {
-  font-size: 50px;
-  line-height: 55px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   text-align: center;
-  padding: 0.5rem 0 1rem 0;
+  padding: 1.5rem 0 1rem 0;
 }
 
 .circle-text {
   font-family: "space-grotesk-light";
-  font-size: 16px;
-  line-height: 140%;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
   text-align: center;
   letter-spacing: 0.01em;
   color: #000000;
@@ -99,28 +102,28 @@
 }
 
 .vision {
-  width: 550px;
-  height: 550px;
-  border-radius: 50%;
-  background: #2154D6;
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  top: 0%;
-  left: 45%;
+  width: 50%;
+  border-radius: 50%;
+  margin-left: -50px;
+  color: white;
+  background-color: #2154D6;
+  text-align: center;
+  aspect-ratio: 1/1;
 }
 
 .vision svg {
-  width: 230px;
-  height: 129px;
-  margin-top: 3rem;
+  width: auto;
+  height: 115px;
+  padding-top: 2rem;
 }
 
 .vision div {
   position: relative;
-  padding: 0.5rem 8rem;
+  padding: 0.5rem 5.8rem;
 }
 
 .mission-statement {
