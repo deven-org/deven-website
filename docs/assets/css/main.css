@@ -68,17 +68,15 @@ main {
 }
 
 .main-header {
-  height: 90vh;
-  position: absolute;
+  height: 95vh;
+  position: relative;
   width: 100%;
-  right: 0px;
-  left: 0px;
-  top: 0px;
   z-index: -1;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
+  margin: -3% auto;
 }
 
 .white-circle {
@@ -216,7 +214,7 @@ main {
   background: #111111;
   display: flex;
   flex-direction: row;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 5px 0.8rem;
   margin: 1rem auto 2rem;
   justify-content: center;
@@ -225,11 +223,8 @@ main {
 }
 @media (min-width: 768px) {
   .nav .nav-links .subnav-button .subnav-container .subnav-content {
-    padding: 5px 2rem;
+    padding: 0px 2.4rem;
   }
-}
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul {
-  padding: 5px 0rem 5px 0rem;
 }
 .nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item {
   display: inline-block;

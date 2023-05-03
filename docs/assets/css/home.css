@@ -18,7 +18,7 @@
 }
 @media (min-width: 1600px) {
   .abstract-geometry {
-    top: 30%;
+    top: 25%;
   }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -116,14 +116,11 @@
 
 .ellipse {
   background-color: #000;
-  margin-left: 4rem;
   margin-top: 9rem;
-  top: -1rem;
-  position: absolute;
+  position: relative;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  left: 14rem;
 }
 
 .ellipse span {

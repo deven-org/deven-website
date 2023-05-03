@@ -110,17 +110,18 @@ main {
 }
 
 .main-header {
-  height: 90vh;
-  position: absolute;
+  height: 95vh;
+  position: relative;
   width: 100%;
-  right: 0px;
-  left: 0px;
-  top: 0px;
+  //right: 0px;
+  //left: 0px;
+  //top: 0px;
   z-index: -1;
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
+  margin: -3% auto;
 }
 
 .white-circle {
