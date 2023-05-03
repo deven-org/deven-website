@@ -28,7 +28,6 @@
 }
 body {
   background: black;
-  max-width: 960px;
   margin: 0 auto;
   line-height: 1.8em;
   font-size: 1em;
@@ -399,12 +398,15 @@ em {
   background: #F7F7F7;
   border-radius: 30px;
   padding: 2rem 1.5rem;
-  margin: 3rem 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  display: none;
 }
 @media (min-width: 768px) {
   .tools {
-    padding: 3rem 2.5rem;
-    margin: 3rem 0 6rem 0;
+    padding: 7rem 5rem;
+    display: block;
   }
 }
 .tools h2 {
