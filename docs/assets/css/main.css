@@ -156,7 +156,12 @@ main {
   font-family: "november";
 }
 .nav .nav-links .nav-item.logo a {
-  font-size: 26px;
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  .nav .nav-links .nav-item.logo a {
+    font-size: 26px;
+  }
 }
 .nav .nav-links .nav-item a {
   color: #111111;
@@ -173,7 +178,7 @@ main {
   }
 }
 .nav .nav-links .subnav-button > a .subnav-chevron {
-  margin-left: 8px;
+  margin-left: 5px;
   margin-top: -3px;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -185,6 +190,7 @@ main {
 }
 @media (min-width: 768px) {
   .nav .nav-links .subnav-button > a .subnav-chevron {
+    margin-left: 8px;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
   }
@@ -383,7 +389,12 @@ em {
 }
 
 .nav-item:not(:last-of-type) {
-  margin-right: 1em;
+  margin-right: 0.8em;
+}
+@media (min-width: 768px) {
+  .nav-item:not(:last-of-type) {
+    margin-right: 1em;
+  }
 }
 
 .nav-item a {
