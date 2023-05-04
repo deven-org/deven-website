@@ -6,78 +6,94 @@
     letter-spacing: 0.01em;
     position: relative;
     border-radius: 20px;
-}
-
-.intro div {
-    padding: 18%;
-}
-
-.intitial-text {
-    font-size: 80px;
-}
-
-.dev-enable {
-    display: inline-block;
-    background: #F1DE00;
-    border-radius: 10px;
-    padding: 2px;
-    font-size: 16px;
-    padding: 0px 5px;
-    vertical-align: bottom;
-}
-
-.rest-text {
-    font-family: "space-grotesk-bold";
-    font-size: 22px;
-    line-height: 1.8rem;
-    .emoji-circle {
-        width: 33px;
-        position: relative;
-        height: 33px;
-        line-height: 33px;
-        border-radius: 50%;
-        font-size: 20px;
-        display: inline-block;
-        text-align: center;
-        background: #2154D6;
+    div {
+        padding: 18%;
+        .intitial-text {
+            font-size: 80px;
+        }
+        .rest-text {
+            font-family: "space-grotesk-bold";
+            font-size: 22px;
+            line-height: 1.8rem;
+            .emoji-circle {
+                width: 33px;
+                position: relative;
+                height: 33px;
+                line-height: 33px;
+                border-radius: 50%;
+                font-size: 20px;
+                display: inline-block;
+                text-align: center;
+                background: #2154D6;
+            }
+            .dev-enable {
+                display: inline-block;
+                background: #F1DE00;
+                border-radius: 10px;
+                padding: 2px;
+                font-size: 16px;
+                padding: 0px 5px;
+                vertical-align: bottom;
+            }
+        }
     }
 }
 
 .vision-mission {
     position: relative;
-    margin-top: 5rem;
     display: flex;
-    margin-bottom: 5rem;
+    max-width: 960px;
     align-items: center;
-    justify-content: flex-start;
-}
-
-.mission {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50%;
-    border-radius: 50%;
-    text-align: center;
-    background-color: #f7f7f7;
-    aspect-ratio: 1 / 1;
+    justify-content: center;
+    margin: 4rem auto 5rem auto;
+    .mission {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50vw;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #f7f7f7;
+        aspect-ratio: 1/1;
+        svg {
+            width: auto;
+            height: 115px;
+            padding-top: 2.5rem;
+        }
+        div {
+            position: relative;
+            padding: 0.5rem 5.8rem;
+        }
+    }
+    .vision {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50vw;
+        border-radius: 50%;
+        margin-left: -50px;
+        color: white;
+        background-color: #2154D6;
+        text-align: center;
+        aspect-ratio: 1/1;
+        svg {
+            width: auto;
+            height: 115px;
+            padding-top: 2.5rem;
+        }
+        div {
+            position: relative;
+            padding: 0.5rem 5.8rem;
+        }
+    }
 }
 
 .november-font {
     font-family: 'november';
     font-style: normal;
     font-weight: 400;
-}
-
-.mission svg {
-    width: auto;
-    height: 115px;
-    padding-top: 2rem;
-}
-.mission div {
-    position: relative;
-    padding: 0.5rem 5.8rem;
 }
 
 .circle-title {
@@ -100,74 +116,46 @@
     color: #ffffff;
 }
 
-.vision {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50%;
-    border-radius: 50%;
-    margin-left: -50px;
-    color: white;
-    background-color: #2154D6;
-    text-align: center;
-    aspect-ratio: 1 / 1;
-}
-
-.vision svg {
-    width: auto;
-    height: 115px;
-    padding-top: 2rem;
-} 
-
-.vision div {
-    position: relative;
-    padding: 0.5rem 5.8rem;
-}
-
 .mission-statement {
     position: relative;
     margin-top: 10%;
     margin-bottom: 10%;
     display: flex;
     justify-content: center;
-}
-
-.cool-stuff-star {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    transform: translate(-50%, 0%);
-}
-
-.cool-stuff-star svg {
-    position: absolute;
-}
-
-.cool-stuff-star text {
-    font-family: 'space-grotesk-bold';
-    font-size: 25px;
-    line-height: 120%;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #000000;
-}
-
-.statement {
-    width: 400px; 
-    background: white;
-    border-radius: 20px;
-    position: relative;
-    padding: 5%;
-    transform: translate(40%, -60%);
-}
-
-.statement p {
-    font-family: 'space-grotesk-bold';
-    font-size: 20px;
-    line-height: 130%;
-    letter-spacing: 0.01em;
-    color: #000000;
+    div {
+        .cool-stuff-star {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            transform: translate(-50%, 0%);
+            svg {
+                position: absolute;
+            }
+            text {
+                font-family: 'space-grotesk-bold';
+                font-size: 25px;
+                line-height: 120%;
+                text-align: center;
+                letter-spacing: 0.01em;
+                color: #000000;
+            }
+        }
+    }
+    .statement {
+        width: 400px; 
+        background: white;
+        border-radius: 20px;
+        position: relative;
+        padding: 5%;
+        transform: translate(40%, -60%);
+        p {
+            font-family: 'space-grotesk-bold';
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: 0.01em;
+            color: #000000;
+        }
+    }
 }
 
 .current-team {
