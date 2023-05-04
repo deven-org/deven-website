@@ -56,6 +56,11 @@
   font-size: 1.8rem;
   padding-bottom: 2rem;
 }
+.project-wrapper .project-info .wrapper h3 {
+  font-family: "space-grotesk-bold";
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
 .project-wrapper .project-info .wrapper p {
   font-family: "space-grotesk-light";
   font-size: 1rem;
@@ -94,8 +99,22 @@
 .project-wrapper .project-info.dark .wrapper {
   padding: 3rem 0 0 0;
 }
-.project-wrapper .project-info.dark .wrapper h2, .project-wrapper .project-info.dark .wrapper p, .project-wrapper .project-info.dark .wrapper a {
+.project-wrapper .project-info.dark .wrapper h2, .project-wrapper .project-info.dark .wrapper p, .project-wrapper .project-info.dark .wrapper a, .project-wrapper .project-info.dark .wrapper ul li, .project-wrapper .project-info.dark .wrapper ol li {
   color: #f7f7f7;
+}
+.project-wrapper .project-info.dark .wrapper ul {
+  list-style: disc;
+  padding-left: 17px;
+}
+.project-wrapper .project-info.dark .wrapper ul li {
+  padding-bottom: 5px;
+}
+.project-wrapper .project-info.dark .wrapper ol {
+  list-style: decimal;
+  padding-left: 17px;
+}
+.project-wrapper .project-info.dark .wrapper ol li {
+  padding-bottom: 5px;
 }
 
 .coming-soon {

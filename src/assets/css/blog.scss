@@ -57,6 +57,11 @@
                 font-size: 1.8rem;
                 padding-bottom: 2rem;
             }
+            h3 {
+                font-family: "space-grotesk-bold";
+                font-size: 0.9rem;
+                padding-bottom: 1rem;
+            }
             p {
                 font-family: "space-grotesk-light";
                 font-size: 1rem;
@@ -94,8 +99,22 @@
             background: #000000;
             .wrapper {
                 padding: 3rem 0 0 0;
-                h2, p, a {
+                h2, p, a, ul li, ol li {
                     color: #f7f7f7;
+                }
+                ul {
+                    list-style: disc;
+                    padding-left: 17px;
+                    li {
+                        padding-bottom: 5px;
+                    }
+                }
+                ol {
+                    list-style: decimal;
+                    padding-left: 17px;
+                    li {
+                        padding-bottom: 5px;
+                    }
                 }
             }
         }
