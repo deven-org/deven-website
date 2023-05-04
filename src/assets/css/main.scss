@@ -192,7 +192,10 @@ main {
       &.logo {
         font-family: "november";
         a {
+          font-size: 22px;
+          @include md {
             font-size: 26px;
+          }
         }
       }
       a {
@@ -211,7 +214,7 @@ main {
     .subnav-button {
       > a {
         .subnav-chevron {
-          margin-left: 8px;
+          margin-left: 5px;
           margin-top: -3px;
           border-right: 1px solid black;
           border-bottom: 1px solid black;
@@ -221,6 +224,7 @@ main {
           display: inline-block;
           vertical-align: middle;
           @include md {
+            margin-left: 8px;
             border-right: 2px solid black;
             border-bottom: 2px solid black;
           }
@@ -420,7 +424,10 @@ em {
 }
 
 .nav-item:not(:last-of-type) {
-    margin-right: 1em;
+    margin-right: 0.8em;
+    @include md {
+      margin-right: 1em;
+    }
 }
 
 .nav-item a{
