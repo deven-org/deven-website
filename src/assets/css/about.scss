@@ -128,13 +128,16 @@
 .mission-statement {
     position: relative;
     margin-top: 10%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
 }
 
 .cool-stuff-star {
     position: relative;
     width: 600px;
     height: 600px;
+    transform: translate(-50%, 0%);
 }
 
 .cool-stuff-star svg {
@@ -153,12 +156,10 @@
 .statement {
     width: 400px; 
     background: white;
-    top: 50%;
-    left: 50%;
     border-radius: 20px;
     position: relative;
     padding: 5%;
-    margin-top: -15%;
+    transform: translate(40%, -60%);
 }
 
 .statement p {
@@ -171,7 +172,8 @@
 
 .current-team {
     position: relative;
-    margin-top: 15%;
+    max-width: 70%;
+    margin: 10% auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

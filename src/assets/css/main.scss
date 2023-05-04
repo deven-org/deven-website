@@ -68,7 +68,7 @@ $screen-xl-min: 1200px;
 
 body {
     background: black;
-    max-width: 960px;
+    //max-width: 960px;
     margin: 0 auto;
     line-height: 1.8em;
     font-size: 1em;
@@ -250,17 +250,16 @@ main {
           background: #111111;
           display: flex;
           flex-direction: row;
-          border-radius: 20px;
+          border-radius: 30px;
           padding: 5px 0.8rem;
           margin: 1rem auto 2rem;
           justify-content: center;
           height: 40px;
           align-items: center;
           @include md {
-            padding: 5px 2rem;
+            padding: 0px 2.4rem;
           }
           ul {
-            padding: 5px 0rem 5px 0rem;
             li.subnav-item {
               display: inline-block;
               margin-right: 8px;
@@ -433,10 +432,13 @@ em {
   background: #F7F7F7;
   border-radius: 30px;
   padding: 2rem 1.5rem;
-  margin: 3rem 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  display: none;
   @include md {
-    padding: 3rem 2.5rem;
-    margin: 3rem 0 6rem 0;
+    padding: 7rem 5rem;
+    display: block;
   }
   h2 {
     font-family: "november";
@@ -457,11 +459,17 @@ em {
       align-items: center;
       h3 {
         font-family: "space-grotesk-bold";
-        font-size: 1.2em;
-        line-height: 1.7em;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
         @include md {
-          font-size: 2.2em;
-          line-height: 1.5em;
+          font-size: 2rem;
+          line-height: 1.5rem;
+        }
+        @include lg {
+          font-size: 3rem;
+        }
+        @include xl {
+          font-size: 3.5rem;
         }
       }
       button {
