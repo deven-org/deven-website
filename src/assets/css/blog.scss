@@ -32,6 +32,7 @@
     padding-top: 70px;
     gap: 40px 0px;
     margin-top: 0%;
+    padding: 70px 10px 0px 10px;
     .project-title {
         font-family: "november";
         font-weight: 400;
@@ -58,13 +59,14 @@
                 padding-bottom: 2rem;
             }
             h3 {
+                margin-top: 2rem;
                 font-family: "space-grotesk-bold";
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 padding-bottom: 1rem;
             }
             p {
                 font-family: "space-grotesk-light";
-                font-size: 1rem;
+                font-size: 0.9rem;
                 display: block;
                 padding: 0.5rem 0;
                 strong {
@@ -98,7 +100,7 @@
         &.dark {
             background: #000000;
             .wrapper {
-                padding: 3rem 0 0 0;
+                padding: 1rem 0 0 0;
                 h2, p, a, ul li, ol li {
                     color: #f7f7f7;
                 }
@@ -110,10 +112,24 @@
                     }
                 }
                 ol {
+                    ul {
+                        li {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                ol {
                     list-style: decimal;
                     padding-left: 17px;
                     li {
                         padding-bottom: 5px;
+                        margin-bottom: 3rem;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .project-offset {
+                            margin-left: -17px;
+                        }
                     }
                 }
             }

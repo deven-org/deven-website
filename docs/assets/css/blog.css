@@ -30,6 +30,7 @@
   padding-top: 70px;
   gap: 40px 0px;
   margin-top: 0%;
+  padding: 70px 10px 0px 10px;
 }
 .project-wrapper .project-title {
   font-family: "november";
@@ -57,13 +58,14 @@
   padding-bottom: 2rem;
 }
 .project-wrapper .project-info .wrapper h3 {
+  margin-top: 2rem;
   font-family: "space-grotesk-bold";
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   padding-bottom: 1rem;
 }
 .project-wrapper .project-info .wrapper p {
   font-family: "space-grotesk-light";
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: block;
   padding: 0.5rem 0;
 }
@@ -97,7 +99,7 @@
   background: #000000;
 }
 .project-wrapper .project-info.dark .wrapper {
-  padding: 3rem 0 0 0;
+  padding: 1rem 0 0 0;
 }
 .project-wrapper .project-info.dark .wrapper h2, .project-wrapper .project-info.dark .wrapper p, .project-wrapper .project-info.dark .wrapper a, .project-wrapper .project-info.dark .wrapper ul li, .project-wrapper .project-info.dark .wrapper ol li {
   color: #f7f7f7;
@@ -109,12 +111,22 @@
 .project-wrapper .project-info.dark .wrapper ul li {
   padding-bottom: 5px;
 }
+.project-wrapper .project-info.dark .wrapper ol ul li {
+  margin-bottom: 0;
+}
 .project-wrapper .project-info.dark .wrapper ol {
   list-style: decimal;
   padding-left: 17px;
 }
 .project-wrapper .project-info.dark .wrapper ol li {
   padding-bottom: 5px;
+  margin-bottom: 3rem;
+}
+.project-wrapper .project-info.dark .wrapper ol li:last-child {
+  margin-bottom: 0;
+}
+.project-wrapper .project-info.dark .wrapper ol li .project-offset {
+  margin-left: -17px;
 }
 
 .coming-soon {

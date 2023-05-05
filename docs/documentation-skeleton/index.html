@@ -41,7 +41,7 @@
                     </ul>
                     <div class="close-btn" onclick="closeSubnav()"></div>
                   </div>
-              </li><li class="nav-item" ><a href="/about/">About</a></li><li class="nav-item" ><a href="/contributors/">Contributors</a></li><li class="nav-item" ><a href="/blog-post/">Blog</a></li></ul>
+              </li><li class="nav-item" ><a href="/contributors/">Contributors</a></li><li class="nav-item" ><a href="/about/">About</a></li><li class="nav-item" ><a href="/blog-post/">Blog</a></li></ul>
           </nav>
         </header>
         <main class="tmpl-blog home">
@@ -136,24 +136,40 @@
             <ol>
                 <li>
                     <h3>Install</h3>
-                    <p>Install the documentation using the <strong>install</strong> command.</p>
-                    <code>npm run doc:install</code>
-                    <p>or</p>
-                    <code>yarn doc:install</code>
-                    <h3>What to expect</h3>
-                    <p>First, a new folder will be created <strong>(./doc)</strong> containing all the skeleton chapters. Then, it will generate a config <strong>(./.deven-skeleton-install.config)</strong>, which will track the installed version.</p>
-                    <p>If the <strong>./doc</strong> folder already exists, it will be renamed to <strong>./_doc</strong>, and a new doc folder will be generated. If both the doc folder and the <strong>_doc</strong> folder exist, the script won't proceed until you don't delete one of them.
-                    <p>If the <strong>./.deven-skeleton-install.config</strong> is already existing, the script will just stop. It means that the documentation skeleton has been already successfully installed, and there's no need to proceed with a new installation.</p>
+                    <section class="project-offset">
+                        <p>Install the documentation using the <strong>install</strong> command.</p>
+                        <code>npm run doc:install</code>
+                        <p>or</p>
+                        <code>yarn doc:install</code>
+                        <h3>What to expect</h3>
+                        <p>First, a new folder will be created <strong>(./doc)</strong> containing all the skeleton chapters. Then, it will generate a config <strong>(./.deven-skeleton-install.config)</strong>, which will track the installed version.</p>
+                        <p>If the <strong>./doc</strong> folder already exists, it will be renamed to <strong>./_doc</strong>, and a new doc folder will be generated. If both the doc folder and the <strong>_doc</strong> folder exist, the script won't proceed until you don't delete one of them.
+                        <p>If the <strong>./.deven-skeleton-install.config</strong> is already existing, the script will just stop. It means that the documentation skeleton has been already successfully installed, and there's no need to proceed with a new installation.</p>
+                    </section>
                 </li>
                 <li>
                     <h3>Check</h3>
-                    <p>Once the documentation skeleton has been installed, you can use the check command to verify the status of the documentation.</p>
-                    <code>npm run doc:check</code>
-                    <p>or</p>
-                    <code>yarn doc:check</code>
-                    <h3>What to expect</h3>
-                    <p>The tool will show the <strong>diff</strong> between the skeleton chapters and the chapters located in the local documentation folder. If other files have been added to the <strong>doc</strong> folder, they will be ignored.
-                    <p>The content of the chapters won't be analysed nor considered for this report.</p>
+                    <section class="project-offset">
+                        <p>Once the documentation skeleton has been installed, you can use the check command to verify the status of the documentation.</p>
+                        <code>npm run doc:check</code>
+                        <p>or</p>
+                        <code>yarn doc:check</code>
+                        <h3>What to expect</h3>
+                        <p>The tool will show the <strong>diff</strong> between the skeleton chapters and the chapters located in the local documentation folder. If other files have been added to the <strong>doc</strong> folder, they will be ignored.
+                        <p>The content of the chapters won't be analysed nor considered for this report.</p>
+                    </section>
+                </li>
+                <li>
+                    <h3>Update</h3>
+                    <section class="project-offset">
+                        <p>In case one or more chapters are missing in the local documentation folder, the command update will clone them into the doc folder.</p>
+                        <code>npm run doc: update</code>
+                        <p>or</p>
+                        <code>yarn doc: update</code>
+                        <h3>What to expect</h3>
+                        <p>If the documentation folder is missing, it will be created. If the README file is missing, it will be created. The tool will clone the missing chapters in the documentation folder.</p>
+                        <p>If the local version is larger than the one of the installed packaged, the script won't run.</p>
+                    </section>
                 </li>
             </ol>
         </div>
