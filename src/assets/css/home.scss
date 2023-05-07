@@ -1,5 +1,5 @@
 // Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
+$screen-sm-min: 276px;
 // Small tablets (portrait view)
 $screen-md-min: 768px;
 
@@ -63,18 +63,54 @@ $screen-xxl-min: 1600px;
 .abstract-geometry{
     position: relative;
     display: flex;
-    //margin-bottom: 5rem;
-    top: 15%;
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 30%;
+
     @include xxl {
         top: 25%;
-   }
-
-   @include xl {
-    top: 20%;
+        flex-direction: row;
     }
-
+    @include xl {
+        top: 20%;
+        flex-direction: row;
+    }
     @include lg {
         top: 15%;
+        flex-direction: row;
+    }
+}
+
+.geometry-1 {
+    display: flex;
+
+    @include lg {
+        margin: 18% auto;
+    }
+    @include xl {
+        margin: 12% auto;
+    }
+    @include xxl {
+        margin: 12% auto;
+    }
+}
+
+.geometry-2 {
+    display: flex;
+    margin: 10%;
+    @include md {
+        margin: 10%;
+    }
+    @include lg {
+        margin: auto -15%;
+    }
+    @include xl {
+        margin: auto -5%;
+    }
+    @include xxl {
+        margin: auto -5%;
     }
 }
 
@@ -102,9 +138,21 @@ $screen-xxl-min: 1600px;
 }
 
 .contributor-btn-group {
+    @include lg{
+        margin-top: 4rem;
+        margin-left: 0rem;
+    }
+    @include xl{
+        margin-top: 12rem;
+        margin-left: 0rem; 
+    }
+    @include xxl{
+        margin-top: 12rem;
+        margin-left: 0rem;
+    }
     position: relative;
-    margin-left: 0rem;
-    margin-top: 12rem; 
+    margin-left: -5rem;
+    margin-top: 0rem; 
 }
 
 .abstract-text-span {
@@ -122,16 +170,32 @@ $screen-xxl-min: 1600px;
 
 .button-group{
     position: relative;
-    margin-top: 12rem;
+    //margin-top: 12rem;
+    @include lg{
+        margin: 10% auto;
+    }
 }
 
 .dev-square {
+
+    @include lg{
+        width: 175px;
+        height: 175px;
+    }
+    @include xl{
+        width: 200px;
+        height: 200px;
+    }
+    @include xxl{
+        width: 200px;
+        height: 200px;
+    }
     position: absolute;
     background-color: #2154D6;
     border-radius: 10%;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     transform: rotate(-20.32deg);
     color: #F7F7F7;
     margin-bottom: 25px;
@@ -139,43 +203,105 @@ $screen-xxl-min: 1600px;
 }
 
 .link-button {
+    @include lg{
+        width: 110px;
+        height: 110px;
+        top: 10rem;
+        left: 8rem;
+    }
+    @include xl{
+        width: 120px;
+        height: 120px;
+        top: 10rem;
+        left: 7rem;
+    }
+    @include xxl{
+        width: 120px;
+        height: 120px;
+        top: 10rem;
+        left: 7rem;
+    }
     position: absolute;
     border-radius: 50%;
     background-color: #F1DE00;
-    width: 120px;
-    height: 120px;
-    top: 10rem;
-    left: 7rem;
+    width: 84px;
+    height: 84px;
+    top: 8rem;
+    left: 9rem;
 }
 
 .enable-circle {
+    @include lg{
+        width: 175px;
+        height: 175px;
+        top: 6rem;
+        left: 18rem;
+    }
+    @include xl{
+        width: 200px;
+        height: 200px;
+        top: 8rem;
+        left: 18rem;
+    }
+    @include xxl{
+        width: 200px;
+        height: 200px;
+        top: 8rem;
+        left: 18rem;
+    }
     position: absolute;
     border-radius: 50%;
     background-color: #F7F7F7;
-    width: 200px;
-    height: 200px;
-    top: 8rem;
-    left: 18rem;
+    width: 140px;
+    height: 140px;
+    top: 5rem;
+    left: 16rem;
     text-align: center;
     transform: rotate(12.74deg);
 }
 
 .ellipse {
+
+    @include lg{
+        width: 120px;
+        height: 120px;
+        top: -15%;
+    }
+    @include xl{
+        width: 120px;
+        height: 120px;
+        top: -15%;
+    }
+    @include xxl{
+        width: 120px;
+        height: 120px;
+        top: -15%;
+    }
     background-color: #000;
-    margin-top: 9rem;
+    //margin-top: 9rem;
     position: relative;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 85px;
+    height: 85px;
+    top: -36%;
 }
 
 .ellipse span {
+    @include lg{
+        font-size: 45px;
+    }
+    @include xl{
+        font-size: 45px;
+    }
+    @include xxl{
+        font-size: 45px;
+    }
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     width: max-content;
     left: 50%;
-    font-size: 45px;
+    font-size: 30px;
     line-height: 26px;
 } 
 
@@ -184,11 +310,28 @@ $screen-xxl-min: 1600px;
     z-index: 1;
     margin-left: 21rem;
     margin-top: -3rem;
+
+    @include lg{
+        margin-left: 20rem;
+        margin-top: -8rem;
+    }
 }
 
 .four-point-star svg {
-    width: 408px;
-    height: 408px;
+    width: 244px;
+    height: 244px;
+    @include lg{
+        width: 325px;
+        height: 325px;
+    }
+    @include xl{
+        width: 408px;
+        height: 408px;
+    }
+    @include xxl{
+        width: 408px;
+        height: 408px;
+    }
 }
 
 .four-point-star text {

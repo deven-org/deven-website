@@ -1,11 +1,86 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 276px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// extra Large tablets and desktops
+$screen-xxl-min: 1600px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) and (max-width: #{$screen-xxl-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min} ) {
+        @content;
+    }
+  }
+
+
 .intro {
-    background: #f7f7f7;
-    width: 100%;
-    color: #000000;
-    line-height: 130%;
-    letter-spacing: 0.01em;
-    position: relative;
-    border-radius: 20px;
+    display: none;
+    @include lg {
+        background: #f7f7f7;
+        width: 100%;
+        color: #000000;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        position: relative;
+        border-radius: 20px;
+        display: flex;
+    }
+    @include xl {
+        background: #f7f7f7;
+        width: 100%;
+        color: #000000;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        position: relative;
+        border-radius: 20px;
+        display: flex;
+    }
+    @include xxl {
+        background: #f7f7f7;
+        width: 100%;
+        color: #000000;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        position: relative;
+        border-radius: 20px;
+        display: flex;
+    }
+
 }
 
 .intro div {
@@ -45,11 +120,38 @@
 
 .vision-mission {
     position: relative;
-    margin-top: 5rem;
     display: flex;
-    margin-bottom: 5rem;
+    margin: 10% auto;
+    max-width: 70%;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
+    @include sm {
+        margin: 50% auto;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    @include md {
+        margin: 50% auto;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    @include lg {
+        margin: 10% auto;
+        flex-direction: row;
+        max-width: 90%;
+    }
+    @include xl {
+        margin: 10% auto;
+        flex-direction: row;
+        max-width: 80%;
+    }
+    @include xxl {
+        margin: 10% auto;
+        flex-direction: row;
+        max-width: 70%;
+    }
 }
 
 .mission {
@@ -57,11 +159,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 50%;
+    width: 80%;
     border-radius: 50%;
     text-align: center;
     background-color: #f7f7f7;
     aspect-ratio: 1 / 1;
+    @include lg {
+        width: 50%;
+    }
+    @include xl {
+        width: 50%;
+    }
+    @include xxl {
+        width: 50%;
+    }
 }
 
 .november-font {
@@ -70,30 +181,94 @@
     font-weight: 400;
 }
 
-.mission svg {
-    width: auto;
-    height: 115px;
-    padding-top: 2rem;
+.vision-mission div svg {
+    width: 30%;
+    padding-top: 1rem;
+
+    @include md {
+        padding-top: 2rem;
+    }
+    @include lg {
+        padding-top: 2rem;
+    }
+    @include xl {
+        padding-top: 2rem;
+    }
+    @include xxl {
+        padding-top: 2rem;
+    }
 }
-.mission div {
+.vision-mission div {
     position: relative;
-    padding: 0.5rem 5.8rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 90%;
+    @include md {
+        width: 60%;
+    }
+    @include lg {
+        width: 80%;
+    }
+    @include xl {
+        width: 80%;
+    }
+    @include xxl {
+        width: 80%;
+    }
 }
 
 .circle-title {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 0.5rem;
     text-align: center;
-    padding: 1.5rem 0 1rem 0;
+    padding: 1.5rem;
+
+    @include md {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    @include lg {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        padding: 1.5rem 0 1rem 0;
+    }
+    @include xl {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        padding: 1.5rem 0 1rem 0;
+    }
+    @include xxl {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        padding: 1.5rem 0 1rem 0;
+    }
 }
 
 .circle-text {
     font-family: "space-grotesk-light";
-    font-size: 0.9rem;
-    line-height: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
     text-align: center;
     letter-spacing: 0.01em;
     color: #000000;
+
+    @include md {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+    @include lg {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+    @include xl {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
+    @include xxl {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
 }
 
 .circle-text.white, .circle-title.white {
@@ -105,43 +280,89 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 50%;
+    width: 80%;
     border-radius: 50%;
-    margin-left: -50px;
+    margin-top: -5%;
     color: white;
     background-color: #2154D6;
     text-align: center;
     aspect-ratio: 1 / 1;
-}
 
-.vision svg {
-    width: auto;
-    height: 115px;
-    padding-top: 2rem;
-} 
-
-.vision div {
-    position: relative;
-    padding: 0.5rem 5.8rem;
+    @include lg {
+        margin-left: -50px;
+        margin-top: 0%;
+        width: 50%;
+    }
+    @include xl {
+        margin-left: -50px;
+        margin-top: 0%;
+        width: 50%;
+    }
+    @include xxl {
+        margin-left: -50px;
+        margin-top: 0%;
+        width: 50%;
+    }
 }
 
 .mission-statement {
     position: relative;
-    margin-top: 10%;
     margin-bottom: 10%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include lg {
+        position: relative;
+        margin: 10% auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 80%;
+    }
+    @include xl {
+        position: relative;
+        margin: 10% auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 80%;
+    }
+    @include xxl {
+        position: relative;
+        margin: 10% auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 80%;
+    }
 }
 
 .cool-stuff-star {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    transform: translate(-50%, 0%);
+    width: 361px;
+    height: 361px;
+    z-index: 1;
+    @include lg {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        //transform: translate(-50%, 0%);
+    }
+    @include xl {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        //transform: translate(-50%, 0%);
+    }
+    @include xxl {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        //transform: translate(-50%, 0%);
+    }
 }
 
 .cool-stuff-star svg {
-    position: absolute;
+    //position: absolute;
 }
 
 .cool-stuff-star text {
@@ -154,31 +375,86 @@
 }
 
 .statement {
-    width: 400px; 
+    width: 300px; 
     background: white;
     border-radius: 20px;
-    position: relative;
     padding: 5%;
-    transform: translate(40%, -60%);
+    display: flex;
+    margin-top: -5%;
+
+    @include md {
+        position: relative;
+        width: 400px; 
+        margin-top: -4%;
+    }
+
+    @include lg {
+        position: relative;
+        margin-top: 50%;
+        width: 400px; 
+    }
+    @include xl {
+        position: relative;
+        margin-top: 50%;
+        width: 400px; 
+    }
+    @include xxl {
+        position: relative;
+        margin-top: 50%;
+        width: 400px; 
+    }
 }
 
 .statement p {
     font-family: 'space-grotesk-bold';
-    font-size: 20px;
+    font-size: 16px;
     line-height: 130%;
     letter-spacing: 0.01em;
     color: #000000;
+
+    @include md {
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    @include lg {
+        font-size: 20px;
+        line-height: 130%;
+    }
+    @include xl {
+        font-size: 20px;
+        line-height: 130%;
+    }
+    @include xxl {
+        font-size: 20px;
+        line-height: 130%;
+    }
 }
 
 .current-team {
     position: relative;
     max-width: 70%;
     margin: 10% auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
+    @include lg {
+        font-size: 20px;
+        line-height: 130%;
+        display: flex;
+    }
+    @include xl {
+        font-size: 20px;
+        line-height: 130%;
+        display: flex;
+    }
+    @include xxl {
+        font-size: 20px;
+        line-height: 130%;
+        display: flex;
+    }
 }
 
 .team-title {

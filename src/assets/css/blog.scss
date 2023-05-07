@@ -1,3 +1,53 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 276px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// extra Large tablets and desktops
+$screen-xxl-min: 1600px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) and (max-width: #{$screen-xxl-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min} ) {
+        @content;
+    }
+  }
+
+
 .blog-eye {
     svg {
         width:250px;
@@ -16,12 +66,24 @@
 }
 
 .blog{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
     margin-top: 12%;
+@include md {
+    display: flex;
+}
+@include lg {
+    display: flex;
+}
+@include xl {
+    display: flex;
+}
+@include xxl {
+    display: flex;
+}
 }
 
 .project-wrapper {

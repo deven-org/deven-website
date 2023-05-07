@@ -14,12 +14,32 @@
 }
 
 .blog {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
   margin-top: 12%;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .blog {
+    display: flex;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .blog {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .blog {
+    display: flex;
+  }
+}
+@media (min-width: 1600px) {
+  .blog {
+    display: flex;
+  }
 }
 
 .project-wrapper {

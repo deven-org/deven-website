@@ -28,7 +28,7 @@
 }
 
 // Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
+$screen-sm-min: 276px;
 // Small tablets (portrait view)
 $screen-md-min: 768px;
 
@@ -37,6 +37,9 @@ $screen-lg-min: 992px;
 
 // Large tablets and desktops
 $screen-xl-min: 1200px;
+
+// extra Large tablets and desktops
+$screen-xxl-min: 1600px;
 
 // Small devices
 @mixin sm {
@@ -47,24 +50,31 @@ $screen-xl-min: 1200px;
 
 // Medium devices
 @mixin md {
-  @media (min-width: #{$screen-md-min}) {
+  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min}) {
       @content;
   }
 }
 
 // Large devices
 @mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
+  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min}) {
       @content;
   }
 }
 
 // Extra large devices
 @mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
+  @media (min-width: #{$screen-xl-min}) and (max-width: #{$screen-xxl-min}) {
       @content;
   }
-}  
+}
+
+// Extra large devices
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min} ) {
+        @content;
+    }
+  }
 
 body {
     background: black;
@@ -360,8 +370,23 @@ em {
 }
 
 .footer-circle {
-  height: 90vh;
-  background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+
+  @include md {
+    height: 90vh;
+    background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+  }
+  @include lg {
+    height: 90vh;
+    background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+  }
+  @include xl {
+    height: 90vh;
+    background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+  }
+  @include xxl {
+    height: 90vh;
+    background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+  }
 }
 
 .footer-content {
