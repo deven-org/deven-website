@@ -268,12 +268,14 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .contributors .image-container {
   display: inline-flex;
-  width: calc(33% - 30px);
+  width: calc(33% - 35px);
   position: relative;
   padding: 10px 15px;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .contributors .image-container {
