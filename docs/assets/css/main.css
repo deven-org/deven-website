@@ -156,7 +156,7 @@ main {
 .nav .nav-links .nav-item.logo a {
   font-size: 22px;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .nav .nav-links .nav-item.logo a {
     font-size: 26px;
   }
@@ -409,7 +409,7 @@ em {
 .nav-item:not(:last-of-type) {
   margin-right: 0.8em;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .nav-item:not(:last-of-type) {
     margin-right: 1em;
   }
@@ -467,12 +467,12 @@ em {
     line-height: 1.5rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .tools ul li h3 {
     font-size: 3rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
   .tools ul li h3 {
     font-size: 3.5rem;
   }
