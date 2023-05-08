@@ -9,7 +9,9 @@ title: Documentation Skeleton
     <div class="project-info light">
         <div class="wrapper">
             <h2>What is it?</h2>
-            <p>Documentation Skeleton is Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>We have all worked on projects where documentation was either missing or was more confusing than helpful. The team lost all their trust in the docs and didn't update them anymore. And it's totally understandable. They might not have had enough time or experience to create documentation that actually serves its purpose.</p>
+            <p>However, when it's time to onboard a new team member or explain how the application works, you need proper documentation.</p>
+            <p>That's why we created our documentation skeleton - it's a simple and easy-to-use tool that provides a structure and examples for adding documentation to your project. Give it a try and make your project more human-friendly!</p>
             <div class="buttons-inline">
                 <div class="cta-btn">
                     <a href="https://github.com/deven-org/documentation-skeleton" target="_blank">View on GitHub →</a>
@@ -18,47 +20,113 @@ title: Documentation Skeleton
                     <a href="https://github.com/deven-org/documentation-skeleton/archive/refs/heads/main.zip">Download as .zip →</a>
                 </div>
             </div>
-            <p>That's why we've put our heads together to create B01LER - a user-friendly, token-based design system boilerplate that helps your team easily create cohesive and consistent designs across all platforms and products. B01LER streamlines the design process and saves time by providing pre-built design components, best practices, and a flexible architecture that can be customized to meet your brand's unique needs.</p>
-            <p>On top of that, it makes collaboration between engineering and design teams much easier and clearer. With B01LER, your teams can work smarter and create better products in less time.</p>
         </div>
     </div>
 
     <div class="project-info dark">
         <div class="wrapper">
             <h2>Getting Started</h2>
-            <p>Eleventy v2.0.1 requires <a href="https://nodejs.org/en" target="_blank">Node.js</a> version 14 or higher.</p>
-            <p>You can check whether or not you have Node installed by running node --version in a terminal window. <a href="https://www.11ty.dev/docs/terminal-window/" target="_blank">(Well, wait—what is a Terminal window?)</a> If the command is not found or it reports a number lower than 14, you will need to <a href="https://nodejs.org/en/download" target="_blank">download and install Node.js</a> before moving on to the next step.</p>
-            <p>Prefer to watch videos instead? Check out <a href="https://www.youtube.com/watch?v=kzf9A9tkkl4" target="_blank">6 minutes to Build a Blog from Scratch.</a></p>
+            <p>deven-documentation-skeleton is designed to function in all environments, including those that are not based on NodeJS.</p>
+            <p>If you environment is not built on NodeJS, you can fork it - here is how. It enables the cloning of Deven's documentation skeleton into your project, provides details on documentation coverage, and assists in identifying and cloning any missing chapters.</p>
         </div>
     </div>
 
     <div class="project-info dark">
         <div class="wrapper">
-            <h2>Install</h2>
-            <p><strong>CREATE A package.json</strong></p>
-            <p>Installing Eleventy into a project requires a package.json file. The npm command (provided by Node.js) will create one for you with <a href="https://docs.npmjs.com/cli/v9/commands/npm-init" target="_blank">npm init -y</a/>. -y tells npm to use default values and skips the command line questionnaire.</p>
-            <code>npm init -y</code>
+            <h2>Goals</h2>
+            <ul>
+                <li>Help engineers easily add detailed documentation to their projects, so they can save time and resources.</li>
+                <li>Make it easier for engineers to find information by creating a single documentation project that covers all their projects. This will reduce their mental workload.</li>
+                <li>Onboard new team members faster.</li>
+                <li>Ensure information is shared and preserved, even after team members move on to new projects.</li>
+            </ul>
         </div>
     </div>
 
     <div class="project-info dark">
         <div class="wrapper">
-            <h2>Few Short Standard Prompts</h2>
-            <p>Few shot standard prompts are the standard prompts we’ve seen before, but with examples of the task in them.</p>
-            <p>Why examples? Well, If you want to increase your chances to get the desired result, you have to add examples of the task that the prompt is trying to solve.</p>
-            <p>Few-shot standard prompts consist of a task description, examples, and the prompt. In this case, the prompt is the beginning of a new example that the model should complete by generating the missing text.</p>
-            <p>Here are the components of few short standard prompts.</p>
-            <img src='https://raw.githubusercontent.com/deven-org/documentation-skeleton/main/assets/render.gif'>
+            <h2>Documentation structure</h2>
+            <code>
+                <pre>└── src/doc<br>     └─└ README.md<br>     └── ARCHITECTURE.md<br>     └── CODEOFCONDUCT.md<br>     └── CONTRIBUTE.md<br>     └── DEPLOYMENT.md<br>     └── GETSTARTED.md<br>     └── GLOSSARY.md<br>     └── PROJECTBACKGROUND.md<br>     └── TESTING.md</pre>
+            </code>
         </div>
     </div>
 
     <div class="project-info dark">
         <div class="wrapper">
-            <h2>Few Short Standard Prompts</h2>
-            <p>Few shot standard prompts are the standard prompts we’ve seen before, but with examples of the task in them.</p>
-            <p>Why examples? Well, If you want to increase your chances to get the desired result, you have to add examples of the task that the prompt is trying to solve.</p>
-            <p>Few-shot standard prompts consist of a task description, examples, and the prompt. In this case, the prompt is the beginning of a new example that the model should complete by generating the missing text.</p>
-            <p>Here are the components of few short standard prompts.</p>
+            <h2>Requirements</h2>
+            <ol>
+                <li>This setup is compatible with all major operating systems, and has been tested on Windows 8, Windows 8.1, Windows 10, Mac, and Linux. It's a Node.js package, so you'll need to have Node Version 4 or higher and npm Version 2 or higher installed. To check your installed versions, run "node -v" and "npm -v".</li>
+                <li>To run our code, please make sure you meet the following requirements:
+                    <ul>
+                        <li>Node.js => v14.0.0 (for more information, please check <a href="https://nodejs.org/en/docs/" target="_blank">the Node.js Documentation</a>)</li>
+                        <li>If you use Yarn, you'll need version => v1.2.0.</li>
+                        <li>If you use npm, you'll need version => v8.0.0.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="project-info dark">
+        <div class="wrapper">
+            <h2>Installation</h2>
+            <p>Install the package in your project:</p>
+            <code>yarn add deven-documentation-skeleton --dev</code>
+            <p>or</p>
+            <code>npm install deven-documentation-skeleton --save-dev </code>
+            <p>Add the following entries to your package.json scripts section:</p>
+            <code>
+                <pre>"scripts": {
+        "doc:install": "deven-documentation-skeleton install",
+        "doc:check": "deven-documentation-skeleton check", 
+        "doc:update": "deven-documentation-skeleton update" 
+}</pre>
+            </code>
+        </div>
+    </div>
+    <div class="project-info dark">
+        <div class="wrapper">
+            <h2>How to use it</h2>
+            <ol>
+                <li>
+                    <h3>Install</h3>
+                    <section class="project-offset">
+                        <p>Install the documentation using the <strong>install</strong> command.</p>
+                        <code>npm run doc:install</code>
+                        <p>or</p>
+                        <code>yarn doc:install</code>
+                        <h3>What to expect</h3>
+                        <p>First, a new folder will be created <strong>(./doc)</strong> containing all the skeleton chapters. Then, it will generate a config <strong>(./.deven-skeleton-install.config)</strong>, which will track the installed version.</p>
+                        <p>If the <strong>./doc</strong> folder already exists, it will be renamed to <strong>./_doc</strong>, and a new doc folder will be generated. If both the doc folder and the <strong>_doc</strong> folder exist, the script won't proceed until you don't delete one of them.
+                        <p>If the <strong>./.deven-skeleton-install.config</strong> is already existing, the script will just stop. It means that the documentation skeleton has been already successfully installed, and there's no need to proceed with a new installation.</p>
+                    </section>
+                </li>
+                <li>
+                    <h3>Check</h3>
+                    <section class="project-offset">
+                        <p>Once the documentation skeleton has been installed, you can use the check command to verify the status of the documentation.</p>
+                        <code>npm run doc:check</code>
+                        <p>or</p>
+                        <code>yarn doc:check</code>
+                        <h3>What to expect</h3>
+                        <p>The tool will show the <strong>diff</strong> between the skeleton chapters and the chapters located in the local documentation folder. If other files have been added to the <strong>doc</strong> folder, they will be ignored.
+                        <p>The content of the chapters won't be analysed nor considered for this report.</p>
+                    </section>
+                </li>
+                <li>
+                    <h3>Update</h3>
+                    <section class="project-offset">
+                        <p>In case one or more chapters are missing in the local documentation folder, the command update will clone them into the doc folder.</p>
+                        <code>npm run doc: update</code>
+                        <p>or</p>
+                        <code>yarn doc: update</code>
+                        <h3>What to expect</h3>
+                        <p>If the documentation folder is missing, it will be created. If the README file is missing, it will be created. The tool will clone the missing chapters in the documentation folder.</p>
+                        <p>If the local version is larger than the one of the installed packaged, the script won't run.</p>
+                    </section>
+                </li>
+            </ol>
         </div>
     </div>
 </div>
