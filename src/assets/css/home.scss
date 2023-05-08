@@ -52,12 +52,29 @@ $screen-xxl-min: 1600px;
     font-family: "november";
     font-style: normal;
     font-weight: 400;
-    font-size: 10rem;
+    font-size: 7rem;
     line-height: 5rem;
     text-align: center;
     /* Yellow */
     color: #F1DE00;
-    top: 20%;
+    top: 17%;
+    @include md {
+        top: 18%;
+        font-size: 8rem;
+    }
+
+    @include lg {
+        top: 20%;
+        font-size: 9rem;
+    }
+    @include xl {
+        top: 22%;
+        font-size: 10rem;
+    }
+    @include xxl {
+        top: 24%;
+        font-size: 12rem;
+    }
 }
 
 .abstract-geometry{
@@ -67,33 +84,39 @@ $screen-xxl-min: 1600px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 30%;
+    top: 33%;
 
-    @include xxl {
-        top: 25%;
+    @include md {
+        top: 40%;
+        flex-direction: column;
+    }
+
+    @include lg {
+        top: 33%;
         flex-direction: row;
     }
     @include xl {
-        top: 20%;
+        top: 26%;
         flex-direction: row;
     }
-    @include lg {
-        top: 15%;
+    @include xxl {
+        top: 34%;
         flex-direction: row;
     }
+
 }
 
 .geometry-1 {
     display: flex;
 
     @include lg {
-        margin: 18% auto;
+        //margin: 18% auto;
     }
     @include xl {
-        margin: 12% auto;
+        //margin: 12% auto;
     }
     @include xxl {
-        margin: 12% auto;
+        //margin: 12% auto;
     }
 }
 
@@ -118,23 +141,59 @@ $screen-xxl-min: 1600px;
     background-color: #2154D6;
     border-radius: 100px;
     text-align: center;
-    width: 16em;
-    height: 70px;
+    width: 13em;
+    height: 60px;
     transform: rotate(-17.81deg);
     color: #F7F7F7;
+    @include md {
+        width: 14em;
+        height: 60px;
+    }
+    @include lg {
+        width: 16em;
+        height: 70px;
+    }
+    @include xl {
+        width: 16em;
+        height: 70px;
+    }
+    @include xxl {
+        width: 16em;
+        height: 70px;
+    }
 }
 
 .stdtion-button{
     background-color: #f7f7f7;
     border-radius: 100px;
     text-align: center;
-    width: 16em;
-    height: 70px;
+    width: 13em;
+    height: 60px;
     transform: rotate(7.82deg);
     color: #000000;
     z-index: 1;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 30px;
+    @include md {
+        width: 14em;
+        height: 60px;
+        margin-left: 30px;
+    }
+    @include lg {
+        width: 16em;
+        height: 70px;
+        margin-left: 50px;
+    }
+    @include xl {
+        width: 16em;
+        height: 70px;
+        margin-left: 50px;
+    }
+    @include xxl {
+        width: 16em;
+        height: 70px;
+        margin-left: 50px;
+    }
 }
 
 .contributor-btn-group {
@@ -174,10 +233,29 @@ $screen-xxl-min: 1600px;
     @include lg{
         margin: 10% auto;
     }
+    @include xl{
+        margin: 10% auto;
+    }
+    @include xxl {
+        margin: 10% auto;
+    }
 }
 
 .dev-square {
-
+    position: absolute;
+    background-color: #2154D6;
+    border-radius: 10%;
+    text-align: center;
+    width: 115px;
+    height: 115px;
+    transform: rotate(-20.32deg);
+    color: #F7F7F7;
+    margin-bottom: 25px;
+    left: 10rem;
+    @include md{
+        width: 130px;
+        height: 130px;
+    }
     @include lg{
         width: 175px;
         height: 175px;
@@ -190,19 +268,22 @@ $screen-xxl-min: 1600px;
         width: 200px;
         height: 200px;
     }
-    position: absolute;
-    background-color: #2154D6;
-    border-radius: 10%;
-    text-align: center;
-    width: 140px;
-    height: 140px;
-    transform: rotate(-20.32deg);
-    color: #F7F7F7;
-    margin-bottom: 25px;
-    left: 10rem;
 }
 
 .link-button {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #F1DE00;
+    width: 75px;
+    height: 75px;
+    top: 6rem;
+    left: 9rem;
+    @include md{
+        width: 85px;
+        height: 85px;
+        top: 7rem;
+        left: 8rem;
+    }
     @include lg{
         width: 110px;
         height: 110px;
@@ -221,16 +302,24 @@ $screen-xxl-min: 1600px;
         top: 10rem;
         left: 7rem;
     }
-    position: absolute;
-    border-radius: 50%;
-    background-color: #F1DE00;
-    width: 84px;
-    height: 84px;
-    top: 8rem;
-    left: 9rem;
 }
 
 .enable-circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #F7F7F7;
+    width: 115px;
+    height: 115px;
+    top: 4rem;
+    left: 15rem;
+    text-align: center;
+    transform: rotate(12.74deg);
+    @include md{
+        width: 130px;
+        height: 130px;
+        top: 5rem;
+        left: 16rem;
+    }
     @include lg{
         width: 175px;
         height: 175px;
@@ -249,15 +338,6 @@ $screen-xxl-min: 1600px;
         top: 8rem;
         left: 18rem;
     }
-    position: absolute;
-    border-radius: 50%;
-    background-color: #F7F7F7;
-    width: 140px;
-    height: 140px;
-    top: 5rem;
-    left: 16rem;
-    text-align: center;
-    transform: rotate(12.74deg);
 }
 
 .ellipse {
@@ -308,9 +388,13 @@ $screen-xxl-min: 1600px;
 .four-point-star {
     position: relative;
     z-index: 1;
-    margin-left: 21rem;
-    margin-top: -3rem;
+    margin-left: 18rem;
+    margin-top: -4rem;
 
+    @include md{
+        margin-left: 21rem;
+        margin-top: -3rem;
+    }
     @include lg{
         margin-left: 20rem;
         margin-top: -8rem;
@@ -318,8 +402,12 @@ $screen-xxl-min: 1600px;
 }
 
 .four-point-star svg {
-    width: 244px;
-    height: 244px;
+    width: 200px;
+    height: 200px;
+    @include lg{
+        width: 244px;
+        height: 244px;
+    }
     @include lg{
         width: 325px;
         height: 325px;
