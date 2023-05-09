@@ -32,6 +32,20 @@
   }
 }
 
+@media (min-width: 992px) {
+  .vision-mission {
+    flex-wrap: nowrap;
+  }
+  .vision-mission .mission, .vision-mission .vision {
+    height: 50vw;
+    width: 50%;
+  }
+  .vision-mission .vision {
+    margin-left: -50px;
+    margin-top: 0px;
+  }
+}
+
 .pe-button {
   background-color: #2154D6;
   border-radius: 100px;
