@@ -13,20 +13,33 @@ $screen-xl-min: 1200px;
 $screen-xxl-min: 1600px;
 
 // Small devices
-@mixin sm {
+@mixin min-sm {
   @media (min-width: #{$screen-sm-min}) {
       @content;
   }
 }
 
 // Medium devices
-@mixin md {
-  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min}) {
+@mixin min-md {
+  @media (min-width: #{$screen-md-min}) {
       @content;
   }
 }
 
+@mixin md {
+    @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
 // Large devices
+
+@mixin min-lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+  }
+
 @mixin lg {
   @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min}) {
       @content;
@@ -47,17 +60,96 @@ $screen-xxl-min: 1600px;
     }
   }
 
-.deven-headtext{
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    gap: 40px 0px;
+    margin-top: 0%;
+    padding: 70px 0 0 0;
+    @include min-md() {
+        padding: 70px 10px 0px 10px;
+    }
+}
+
+h1.deven-headtext{
     position: relative;
     font-family: "november";
     font-style: normal;
     font-weight: 400;
-    font-size: 10rem;
+    font-size: 7rem;
     line-height: 5rem;
     text-align: center;
-    /* Yellow */
+    justify-content: center;
+    padding: 40px 0px 80px 0px;
     color: #F1DE00;
     top: 20%;
+    @include min-md() {
+        font-size: 8rem;
+        padding: 70px 0px 80px 0px;
+    }
+}
+
+.shapes-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    width: 100%;
+    flex-wrap: wrap;
+    @include min-md() {
+        padding-top: 1rem;
+        max-width: 1050px;
+        padding-bottom: 5rem;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .intro-btn-group {
+        width: 50%;
+        margin-top: -1rem;
+        margin-left: 1rem;
+        @include min-md() {
+            margin-top: -1rem;
+            margin-left: 2rem;
+            width: 200px;
+        }
+    }
+    .open-source-star {
+        position: relative;
+        z-index: 1;
+        margin-left: 0;
+        margin-top: -2rem;
+        margin-bottom: 8rem;
+        overflow: hidden;
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        svg {
+            width: 200px;
+            height: 200px;
+        }
+        @include min-md() {
+            margin-bottom: 14rem;
+            margin-left: 3rem;
+            margin-top: -13rem;
+            svg {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        text {
+            z-index: 2;
+            width: max-content;
+            font-family: 'space-grotesk-bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            color: #000;
+        }
+    }
 }
 
 .abstract-geometry{
@@ -78,17 +170,34 @@ $screen-xxl-min: 1600px;
     }
 }
 
+.vision-mission {
+    @include min-lg() {
+        flex-wrap: nowrap;
+        .mission, .vision {
+            height: 50vw;
+            width: 50%;
+        }
+        .vision {
+            margin-left: -50px;
+            margin-top: 0px;
+        }
+    }
+}
+
 .pe-button{
     background-color: #2154D6;
     border-radius: 100px;
     text-align: center;
-    width: 16em;
-    height: 70px;
+    width: 18em;
+    height: 65px;
     transform: rotate(-17.81deg);
     color: #F7F7F7;
+    border: none;
+    font-family: "space-grotesk-bold";
+    font-size: 12px;
 }
 
-.stdtion-button{
+.standardization-button{
     background-color: #f7f7f7;
     border-radius: 100px;
     text-align: center;
@@ -97,14 +206,19 @@ $screen-xxl-min: 1600px;
     transform: rotate(7.82deg);
     color: #000000;
     z-index: 1;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 9px;
+    margin-left: 60px;
+    border: none;
+    font-family: "space-grotesk-bold";
+    font-size: 12px;
+    @include min-md() {
+        font-size: 13px;
+    }
 }
 
-.contributor-btn-group {
+.button-group{
     position: relative;
-    margin-left: 0rem;
-    margin-top: 12rem; 
+    margin-top: 12rem;
 }
 
 .abstract-text-span {
@@ -116,71 +230,128 @@ $screen-xxl-min: 1600px;
     font-family: 'space-grotesk-bold';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 20px;
+    @include min-md() {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    svg {
+        height: 26px;
+        @include min-md() {
+            height: 37px;
+        }
+    }
 } 
 
-.button-group{
+.contributor-btn-group {
     position: relative;
-    margin-top: 12rem;
+    width: 50%;
+    margin-top: 2.3rem;
+    margin-left: 1rem;
+    @include min-md() {
+        margin-left: 0rem;
+        margin-top: 3rem;
+        width: auto;
+    }
+    .dev-square {
+        position: absolute;
+        background-color: #2154D6;
+        border-radius: 10%;
+        text-align: center;
+        width: 120px;
+        height: 120px;
+        transform: rotate(-20.32deg);
+        color: #F7F7F7;
+        margin-bottom: 25px;
+        left: 1rem;
+        @include min-md() {
+            width: 200px;
+            height: 200px;
+            left: 0;
+        }
+        @include md() {
+            width: 160px;
+            height: 160px;
+            left: 0;
+        }
+    }
+    .link-button {
+        position: absolute;
+        border-radius: 50%;
+        background-color: #F1DE00;
+        width: 65px;
+        height: 65px;
+        top: 7rem;
+        left: 0.4rem;
+        @include min-md() {
+            width: 120px;
+            height: 120px;
+            top: 10rem;
+            left: 0rem;
+        }
+        @include md() {
+            width: 90px;
+            height: 90px;
+            top: 9rem;
+            left: 0rem;
+        }
+    }
+    .enable-circle {
+        position: absolute;
+        border-radius: 50%;
+        background-color: #F7F7F7;
+        width: 120px;
+        height: 120px;
+        top: 4rem;
+        left: 7rem;
+        text-align: center;
+        transform: rotate(12.74deg);
+        @include min-md() {
+            width: 200px;
+            height: 200px;
+            left: 10rem;
+            top: 4rem;
+        }
+        @include md() {
+            width: 150px;
+            height: 150px;
+            left: 8.3rem;
+            top: 4rem;
+        }
+        span {
+            color: #000;
+        }
+    }
 }
 
-.dev-square {
-    position: absolute;
-    background-color: #2154D6;
-    border-radius: 10%;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    transform: rotate(-20.32deg);
-    color: #F7F7F7;
-    margin-bottom: 25px;
-    left: 10rem;
-}
-
-.link-button {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #F1DE00;
-    width: 120px;
-    height: 120px;
-    top: 10rem;
-    left: 7rem;
-}
-
-.enable-circle {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #F7F7F7;
-    width: 200px;
-    height: 200px;
-    top: 8rem;
-    left: 18rem;
-    text-align: center;
-    transform: rotate(12.74deg);
-}
-
-.ellipse {
+.emoji-ellipse {
     background-color: #000;
-    margin-left: 4rem;
-    margin-top: 9rem;
-    top: -1rem;
-    position: absolute;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    left: 14rem;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+    margin-top: -4rem;
+    @include min-md() {
+        width: 120px;
+        height: 120px;
+        margin: -2rem 3rem 0 6rem;
+    }
+    span {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: max-content;
+        left: 50%;
+        font-size: 30px;
+        line-height: 26px;
+        @include min-md() {
+            font-size: 45px;
+            line-height: 26px;
+        }
+    } 
 }
-
-.ellipse span {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: max-content;
-    left: 50%;
-    font-size: 45px;
-    line-height: 26px;
-} 
 
 .four-point-star {
     position: relative;
@@ -189,21 +360,192 @@ $screen-xxl-min: 1600px;
     margin-top: -3rem;
 }
 
-.four-point-star svg {
-    width: 408px;
-    height: 408px;
-}
-
-.four-point-star text {
-    z-index: 2;
-    width: max-content;
-    font-family: 'space-grotesk-bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    color: #000;
-}
-
 .blog-content {
     padding: 2%;
+}
+
+.initial-text {
+    font-size: 3rem;
+    @include min-md() {
+        font-size: 5rem;
+    }
+}
+
+.rest-text {
+    font-family: "space-grotesk-bold";
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    @include min-md() {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .emoji-circle {
+        width: 33px;
+        position: relative;
+        height: 33px;
+        line-height: 33px;
+        border-radius: 50%;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        background: #2154D6;
+    }
+}
+
+.intro {
+    background: #f7f7f7;
+    width: 100%;
+    color: #000000;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    position: relative;
+    border-radius: 20px;
+}
+
+.intro div {
+    padding: 15% 18%;
+}
+
+.statement {
+    width: 100%; 
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    transform: none;
+    @include min-md() {
+        width: 400px;
+        background: white;
+        border-radius: 20px;
+        position: relative;
+        padding: 5%;
+        transform: translate(30%, -70%);
+    }
+    p {
+        padding: 5%;
+        font-family: 'space-grotesk-bold';
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.01em;
+        color: #000000;
+        @include min-md() {
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+        }
+    }
+}
+
+.cool-stuff-star {
+    position: relative;
+    display: flex;
+    transform: none;
+    justify-content: center;
+    margin: 0px auto -1rem auto;
+    z-index: 1;
+    @include min-md() {
+        position: relative;
+        margin: 0px auto 30px auto;
+        transform: translate(-60%, 0%);
+    }
+    svg {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        @include min-md() {
+            width: 408px;
+            height: 408px;
+        }
+    }
+    text {
+        z-index: 2;
+        width: max-content;
+        font-family: 'space-grotesk-bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+    }
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 10% auto 8% auto;
+  }
+
+  .circle-text {
+    font-family: "space-grotesk-light";
+    font-size: 0.7rem;
+    line-height: 1rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #000000;
+    @include min-md() {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+}
+
+.circle-title {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: .5rem 0 1rem 0;
+    @include min-md() {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        padding: 1.5rem 0 1rem 0;
+    }
+}
+
+.mission svg {
+    max-width: 100%;
+    height: 40px;
+    padding-top: 0.5rem;
+    @include min-md() {
+        height: 115px;
+        padding-top: 0rem;
+    }
+}
+.mission div {
+    position: relative;
+    padding: 0.5rem 2.1rem;
+    @include min-md() {
+        padding: 0.5rem 5.8rem;
+    }
+}
+
+.vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-top: -30px;
+    height: 100vw;
+    color: white;
+    background-color: #2154D6;
+    text-align: center;
+    aspect-ratio: 1/1;
+  }
+
+.vision svg {
+    max-width: 100%;
+    height: 40px;
+    padding-top: 0.5rem;
+    @include min-md() {
+        height: 115px;
+        padding-top: 0rem;
+    }
+  }
+
+.vision div {
+    position: relative;
+    padding: 0.5rem 2.1rem;
+    @include min-md() {
+        padding: 0.5rem 5.8rem;
+    }
 }

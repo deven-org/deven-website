@@ -110,7 +110,7 @@ main {
 }
 
 .main-header {
-  height: 90vh;
+  height: 630px;
   position: absolute;
   width: 100%;
   right: 0px;
@@ -121,6 +121,15 @@ main {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
+  @include md {
+    height: 800px;
+  }
+  @include lg {
+    height: 700px;
+  }
+  @include xl {
+    height: 560px;
+  }
 }
 
 .white-circle {
@@ -363,8 +372,14 @@ em {
 }
 
 .footer-circle {
-  height: 90vh;
+  height: auto;
   background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  background-position: 0px -58vh;
+  @include md {
+    background-position: 0px -65vh;
+  }
 }
 
 .footer-content {
@@ -549,5 +564,26 @@ em {
         }
       }
     }
+  }
+}
+
+.coming-soon-text {
+  color: #F7F7F7;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+  @include md {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+}
+
+.blog-eye {
+  svg {
+      width: auto;
+      height: 100px;
+      @include md {
+        width: auto;
+        height: 138px;
+      }
   }
 }
