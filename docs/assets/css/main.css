@@ -68,7 +68,7 @@ main {
 }
 
 .main-header {
-  height: 90vh;
+  height: 630px;
   position: absolute;
   width: 100%;
   right: 0px;
@@ -79,6 +79,21 @@ main {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .main-header {
+    height: 800px;
+  }
+}
+@media (min-width: 992px) {
+  .main-header {
+    height: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-header {
+    height: 560px;
+  }
 }
 
 .white-circle {
@@ -330,8 +345,16 @@ em {
 }
 
 .footer-circle {
-  height: 90vh;
+  height: auto;
   background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  background-position: 0px -58vh;
+}
+@media (min-width: 768px) {
+  .footer-circle {
+    background-position: 0px -65vh;
+  }
 }
 
 .footer-content {
@@ -525,4 +548,27 @@ em {
 }
 .tools ul li:nth-child(even) button a svg path {
   fill: black;
+}
+
+.coming-soon-text {
+  color: #F7F7F7;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+}
+@media (min-width: 768px) {
+  .coming-soon-text {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+}
+
+.blog-eye svg {
+  width: auto;
+  height: 100px;
+}
+@media (min-width: 768px) {
+  .blog-eye svg {
+    width: auto;
+    height: 138px;
+  }
 }

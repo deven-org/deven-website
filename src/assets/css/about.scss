@@ -1,21 +1,3 @@
-.intro {
-    background: #f7f7f7;
-    width: 100%;
-    color: #000000;
-    line-height: 130%;
-    letter-spacing: 0.01em;
-    position: relative;
-    border-radius: 20px;
-}
-
-.intro div {
-    padding: 18%;
-}
-
-.intitial-text {
-    font-size: 80px;
-}
-
 .dev-enable {
     display: inline-block;
     background: #F1DE00;
@@ -24,23 +6,6 @@
     font-size: 16px;
     padding: 0px 5px;
     vertical-align: bottom;
-}
-
-.rest-text {
-    font-family: "space-grotesk-bold";
-    font-size: 22px;
-    line-height: 1.8rem;
-    .emoji-circle {
-        width: 33px;
-        position: relative;
-        height: 33px;
-        line-height: 33px;
-        border-radius: 50%;
-        font-size: 20px;
-        display: inline-block;
-        text-align: center;
-        background: #2154D6;
-    }
 }
 
 .vision-mission {
@@ -72,80 +37,17 @@
     font-weight: 400;
 }
 
-.mission svg {
-    max-width: 100%;
-    height: 115px;
-    padding-top: 0rem;
-}
-.mission div {
-    position: relative;
-    padding: 0.5rem 5.8rem;
-}
-
-.circle-title {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    text-align: center;
-    padding: 1.5rem 0 1rem 0;
-}
-
-.circle-text {
-    font-family: "space-grotesk-light";
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-    text-align: center;
-    letter-spacing: 0.01em;
-    color: #000000;
-}
-
 .circle-text.white, .circle-title.white {
     color: #ffffff;
 }
 
-.vision {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border-radius: 50%;
-    margin-left: 0px;
-    margin-top: -50px;
-    height: 100vw;
-    color: white;
-    background-color: #2154D6;
-    text-align: center;
-    aspect-ratio: 1/1;
-  }
-  
-.vision svg {
-    max-width: 100%;
-    height: 115px;
-    padding-top: 0rem;
-  }
-
-.vision div {
-    position: relative;
-    padding: 0.5rem 5.8rem;
-}
-
 .mission-statement {
-    position: relative;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.cool-stuff-star {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    transform: translate(-50%, 0%);
-}
-
-.cool-stuff-star svg {
-    position: absolute;
+  position: relative;
+  margin: 8rem auto 0px auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .cool-stuff-star text {
@@ -157,27 +59,10 @@
     color: #000000;
 }
 
-.statement {
-    width: 400px; 
-    background: white;
-    border-radius: 20px;
-    position: relative;
-    padding: 5%;
-    transform: translate(40%, -60%);
-}
-
-.statement p {
-    font-family: 'space-grotesk-bold';
-    font-size: 20px;
-    line-height: 130%;
-    letter-spacing: 0.01em;
-    color: #000000;
-}
-
 .current-team {
     position: relative;
     max-width: 70%;
-    margin: 10% auto;
+    margin: 8rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,14 +75,6 @@
     font-size: 50px;
     line-height: 55px;
 }
-
-.team-members {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 100%;
-    margin: 10% auto 8% auto;
-  }
   
   .team-member {
     display: flex;
