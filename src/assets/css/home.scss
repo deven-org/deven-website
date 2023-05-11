@@ -408,13 +408,13 @@ h1.deven-headtext{
 
 .statement {
     width: 100%; 
-    background: white;
+    background: #f7f7f7;
     border-radius: 20px;
     position: relative;
     transform: none;
     @include min-md() {
         width: 400px;
-        background: white;
+        background: f7f7f7;
         border-radius: 20px;
         position: relative;
         padding: 5%;

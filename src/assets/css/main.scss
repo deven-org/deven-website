@@ -452,26 +452,29 @@ em {
 
 .tools {
   background: #F7F7F7;
+  position: relative;
   border-radius: 30px;
-  padding: 2rem 1.5rem;
-  margin: 0 auto;
+  margin: 0rem auto 0px auto;
+  padding: 0;
   text-align: center;
-  width: 60%;
-  display: none;
+  width: 100%;
+  display: block;
   @include md {
-    padding: 7rem 5rem;
-    display: block;
+    width: 60%;
+    padding: 2rem 5rem;
   }
   h2 {
     font-family: "november";
     font-size: 1.8em;
     line-height: 1.5em;
     text-align: center;
+    padding: 2rem 0 0.5rem 0;
   }
   ul {
     margin-top: 1rem;
+    padding: 2rem 1.5rem;
     @include md {
-      margin-top: 3rem;
+      margin-top: 0rem;
     }
     li {
       padding: 20px 0px;
@@ -483,15 +486,18 @@ em {
         font-family: "space-grotesk-bold";
         font-size: 1.5rem;
         line-height: 1.7rem;
+        text-align: left;
         @include md {
-          font-size: 2rem;
-          line-height: 1.5rem;
+          font-size: 1.7rem;
+          line-height: 2.7rem;
         }
         @include lg {
-          font-size: 3rem;
+          font-size: 2.1rem;
+          line-height: 2.9rem;
         }
         @include xl {
-          font-size: 3.5rem;
+          font-size: 2.7rem;
+          line-height: 3.4rem;
         }
       }
       button {
@@ -505,6 +511,10 @@ em {
         align-items: center;
         overflow: hidden;
         position: relative;
+        @include md {
+          height: 75px;
+          width: 75px;
+        }
         a {
           position: relative;
           width: 100%;
@@ -519,9 +529,15 @@ em {
           }
           #slidePrev {
             left: 11px;
+            @include md {
+              left: 24px;
+            }
           }
           #slideNext {
             left: -50px;
+            @include md {
+              left: -25px;
+            }
           }
         }
         &:hover > a #slidePrev {
@@ -536,19 +552,52 @@ em {
         }
       
         @-webkit-keyframes slidePrev {
-            100% { left: 50px; }
+            100% {
+              left: 50px;
+            }
         }
-        
+
         @keyframes slidePrev {
-            100% { left: 50px; }
+          100% {
+            left: 50px;
+          }
         }
-        
+
+        @include md {
+          @-webkit-keyframes slidePrev {
+            100% {
+              left: 70px;
+            }
+          }
+          @keyframes slidePrev {
+            100% {
+              left: 70px;
+            }
+          }
+        }
         @-webkit-keyframes slideNext {
-            100% { left: 11px; }
+          100% {
+            left: 11px;
+          }
         }
         
         @keyframes slideNext {
-          100% { left: 11px; }
+          100% {
+            left: 11px;
+          }
+        }
+
+        @include md {
+          @-webkit-keyframes slideNext {
+            100% {
+              left: 24px;
+            }
+          }
+          @keyframes slideNext {
+            100% {
+              left: 24px;
+            }
+          }
         }
       }
       &:nth-child(even) {
