@@ -2,9 +2,19 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<time class="postlist-date" datetime="{{ date | htmlDateString }}">
-	{{ date | readableDate }}
-</time>
-<h1 class="post-title">{{ title }}</h1>
+<div class="post-header">
+	<img src="https://placehold.co/400" alt="author img" />
+	<div>
+		<div>
+			<p class="post-header-autor">
+				{{ author }} | 
+				<time class="postlist-date" datetime="{{ date | htmlDateString }}">
+					{{ date | readableDate }}
+				</time>
+			</p>
+		</div>
+		<h2 class="post-header-title">{{ title }}</h2>
+	</div>
+</div>
 
-{{ content | safe }}
+<div class="post-content-wrapper"> {{ content | safe }} </div>
