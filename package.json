@@ -5,7 +5,7 @@
   "main": "docs/index.html",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy build"
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
