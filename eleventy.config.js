@@ -1,5 +1,5 @@
 // Importing from config
-const {getPosts, getProjects} = require('./config/collections/index.js');
+const { getPosts, getProjects } = require("./config/collections/index.js");
 const sass = require("sass");
 
 // lib to format time
@@ -10,12 +10,11 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
-
-module.exports = eleventyConfig => {
+module.exports = (eleventyConfig) => {
   // Collections
-  eleventyConfig.addCollection('posts', getPosts);
-  eleventyConfig.addCollection('projects', getProjects);
-  ['src/assets/fonts/', 'src/assets/images/'].forEach(path =>
+  eleventyConfig.addCollection("posts", getPosts);
+  eleventyConfig.addCollection("projects", getProjects);
+  ["src/assets/fonts/", "src/assets/images/"].forEach((path) =>
     eleventyConfig.addPassthroughCopy(path)
   );
   // eleventyConfig.setDataDeepMerge(true);
@@ -29,16 +28,17 @@ module.exports = eleventyConfig => {
   // prefixPath
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
-
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require("markdown-it-anchor");
-  const markdown = markdownIt({ html: true, linkify: true })
-  .use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "bookmark",
-    permalinkSymbol: "#"
-  });
+  const markdown = markdownIt({ html: true, linkify: true }).use(
+    markdownItAnchor,
+    {
+      permalink: true,
+      permalinkClass: "bookmark",
+      permalinkSymbol: "#",
+    }
+  );
 
   eleventyConfig.setLibrary("md", markdown);
 
@@ -47,16 +47,18 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy("css");
 
   // Adds Date Formatting
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "dd LLL yyyy"
+    );
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd');
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat("yyyy-LL-dd");
   });
 
-  eleventyConfig.addFilter("htmlExcerpt", content => {
+  eleventyConfig.addFilter("htmlExcerpt", (content) => {
     if (!content) return content;
     const start = content.indexOf("<p>");
     const secondStart = content.indexOf("<p>", start + 1);
@@ -75,51 +77,45 @@ module.exports = eleventyConfig => {
     outputFileExtension: "css", // optional, default: "html"
 
     // `compile` is called once per .scss file in the input directory
-    compile: async function(inputContent) {
+    compile: async function (inputContent) {
       let result = sass.compileString(inputContent);
 
       // This is the render function, `data` is the full data cascade
       return async (data) => {
         return result.css;
       };
-    }
+    },
   });
 
-  if(process.env.NODE_ENV !== "production" || process.env.ELEVENTY_SERVERLESS) {
-  return {
-    templateFormats: [
-      "md",
-      "html",
-      "njk"
-    ],
-    markdownTemplateEngine: "liquid",
-    dataTemplateEngine: "njk",
-    dir: {
-      input: 'src',
-      output: 'docs',
-      includes: "_includes",
-      data: '_data',
-      styles: 'css'
-    }
-  };
-}
-else {
-  return {
-    templateFormats: [
-      "md",
-      "html",
-      "njk"
-    ],
-    markdownTemplateEngine: "liquid",
-    dataTemplateEngine: "njk",
-    dir: {
-      input: 'src',
-      output: 'docs',
-      includes: "_includes",
-      data: '_data',
-      styles: 'css'
-    },
-
-  };
-}
+  if (
+    process.env.NODE_ENV !== "production" ||
+    process.env.ELEVENTY_SERVERLESS
+  ) {
+    return {
+      templateFormats: ["md", "html", "njk"],
+      markdownTemplateEngine: "liquid",
+      dataTemplateEngine: "njk",
+      dir: {
+        input: "src",
+        output: "docs",
+        includes: "_includes",
+        data: "_data",
+        styles: "css",
+      },
+    };
+  } else {
+    return {
+      templateFormats: ["md", "html", "njk"],
+      markdownTemplateEngine: "liquid",
+      dataTemplateEngine: "njk",
+      dir: {
+        input: "src",
+        output: "docs",
+        includes: "_includes",
+        data: "_data",
+        styles: "css",
+      },
+      pathPrefix: "/deven-website/",
+    };
+  }
 };
