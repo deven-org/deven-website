@@ -1,5 +1,3 @@
-// Importing from config
-const { getPosts, getProjects } = require("./config/collections/index.js");
 const sass = require("sass");
 
 // lib to format time
@@ -11,9 +9,6 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = (eleventyConfig) => {
-  // Collections
-  eleventyConfig.addCollection("posts", getPosts);
-  eleventyConfig.addCollection("projects", getProjects);
   ["src/assets/fonts/", "src/assets/images/"].forEach((path) =>
     eleventyConfig.addPassthroughCopy(path)
   );
