@@ -41,38 +41,38 @@ $screen-xl-min: 1200px;
 // Small devices
 @mixin sm {
   @media (min-width: #{$screen-sm-min}) {
-      @content;
+    @content;
   }
 }
 
 // Medium devices
 @mixin md {
   @media (min-width: #{$screen-md-min}) {
-      @content;
+    @content;
   }
 }
 
 // Large devices
 @mixin lg {
   @media (min-width: #{$screen-lg-min}) {
-      @content;
+    @content;
   }
 }
 
 // Extra large devices
 @mixin xl {
   @media (min-width: #{$screen-xl-min}) {
-      @content;
+    @content;
   }
-}  
+}
 
 body {
-    background: black;
-    //max-width: 960px;
-    margin: 0 auto;
-    line-height: 1.8em;
-    font-size: 1em;
-    font-family: "AVF";
+  background: black;
+  //max-width: 960px;
+  margin: 0 auto;
+  line-height: 1.8em;
+  font-size: 1em;
+  font-family: "AVF";
 }
 
 .content-wrapper {
@@ -81,23 +81,22 @@ body {
   margin-bottom: -40px;
 }
 
-.navi{
-    background-position: center -200px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.navi {
+  background-position: center -200px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .main {
-    padding: 20px 30px;
-    background: #fff;
-    margin-bottom: 5rem;
-    border-radius: 20px;
+  padding: 20px 30px;
+  background: #fff;
+  margin-bottom: 5rem;
+  border-radius: 20px;
 }
 
 main {
   margin-bottom: 30px;
   min-height: calc(100vh - 80px);
- 
 }
 
 .navi {
@@ -133,11 +132,19 @@ main {
 }
 
 .white-circle {
-  background-image: radial-gradient(circle at top, #f7f7f7 50%, transparent 50%);
+  background-image: radial-gradient(
+    circle at top,
+    #f7f7f7 50%,
+    transparent 50%
+  );
 }
 
 .blue-circle {
-  background-image: radial-gradient(circle at top, #2154D6 50%, transparent 50%);
+  background-image: radial-gradient(
+    circle at top,
+    #2154d6 50%,
+    transparent 50%
+  );
 }
 
 .cta-btn {
@@ -146,7 +153,7 @@ main {
   align-items: center;
   margin-top: 30px;
   padding: 14px 20px;
-  background-color: #F1DE00;
+  background-color: #f1de00;
   color: #000;
   cursor: pointer;
   border-radius: 100px;
@@ -155,7 +162,7 @@ main {
 }
 
 .cta-btn a {
-  font-family: 'space-grotesk-bold';
+  font-family: "space-grotesk-bold";
   color: black;
   text-decoration: none;
   font-size: 16px;
@@ -168,7 +175,7 @@ main {
   justify-content: flex-start;
   display: flex;
   .cta-btn {
-      margin: 0px 2rem 0px 0px;
+    margin: 0px 2rem 0px 0px;
   }
 }
 
@@ -191,7 +198,7 @@ main {
       font-family: "space-grotesk-light";
       .nav .nav-links .nav-item {
         margin: 0px 15px;
-    }
+      }
       @include md {
         margin: 0px 15px;
       }
@@ -213,7 +220,7 @@ main {
         font-size: 12px;
         cursor: pointer;
         &:hover {
-            color: #8E8E8E;
+          color: #8e8e8e;
         }
         @include md {
           font-size: 1rem;
@@ -239,11 +246,11 @@ main {
           }
         }
         &:hover .subnav-chevron {
-          border-color: #8E8E8E;
+          border-color: #8e8e8e;
         }
       }
       &:not(.hidden) a {
-        color: #8E8E8E;
+        color: #8e8e8e;
       }
       .subnav-container {
         position: absolute;
@@ -290,22 +297,23 @@ main {
               a {
                 color: white;
                 &:hover {
-                  color: #8E8E8E;
+                  color: #8e8e8e;
                 }
                 @include md {
                   font-size: 12px;
                 }
               }
             }
-         }
-         .close-btn {
-          width: 12px;
-          height: 12px;
-          overflow: hidden;
-          position: relative;
-          cursor: pointer;
-          margin-left: 0.5rem;
-            &::before, &::after {
+          }
+          .close-btn {
+            width: 12px;
+            height: 12px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            margin-left: 0.5rem;
+            &::before,
+            &::after {
               content: "";
               position: absolute;
               height: 1px;
@@ -325,8 +333,9 @@ main {
               margin-left: 1.5rem;
             }
             &:hover {
-              &::before, &::after {
-                background: #8E8E8E;
+              &::before,
+              &::after {
+                background: #8e8e8e;
               }
             }
           }
@@ -336,30 +345,30 @@ main {
         display: none;
       }
       &:hover .subnav-button {
-        color: #8E8E8E;
+        color: #8e8e8e;
       }
       &.hidden .subnav-chevron {
         margin-top: -3px;
         transform: rotate(45deg);
         border-color: black;
       }
-    
+
       &:not(.hidden) .subnav-chevron {
         margin-top: 2px;
         transform: rotate(-135deg);
-        border-color: #8E8E8E;
+        border-color: #8e8e8e;
       }
     }
   }
 }
 
 .main {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 em {
-    font-weight: 900;
-    font-style: underline;
+  font-weight: 900;
+  font-style: underline;
 }
 
 .footer {
@@ -368,12 +377,16 @@ em {
   width: 100%;
   left: 0;
   flex-direction: column;
-    justify-content: flex-end;  
+  justify-content: flex-end;
 }
 
 .footer-circle {
   height: auto;
-  background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+  background-image: radial-gradient(
+    circle at bottom,
+    #2154d6 50%,
+    transparent 50%
+  );
   background-size: 100% 200%;
   background-repeat: no-repeat;
   background-position: 0px -58vh;
@@ -383,7 +396,7 @@ em {
 }
 
 .footer-content {
-  border-top: 1px solid #F7F7F7;
+  border-top: 1px solid #f7f7f7;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -391,8 +404,9 @@ em {
   width: 90%;
   max-width: 930px;
   margin: 0px auto;
-  p, a {
-    color: #F7F7F7;
+  p,
+  a {
+    color: #f7f7f7;
     font-size: 12px;
     padding: 0px 5px;
   }
@@ -403,10 +417,10 @@ em {
 
 // Headline
 .log-title {
-    font-family: "november";
-    font-size: 2.5em;
-    line-height: 3.2em;
-    text-align: center;
+  font-family: "november";
+  font-size: 2.5em;
+  line-height: 3.2em;
+  text-align: center;
 }
 
 .imprint-container {
@@ -428,30 +442,30 @@ em {
     p {
       color: #f7f7f7;
       strong {
-      font-family: "space-grotesk-bold";
+        font-family: "space-grotesk-bold";
       }
     }
   }
 }
 
 .nav-item {
-    display: inline-block;
+  display: inline-block;
 }
 
 .nav-item:not(:last-of-type) {
-    margin-right: 0.8em;
-    @include md {
-      margin-right: 1em;
-    }
+  margin-right: 0.8em;
+  @include md {
+    margin-right: 1em;
+  }
 }
 
-.nav-item a{
-    color: black;
-    text-decoration: none;
+.nav-item a {
+  color: black;
+  text-decoration: none;
 }
 
 .tools {
-  background: #F7F7F7;
+  background: #f7f7f7;
   position: relative;
   border-radius: 30px;
   margin: 0rem auto 0px auto;
@@ -501,7 +515,7 @@ em {
         }
       }
       button {
-        background: #2154D6;
+        background: #2154d6;
         height: 50px;
         width: 50px;
         border: none;
@@ -550,11 +564,11 @@ em {
           animation: slideNext 0.75s forwards;
           animation-iteration-count: 1;
         }
-      
+
         @-webkit-keyframes slidePrev {
-            100% {
-              left: 50px;
-            }
+          100% {
+            left: 50px;
+          }
         }
 
         @keyframes slidePrev {
@@ -580,7 +594,7 @@ em {
             left: 11px;
           }
         }
-        
+
         @keyframes slideNext {
           100% {
             left: 11px;
@@ -602,7 +616,7 @@ em {
       }
       &:nth-child(even) {
         button {
-        background: #F1DE00;
+          background: #f1de00;
           a {
             svg {
               path {
@@ -617,7 +631,7 @@ em {
 }
 
 .coming-soon-text {
-  color: #F7F7F7;
+  color: #f7f7f7;
   font-size: 2.5rem;
   line-height: 2.8rem;
   @include md {
@@ -628,11 +642,11 @@ em {
 
 .blog-eye {
   svg {
+    width: auto;
+    height: 100px;
+    @include md {
       width: auto;
-      height: 100px;
-      @include md {
-        width: auto;
-        height: 138px;
-      }
+      height: 138px;
+    }
   }
 }

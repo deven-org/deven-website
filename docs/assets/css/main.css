@@ -101,7 +101,7 @@ main {
 }
 
 .blue-circle {
-  background-image: radial-gradient(circle at top, #2154D6 50%, transparent 50%);
+  background-image: radial-gradient(circle at top, #2154d6 50%, transparent 50%);
 }
 
 .cta-btn {
@@ -110,7 +110,7 @@ main {
   align-items: center;
   margin-top: 30px;
   padding: 14px 20px;
-  background-color: #F1DE00;
+  background-color: #f1de00;
   color: #000;
   cursor: pointer;
   border-radius: 100px;
@@ -185,7 +185,7 @@ main {
   cursor: pointer;
 }
 .nav .nav-links .nav-item a:hover {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 @media (min-width: 768px) {
   .nav .nav-links .nav-item a {
@@ -211,10 +211,10 @@ main {
   }
 }
 .nav .nav-links .subnav-button > a:hover .subnav-chevron {
-  border-color: #8E8E8E;
+  border-color: #8e8e8e;
 }
 .nav .nav-links .subnav-button:not(.hidden) a {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 .nav .nav-links .subnav-button .subnav-container {
   position: absolute;
@@ -270,7 +270,7 @@ main {
   color: white;
 }
 .nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item a:hover {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 @media (min-width: 768px) {
   .nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item a {
@@ -307,13 +307,13 @@ main {
   }
 }
 .nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn:hover::before, .nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn:hover::after {
-  background: #8E8E8E;
+  background: #8e8e8e;
 }
 .nav .nav-links .subnav-button.hidden .subnav-container {
   display: none;
 }
 .nav .nav-links .subnav-button:hover .subnav-button {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 .nav .nav-links .subnav-button.hidden .subnav-chevron {
   margin-top: -3px;
@@ -323,7 +323,7 @@ main {
 .nav .nav-links .subnav-button:not(.hidden) .subnav-chevron {
   margin-top: 2px;
   transform: rotate(-135deg);
-  border-color: #8E8E8E;
+  border-color: #8e8e8e;
 }
 
 .main {
@@ -346,7 +346,7 @@ em {
 
 .footer-circle {
   height: auto;
-  background-image: radial-gradient(circle at bottom, #2154D6 50%, transparent 50%);
+  background-image: radial-gradient(circle at bottom, #2154d6 50%, transparent 50%);
   background-size: 100% 200%;
   background-repeat: no-repeat;
   background-position: 0px -58vh;
@@ -358,7 +358,7 @@ em {
 }
 
 .footer-content {
-  border-top: 1px solid #F7F7F7;
+  border-top: 1px solid #f7f7f7;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -367,8 +367,9 @@ em {
   max-width: 930px;
   margin: 0px auto;
 }
-.footer-content p, .footer-content a {
-  color: #F7F7F7;
+.footer-content p,
+.footer-content a {
+  color: #f7f7f7;
   font-size: 12px;
   padding: 0px 5px;
 }
@@ -426,7 +427,7 @@ em {
 }
 
 .tools {
-  background: #F7F7F7;
+  background: #f7f7f7;
   position: relative;
   border-radius: 30px;
   margin: 0rem auto 0px auto;
@@ -489,7 +490,7 @@ em {
   }
 }
 .tools ul li button {
-  background: #2154D6;
+  background: #2154d6;
   height: 50px;
   width: 50px;
   border: none;
@@ -590,14 +591,14 @@ em {
   }
 }
 .tools ul li:nth-child(even) button {
-  background: #F1DE00;
+  background: #f1de00;
 }
 .tools ul li:nth-child(even) button a svg path {
   fill: black;
 }
 
 .coming-soon-text {
-  color: #F7F7F7;
+  color: #f7f7f7;
   font-size: 2.5rem;
   line-height: 2.8rem;
 }
