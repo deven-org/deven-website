@@ -110,6 +110,7 @@ module.exports = (eleventyConfig) => {
         data: "_data",
         styles: "css",
       },
+      pathPrefix: "/deven-website/",
     };
   }
 };

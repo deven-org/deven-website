@@ -4,8 +4,8 @@
   "description": "This repository contains DEVENs website",
   "main": "docs/index.html",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy build"
+    "start": "NODE_ENV=development eleventy --serve",
+    "build": "NODE_ENV=production eleventy"
   },
   "repository": {
     "type": "git",
