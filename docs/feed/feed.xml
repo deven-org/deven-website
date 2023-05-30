@@ -13,9 +13,9 @@
 		
 		<entry>
 			<title>What is Web Compatibility</title>
-			<link href="https://deven-org.github.io/deven-website/posts/20170110-what-is-web-compatibility/"/>
+			<link href="https://deven-org.github.io/posts/20170110-what-is-web-compatibility/"/>
 			<updated>2017-01-16T00:00:00Z</updated>
-			<id>https://deven-org.github.io/deven-website/posts/20170110-what-is-web-compatibility/</id>
+			<id>https://deven-org.github.io/posts/20170110-what-is-web-compatibility/</id>
 			<content type="html">&lt;p&gt;One week ago, I’ve started my job as Web Compatibility Engineer at Mozilla and it’s been wonderful so far!
 It’s a very welcoming place here in Berlin and my team is superb! So, summed up in one GIF?&lt;/p&gt;
 &lt;img class=&quot;post-item-image&quot; src=&quot;https://media.giphy.com/media/10uJ0IFxlCA06I/giphy.gif&quot; alt=&quot;Hands make a heart&quot; /&gt;
@@ -27,7 +27,7 @@ B: ”Yes, please! Just hop over to &lt;a href=&quot;https://webcompat.com/&quot
 &lt;strong&gt;A: “Oh, great. So you can fix my broken website, right?”&lt;/strong&gt;&lt;br /&gt;
 B: “Well, it depends… Is your bug appearing in one browser, but not another? Then it is a webcompat bug and you should totally report it.”&lt;/p&gt;
 &lt;img class=&quot;post-item-image&quot; src=&quot;https://media.giphy.com/media/c4Nc0v0g15g9G/giphy.gif&quot; alt=&quot;Jake thinks this is interesting.&quot; /&gt;
-&lt;h2 id=&quot;what-is-a-webcompat-bug%3F&quot; tabindex=&quot;-1&quot;&gt;What is a WebCompat bug? &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170110-what-is-web-compatibility/#what-is-a-webcompat-bug%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;what-is-a-webcompat-bug%3F&quot; tabindex=&quot;-1&quot;&gt;What is a WebCompat bug? &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170110-what-is-web-compatibility/#what-is-a-webcompat-bug%3F&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;If you find a bug on a web site, just ask yourself… Is this happening just in one browser or in all of them?
 &lt;strong&gt;If it’s in more than three common browsers, please report the bug to the website youre browsing.&lt;/strong&gt; They’ll be happy about some good pointers how to reproduce the bug and which system / browser you are running etc, because everyone deserves good bug reports. ;)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If this is happening in just one or two browsers, this is pretty likely a WebCompat bug, which you should report over at &lt;a href=&quot;https://webcompat.com/&quot;&gt;webcompat.com&lt;/a&gt;.&lt;/strong&gt;
@@ -42,11 +42,11 @@ This could be e.g. a prefix the website is using, but just for one browser and o
 		
 		<entry>
 			<title>Why do we need Web Compatibility</title>
-			<link href="https://deven-org.github.io/deven-website/posts/20170116-why-do-we-need-web-compatibility/"/>
+			<link href="https://deven-org.github.io/posts/20170116-why-do-we-need-web-compatibility/"/>
 			<updated>2017-01-16T00:00:00Z</updated>
-			<id>https://deven-org.github.io/deven-website/posts/20170116-why-do-we-need-web-compatibility/</id>
+			<id>https://deven-org.github.io/posts/20170116-why-do-we-need-web-compatibility/</id>
 			<content type="html">&lt;p&gt;Last week, I published the first part of this blog post called &lt;a href=&quot;https://zoepage.github.io/posts/20170110-what-is-web-compatibility/index.html&quot;&gt;What is Web Compatibility&lt;/a&gt;? It explained what web compatibility is (Does it work in most browsers? Is the bug appearing in just this one?) and how you can report it.&lt;/p&gt;
-&lt;h3 id=&quot;but-why-do-we-need-web-compatibility%3F&quot; tabindex=&quot;-1&quot;&gt;But why do we need Web Compatibility? &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170116-why-do-we-need-web-compatibility/#but-why-do-we-need-web-compatibility%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;but-why-do-we-need-web-compatibility%3F&quot; tabindex=&quot;-1&quot;&gt;But why do we need Web Compatibility? &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170116-why-do-we-need-web-compatibility/#but-why-do-we-need-web-compatibility%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;There are a so many things I&#39;ve heard from people why they do not report bugs.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -69,12 +69,12 @@ This could be e.g. a prefix the website is using, but just for one browser and o
 &lt;p&gt;&lt;em&gt; If a vendor implements a tool to be able to reload part of a document without making a HTTP request for the full document AND has a very large market share… you get XMLHttpRequest which was created by IE (initially as an activeX mechanism) and that other browsers were forced to implement (with its own twisted history). &lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt; Web SQL and IndexedDB is a twisted history of Apple which had vested interests in another technology.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/karlcow&quot;&gt;@karlcow&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;please%2C-stop...&quot; tabindex=&quot;-1&quot;&gt;Please, stop... &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170116-why-do-we-need-web-compatibility/#please%2C-stop...&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;please%2C-stop...&quot; tabindex=&quot;-1&quot;&gt;Please, stop... &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170116-why-do-we-need-web-compatibility/#please%2C-stop...&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;We need to stop hacking things. Your voice matters to show browser vendors that we need interoperable specs, not different implementations. We as developers need tools that work from the get go in the right way.&lt;/p&gt;
 &lt;img class=&quot;post-item-image&quot; src=&quot;https://media.giphy.com/media/wpoLqr5FT1sY0/giphy.gif&quot; alt=&quot;Dog typing on keyboard.&quot; /&gt;
 &lt;p&gt;Clean code is valuable for everyone. Not just because updating hacked code is hard and you get yourself in a bigger mess everytime you do something. But also, because it takes us forever to find those browser quirks and learn things, we shouldn&#39;t need to know. Just think about how much time and frustration you had to go through, while you fought with those type of bugs?!&lt;/p&gt;
 &lt;p&gt;We should have a web that works for everyone. Make it not just user-, but developer-friendly.&lt;/p&gt;
-&lt;h3 id=&quot;benefits-of-reporting-%3C3&quot; tabindex=&quot;-1&quot;&gt;Benefits of reporting &amp;lt;3 &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170116-why-do-we-need-web-compatibility/#benefits-of-reporting-%3C3&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;benefits-of-reporting-%3C3&quot; tabindex=&quot;-1&quot;&gt;Benefits of reporting &amp;lt;3 &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170116-why-do-we-need-web-compatibility/#benefits-of-reporting-%3C3&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;You might assume the bug was already reported, because other developers do that all the time, right?
 Well... most likely? No. If you ask at a meetup, conference or where ever you meet other developers how many of them reported a bug before, 1-2 hands will go up. &lt;em&gt;If&lt;/em&gt; you&#39;re lucky!&lt;/p&gt;
 &lt;p&gt;And &lt;em&gt;what if&lt;/em&gt; it was &lt;em&gt;already&lt;/em&gt; reported? There is no dragon standing in front of the bug tracker and eat you alive, just because you dared to raise your voice and say a word about that bug...&lt;/p&gt;
@@ -82,7 +82,7 @@ Well... most likely? No. If you ask at a meetup, conference or where ever you me
 &lt;p&gt;&lt;small&gt;(Okay, maybe just a very cute one, who is actually really nice and would love to give you a hug!)&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;The more developers report bugs, the higher is the chance to get all of them covered. PLUS it makes specific bugs so much more visible and the fact how annoyed developers are by &amp;quot;this specific one&amp;quot;, so browser vendors will prioritize it higher and fix it sooner.&lt;/p&gt;
 &lt;p&gt;Your experience, knowledge and voice is what is the most important thing. Browser vendors need you! Your input. You are the ones building the web, shaping up the web.&lt;/p&gt;
-&lt;h3 id=&quot;how-can-i-help-beyond-just-reporting-bugs%3F&quot; tabindex=&quot;-1&quot;&gt;How can I help beyond just reporting bugs? &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170116-why-do-we-need-web-compatibility/#how-can-i-help-beyond-just-reporting-bugs%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;how-can-i-help-beyond-just-reporting-bugs%3F&quot; tabindex=&quot;-1&quot;&gt;How can I help beyond just reporting bugs? &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170116-why-do-we-need-web-compatibility/#how-can-i-help-beyond-just-reporting-bugs%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;With reporting, you already did the biggest part on helping make the web accessible for everyone.
 But you can help also with checking out bugs, finding solutions or share your knowledge... You can find more about the how at &lt;a href=&quot;https://webcompat.com/contributors&quot;&gt;https://webcompat.com/contributors&lt;/a&gt;.&lt;/p&gt;
 &lt;img class=&quot;post-item-image&quot; src=&quot;https://media.giphy.com/media/tnivTK2URZm7e/giphy.gif&quot; alt=&quot;Care bears sending hearts out of their bellies.&quot; /&gt;
@@ -93,9 +93,9 @@ But you can help also with checking out bugs, finding solutions or share your kn
 		
 		<entry>
 			<title>Key to Productivity</title>
-			<link href="https://deven-org.github.io/deven-website/posts/20170404-key-to-productivity/"/>
+			<link href="https://deven-org.github.io/posts/20170404-key-to-productivity/"/>
 			<updated>2017-04-04T00:00:00Z</updated>
-			<id>https://deven-org.github.io/deven-website/posts/20170404-key-to-productivity/</id>
+			<id>https://deven-org.github.io/posts/20170404-key-to-productivity/</id>
 			<content type="html">&lt;p&gt;One of the first things people learn about me, I have a pretty busy life.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I am a engineer who works full-time on Firefox.&lt;/li&gt;
@@ -113,22 +113,22 @@ Keeping up with the little ones schedule and taking care of all her appointments
 &lt;p&gt;This all feels like an everyday fight against a hydra. Everytime one todo is done, it seems like two new ones appear. But this is also a life I chose and most of the times I am pretty happy with it.&lt;/p&gt;
 &lt;p&gt;So, how do I deal with all of this without being burned out in a short amount of time? Well... it is not easy, but its somekind of doable. After three burnouts in my 20s (before I had a kid) I changed a lot how I handeled things.
 Following, I&#39;ll mention the things that helped me the most.&lt;/p&gt;
-&lt;h2 id=&quot;organize-%26%26-plan-ahead&quot; tabindex=&quot;-1&quot;&gt;Organize &amp;amp;&amp;amp; plan ahead &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170404-key-to-productivity/#organize-%26%26-plan-ahead&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;organize-%26%26-plan-ahead&quot; tabindex=&quot;-1&quot;&gt;Organize &amp;amp;&amp;amp; plan ahead &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170404-key-to-productivity/#organize-%26%26-plan-ahead&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;img class=&quot;post-item-image&quot; src=&quot;https://media.giphy.com/media/xUOxf5B4tGwIh6WOw8/giphy-downsized.gif&quot; alt=&quot;Planner for 2017&quot; /&gt;
 &lt;p&gt;Lists, notes and a calender can be a life saver. Start with the &amp;quot;bigger picture&amp;quot;. What lays ahead of you in the next 3 - 6 months? What do you need to do to make those things happen? Are there any deadlines you should be aware of? Make a plan, todo list and a schedule that&#39;ll help you navigate through the next few months.&lt;/p&gt;
 &lt;p&gt;The go on with the &amp;quot;smaller view&amp;quot;. Grab the next tasks or the ones that have the closest deadlines. If your time is short, don&#39;t be scared of downgrading tasks and putting them at the end of your list. They might become obsolete or you&#39;ll have time for it later or it becomes more pressuing and gets a bump up on your list. (This is also what makes you flexible.) Just make sure to work focused on one task after another.&lt;/p&gt;
-&lt;h2 id=&quot;stick-to-your-hours-%26%26-decisions&quot; tabindex=&quot;-1&quot;&gt;Stick to your hours &amp;amp;&amp;amp; decisions &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170404-key-to-productivity/#stick-to-your-hours-%26%26-decisions&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;stick-to-your-hours-%26%26-decisions&quot; tabindex=&quot;-1&quot;&gt;Stick to your hours &amp;amp;&amp;amp; decisions &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170404-key-to-productivity/#stick-to-your-hours-%26%26-decisions&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;img class=&quot;post-item-image&quot; src=&quot;https://media.giphy.com/media/l0MYGtCMbPTYWOzaU/giphy-tumblr.gif&quot; alt=&quot;Sherlock lookig at his watch&quot; /&gt;
 &lt;p&gt;When you create a loose schedule it&#39;s all about balance. Make sure to add time for all important todos, but also for this thing called life... as life happens to all of us from time to time, right? Don&#39;t cut hours from your family time on a regular basis just because work comes up. Schedule more time in advance or leave it, but stick to your decisions.&lt;/p&gt;
 &lt;p&gt;Being really productive is not about working 24/7 or being available all the time. It’s about using your time right. Your are working? Work! Stop slacking on Youtube or Facebook. If you take a break like a chat with your colleagues allow it to yourself. Don&#39;t stress about it. But be aware of your time, the break and enjoy it.&lt;/p&gt;
-&lt;h2 id=&quot;let-it-go...&quot; tabindex=&quot;-1&quot;&gt;Let it go... &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170404-key-to-productivity/#let-it-go...&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;let-it-go...&quot; tabindex=&quot;-1&quot;&gt;Let it go... &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170404-key-to-productivity/#let-it-go...&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Enough is enough. Stop overthinging it. F*ck perfection. Ask for help. Stop blaming others or you. Just learn from it, find a solution and move on. Often you don&#39;t need to be the only person who works on the task. Document it and let it go if you have to.&lt;/p&gt;
-&lt;h2 id=&quot;know-your-limits!&quot; tabindex=&quot;-1&quot;&gt;Know your limits! &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170404-key-to-productivity/#know-your-limits!&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;know-your-limits!&quot; tabindex=&quot;-1&quot;&gt;Know your limits! &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170404-key-to-productivity/#know-your-limits!&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;img class=&quot;post-item-image&quot; src=&quot;https://media.giphy.com/media/yxZlvexI0DyHI2Dyrf/giphy.gif&quot; alt=&quot;Power Puff Girl with circle eyes&quot; /&gt;
 &lt;p&gt;How much sleep do you need to feel creative, productive, good about yourself?
 How are you making sure you do hydrate yourself enough during the day? Did you eat something healthy? Or greasy because you need it right now? Which workout works for you or do you prefer to take a long bath? Hanging out with friends or enjoying alone time?&lt;/p&gt;
 &lt;p&gt;Be aware what recharges your batteries, physically AND emotionally. Don&#39;t compromise on that or even cut time down. You might increase your productivity for some time but its just for a short run.&lt;/p&gt;
-&lt;h2 id=&quot;learn-to-say-no&quot; tabindex=&quot;-1&quot;&gt;Learn to say NO &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/deven-website/posts/20170404-key-to-productivity/#learn-to-say-no&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;learn-to-say-no&quot; tabindex=&quot;-1&quot;&gt;Learn to say NO &lt;a class=&quot;bookmark&quot; href=&quot;https://deven-org.github.io/posts/20170404-key-to-productivity/#learn-to-say-no&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;img class=&quot;post-item-image&quot; src=&quot;https://media.giphy.com/media/EVbEdEW3kuu0o/giphy.gif&quot; alt=&quot;David Tennant as Doctor Who shakes his head.&quot; /&gt;
 &lt;p&gt;Don&#39;t work on demand which means schedule fixed times for replying to messages like mails or direct messages. Review your notification settings. A thing I&#39;ve learned in the past few years is that there is no reply so important to drop whatever you do right now.&lt;/p&gt;
 &lt;p&gt;You don&#39;t need to save this world all by yourself. Learn to say no. Know who you can count on. Ask for help. Delegate requests to other people who might be intrested and have resources. But mostly important check in with yourself... Do you have the time, the energy or see any benefit for you before saying yes. This might sound selfish but as a close friend once told me &amp;quot;You have to take care of yourself, before you can take care of others.&amp;quot;... And he is right.&lt;/p&gt;

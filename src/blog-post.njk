@@ -4,7 +4,10 @@ tags:
   - nav
 navtitle: Blog
 title: Blog
+templateClass: tmpl-blog
 ---
+
+{% from "./_includes/macros/postExcerpt.njk" import postExcerpt %}
 
 <div class="blog">
   <div class="blog-eye">
@@ -15,28 +18,7 @@ title: Blog
   </div>
   <div class="blog-posts-wrapper">
     {% for post in collections.posts %}
-
-      <div class="blog-post-tiles">
-        <div class="post-tile-img">
-          <a href={{post.url}}>
-            <img src="https://placehold.co/400" alt="author img"/>
-          </a>
-        </div>
-
-        <div class="post-content">
-          <div class="author-section">
-            <img src="https://placehold.co/400" alt="author img"/>
-            <p>{{ post.data.author }}</p>
-          </div>
-
-          <div class="post-title-section">
-            <h3>
-              <a href={{post.url}}>{{ post.data.title }}</a>
-            </h3>
-          </div>
-
-        </div>
-      </div>
+      {{ postExcerpt(postUrl=post.url, postTitle=post.data.title, postImgSrc="https://placehold.co/400", postImgAlt=post.data.title, authorName=post.data.author, authorImgSrc="https://placehold.co/400", authorImgAlt=post.data.author) }}
     {% endfor %}
   </div>
   <div class="cta-btn">

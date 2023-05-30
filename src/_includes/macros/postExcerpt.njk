@@ -1,0 +1,18 @@
+{% macro postExcerpt(postUrl, postTitle, postImgSrc, postImgAlt, authorName, authorImgSrc, authorImgAlt ) %}
+<div class="blog-post-tiles">
+  <div class="post-tile-img">
+    <a href="{{ postUrl }}">
+      <img src="{{ postImgSrc }}" alt="{{ postImgAlt }}" />
+    </a>
+  </div>
+  <div class="post-content">
+    <div class="author-section">
+      <img src="{{ authorImgSrc }}" alt="{{ authorImgAlt }}" />
+      <p>{{ authorName }}</p>
+    </div>
+    <div class="post-title-section">
+        <h3><a href={{ postUrl }}>{{ postTitle }}</a></h3>
+    </div>
+  </div>
+</div>
+{% endmacro %}
