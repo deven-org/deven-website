@@ -2,26 +2,27 @@
 permalink: feed/feed.xml
 excludeFromSitemap: true
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
 	<title>{{ metadata.title }}</title>
-	<subtitle>{{ metadata.feed.subtitle }}</subtitle>
+	<description>{{ metadata.feed.subtitle }}</description>
 	<link href="{{ metadata.feed.url }}" rel="self"/>
 	<link href="{{ metadata.url }}"/>
-	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
-	<id>{{ metadata.feed.id }}</id>
-	<author>
+	<pubDate>{{ collections.posts | rssLastUpdatedDate }}</pubDate>
+	<guid>{{ metadata.feed.id }}</guid>
+	<managingEditor>
 		<name>{{ metadata.author.name }}</name>
-		<email>{{ metadata.author.email }}</email>
-	</author>
+	</managingEditor>
 	{%- for post in collections.posts %}
 		{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-		<entry>
+		<item>
 			<title>{{ post.data.title }}</title>
 			<link href="{{ absolutePostUrl }}"/>
-			<updated>{{ post.date | rssDate }}</updated>
-			<id>{{ absolutePostUrl }}</id>
-			<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-		</entry>
+			<pubDate>{{ post.date | rssDate }}</pubDate>
+			<guid>{{ absolutePostUrl }}</guid>
+			<description type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+		</item>
 	{%- endfor %}
-</feed>
+</channel>
+</rss>
