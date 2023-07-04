@@ -1,13 +1,13 @@
 {
   "title": "DEVEN - Developer Enhancement",
-  "url": "https://deven-org.github.io/deven-website/",
+  "url": "https://thedeven.org/",
   "description": "Developer standards and best practices.",
   "feed": {
     "subtitle": "Developer for Developer to make your (work) life easier!",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "url": "https://deven-org.github.io/deven-website/feed/feed.xml",
-    "id": "https://deven-org.github.io/deven-website/"
+    "url": "https://thedeven.org/feed/feed.xml",
+    "id": "https://thedeven.org/"
   },
   "author": {
     "name": "Ola Gasidlo-Brändel",
