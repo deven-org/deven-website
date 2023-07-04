@@ -81,36 +81,16 @@ module.exports = (eleventyConfig) => {
       };
     },
   });
-
-  if (
-    process.env.NODE_ENV !== "production" ||
-    process.env.ELEVENTY_SERVERLESS
-  ) {
-    return {
-      templateFormats: ["md", "html", "njk"],
-      markdownTemplateEngine: "liquid",
-      dataTemplateEngine: "njk",
-      dir: {
-        input: "src",
-        output: "docs",
-        includes: "_includes",
-        data: "_data",
-        styles: "css",
-      },
-    };
-  } else {
-    return {
-      templateFormats: ["md", "html", "njk"],
-      markdownTemplateEngine: "liquid",
-      dataTemplateEngine: "njk",
-      dir: {
-        input: "src",
-        output: "docs",
-        includes: "_includes",
-        data: "_data",
-        styles: "css",
-      },
-      pathPrefix: "/deven-website/",
-    };
-  }
+  return {
+    templateFormats: ["md", "html", "njk"],
+    markdownTemplateEngine: "liquid",
+    dataTemplateEngine: "njk",
+    dir: {
+      input: "src",
+      output: "docs",
+      includes: "_includes",
+      data: "_data",
+      styles: "css",
+    },
+  };
 };
