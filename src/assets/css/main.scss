@@ -1,30 +1,30 @@
 @font-face {
-  font-family: "november";
+  font-family: 'november';
   font-style: normal;
   font-weight: 500;
   font-display: auto;
-  src: url("../fonts/november.ttf");
+  src: url('../fonts/november.ttf');
 }
 @font-face {
-  font-family: "AVF";
+  font-family: 'AVF';
   font-style: light;
   font-weight: 300;
   font-display: auto;
-  src: url("../fonts/AVF.ttf");
+  src: url('../fonts/AVF.ttf');
 }
 @font-face {
-  font-family: "space-grotesk-light";
+  font-family: 'space-grotesk-light';
   font-style: normal;
   font-weight: 300;
   font-display: auto;
-  src: url("../fonts/space-grotesk.ttf");
+  src: url('../fonts/space-grotesk.ttf');
 }
 @font-face {
-  font-family: "space-grotesk-bold";
+  font-family: 'space-grotesk-bold';
   font-style: normal;
   font-weight: 700;
   font-display: auto;
-  src: url("../fonts/space-grotesk.ttf");
+  src: url('../fonts/space-grotesk.ttf');
 }
 
 // Small tablets and large smartphones (landscape view)
@@ -72,7 +72,7 @@ body {
   margin: 0 auto;
   line-height: 1.8em;
   font-size: 1em;
-  font-family: "AVF";
+  font-family: 'AVF';
 }
 
 .content-wrapper {
@@ -162,7 +162,7 @@ main {
 }
 
 .cta-btn a {
-  font-family: "space-grotesk-bold";
+  font-family: 'space-grotesk-bold';
   color: black;
   text-decoration: none;
   font-size: 16px;
@@ -195,7 +195,7 @@ main {
     align-items: center;
     .nav-item {
       display: inline-block;
-      font-family: "space-grotesk-light";
+      font-family: 'space-grotesk-light';
       .nav .nav-links .nav-item {
         margin: 0px 15px;
       }
@@ -203,10 +203,10 @@ main {
         margin: 0px 15px;
       }
       &.nav-item-active {
-        font-family: "space-grotesk-bold";
+        font-family: 'space-grotesk-bold';
       }
       &.logo {
-        font-family: "november";
+        font-family: 'november';
         a {
           font-size: 22px;
           @include md {
@@ -284,9 +284,9 @@ main {
               display: inline-block;
               margin-right: 8px;
               font-size: 10px;
-              font-family: "space-grotesk-light";
+              font-family: 'space-grotesk-light';
               &.subnav-item-active {
-                font-family: "space-grotesk-bold";
+                font-family: 'space-grotesk-bold';
               }
               @include md {
                 margin-right: 2em;
@@ -314,7 +314,7 @@ main {
             margin-left: 0.5rem;
             &::before,
             &::after {
-              content: "";
+              content: '';
               position: absolute;
               height: 1px;
               width: 100%;
@@ -417,7 +417,7 @@ em {
 
 // Headline
 .log-title {
-  font-family: "november";
+  font-family: 'november';
   font-size: 2.5em;
   line-height: 3.2em;
   text-align: center;
@@ -435,14 +435,14 @@ em {
     align-items: center;
     h1 {
       color: #f7f7f7;
-      font-family: "space-grotesk-bold";
+      font-family: 'space-grotesk-bold';
       font-size: 25px;
       padding-bottom: 20px;
     }
     p {
       color: #f7f7f7;
       strong {
-        font-family: "space-grotesk-bold";
+        font-family: 'space-grotesk-bold';
       }
     }
   }
@@ -478,7 +478,7 @@ em {
     padding: 2rem 5rem;
   }
   h2 {
-    font-family: "november";
+    font-family: 'november';
     font-size: 1.8em;
     line-height: 1.5em;
     text-align: center;
@@ -497,7 +497,7 @@ em {
       justify-content: space-between;
       align-items: center;
       h3 {
-        font-family: "space-grotesk-bold";
+        font-family: 'space-grotesk-bold';
         font-size: 1.5rem;
         line-height: 1.7rem;
         text-align: left;
@@ -649,4 +649,18 @@ em {
       height: 138px;
     }
   }
+}
+
+/* 
+ * Utility class to hide content visually while keeping it screen reader-accessible.
+ * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
+ */
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
