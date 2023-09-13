@@ -457,140 +457,95 @@ em {
 .tools ul li {
   padding: 20px 0px;
   border-bottom: 1px solid #000000;
+}
+.tools ul li a {
   display: flex;
+  color: inherit;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 }
-.tools ul li h3 {
+.tools ul li a h3 {
   font-family: "space-grotesk-bold";
   font-size: 1.5rem;
   line-height: 1.7rem;
   text-align: left;
 }
 @media (min-width: 768px) {
-  .tools ul li h3 {
+  .tools ul li a h3 {
     font-size: 1.7rem;
     line-height: 2.7rem;
   }
 }
 @media (min-width: 992px) {
-  .tools ul li h3 {
+  .tools ul li a h3 {
     font-size: 2.1rem;
     line-height: 2.9rem;
   }
 }
 @media (min-width: 1200px) {
-  .tools ul li h3 {
+  .tools ul li a h3 {
     font-size: 2.7rem;
     line-height: 3.4rem;
   }
 }
-.tools ul li button {
+.tools ul li a .arrow-circle {
   background: #2154d6;
+  color: #f7f7f7;
   height: 50px;
   width: 50px;
   border: none;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
   position: relative;
 }
 @media (min-width: 768px) {
-  .tools ul li button {
+  .tools ul li a .arrow-circle {
     height: 75px;
     width: 75px;
   }
 }
-.tools ul li button a {
+.tools ul li a .arrow-circle .animated-arrow {
   position: relative;
-  width: 100%;
+  width: 200%;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
-.tools ul li button a:hover {
-  text-decoration: underline;
+.tools ul li a:hover {
+  color: #8e8e8e;
 }
-.tools ul li button a svg {
-  position: absolute;
-}
-.tools ul li button a #slidePrev {
-  left: 11px;
-}
-@media (min-width: 768px) {
-  .tools ul li button a #slidePrev {
-    left: 24px;
-  }
-}
-.tools ul li button a #slideNext {
-  left: -50px;
-}
-@media (min-width: 768px) {
-  .tools ul li button a #slideNext {
-    left: -25px;
-  }
-}
-.tools ul li button:hover > a #slidePrev {
-  -webkit-animation: slidePrev 0.75s forwards;
-  animation: slidePrev 0.75s forwards;
+.tools ul li a:hover .animated-arrow {
+  -webkit-animation: slideArrows 0.75s forwards;
+  animation: slideArrows 0.75s forwards;
   animation-iteration-count: 1;
 }
-.tools ul li button:hover > a #slideNext {
-  -webkit-animation: slideNext 0.75s forwards;
-  animation: slideNext 0.75s forwards;
-  animation-iteration-count: 1;
+@media (prefers-reduced-motion: reduce) {
+  .tools ul li a:hover .animated-arrow {
+    -webkit-animation: none;
+    animation: none;
+  }
 }
-@-webkit-keyframes slidePrev {
+@-webkit-keyframes slideArrows {
+  0% {
+    transform: translateX(-50%);
+  }
   100% {
-    left: 50px;
+    transform: translateX(0);
   }
 }
-@keyframes slidePrev {
+@keyframes slideArrows {
+  0% {
+    transform: translateX(-50%);
+  }
   100% {
-    left: 50px;
+    transform: translateX(0);
   }
 }
-@media (min-width: 768px) {
-  @-webkit-keyframes slidePrev {
-    100% {
-      left: 70px;
-    }
-  }
-  @keyframes slidePrev {
-    100% {
-      left: 70px;
-    }
-  }
-}
-@-webkit-keyframes slideNext {
-  100% {
-    left: 11px;
-  }
-}
-@keyframes slideNext {
-  100% {
-    left: 11px;
-  }
-}
-@media (min-width: 768px) {
-  @-webkit-keyframes slideNext {
-    100% {
-      left: 24px;
-    }
-  }
-  @keyframes slideNext {
-    100% {
-      left: 24px;
-    }
-  }
-}
-.tools ul li:nth-child(even) button {
+.tools ul li:nth-child(even) .arrow-circle {
   background: #f1de00;
-}
-.tools ul li:nth-child(even) button a svg path {
-  fill: black;
+  color: blacK;
 }
 
 .coming-soon-text {
