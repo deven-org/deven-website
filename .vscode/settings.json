@@ -3,5 +3,9 @@
   "editor.tabSize": 2,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "search.exclude": {
+    "/_site": true,
+    "/docs": true
   }
 }

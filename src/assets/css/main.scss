@@ -181,7 +181,6 @@ main {
 
 .nav {
   max-width: 800px;
-  overflow: hidden;
   margin: 0px auto;
   .nav-links {
     display: flex;
@@ -214,7 +213,14 @@ main {
           }
         }
       }
-      a {
+      a,
+      .subnav-toggle {
+        padding: 0;
+        margin: 0;
+        font-family: inherit;
+        border: none;
+        background-color: transparent;
+        display: block;
         color: #111111;
         text-decoration: none;
         font-size: 12px;
@@ -227,13 +233,15 @@ main {
         }
       }
     }
-    .subnav-button {
-      > a {
+    .subnav {
+      position: relative;
+
+      > .subnav-toggle {
         .subnav-chevron {
           margin-left: 5px;
           margin-top: -3px;
-          border-right: 1px solid black;
-          border-bottom: 1px solid black;
+          border-right: 1px solid currentColor;
+          border-bottom: 1px solid currentColor;
           width: 6px;
           height: 6px;
           transform: rotate(45deg);
@@ -241,122 +249,110 @@ main {
           vertical-align: middle;
           @include md {
             margin-left: 8px;
-            border-right: 2px solid black;
-            border-bottom: 2px solid black;
+            border-right: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
           }
         }
-        &:hover .subnav-chevron {
-          border-color: #8e8e8e;
+
+        &[aria-expanded='true'] {
+          color: #8e8e8e;
+
+          .subnav-chevron {
+            margin-top: 2px;
+            transform: rotate(-135deg);
+          }
         }
-      }
-      &:not(.hidden) a {
-        color: #8e8e8e;
-      }
-      .subnav-container {
-        position: absolute;
-        transform: rotate(7deg);
-        margin: 2rem 0 0 -1.3rem;
-        height: 1.8rem;
-        padding-top: 30px;
-        top: 0px;
-        display: flex;
-        @include md {
-          padding-top: 35px;
-        }
-        &.hidden {
+
+        &[aria-expanded='false'] + .subnav-container {
           display: none;
         }
-        .subnav-content {
-          background: #111111;
-          display: flex;
-          flex-direction: row;
-          border-radius: 30px;
-          padding: 5px 0.8rem;
-          margin: 1rem auto 2rem;
-          justify-content: center;
-          height: 40px;
-          align-items: center;
-          @include md {
-            padding: 0px 2.4rem;
-          }
-          ul {
-            li.subnav-item {
-              display: inline-block;
-              margin-right: 8px;
-              font-size: 10px;
-              font-family: 'space-grotesk-light';
-              &.subnav-item-active {
-                font-family: 'space-grotesk-bold';
-              }
-              @include md {
-                margin-right: 2em;
-              }
-              &:last-of-type {
-                margin-right: 0;
-              }
-              a {
-                color: white;
-                &:hover {
-                  color: #8e8e8e;
-                }
-                @include md {
-                  font-size: 12px;
-                }
-              }
-            }
-          }
-          .close-btn {
-            width: 12px;
-            height: 12px;
-            overflow: hidden;
-            position: relative;
-            cursor: pointer;
-            margin-left: 0.5rem;
-            &::before,
-            &::after {
-              content: '';
-              position: absolute;
-              height: 1px;
-              width: 100%;
-              top: 50%;
-              left: 0;
-              margin-top: -1px;
-              background: white;
-            }
-            &::before {
-              transform: rotate(45deg);
-            }
-            &::after {
-              transform: rotate(-45deg);
+      }
+
+      .subnav-container {
+        position: absolute;
+        transform-origin: 0% 0%;
+        transform: rotate(7deg);
+        top: 100%;
+        left: -0.8rem;
+
+        @include md {
+          left: -2.4rem;
+        }
+
+        background: #111111;
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+        padding: 5px 0.8rem;
+        justify-content: center;
+        height: 40px;
+        align-items: center;
+        @include md {
+          padding: 0px 2.4rem;
+        }
+        ul {
+          white-space: nowrap;
+          li.subnav-item {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 10px;
+            font-family: 'space-grotesk-light';
+            &.subnav-item-active {
+              font-family: 'space-grotesk-bold';
             }
             @include md {
-              margin-left: 1.5rem;
+              margin-right: 2em;
             }
-            &:hover {
-              &::before,
-              &::after {
-                background: #8e8e8e;
+            &:last-of-type {
+              margin-right: 0;
+            }
+            a {
+              color: white;
+              &:hover {
+                color: #8e8e8e;
+              }
+              @include md {
+                font-size: 12px;
               }
             }
           }
         }
-      }
-      &.hidden .subnav-container {
-        display: none;
-      }
-      &:hover .subnav-button {
-        color: #8e8e8e;
-      }
-      &.hidden .subnav-chevron {
-        margin-top: -3px;
-        transform: rotate(45deg);
-        border-color: black;
-      }
-
-      &:not(.hidden) .subnav-chevron {
-        margin-top: 2px;
-        transform: rotate(-135deg);
-        border-color: #8e8e8e;
+        .close-btn {
+          width: 12px;
+          height: 12px;
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+          background: transparent;
+          margin: 0 0 0 0.5rem;
+          border: none;
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            margin-top: -1px;
+            background: white;
+          }
+          &::before {
+            transform: rotate(45deg);
+          }
+          &::after {
+            transform: rotate(-45deg);
+          }
+          @include md {
+            margin-left: 1.5rem;
+          }
+          &:hover {
+            &::before,
+            &::after {
+              background: #8e8e8e;
+            }
+          }
+        }
       }
     }
   }

@@ -25,27 +25,25 @@
             <li class="nav-item logo">
               <a href="/">Deven</a>
             </li>
-            <li class="nav-item subnav-button hidden" id="subnav" onclick="toggleSubnav()">
-              <a>Discover<div class="subnav-chevron"></div>
-              </a>
+            <li class="nav-item subnav" id="subnav" >
+              <button class="subnav-toggle" id="subnav-toggle" aria-expanded="false" onclick="toggleSubnav()">Discover<div class="subnav-chevron"></div>
+              </button>
               <div class="subnav-container">
-                <div class="subnav-content" id="subnav">
-                  <ul>
-                    <li class="subnav-item">
-                      <a href="/#about-deven">About</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#tools">Tools</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#team">Team</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#latest-news">Latest News</a>
-                    </li>
-                  </ul>
-                  <div class="close-btn" onclick="closeSubnav()"></div>
-                </div>
+                <ul>
+                  <li class="subnav-item">
+                    <a href="/#about-deven">About</a>
+                  </li>
+                  <li class="subnav-item">
+                    <a href="/#tools">Tools</a>
+                  </li>
+                  <li class="subnav-item">
+                    <a href="/#team">Team</a>
+                  </li>
+                  <li class="subnav-item">
+                    <a href="/#latest-news">Latest News</a>
+                  </li>
+                </ul>
+                <button class="close-btn" onclick="closeSubnav()"><span class="visually-hidden">Close Discover menu</span></button>
               </div>
             </li>
                 <li class="nav-item" >
@@ -275,31 +273,35 @@
         .getElementById('copyright')
         .innerHTML = `&copy DEVEN ${new Date().getFullYear()}. All rights reserved.`;
 
-      function toggleSubnav() {
-        var subnavLink = document.querySelector("#subnav a");
-        var subnav = document.getElementById("subnav");
+      // Subnav handling
+      //
+      // Since we have to update aria-expanded anyway, we can use it as our
+      // source of truth for the state (in JS and CSS).
 
-        document.addEventListener('click', function (event) {
-          const clickedInside = subnavLink.contains(event.target);
-          if (clickedInside) {
-            subnav
-              .classList
-              .remove("hidden");
-          } else {
-            subnav
-              .classList
-              .add("hidden");
-          }
-        });
+      document.addEventListener('click', function (event) {
+        // listen to outside clicks (only) to close subnav automatically
+        const isOutside = !document.getElementById("subnav").contains(event.target);
+        const subnavToggle = document.getElementById('subnav-toggle');
+
+        if (isOutside && subnavToggle.getAttribute("aria-expanded") !== "false") {
+          subnavToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      function toggleSubnav() {
+        const subnavToggle = document.getElementById('subnav-toggle');
+
+        if (subnavToggle.getAttribute("aria-expanded") === "false") {
+          subnavToggle.setAttribute("aria-expanded", "true");
+        } else {
+          subnavToggle.setAttribute("aria-expanded", "false");
+        }
       }
+
       function closeSubnav() {
-        document.addEventListener('click', function (event) {
-          var closeBtn = document.querySelector("#subnav .close-btn");
-          var subnavContainer = document.querySelector("#subnav");
-          subnavContainer
-            .classList
-            .add("hidden");
-        });
+        document
+          .getElementById('subnav-toggle')
+          .setAttribute("aria-expanded", "false");
       }
     </script>
 

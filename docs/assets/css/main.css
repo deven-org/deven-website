@@ -138,7 +138,6 @@ main {
 
 .nav {
   max-width: 800px;
-  overflow: hidden;
   margin: 0px auto;
 }
 .nav .nav-links {
@@ -178,25 +177,37 @@ main {
     font-size: 26px;
   }
 }
-.nav .nav-links .nav-item a {
+.nav .nav-links .nav-item a,
+.nav .nav-links .nav-item .subnav-toggle {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  display: block;
   color: #111111;
   text-decoration: none;
   font-size: 12px;
   cursor: pointer;
 }
-.nav .nav-links .nav-item a:hover {
+.nav .nav-links .nav-item a:hover,
+.nav .nav-links .nav-item .subnav-toggle:hover {
   color: #8e8e8e;
 }
 @media (min-width: 768px) {
-  .nav .nav-links .nav-item a {
+  .nav .nav-links .nav-item a,
+  .nav .nav-links .nav-item .subnav-toggle {
     font-size: 1rem;
   }
 }
-.nav .nav-links .subnav-button > a .subnav-chevron {
+.nav .nav-links .subnav {
+  position: relative;
+}
+.nav .nav-links .subnav > .subnav-toggle .subnav-chevron {
   margin-left: 5px;
   margin-top: -3px;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   width: 6px;
   height: 6px;
   transform: rotate(45deg);
@@ -204,88 +215,89 @@ main {
   vertical-align: middle;
 }
 @media (min-width: 768px) {
-  .nav .nav-links .subnav-button > a .subnav-chevron {
+  .nav .nav-links .subnav > .subnav-toggle .subnav-chevron {
     margin-left: 8px;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
   }
 }
-.nav .nav-links .subnav-button > a:hover .subnav-chevron {
-  border-color: #8e8e8e;
-}
-.nav .nav-links .subnav-button:not(.hidden) a {
+.nav .nav-links .subnav > .subnav-toggle[aria-expanded=true] {
   color: #8e8e8e;
 }
-.nav .nav-links .subnav-button .subnav-container {
-  position: absolute;
-  transform: rotate(7deg);
-  margin: 2rem 0 0 -1.3rem;
-  height: 1.8rem;
-  padding-top: 30px;
-  top: 0px;
-  display: flex;
+.nav .nav-links .subnav > .subnav-toggle[aria-expanded=true] .subnav-chevron {
+  margin-top: 2px;
+  transform: rotate(-135deg);
 }
-@media (min-width: 768px) {
-  .nav .nav-links .subnav-button .subnav-container {
-    padding-top: 35px;
-  }
-}
-.nav .nav-links .subnav-button .subnav-container.hidden {
+.nav .nav-links .subnav > .subnav-toggle[aria-expanded=false] + .subnav-container {
   display: none;
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content {
+.nav .nav-links .subnav .subnav-container {
+  position: absolute;
+  transform-origin: 0% 0%;
+  transform: rotate(7deg);
+  top: 100%;
+  left: -0.8rem;
   background: #111111;
   display: flex;
   flex-direction: row;
   border-radius: 30px;
   padding: 5px 0.8rem;
-  margin: 1rem auto 2rem;
   justify-content: center;
   height: 40px;
   align-items: center;
 }
 @media (min-width: 768px) {
-  .nav .nav-links .subnav-button .subnav-container .subnav-content {
+  .nav .nav-links .subnav .subnav-container {
+    left: -2.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .nav .nav-links .subnav .subnav-container {
     padding: 0px 2.4rem;
   }
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item {
+.nav .nav-links .subnav .subnav-container ul {
+  white-space: nowrap;
+}
+.nav .nav-links .subnav .subnav-container ul li.subnav-item {
   display: inline-block;
   margin-right: 8px;
   font-size: 10px;
   font-family: "space-grotesk-light";
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item.subnav-item-active {
+.nav .nav-links .subnav .subnav-container ul li.subnav-item.subnav-item-active {
   font-family: "space-grotesk-bold";
 }
 @media (min-width: 768px) {
-  .nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item {
+  .nav .nav-links .subnav .subnav-container ul li.subnav-item {
     margin-right: 2em;
   }
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item:last-of-type {
+.nav .nav-links .subnav .subnav-container ul li.subnav-item:last-of-type {
   margin-right: 0;
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item a {
+.nav .nav-links .subnav .subnav-container ul li.subnav-item a {
   color: white;
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item a:hover {
+.nav .nav-links .subnav .subnav-container ul li.subnav-item a:hover {
   color: #8e8e8e;
 }
 @media (min-width: 768px) {
-  .nav .nav-links .subnav-button .subnav-container .subnav-content ul li.subnav-item a {
+  .nav .nav-links .subnav .subnav-container ul li.subnav-item a {
     font-size: 12px;
   }
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn {
+.nav .nav-links .subnav .subnav-container .close-btn {
   width: 12px;
   height: 12px;
-  overflow: hidden;
   position: relative;
   cursor: pointer;
-  margin-left: 0.5rem;
+  padding: 0;
+  background: transparent;
+  margin: 0 0 0 0.5rem;
+  border: none;
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn::before, .nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn::after {
+.nav .nav-links .subnav .subnav-container .close-btn::before, .nav .nav-links .subnav .subnav-container .close-btn::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -295,35 +307,19 @@ main {
   margin-top: -1px;
   background: white;
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn::before {
+.nav .nav-links .subnav .subnav-container .close-btn::before {
   transform: rotate(45deg);
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn::after {
+.nav .nav-links .subnav .subnav-container .close-btn::after {
   transform: rotate(-45deg);
 }
 @media (min-width: 768px) {
-  .nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn {
+  .nav .nav-links .subnav .subnav-container .close-btn {
     margin-left: 1.5rem;
   }
 }
-.nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn:hover::before, .nav .nav-links .subnav-button .subnav-container .subnav-content .close-btn:hover::after {
+.nav .nav-links .subnav .subnav-container .close-btn:hover::before, .nav .nav-links .subnav .subnav-container .close-btn:hover::after {
   background: #8e8e8e;
-}
-.nav .nav-links .subnav-button.hidden .subnav-container {
-  display: none;
-}
-.nav .nav-links .subnav-button:hover .subnav-button {
-  color: #8e8e8e;
-}
-.nav .nav-links .subnav-button.hidden .subnav-chevron {
-  margin-top: -3px;
-  transform: rotate(45deg);
-  border-color: black;
-}
-.nav .nav-links .subnav-button:not(.hidden) .subnav-chevron {
-  margin-top: 2px;
-  transform: rotate(-135deg);
-  border-color: #8e8e8e;
 }
 
 .main {
