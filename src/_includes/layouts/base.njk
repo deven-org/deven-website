@@ -60,7 +60,7 @@
         {{ content | safe }}
       </main>
       <footer{% if comingSoonClass %} class="footer {{ comingSoonClass }}"{% endif %} id="latest-news">
-        <div {% if not comingSoonClass %} style="display:none;" {% endif %} class="blog-content">
+        <section {% if not comingSoonClass %} style="display:none;" {% endif %} aria-label="Latest News" class="blog-content">
           <div class="blog no-blog-margin">
             <div class="blog-eye">
               <svg viewBox="0 0 250 158" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,14 +70,14 @@
             </div>
             <div class="blog-posts-wrapper">
               {% for post in collections.posts %}
-                {{ postExcerpt(postUrl=post.url, postTitle=post.data.title, postImgSrc="https://placehold.co/400", postImgAlt=post.data.title, authorName=post.data.author, authorImgSrc="https://placehold.co/400", authorImgAlt=post.data.author) }}
+                {{ postExcerpt(postUrl=post.url, postTitle=post.data.title, postImgSrc="https://placehold.co/400", authorName=post.data.author, authorImgSrc="https://placehold.co/400") }}
               {% endfor %}
             </div>
             <div class="cta-btn">
               <a href="./feed/feed.xml" title="Subscribe via RSS Feed">Subscribe via RSS</a>
             </div>
           </div>
-        </div>
+        </section>
         <div class="footer-content">
           <p id="copyright"></p>
           <a href='/imprint'>Imprint</a>
