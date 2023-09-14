@@ -82,56 +82,158 @@
     </div>
   </div>
 </section>
-<section class="contributors">
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
+<section aria-label="List of GitHub contributors">
+  <div class="fetch-status" id="contributors-fetch-status">
+    <span class="status-loading" id="contributors-status-loading">Loading Contributors… ⏳</span>
+    <span aria-live="polite" hidden class="status-error" id="contributors-status-error">Could not load GitHub Contributors 😔</span>
   </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
-  </div>
-  <div class='image-container'>
-    <img src="https://placehold.co/400" alt="Ross DiLiegro - Product Engineer" class="contributor-pic">
+  <div class="contributors" id="contributors" hidden>
+    
   </div>
 </section>
+<script type="module">
+  // Unauthenticated REST endpoints are rate limited at usually 60req/IP/hour
+  // So we try to cache results in localStorage for an hour
+  const CACHE_RETENTION_MS = 1000 * 60 * 60;
+  const GITHUB_API_VERSION = "2022-11-28";
+  const LOCAL_STORAGE_CACHE_KEY = "contrib-cache";
+
+  function getCachedContributors() {
+    /*
+      Cache format v1
+
+      {
+        updated_at: number,
+        version: 1,
+        contributors: {
+          id: number,
+          login: string,
+          avatar_url: string,
+          html_url: string,
+          contributions: number,
+        }[]
+      }
+    */
+    const cachedUsers = JSON.parse(localStorage.getItem(LOCAL_STORAGE_CACHE_KEY));
+
+    if (!cachedUsers || cachedUsers.version !== 1) {
+      return null;
+    }
+
+    if (Date.now() - cachedUsers.updated_at > CACHE_RETENTION_MS) {
+      localStorage.removeItem(LOCAL_STORAGE_CACHE_KEY);
+      return null;
+    }
+
+    return cachedUsers.contributors;
+  }
+
+  function cacheContributors(contributors) {
+    const cacheData = JSON.stringify({
+      updated_at: Date.now(),
+      version: 1,
+      contributors,
+    });
+    localStorage.setItem(LOCAL_STORAGE_CACHE_KEY, cacheData);
+  }
+
+  async function fetchGithubJson(endpoint) {
+    const response = await fetch(`https://api.github.com${endpoint}`, {
+      headers: { "X-GitHub-Api-Version": GITHUB_API_VERSION }
+    });
+
+    if (!response.ok) {
+      throw new Error("Unknown error fetching from GitHub");
+    }
+
+    return await response.json();
+  }
+
+  async function fetchDevenContributors() {
+    const cached = getCachedContributors();
+
+    if (cached) {
+      return cached;
+    }
+
+    // Step 1: Fetch all public repos in deven-org
+    const orgRepos = await fetchGithubJson("/orgs/deven-org/repos");
+    // Step 2: Fetch all contributors for each repo
+    const contributorsResults = await Promise.allSettled(
+        orgRepos.map(repo => fetchGithubJson(`/repos/${repo.full_name}/contributors`))
+    );
+
+    // Using Promise.allSettled with this filter ignores partial fails
+    // i.e. if one repo cannot be fetched, we will ignore this
+    const contributorsLists = contributorsResults
+      .filter(res => res.status === "fulfilled" && res.value.length > 0)
+      .map(res => res.value);
+
+    const dedupedList = [];
+
+    for (const list of contributorsLists) {
+      for (const user of list) {
+        if (user.type !== "User") {
+          continue;
+        }
+
+        const existing = dedupedList.find(u => u.id === user.id);
+        if (existing) {
+          existing.contributions += user.contributions
+        } else {
+          const { id, login, avatar_url, html_url, contributions } = user;
+          dedupedList.push({ id, login, avatar_url, html_url, contributions });
+        }
+      }
+    }
+
+    if (dedupedList.length === 0) {
+      throw new Error("No contributors found");
+    }
+
+    dedupedList.sort((a, b) => b.contributions - a.contributions); // descending
+
+    cacheContributors(dedupedList);
+
+    return dedupedList;
+  }
+
+
+  fetchDevenContributors().then((contributors) => {
+    const contributorsSection = document.getElementById("contributors");
+
+    for (const user of contributors) {
+      /*
+        We're generating this:
+
+        <a href={user.html_url} class="image-container">
+          <img class="contributor-pic" src={user.avatar_url} alt={user.login} title={user.login} />
+        </a>
+      */
+
+      const userLink = document.createElement("a");
+      userLink.classList.add("image-container");
+      userLink.href = user.html_url;
+
+      const image = document.createElement("img");
+      image.src = user.avatar_url;
+      image.alt = user.login;
+      image.title = user.login;
+      image.classList.add("contributor-pic");
+
+      userLink.appendChild(image);
+      contributorsSection.appendChild(userLink);
+    }
+
+    document.getElementById("contributors-fetch-status").setAttribute("hidden", "");
+    contributorsSection.removeAttribute("hidden");
+  }).catch((e) => {
+    console.warn("An error occured while fetching the GitHub contributor list");
+    console.error(e);
+    document.getElementById("contributors-status-loading").setAttribute("hidden", "");
+    document.getElementById("contributors-status-error").removeAttribute("hidden");
+  });
+</script>
       </main>
       <footer id="latest-news">
         <div  style="display:none;"  class="blog-content">
