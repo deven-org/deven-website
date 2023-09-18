@@ -1,13 +1,23 @@
-{% macro postExcerpt(postUrl, postTitle, postImgSrc, postImgAlt, authorName, authorImgSrc, authorImgAlt ) %}
+{% macro postExcerpt(postUrl, postTitle, postImgSrc, authorName, authorImgSrc ) %}
 <div class="blog-post-tiles">
   <div class="post-tile-img">
-    <a href="{{ postUrl }}">
-      <img src="{{ postImgSrc }}" alt="{{ postImgAlt }}" />
+    {#
+      aria-hidden to remove duplicated link with same text. This can be changed
+      if we decide that some post images need an additional description because
+      they provide relevant information the title doesn't.
+    #}
+    <a href="{{ postUrl }}" aria-hidden="true">
+      <img src="{{ postImgSrc }}" alt="" />
     </a>
   </div>
   <div class="post-content">
     <div class="author-section">
-      <img src="{{ authorImgSrc }}" alt="{{ authorImgAlt }}" />
+      {# 
+        The alt is fixed to "" to mark the image as presentational (since the
+        name is next to it). Adding a longer description of what the person
+        looks like is probably not contextually warranted here.
+      #}
+      <img src="{{ authorImgSrc }}" alt="" />
       <p>{{ authorName }}</p>
     </div>
     <div class="post-title-section">

@@ -24,7 +24,7 @@ h1.deven-headtext {
   text-align: center;
   justify-content: center;
   padding: 40px 0px 80px 0px;
-  color: #F1DE00;
+  color: #f1de00;
   top: 20%;
 }
 @media (min-width: 768px) {
@@ -52,13 +52,13 @@ h1.deven-headtext {
     justify-content: space-between;
   }
 }
-.shapes-container .intro-btn-group {
+.shapes-container .intro-jumble {
   width: 50%;
   margin-top: -1rem;
   margin-left: 1rem;
 }
 @media (min-width: 768px) {
-  .shapes-container .intro-btn-group {
+  .shapes-container .intro-jumble {
     margin-top: -1rem;
     margin-left: 2rem;
     width: 200px;
@@ -125,7 +125,8 @@ h1.deven-headtext {
   .vision-mission {
     flex-wrap: nowrap;
   }
-  .vision-mission .mission, .vision-mission .vision {
+  .vision-mission .mission,
+  .vision-mission .vision {
     height: 50vw;
     width: 50%;
   }
@@ -135,25 +136,27 @@ h1.deven-headtext {
   }
 }
 
-.pe-button {
-  background-color: #2154D6;
+.pe-pill {
+  background-color: #2154d6;
   border-radius: 100px;
   text-align: center;
   width: 18em;
   height: 65px;
+  line-height: 65px;
   transform: rotate(-17.81deg);
-  color: #F7F7F7;
+  color: #f7f7f7;
   border: none;
   font-family: "space-grotesk-bold";
   font-size: 12px;
 }
 
-.standardization-button {
+.standardization-pill {
   background-color: #f7f7f7;
   border-radius: 100px;
   text-align: center;
   width: 16em;
   height: 70px;
+  line-height: 70px;
   transform: rotate(7.82deg);
   color: #000000;
   z-index: 1;
@@ -164,7 +167,7 @@ h1.deven-headtext {
   font-size: 12px;
 }
 @media (min-width: 768px) {
-  .standardization-button {
+  .standardization-pill {
     font-size: 13px;
   }
 }
@@ -201,56 +204,56 @@ h1.deven-headtext {
   }
 }
 
-.contributor-btn-group {
+.contributor-jumble {
   position: relative;
   width: 50%;
   margin-top: 2.3rem;
   margin-left: 1rem;
 }
 @media (min-width: 768px) {
-  .contributor-btn-group {
+  .contributor-jumble {
     margin-left: 0rem;
     margin-top: 3rem;
     width: auto;
   }
 }
-.contributor-btn-group .dev-square {
+.contributor-jumble .dev-square {
   position: absolute;
-  background-color: #2154D6;
+  background-color: #2154d6;
   border-radius: 10%;
   text-align: center;
   width: 120px;
   height: 120px;
   transform: rotate(-20.32deg);
-  color: #F7F7F7;
+  color: #f7f7f7;
   margin-bottom: 25px;
   left: 1rem;
 }
 @media (min-width: 768px) {
-  .contributor-btn-group .dev-square {
+  .contributor-jumble .dev-square {
     width: 200px;
     height: 200px;
     left: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .contributor-btn-group .dev-square {
+  .contributor-jumble .dev-square {
     width: 160px;
     height: 160px;
     left: 0;
   }
 }
-.contributor-btn-group .link-button {
+.contributor-jumble .link-button {
   position: absolute;
   border-radius: 50%;
-  background-color: #F1DE00;
+  background-color: #f1de00;
   width: 65px;
   height: 65px;
   top: 7rem;
   left: 0.4rem;
 }
 @media (min-width: 768px) {
-  .contributor-btn-group .link-button {
+  .contributor-jumble .link-button {
     width: 120px;
     height: 120px;
     top: 10rem;
@@ -258,17 +261,17 @@ h1.deven-headtext {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .contributor-btn-group .link-button {
+  .contributor-jumble .link-button {
     width: 90px;
     height: 90px;
     top: 9rem;
     left: 0rem;
   }
 }
-.contributor-btn-group .enable-circle {
+.contributor-jumble .enable-circle {
   position: absolute;
   border-radius: 50%;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   width: 120px;
   height: 120px;
   top: 4rem;
@@ -277,7 +280,7 @@ h1.deven-headtext {
   transform: rotate(12.74deg);
 }
 @media (min-width: 768px) {
-  .contributor-btn-group .enable-circle {
+  .contributor-jumble .enable-circle {
     width: 200px;
     height: 200px;
     left: 10rem;
@@ -285,14 +288,14 @@ h1.deven-headtext {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .contributor-btn-group .enable-circle {
+  .contributor-jumble .enable-circle {
     width: 150px;
     height: 150px;
     left: 8.3rem;
     top: 4rem;
   }
 }
-.contributor-btn-group .enable-circle span {
+.contributor-jumble .enable-circle span {
   color: #000;
 }
 
@@ -368,7 +371,7 @@ h1.deven-headtext {
   font-size: 20px;
   display: inline-block;
   text-align: center;
-  background: #2154D6;
+  background: #2154d6;
 }
 
 .intro {
@@ -523,7 +526,7 @@ h1.deven-headtext {
   margin-top: -30px;
   height: 100vw;
   color: white;
-  background-color: #2154D6;
+  background-color: #2154d6;
   text-align: center;
   aspect-ratio: 1/1;
 }

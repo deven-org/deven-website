@@ -1,30 +1,30 @@
 @font-face {
-  font-family: "november";
+  font-family: 'november';
   font-style: normal;
   font-weight: 500;
   font-display: auto;
-  src: url("../fonts/november.ttf");
+  src: url('../fonts/november.ttf');
 }
 @font-face {
-  font-family: "AVF";
+  font-family: 'AVF';
   font-style: light;
   font-weight: 300;
   font-display: auto;
-  src: url("../fonts/AVF.ttf");
+  src: url('../fonts/AVF.ttf');
 }
 @font-face {
-  font-family: "space-grotesk-light";
+  font-family: 'space-grotesk-light';
   font-style: normal;
   font-weight: 300;
   font-display: auto;
-  src: url("../fonts/space-grotesk.ttf");
+  src: url('../fonts/space-grotesk.ttf');
 }
 @font-face {
-  font-family: "space-grotesk-bold";
+  font-family: 'space-grotesk-bold';
   font-style: normal;
   font-weight: 700;
   font-display: auto;
-  src: url("../fonts/space-grotesk.ttf");
+  src: url('../fonts/space-grotesk.ttf');
 }
 
 // Small tablets and large smartphones (landscape view)
@@ -66,13 +66,20 @@ $screen-xl-min: 1200px;
   }
 }
 
+// User specified they prefer to have less or no motion animations
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
 body {
   background: black;
   //max-width: 960px;
   margin: 0 auto;
   line-height: 1.8em;
   font-size: 1em;
-  font-family: "AVF";
+  font-family: 'AVF';
 }
 
 .content-wrapper {
@@ -162,7 +169,7 @@ main {
 }
 
 .cta-btn a {
-  font-family: "space-grotesk-bold";
+  font-family: 'space-grotesk-bold';
   color: black;
   text-decoration: none;
   font-size: 16px;
@@ -181,7 +188,6 @@ main {
 
 .nav {
   max-width: 800px;
-  overflow: hidden;
   margin: 0px auto;
   .nav-links {
     display: flex;
@@ -195,7 +201,7 @@ main {
     align-items: center;
     .nav-item {
       display: inline-block;
-      font-family: "space-grotesk-light";
+      font-family: 'space-grotesk-light';
       .nav .nav-links .nav-item {
         margin: 0px 15px;
       }
@@ -203,10 +209,10 @@ main {
         margin: 0px 15px;
       }
       &.nav-item-active {
-        font-family: "space-grotesk-bold";
+        font-family: 'space-grotesk-bold';
       }
       &.logo {
-        font-family: "november";
+        font-family: 'november';
         a {
           font-size: 22px;
           @include md {
@@ -214,7 +220,14 @@ main {
           }
         }
       }
-      a {
+      a,
+      .subnav-toggle {
+        padding: 0;
+        margin: 0;
+        font-family: inherit;
+        border: none;
+        background-color: transparent;
+        display: block;
         color: #111111;
         text-decoration: none;
         font-size: 12px;
@@ -227,13 +240,15 @@ main {
         }
       }
     }
-    .subnav-button {
-      > a {
+    .subnav {
+      position: relative;
+
+      > .subnav-toggle {
         .subnav-chevron {
           margin-left: 5px;
           margin-top: -3px;
-          border-right: 1px solid black;
-          border-bottom: 1px solid black;
+          border-right: 1px solid currentColor;
+          border-bottom: 1px solid currentColor;
           width: 6px;
           height: 6px;
           transform: rotate(45deg);
@@ -241,122 +256,110 @@ main {
           vertical-align: middle;
           @include md {
             margin-left: 8px;
-            border-right: 2px solid black;
-            border-bottom: 2px solid black;
+            border-right: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
           }
         }
-        &:hover .subnav-chevron {
-          border-color: #8e8e8e;
+
+        &[aria-expanded='true'] {
+          color: #8e8e8e;
+
+          .subnav-chevron {
+            margin-top: 2px;
+            transform: rotate(-135deg);
+          }
         }
-      }
-      &:not(.hidden) a {
-        color: #8e8e8e;
-      }
-      .subnav-container {
-        position: absolute;
-        transform: rotate(7deg);
-        margin: 2rem 0 0 -1.3rem;
-        height: 1.8rem;
-        padding-top: 30px;
-        top: 0px;
-        display: flex;
-        @include md {
-          padding-top: 35px;
-        }
-        &.hidden {
+
+        &[aria-expanded='false'] + .subnav-container {
           display: none;
         }
-        .subnav-content {
-          background: #111111;
-          display: flex;
-          flex-direction: row;
-          border-radius: 30px;
-          padding: 5px 0.8rem;
-          margin: 1rem auto 2rem;
-          justify-content: center;
-          height: 40px;
-          align-items: center;
-          @include md {
-            padding: 0px 2.4rem;
-          }
-          ul {
-            li.subnav-item {
-              display: inline-block;
-              margin-right: 8px;
-              font-size: 10px;
-              font-family: "space-grotesk-light";
-              &.subnav-item-active {
-                font-family: "space-grotesk-bold";
-              }
-              @include md {
-                margin-right: 2em;
-              }
-              &:last-of-type {
-                margin-right: 0;
-              }
-              a {
-                color: white;
-                &:hover {
-                  color: #8e8e8e;
-                }
-                @include md {
-                  font-size: 12px;
-                }
-              }
-            }
-          }
-          .close-btn {
-            width: 12px;
-            height: 12px;
-            overflow: hidden;
-            position: relative;
-            cursor: pointer;
-            margin-left: 0.5rem;
-            &::before,
-            &::after {
-              content: "";
-              position: absolute;
-              height: 1px;
-              width: 100%;
-              top: 50%;
-              left: 0;
-              margin-top: -1px;
-              background: white;
-            }
-            &::before {
-              transform: rotate(45deg);
-            }
-            &::after {
-              transform: rotate(-45deg);
+      }
+
+      .subnav-container {
+        position: absolute;
+        transform-origin: 0% 0%;
+        transform: rotate(7deg);
+        top: 100%;
+        left: -0.8rem;
+
+        @include md {
+          left: -2.4rem;
+        }
+
+        background: #111111;
+        display: flex;
+        flex-direction: row;
+        border-radius: 30px;
+        padding: 5px 0.8rem;
+        justify-content: center;
+        height: 40px;
+        align-items: center;
+        @include md {
+          padding: 0px 2.4rem;
+        }
+        ul {
+          white-space: nowrap;
+          li.subnav-item {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 10px;
+            font-family: 'space-grotesk-light';
+            &.subnav-item-active {
+              font-family: 'space-grotesk-bold';
             }
             @include md {
-              margin-left: 1.5rem;
+              margin-right: 2em;
             }
-            &:hover {
-              &::before,
-              &::after {
-                background: #8e8e8e;
+            &:last-of-type {
+              margin-right: 0;
+            }
+            a {
+              color: white;
+              &:hover {
+                color: #8e8e8e;
+              }
+              @include md {
+                font-size: 12px;
               }
             }
           }
         }
-      }
-      &.hidden .subnav-container {
-        display: none;
-      }
-      &:hover .subnav-button {
-        color: #8e8e8e;
-      }
-      &.hidden .subnav-chevron {
-        margin-top: -3px;
-        transform: rotate(45deg);
-        border-color: black;
-      }
-
-      &:not(.hidden) .subnav-chevron {
-        margin-top: 2px;
-        transform: rotate(-135deg);
-        border-color: #8e8e8e;
+        .close-btn {
+          width: 12px;
+          height: 12px;
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+          background: transparent;
+          margin: 0 0 0 0.5rem;
+          border: none;
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            margin-top: -1px;
+            background: white;
+          }
+          &::before {
+            transform: rotate(45deg);
+          }
+          &::after {
+            transform: rotate(-45deg);
+          }
+          @include md {
+            margin-left: 1.5rem;
+          }
+          &:hover {
+            &::before,
+            &::after {
+              background: #8e8e8e;
+            }
+          }
+        }
       }
     }
   }
@@ -417,7 +420,7 @@ em {
 
 // Headline
 .log-title {
-  font-family: "november";
+  font-family: 'november';
   font-size: 2.5em;
   line-height: 3.2em;
   text-align: center;
@@ -435,14 +438,14 @@ em {
     align-items: center;
     h1 {
       color: #f7f7f7;
-      font-family: "space-grotesk-bold";
+      font-family: 'space-grotesk-bold';
       font-size: 25px;
       padding-bottom: 20px;
     }
     p {
       color: #f7f7f7;
       strong {
-        font-family: "space-grotesk-bold";
+        font-family: 'space-grotesk-bold';
       }
     }
   }
@@ -478,7 +481,7 @@ em {
     padding: 2rem 5rem;
   }
   h2 {
-    font-family: "november";
+    font-family: 'november';
     font-size: 1.8em;
     line-height: 1.5em;
     text-align: center;
@@ -493,137 +496,96 @@ em {
     li {
       padding: 20px 0px;
       border-bottom: 1px solid #000000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      h3 {
-        font-family: "space-grotesk-bold";
-        font-size: 1.5rem;
-        line-height: 1.7rem;
-        text-align: left;
-        @include md {
-          font-size: 1.7rem;
-          line-height: 2.7rem;
-        }
-        @include lg {
-          font-size: 2.1rem;
-          line-height: 2.9rem;
-        }
-        @include xl {
-          font-size: 2.7rem;
-          line-height: 3.4rem;
-        }
-      }
-      button {
-        background: #2154d6;
-        height: 50px;
-        width: 50px;
-        border: none;
-        border-radius: 50%;
+      a {
         display: flex;
-        justify-content: center;
+        color: inherit;
+        justify-content: space-between;
         align-items: center;
-        overflow: hidden;
-        position: relative;
-        @include md {
-          height: 75px;
-          width: 75px;
+        text-decoration: none;
+
+        h3 {
+          font-family: 'space-grotesk-bold';
+          font-size: 1.5rem;
+          line-height: 1.7rem;
+          text-align: left;
+          @include md {
+            font-size: 1.7rem;
+            line-height: 2.7rem;
+          }
+          @include lg {
+            font-size: 2.1rem;
+            line-height: 2.9rem;
+          }
+          @include xl {
+            font-size: 2.7rem;
+            line-height: 3.4rem;
+          }
         }
-        a {
+        .arrow-circle {
+          background: #2154d6;
+          color: #f7f7f7;
+          height: 50px;
+          width: 50px;
+          border: none;
+          border-radius: 50%;
+          overflow: hidden;
           position: relative;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          &:hover {
-            text-decoration: underline;
+          @include md {
+            height: 75px;
+            width: 75px;
           }
-          svg {
-            position: absolute;
-          }
-          #slidePrev {
-            left: 11px;
-            @include md {
-              left: 24px;
-            }
-          }
-          #slideNext {
-            left: -50px;
-            @include md {
-              left: -25px;
-            }
-          }
-        }
-        &:hover > a #slidePrev {
-          -webkit-animation: slidePrev 0.75s forwards;
-          animation: slidePrev 0.75s forwards;
-          animation-iteration-count: 1;
-        }
-        &:hover > a #slideNext {
-          -webkit-animation: slideNext 0.75s forwards;
-          animation: slideNext 0.75s forwards;
-          animation-iteration-count: 1;
-        }
-
-        @-webkit-keyframes slidePrev {
-          100% {
-            left: 50px;
+          .animated-arrow {
+            position: relative;
+            width: 200%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
           }
         }
 
-        @keyframes slidePrev {
-          100% {
-            left: 50px;
-          }
-        }
+        &:hover {
+          color: #8e8e8e;
 
-        @include md {
-          @-webkit-keyframes slidePrev {
-            100% {
-              left: 70px;
-            }
-          }
-          @keyframes slidePrev {
-            100% {
-              left: 70px;
-            }
-          }
-        }
-        @-webkit-keyframes slideNext {
-          100% {
-            left: 11px;
-          }
-        }
+          .animated-arrow {
+            -webkit-animation: slideArrows 0.75s forwards;
+            animation: slideArrows 0.75s forwards;
+            animation-iteration-count: 1;
 
-        @keyframes slideNext {
-          100% {
-            left: 11px;
-          }
-        }
+            @include reduced-motion {
+              -webkit-animation: none;
+              animation: none;
+            }
 
-        @include md {
-          @-webkit-keyframes slideNext {
-            100% {
-              left: 24px;
+            // translate percentage works relative to the current element size.
+            // Since the element is twice as wide as the parent, 50% equals the full
+            // parent width.
+
+            @-webkit-keyframes slideArrows {
+              0% {
+                transform: translateX(-50%);
+              }
+              100% {
+                transform: translateX(0);
+              }
             }
-          }
-          @keyframes slideNext {
-            100% {
-              left: 24px;
-            }
-          }
-        }
-      }
-      &:nth-child(even) {
-        button {
-          background: #f1de00;
-          a {
-            svg {
-              path {
-                fill: black;
+
+            @keyframes slideArrows {
+              0% {
+                transform: translateX(-50%);
+              }
+              100% {
+                transform: translateX(0);
               }
             }
           }
+        }
+      }
+
+      &:nth-child(even) {
+        .arrow-circle {
+          background: #f1de00;
+          color: blacK;
         }
       }
     }
@@ -649,4 +611,18 @@ em {
       height: 138px;
     }
   }
+}
+
+/* 
+ * Utility class to hide content visually while keeping it screen reader-accessible.
+ * Source: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html 
+ */
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
