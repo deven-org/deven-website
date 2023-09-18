@@ -288,3 +288,11 @@
   height: auto;
   padding: 10px 20px;
 }
+
+.fetch-status {
+  font-family: "space-grotesk-bold";
+  margin: 5rem auto 5rem auto;
+  text-align: center;
+  font-size: 2rem;
+  color: #f7f7f7;
+}
