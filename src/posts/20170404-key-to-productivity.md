@@ -3,10 +3,6 @@ title: Key to Productivity
 description: How to survive a busy life
 date: 2017-04-04
 author: User 1
-tags:
-  - productivity
-  - family
-  - health
 layout: layouts/post.njk
 ---
 
@@ -18,7 +14,7 @@ One of the first things people learn about me, I have a pretty busy life.
 - I am a solo mom of a 5 y/o.
 - I am a human being, with a need for breaks and social interactions.
 
-<img class="post-item-image" src="https://media.giphy.com/media/JYkfr7F6d31hC/giphy-downsized.gif" alt="Wait what?" />
+<img src="https://media.giphy.com/media/JYkfr7F6d31hC/giphy-downsized.gif" alt="Wait what?" />
 
 All those things add up to enormous amount of tasks.
 
@@ -34,7 +30,7 @@ Following, I'll mention the things that helped me the most.
 
 ## Organize && plan ahead
 
-<img class="post-item-image" src="https://media.giphy.com/media/xUOxf5B4tGwIh6WOw8/giphy-downsized.gif" alt="Planner for 2017" />
+<img src="https://media.giphy.com/media/xUOxf5B4tGwIh6WOw8/giphy-downsized.gif" alt="Planner for 2017" />
 
 Lists, notes and a calender can be a life saver. Start with the "bigger picture". What lays ahead of you in the next 3 - 6 months? What do you need to do to make those things happen? Are there any deadlines you should be aware of? Make a plan, todo list and a schedule that'll help you navigate through the next few months.
 
@@ -42,7 +38,7 @@ The go on with the "smaller view". Grab the next tasks or the ones that have the
 
 ## Stick to your hours && decisions
 
-<img class="post-item-image" src="https://media.giphy.com/media/l0MYGtCMbPTYWOzaU/giphy-tumblr.gif" alt="Sherlock lookig at his watch" />
+<img src="https://media.giphy.com/media/l0MYGtCMbPTYWOzaU/giphy-tumblr.gif" alt="Sherlock lookig at his watch" />
 
 When you create a loose schedule it's all about balance. Make sure to add time for all important todos, but also for this thing called life... as life happens to all of us from time to time, right? Don't cut hours from your family time on a regular basis just because work comes up. Schedule more time in advance or leave it, but stick to your decisions.
 
@@ -54,7 +50,7 @@ Enough is enough. Stop overthinging it. F\*ck perfection. Ask for help. Stop bla
 
 ## Know your limits!
 
-<img class="post-item-image" src="https://media.giphy.com/media/yxZlvexI0DyHI2Dyrf/giphy.gif" alt="Power Puff Girl with circle eyes" />
+<img src="https://media.giphy.com/media/yxZlvexI0DyHI2Dyrf/giphy.gif" alt="Power Puff Girl with circle eyes" />
 
 How much sleep do you need to feel creative, productive, good about yourself?
 How are you making sure you do hydrate yourself enough during the day? Did you eat something healthy? Or greasy because you need it right now? Which workout works for you or do you prefer to take a long bath? Hanging out with friends or enjoying alone time?
@@ -63,7 +59,7 @@ Be aware what recharges your batteries, physically AND emotionally. Don't compro
 
 ## Learn to say NO
 
-<img class="post-item-image" src="https://media.giphy.com/media/EVbEdEW3kuu0o/giphy.gif" alt="David Tennant as Doctor Who shakes his head." />
+<img src="https://media.giphy.com/media/EVbEdEW3kuu0o/giphy.gif" alt="David Tennant as Doctor Who shakes his head." />
 
 Don't work on demand which means schedule fixed times for replying to messages like mails or direct messages. Review your notification settings. A thing I've learned in the past few years is that there is no reply so important to drop whatever you do right now.
 
