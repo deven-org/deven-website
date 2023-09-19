@@ -1,21 +1,24 @@
 .post-header {
-  margin: 150px 20px 80px 20px;
+  margin: 150px auto 80px auto;
+  padding-inline: 20px 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  column-gap: 150px;
+  max-width: min(90rem, 100vw);
   align-items: center;
   flex-direction: row;
 }
 .post-header .post-header-img {
   width: 600px;
-  height: 600px;
+  aspect-ratio: 1/1;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 .post-header .post-header-img img {
-  max-width: 100%;
-  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 .post-header .post-header-autor {
   color: #f7f7f7;
@@ -32,9 +35,11 @@
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .post-header {
-    margin: 150px 20px 20px 20px;
+    margin-bottom: 20px;
+    padding-inline: 20px;
     justify-content: flex-start;
     flex-direction: row;
+    column-gap: 40px;
     justify-content: space-around;
     align-items: center;
   }
@@ -47,12 +52,12 @@
   }
   .post-header .post-header-img {
     width: 400px;
-    height: 400px;
   }
 }
 @media (max-width: 767px) {
   .post-header {
-    margin: 150px 20px 20px 20px;
+    margin-bottom: 20px;
+    padding-inline: 20px;
     justify-content: flex-start;
     flex-direction: column;
     align-items: normal;
@@ -66,12 +71,13 @@
   }
   .post-header .post-header-img {
     width: 100%;
-    height: 400px;
+    aspect-ratio: 3/2;
   }
 }
 
 .post-content-wrapper {
   margin: 0px auto;
+  max-width: 55rem;
   color: #fff;
 }
 @media screen and (min-width: 1200px) {

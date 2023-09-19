@@ -3,19 +3,13 @@ title: What is Web Compatibility
 description: What is web compabitility exactly
 date: 2017-01-16
 author: User 1
-tags:
-  - mozilla
-  - web
-  - webcompat
-  - open source
-  - standards
 layout: layouts/post.njk
 ---
 
 One week ago, I’ve started my job as Web Compatibility Engineer at Mozilla and it’s been wonderful so far!
 It’s a very welcoming place here in Berlin and my team is superb! So, summed up in one GIF?
 
-<img class="post-item-image" src="https://media.giphy.com/media/10uJ0IFxlCA06I/giphy.gif" alt="Hands make a heart" />
+<img src="https://media.giphy.com/media/10uJ0IFxlCA06I/giphy.gif" alt="Hands make a heart" />
 
 When people ask me, what I actually do, the conversations mostly go like this…
 
@@ -26,7 +20,7 @@ B: ”Yes, please! Just hop over to [webcompat.com](https://webcompat.com) and l
 **A: “Oh, great. So you can fix my broken website, right?”**  
 B: “Well, it depends… Is your bug appearing in one browser, but not another? Then it is a webcompat bug and you should totally report it.”
 
-<img class="post-item-image" src="https://media.giphy.com/media/c4Nc0v0g15g9G/giphy.gif" alt="Jake thinks this is interesting." />
+<img src="https://media.giphy.com/media/c4Nc0v0g15g9G/giphy.gif" alt="Jake thinks this is interesting." />
 
 ## What is a WebCompat bug?
 
@@ -38,7 +32,7 @@ This could be e.g. a prefix the website is using, but just for one browser and o
 
 Your experience, knowledge and voice is what is the most important thing. Browser vendors need you! Your input. You are the ones building the web, shaping up the web.
 
-<img class="post-item-image" src="https://media.giphy.com/media/tnivTK2URZm7e/giphy.gif" alt="Care bears sending hearts out of their bellies." />
+<img src="https://media.giphy.com/media/tnivTK2URZm7e/giphy.gif" alt="Care bears sending hearts out of their bellies." />
 
 **Thank you <3**
 
