@@ -3,6 +3,7 @@ title: What is Web Compatibility
 description: What is web compabitility exactly
 date: 2017-01-16
 author: User 1
+authorImageUrl: '/assets/images/authors/placeholder_cat_by_vassago_labs_cc0.png'
 layout: layouts/post.njk
 ---
 

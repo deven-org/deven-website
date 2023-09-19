@@ -3,6 +3,7 @@ title: Why do we need Web Compatibility
 description: Why do we need standards for a healthy web
 date: 2017-01-16
 author: User 2
+authorImageUrl: 'https://placehold.co/64'
 layout: layouts/post.njk
 ---
 
