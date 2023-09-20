@@ -1,3 +1,5 @@
+@use 'styles/media';
+
 @font-face {
   font-family: 'november';
   font-style: normal;
@@ -25,52 +27,6 @@
   font-weight: 700;
   font-display: auto;
   src: url('../fonts/space-grotesk.ttf');
-}
-
-// Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
-// Small tablets (portrait view)
-$screen-md-min: 768px;
-
-// Tablets and small desktops
-$screen-lg-min: 992px;
-
-// Large tablets and desktops
-$screen-xl-min: 1200px;
-
-// Small devices
-@mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
-    @content;
-  }
-}
-
-// Medium devices
-@mixin md {
-  @media (min-width: #{$screen-md-min}) {
-    @content;
-  }
-}
-
-// Large devices
-@mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
-    @content;
-  }
-}
-
-// Extra large devices
-@mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
-    @content;
-  }
-}
-
-// User specified they prefer to have less or no motion animations
-@mixin reduced-motion {
-  @media (prefers-reduced-motion: reduce) {
-    @content;
-  }
 }
 
 body {
@@ -127,13 +83,13 @@ main {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  @include md {
+  @include media.md {
     height: 800px;
   }
-  @include lg {
+  @include media.lg {
     height: 700px;
   }
-  @include xl {
+  @include media.xl {
     height: 560px;
   }
 }
@@ -205,7 +161,7 @@ main {
       .nav .nav-links .nav-item {
         margin: 0px 15px;
       }
-      @include md {
+      @include media.md {
         margin: 0px 15px;
       }
       &.nav-item-active {
@@ -215,7 +171,7 @@ main {
         font-family: 'november';
         a {
           font-size: 22px;
-          @include md {
+          @include media.md {
             font-size: 26px;
           }
         }
@@ -235,7 +191,7 @@ main {
         &:hover {
           color: #8e8e8e;
         }
-        @include md {
+        @include media.md {
           font-size: 1rem;
         }
       }
@@ -254,7 +210,7 @@ main {
           transform: rotate(45deg);
           display: inline-block;
           vertical-align: middle;
-          @include md {
+          @include media.md {
             margin-left: 8px;
             border-right: 2px solid currentColor;
             border-bottom: 2px solid currentColor;
@@ -282,7 +238,7 @@ main {
         top: 100%;
         left: -0.8rem;
 
-        @include md {
+        @include media.md {
           left: -2.4rem;
         }
 
@@ -294,7 +250,7 @@ main {
         justify-content: center;
         height: 40px;
         align-items: center;
-        @include md {
+        @include media.md {
           padding: 0px 2.4rem;
         }
         ul {
@@ -307,7 +263,7 @@ main {
             &.subnav-item-active {
               font-family: 'space-grotesk-bold';
             }
-            @include md {
+            @include media.md {
               margin-right: 2em;
             }
             &:last-of-type {
@@ -318,7 +274,7 @@ main {
               &:hover {
                 color: #8e8e8e;
               }
-              @include md {
+              @include media.md {
                 font-size: 12px;
               }
             }
@@ -350,7 +306,7 @@ main {
           &::after {
             transform: rotate(-45deg);
           }
-          @include md {
+          @include media.md {
             margin-left: 1.5rem;
           }
           &:hover {
@@ -393,7 +349,7 @@ em {
   background-size: 100% 200%;
   background-repeat: no-repeat;
   background-position: 0px -58vh;
-  @include md {
+  @include media.md {
     background-position: 0px -65vh;
   }
 }
@@ -457,7 +413,7 @@ em {
 
 .nav-item:not(:last-of-type) {
   margin-right: 0.8em;
-  @include md {
+  @include media.md {
     margin-right: 1em;
   }
 }
@@ -476,7 +432,7 @@ em {
   text-align: center;
   width: 100%;
   display: block;
-  @include md {
+  @include media.md {
     width: 60%;
     padding: 2rem 5rem;
   }
@@ -490,7 +446,7 @@ em {
   ul {
     margin-top: 1rem;
     padding: 2rem 1.5rem;
-    @include md {
+    @include media.md {
       margin-top: 0rem;
     }
     li {
@@ -508,15 +464,15 @@ em {
           font-size: 1.5rem;
           line-height: 1.7rem;
           text-align: left;
-          @include md {
+          @include media.md {
             font-size: 1.7rem;
             line-height: 2.7rem;
           }
-          @include lg {
+          @include media.lg {
             font-size: 2.1rem;
             line-height: 2.9rem;
           }
-          @include xl {
+          @include media.xl {
             font-size: 2.7rem;
             line-height: 3.4rem;
           }
@@ -530,7 +486,7 @@ em {
           border-radius: 50%;
           overflow: hidden;
           position: relative;
-          @include md {
+          @include media.md {
             height: 75px;
             width: 75px;
           }
@@ -552,7 +508,7 @@ em {
             animation: slideArrows 0.75s forwards;
             animation-iteration-count: 1;
 
-            @include reduced-motion {
+            @include media.reduced-motion {
               -webkit-animation: none;
               animation: none;
             }
@@ -596,7 +552,7 @@ em {
   color: #f7f7f7;
   font-size: 2.5rem;
   line-height: 2.8rem;
-  @include md {
+  @include media.md {
     font-size: 3rem;
     line-height: 3.2rem;
   }
@@ -606,7 +562,7 @@ em {
   svg {
     width: auto;
     height: 100px;
-    @include md {
+    @include media.md {
       width: auto;
       height: 138px;
     }

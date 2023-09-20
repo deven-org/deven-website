@@ -1,4 +1,5 @@
 const sass = require('sass')
+const path = require('node:path')
 
 // lib to format time
 const { DateTime } = require('luxon')
@@ -77,8 +78,15 @@ module.exports = (eleventyConfig) => {
     outputFileExtension: 'css', // optional, default: "html"
 
     // `compile` is called once per .scss file in the input directory
-    compile: async function (inputContent) {
-      let result = sass.compileString(inputContent)
+    compile: async function (inputContent, inputPath) {
+      let parsedPath = path.parse(inputPath)
+
+      let result = sass.compileString(inputContent, {
+        loadPaths: [parsedPath.dir || '.', './src/_includes'],
+      })
+
+      // Makes 11ty invalidate cache when imported scss files (via @use) change
+      this.addDependencies(inputPath, result.loadedUrls)
 
       // This is the render function, `data` is the full data cascade
       return async (data) => {

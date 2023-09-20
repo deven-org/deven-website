@@ -105,19 +105,14 @@ h1.deven-headtext {
   display: flex;
   top: 15%;
 }
-@media (min-width: 1600px) {
-  .abstract-geometry {
-    top: 30%;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1200px) {
   .abstract-geometry {
     top: 20%;
   }
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 1600px) {
   .abstract-geometry {
-    top: 15%;
+    top: 30%;
   }
 }
 
@@ -231,16 +226,15 @@ h1.deven-headtext {
 }
 @media (min-width: 768px) {
   .contributor-jumble .dev-square {
-    width: 200px;
-    height: 200px;
-    left: 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .contributor-jumble .dev-square {
     width: 160px;
     height: 160px;
     left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .contributor-jumble .dev-square {
+    width: 200px;
+    height: 200px;
   }
 }
 .contributor-jumble .link-button {
@@ -254,18 +248,17 @@ h1.deven-headtext {
 }
 @media (min-width: 768px) {
   .contributor-jumble .link-button {
-    width: 120px;
-    height: 120px;
-    top: 10rem;
-    left: 0rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .contributor-jumble .link-button {
     width: 90px;
     height: 90px;
     top: 9rem;
     left: 0rem;
+  }
+}
+@media (min-width: 992px) {
+  .contributor-jumble .link-button {
+    width: 120px;
+    height: 120px;
+    top: 10rem;
   }
 }
 .contributor-jumble .enable-circle {
@@ -281,18 +274,17 @@ h1.deven-headtext {
 }
 @media (min-width: 768px) {
   .contributor-jumble .enable-circle {
-    width: 200px;
-    height: 200px;
-    left: 10rem;
-    top: 4rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .contributor-jumble .enable-circle {
     width: 150px;
     height: 150px;
     left: 8.3rem;
     top: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .contributor-jumble .enable-circle {
+    width: 200px;
+    height: 200px;
+    left: 10rem;
   }
 }
 .contributor-jumble .enable-circle span {
