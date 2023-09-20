@@ -2,6 +2,7 @@
 title: Why do we need Web Compatibility
 description: Why do we need standards for a healthy web
 imageUrl: 'https://placekitten.com/g/600/600'
+imageDescription: A black and white photo of a kitten contemplating Web Compatibility
 date: 2017-01-16
 author: User 2
 authorImageUrl: 'https://placehold.co/64'

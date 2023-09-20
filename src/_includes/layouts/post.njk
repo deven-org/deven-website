@@ -8,7 +8,7 @@ templateClass: tmpl-post
 <article>
 	<header class="post-header">
 		<div class="post-header-img">
-			<img src="{{ imageUrl }}" alt="" />
+			<img src="{{ imageUrl }}" alt="{{imageDescription or ""}}" />
 		</div>
 		<div>
 			{{ byline(authorName=author, authorImgSrc=authorImageUrl, date=date) }}

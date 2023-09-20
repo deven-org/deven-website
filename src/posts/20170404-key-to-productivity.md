@@ -2,6 +2,7 @@
 title: Key to Productivity
 description: How to survive a busy life
 imageUrl: 'https://placehold.co/400'
+imageDescription: # decorative
 date: 2017-04-04
 author: User 5
 layout: layouts/post.njk
