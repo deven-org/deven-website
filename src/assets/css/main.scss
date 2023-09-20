@@ -626,3 +626,21 @@ em {
   white-space: nowrap;
   width: 1px;
 }
+
+a.bookmark {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: inherit;
+
+  &::after {
+    content: '#';
+    color: #8e8e8e;
+    padding-inline: 0.5em;
+    visibility: hidden;
+  }
+
+  &:hover::after {
+    visibility: visible;
+  }
+}

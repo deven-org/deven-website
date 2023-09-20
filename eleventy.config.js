@@ -33,9 +33,10 @@ module.exports = (eleventyConfig) => {
   const markdown = markdownIt({ html: true, linkify: true }).use(
     markdownItAnchor,
     {
-      permalink: true,
-      permalinkClass: 'bookmark',
-      permalinkSymbol: '#',
+      permalink: markdownItAnchor.permalink.headerLink({
+        safariReaderFix: true,
+        class: 'bookmark',
+      }),
     }
   )
 
