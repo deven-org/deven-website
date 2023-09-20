@@ -128,7 +128,7 @@ main {
 }
 
 .buttons-inline {
-  margin: 2rem 0;
+  margin-top: 2rem;
   justify-content: flex-start;
   display: flex;
 }

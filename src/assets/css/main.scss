@@ -134,9 +134,10 @@ main {
 }
 
 .buttons-inline {
-  margin: 2rem 0;
+  margin-top: 2rem;
   justify-content: flex-start;
   display: flex;
+
   .cta-btn {
     margin: 0px 2rem 0px 0px;
   }
