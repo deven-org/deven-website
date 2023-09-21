@@ -7,7 +7,10 @@ const { DateTime } = require('luxon')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 
-const { EleventyHtmlBasePlugin } = require('@11ty/eleventy')
+const {
+  EleventyHtmlBasePlugin,
+  EleventyRenderPlugin,
+} = require('@11ty/eleventy')
 
 module.exports = (eleventyConfig) => {
   ;['src/assets/fonts/', 'src/assets/images/', 'src/assets/favicon/'].forEach(
@@ -27,6 +30,9 @@ module.exports = (eleventyConfig) => {
 
   // prefixPath
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin)
+
+  // Allow rendering files inside a template
+  eleventyConfig.addPlugin(EleventyRenderPlugin)
 
   /* Markdown Plugins */
   let markdownIt = require('markdown-it')

@@ -45,6 +45,7 @@
   position: relative;
   max-width: 40rem;
   margin: 0px auto;
+  color: #f7f7f7;
 }
 .project-wrapper .project-info.highlight {
   box-sizing: border-box;
@@ -209,6 +210,7 @@
   max-width: 55rem;
   width: 80%;
   padding: 10px;
+  color: #f7f7f7;
 }
 @media (min-width: 768px) {
   .post-content-wrapper {
