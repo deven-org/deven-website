@@ -4,26 +4,24 @@ excludeFromSitemap: true
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-<channel>
-	<title>{{ metadata.title }}</title>
-	<description>{{ metadata.feed.subtitle }}</description>
-	<link href="{{ metadata.feed.url }}" rel="self"/>
-	<link href="{{ metadata.url }}"/>
-	<pubDate>{{ collections.posts | rssLastUpdatedDate }}</pubDate>
-	<guid>{{ metadata.feed.id }}</guid>
-	<managingEditor>
-		<name>{{ metadata.author.name }}</name>
-	</managingEditor>
-	{%- for post in collections.posts %}
-		{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-		<item>
-			<title>{{ post.data.title }}</title>
-			<link href="{{ absolutePostUrl }}"/>
-			<pubDate>{{ post.date | rssDate }}</pubDate>
-			<guid>{{ absolutePostUrl }}</guid>
-			<description type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
-		</item>
-	{%- endfor %}
-</channel>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ metadata.title }}</title>
+		<link>{{ metadata.url }}</link>
+		<atom:link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self" type="application/rss+xml" />
+		<description>{{ metadata.feed.subtitle }}</description>
+		<pubDate>{{ collections.posts | getNewestCollectionItemDate | dateToRfc822 }}</pubDate>
+		<managingEditor>{{metadata.author.email}} ({{metadata.author.name}})</managingEditor>
+		{%- for post in collections.posts | reverse %}
+			{% set absolutePostUrl %}{{ post.url | absoluteUrl(metadata.url) }}{% endset %}
+			<item>
+				<title>{{ post.data.title }}</title>
+				<link>{{ absolutePostUrl }}</link>
+				<description>{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</description>
+				<pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+				<dc:creator>{{ post.data.author or metadata.author.name }}</dc:creator>
+				<guid>{{ absolutePostUrl }}</guid>
+			</item>
+		{%- endfor %}
+	</channel>
 </rss>
