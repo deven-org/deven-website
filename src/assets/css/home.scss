@@ -92,36 +92,6 @@ h1.deven-headtext {
   }
 }
 
-.abstract-geometry {
-  position: relative;
-  display: flex;
-  //margin-bottom: 5rem;
-  top: 15%;
-
-  @include media.xl {
-    top: 20%;
-  }
-
-  @include media.xxl {
-    top: 30%;
-  }
-}
-
-.vision-mission {
-  @include media.lg {
-    flex-wrap: nowrap;
-    .mission,
-    .vision {
-      height: 50vw;
-      width: 50%;
-    }
-    .vision {
-      margin-left: -50px;
-      margin-top: 0px;
-    }
-  }
-}
-
 .pe-pill {
   background-color: #2154d6;
   border-radius: 100px;
@@ -415,78 +385,108 @@ h1.deven-headtext {
   margin: 10% auto 8% auto;
 }
 
-.circle-text {
-  font-family: 'space-grotesk-light';
-  font-size: 0.7rem;
-  line-height: 1rem;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #000000;
-  @include media.md {
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-  }
-}
+.vision-mission {
+  // We use negative margin on the circles for the overlapping effect
+  --circle-overlap-y: 70px;
 
-.circle-title {
-  font-size: 2rem;
-  line-height: 2rem;
-  text-align: center;
-  padding: 0.5rem 0 1rem 0;
-  @include media.md {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    padding: 1.5rem 0 1rem 0;
-  }
-}
-
-.mission svg {
-  max-width: 100%;
-  height: 40px;
-  padding-top: 0.5rem;
-  @include media.md {
-    height: 115px;
-    padding-top: 0rem;
-  }
-}
-.mission div {
   position: relative;
-  padding: 0.5rem 2.1rem;
+
+  margin: 5rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
   @include media.md {
-    padding: 0.5rem 5.8rem;
+    --circle-overlap-y: 100px;
+  }
+
+  @include media.xl {
+    --circle-overlap-y: unset;
+    --circle-overlap-x: 100px;
+    flex-direction: row;
   }
 }
 
+.mission,
 .vision {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
-  border-radius: 50%;
-  margin-left: 0px;
-  margin-top: -30px;
-  height: 100vw;
-  color: white;
-  background-color: #2154d6;
+  max-width: 640px;
+  // not percentual to have overflow-situation have rounded rects, not ovals
+  border-radius: 320px;
   text-align: center;
   aspect-ratio: 1/1;
-}
 
-.vision svg {
-  max-width: 100%;
-  height: 40px;
-  padding-top: 0.5rem;
-  @include media.md {
-    height: 115px;
-    padding-top: 0rem;
+  svg {
+    // eye scales with circle width
+    width: 40%;
+    height: auto;
+    padding-top: 10%;
   }
 }
 
-.vision div {
-  position: relative;
-  padding: 0.5rem 2.1rem;
-  @include media.md {
-    padding: 0.5rem 5.8rem;
+.mission {
+  color: black;
+  background-color: #f7f7f7;
+}
+
+.vision {
+  // column layout
+  margin-block-start: calc(-1 * var(--circle-overlap-y, 0px));
+  margin-inline-start: calc(-1 * var(--circle-overlap-x, 0px));
+  color: white;
+  background-color: #2154d6;
+}
+
+.circle-content {
+  // approximation of the text-safe zone given the circle shape and overlap
+  padding-top: 0.5rem;
+  padding-inline: calc(var(--circle-overlap-x, 5%) + 1rem);
+  padding-bottom: calc(var(--circle-overlap-y, 10%) + 1rem);
+
+  @include media.sm {
+    padding-inline: calc(var(--circle-overlap-x, 10%) + 1rem);
+  }
+
+  .circle-title {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 0.5rem 0 1rem 0;
+    @include media.md {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      padding: 1.5rem 0 1.5rem 0;
+    }
+
+    @include media.lg {
+      font-size: 3rem;
+    }
+  }
+
+  .circle-text {
+    font-family: 'space-grotesk-light';
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    font-size: 0.9rem;
+    line-height: 1.2;
+
+    @include media.sm {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    @include media.md {
+      font-size: 1.1rem;
+    }
+
+    @include media.lg {
+      font-size: 1.2rem;
+    }
   }
 }
