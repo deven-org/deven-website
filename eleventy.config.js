@@ -66,6 +66,8 @@ module.exports = (eleventyConfig) => {
     return content
   })
 
+  eleventyConfig.setNunjucksEnvironmentOptions({ throwOnUndefined: true })
+
   // Adds SCSS compiling
   eleventyConfig.addTemplateFormats('scss')
 
@@ -83,6 +85,7 @@ module.exports = (eleventyConfig) => {
       }
     },
   })
+
   return {
     templateFormats: ['md', 'html', 'njk'],
     markdownTemplateEngine: 'liquid',
