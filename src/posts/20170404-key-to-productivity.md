@@ -5,7 +5,6 @@ imageUrl: 'https://placehold.co/400'
 imageDescription: # decorative
 date: 2017-04-04
 author: User 5
-layout: layouts/post.njk
 ---
 
 One of the first things people learn about me, I have a pretty busy life.

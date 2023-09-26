@@ -6,7 +6,6 @@ imageDescription: # decorative
 date: 2017-01-16
 author: User 1
 authorImageUrl: '/assets/images/authors/placeholder_cat_by_vassago_labs_cc0.png'
-layout: layouts/post.njk
 ---
 
 One week ago, I’ve started my job as Web Compatibility Engineer at Mozilla and it’s been wonderful so far!
