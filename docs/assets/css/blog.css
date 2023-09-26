@@ -36,6 +36,9 @@
 .project-wrapper .project-title.not-found {
   color: #000000;
 }
+.project-wrapper .project-title.wide-letters {
+  letter-spacing: 0.1em;
+}
 .project-wrapper .project-info {
   width: 100%;
   line-height: 130%;

@@ -26,7 +26,7 @@
   margin-top: 0%;
   padding: 70px 10px 0px 10px;
   .project-title {
-    font-family: "november";
+    font-family: 'november';
     font-weight: 400;
     font-size: 45px;
     line-height: 5rem;
@@ -37,6 +37,9 @@
     padding: 100px 0px 80px 0px;
     &.not-found {
       color: #000000;
+    }
+    &.wide-letters {
+      letter-spacing: 0.1em;
     }
   }
   .project-info {
@@ -50,30 +53,30 @@
     .wrapper {
       h1,
       h2 {
-        font-family: "space-grotesk-bold";
+        font-family: 'space-grotesk-bold';
         font-size: 1.8rem;
         padding-bottom: 2rem;
       }
       h3 {
         margin-top: 2rem;
-        font-family: "space-grotesk-bold";
+        font-family: 'space-grotesk-bold';
         font-size: 1.1rem;
         padding-bottom: 1rem;
       }
       p {
-        font-family: "space-grotesk-light";
+        font-family: 'space-grotesk-light';
         font-size: 0.9rem;
         display: block;
         padding: 0.5rem 0;
         strong {
-          font-family: "space-grotesk-bold";
+          font-family: 'space-grotesk-bold';
         }
       }
       code {
         color: black;
         background-color: #f7f7f7;
         border-radius: 10px;
-        font-family: "space-grotesk-bold";
+        font-family: 'space-grotesk-bold';
         padding: 1rem 1.5rem;
         margin: 20px auto;
         display: block;
@@ -142,7 +145,7 @@
 }
 
 .coming-soon {
-  font-family: "november";
+  font-family: 'november';
   font-weight: 400;
   font-size: 45px;
   line-height: 5rem;
@@ -205,7 +208,7 @@
     p {
       font-size: 14px;
       font-weight: 700;
-      font-family: "space-grotesk-light";
+      font-family: 'space-grotesk-light';
       color: #111111;
     }
   }
@@ -215,7 +218,7 @@
       text-decoration: none;
       font-size: 18px;
       font-weight: 700;
-      font-family: "space-grotesk-bold";
+      font-family: 'space-grotesk-bold';
       color: #000;
       cursor: pointer;
       &:hover {

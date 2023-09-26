@@ -30,7 +30,7 @@
       <header class="navi">
         <nav class="nav" role="navigation" aria-label="Main">
           <ul class="nav-links">
-            <li class="nav-item logo">
+            <li class="nav-item logo" >
               <a href="/">Deven</a>
             </li>
             <li class="nav-item subnav" id="subnav" >
@@ -54,12 +54,10 @@
                 <button class="close-btn" onclick="closeSubnav()"><span class="visually-hidden">Close Discover menu</span></button>
               </div>
             </li>
-            {%- for nav in collections.nav | reverse -%}
-              {% if nav.data.navtitle %}
-                <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}>
-                  <a href="{{ nav.url }}">{{ nav.data.navtitle }}</a>
-                </li>
-              {% endif %}
+            {%- for nav in collections.navItems | sort(attribute="data.navOrder") -%}
+              <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}>
+                <a href="{{ nav.url }}">{{ nav.data.title }}</a>
+              </li>
             {%- endfor -%}
           </ul>
         </nav>
