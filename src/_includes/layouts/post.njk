@@ -2,21 +2,18 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<div class="post-header">
-	<div class="post-header-img">
-		<img src="https://placehold.co/400" alt="author img" />
-	</div>
-	<div>
-		<div>
-			<p class="post-header-autor">
-				{{ author }} | 
-				<time class="postlist-date" datetime="{{ date | htmlDateString }}">
-					{{ date | readableDate }}
-				</time>
-			</p>
-		</div>
-		<h2 class="post-header-title">{{ title }}</h2>
-	</div>
-</div>
 
-<div class="post-content-wrapper"> {{ content | safe }} </div>
+{% from "../macros/byline.njk" import byline %}
+
+<article>
+	<header class="post-header">
+		<div class="post-header-img">
+			<img src="{{ imageUrl }}" alt="{{imageDescription or ""}}" />
+		</div>
+		<div>
+			{{ byline(authorName=author, authorImgSrc=authorImageUrl, date=date) }}
+			<h1 class="post-header-title">{{ title }}</h1>
+		</div>
+	</header>
+	<div class="post-content-wrapper"> {{ content | safe }} </div>
+</article>

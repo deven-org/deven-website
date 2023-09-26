@@ -7,6 +7,7 @@
   max-width: min(90rem, 100vw);
   align-items: center;
   flex-direction: row;
+  color: #f7f7f7;
 }
 .post-header .post-header-img {
   width: 600px;
@@ -19,11 +20,6 @@
 .post-header .post-header-img img {
   object-fit: cover;
   width: 100%;
-}
-.post-header .post-header-autor {
-  color: #f7f7f7;
-  font-size: 16px;
-  font-family: "space-grotesk-light";
 }
 .post-header .post-header-title {
   font-size: 40px;
@@ -43,7 +39,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  .post-header .post-header-autor {
+  .post-header .byline {
     margin-top: 25px;
   }
   .post-header .post-header-title {
@@ -62,7 +58,7 @@
     flex-direction: column;
     align-items: normal;
   }
-  .post-header .post-header-autor {
+  .post-header .byline {
     margin-top: 25px;
   }
   .post-header .post-header-title {
@@ -110,25 +106,42 @@
 }
 .post-content-wrapper p {
   font-size: 16px;
-  color: #f7f7f7;
   font-family: "space-grotesk-light";
   margin: 20px 0px;
 }
 .post-content-wrapper h2 {
   font-size: 28px;
   font-weight: 700;
-  color: #f7f7f7;
   font-family: "space-grotesk-bold";
-  margin: 30px 0px 30px 0px;
+  line-height: 1.3;
+  letter-spacing: 0.28px;
+  margin-block: 80px 20px;
 }
-.post-content-wrapper a {
+.post-content-wrapper h3 {
+  font-size: 22px;
+  font-weight: 700;
   font-family: "space-grotesk-bold";
-  color: #f7f7f7;
-  text-decoration: none;
-  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  margin-block: 20px;
+}
+.post-content-wrapper h4,
+.post-content-wrapper h5,
+.post-content-wrapper h6 {
+  font-size: inherit;
+  font-weight: 700;
+  font-family: "space-grotesk-bold";
+  line-height: 1.4;
+  letter-spacing: 0.14px;
+  margin-block: 20px;
+}
+.post-content-wrapper a:not(.bookmark) {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
   cursor: pointer;
 }
-.post-content-wrapper a:hover {
+.post-content-wrapper a:not(.bookmark):hover {
   color: #8e8e8e;
 }
 .post-content-wrapper ul {
@@ -136,8 +149,29 @@
 }
 .post-content-wrapper li {
   font-size: 16px;
-  color: #f7f7f7;
   font-family: "space-grotesk-light";
   list-style-type: circle;
   padding: 5px 0;
+}
+
+.byline {
+  font-size: 16px;
+  font-family: "space-grotesk-light";
+  line-height: 32px;
+}
+.byline > * {
+  vertical-align: middle;
+}
+.byline img {
+  object-fit: cover;
+  height: 30px;
+  width: 30px;
+  margin-inline-end: 15px;
+  border-radius: 100%;
+}
+.byline address {
+  display: inline;
+}
+.byline .byline-separator {
+  margin-inline: 0.75em;
 }

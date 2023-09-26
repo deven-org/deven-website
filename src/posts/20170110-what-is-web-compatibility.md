@@ -1,9 +1,11 @@
 ---
 title: What is Web Compatibility
 description: What is web compabitility exactly
+imageUrl: 'https://placekitten.com/600/600'
+imageDescription: # decorative
 date: 2017-01-16
 author: User 1
-layout: layouts/post.njk
+authorImageUrl: '/assets/images/authors/placeholder_cat_by_vassago_labs_cc0.png'
 ---
 
 One week ago, I’ve started my job as Web Compatibility Engineer at Mozilla and it’s been wonderful so far!

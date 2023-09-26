@@ -1,9 +1,11 @@
 ---
 title: Why do we need Web Compatibility
 description: Why do we need standards for a healthy web
+imageUrl: 'https://placekitten.com/g/600/600'
+imageDescription: A black and white photo of a kitten contemplating Web Compatibility
 date: 2017-01-16
 author: User 2
-layout: layouts/post.njk
+authorImageUrl: 'https://placehold.co/64'
 ---
 
 Last week, I published the first part of this blog post called [What is Web Compatibility](https://zoepage.github.io/posts/20170110-what-is-web-compatibility/index.html)? It explained what web compatibility is (Does it work in most browsers? Is the bug appearing in just this one?) and how you can report it.

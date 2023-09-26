@@ -1,0 +1,19 @@
+{% macro byline(authorName, authorImgSrc, date) %}
+  <div class="byline">
+    {# 
+      The alt is fixed to "" to mark the image as presentational (since the
+      name is next to it). Adding a longer description of what the person
+      looks like is probably not contextually warranted here.
+    #}
+    {% if authorImgSrc %}
+      <img src="{{ authorImgSrc }}" alt="" />
+    {% endif %}
+    <address>{{ authorName }}</address>
+    {%if date %}
+      <span class="byline-separator" aria-hidden="true">|</span>
+      <time datetime="{{ date | htmlDateString }}">
+        {{ date | readableDate }}
+      </time>
+    {% endif %}
+  </div>
+{% endmacro %}

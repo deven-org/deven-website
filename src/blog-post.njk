@@ -18,7 +18,7 @@ templateClass: tmpl-blog
   </div>
   <div class="blog-posts-wrapper">
     {% for post in collections.posts %}
-      {{ postExcerpt(postUrl=post.url, postTitle=post.data.title, postImgSrc="https://placehold.co/400", postImgAlt=post.data.title, authorName=post.data.author, authorImgSrc="https://placehold.co/400", authorImgAlt=post.data.author) }}
+      {{ postExcerpt(postUrl=post.url, postTitle=post.data.title, postImgSrc=post.data.imageUrl, authorName=post.data.author, authorImgSrc=post.data.authorImageUrl) }}
     {% endfor %}
   </div>
   <div class="cta-btn">

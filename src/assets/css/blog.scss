@@ -195,17 +195,23 @@
   .post-content {
     padding: 45px;
   }
+
   .author-section {
-    display: flex;
-    justify-content: flex-start;
     margin-bottom: 20px;
-    img {
-      width: 35px;
-      height: 35px;
+    line-height: 30px;
+
+    > * {
+      vertical-align: middle;
+    }
+
+    > img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
       margin-right: 15px;
       border-radius: 25px;
     }
-    p {
+    > span {
       font-size: 14px;
       font-weight: 700;
       font-family: 'space-grotesk-light';
@@ -213,6 +219,8 @@
     }
   }
   .post-title-section {
+    margin-top: 20px;
+
     a {
       color: #000;
       text-decoration: none;

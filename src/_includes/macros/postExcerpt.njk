@@ -1,25 +1,21 @@
+{% from "./byline.njk" import byline %}
+
 {% macro postExcerpt(postUrl, postTitle, postImgSrc, authorName, authorImgSrc ) %}
 <div class="blog-post-tiles">
   <div class="post-tile-img">
     {#
-      aria-hidden to remove duplicated link with same text. This can be changed
-      if we decide that some post images need an additional description because
-      they provide relevant information the title doesn't.
+      In the context of the preview, the link is a duplicate, and the image is
+      used decoratively - making the link not aria-hidden with an image
+      description (if available) seems more confusing than helpful.
+      If we have an image description it will be included on the post's page,
+      where it is part of the article's content.
     #}
     <a href="{{ postUrl }}" aria-hidden="true">
       <img src="{{ postImgSrc }}" alt="" />
     </a>
   </div>
   <div class="post-content">
-    <div class="author-section">
-      {# 
-        The alt is fixed to "" to mark the image as presentational (since the
-        name is next to it). Adding a longer description of what the person
-        looks like is probably not contextually warranted here.
-      #}
-      <img src="{{ authorImgSrc }}" alt="" />
-      <p>{{ authorName }}</p>
-    </div>
+    {{ byline(authorName=authorName, authorImgSrc=authorImgSrc) }}
     <div class="post-title-section">
         <h3><a href={{ postUrl }}>{{ postTitle }}</a></h3>
     </div>
