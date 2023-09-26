@@ -1,41 +1,4 @@
-// Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
-// Small tablets (portrait view)
-$screen-md-min: 768px;
-
-// Tablets and small desktops
-$screen-lg-min: 992px;
-
-// Large tablets and desktops
-$screen-xl-min: 1200px;
-
-// Small devices
-@mixin sm {
-  @media (min-width: #{$screen-sm-min}) {
-    @content;
-  }
-}
-
-// Medium devices
-@mixin md {
-  @media (min-width: #{$screen-md-min}) {
-    @content;
-  }
-}
-
-// Large devices
-@mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
-    @content;
-  }
-}
-
-// Extra large devices
-@mixin xl {
-  @media (min-width: #{$screen-xl-min}) {
-    @content;
-  }
-}
+@use 'styles/media';
 
 .content-wrapper {
   width: 100%;
@@ -105,7 +68,7 @@ $screen-xl-min: 1200px;
   max-width: 1200px;
   margin: 4rem auto;
   padding: 0 1rem;
-  @include md {
+  @include media.md {
     padding: 0;
   }
   .heart {
@@ -118,7 +81,7 @@ $screen-xl-min: 1200px;
     justify-content: center;
     align-items: center;
     animation: pulse 2s linear infinite alternate;
-    @include sm {
+    @include media.sm {
       width: 480px;
       height: 480px;
     }
@@ -130,7 +93,7 @@ $screen-xl-min: 1200px;
       align-items: center;
       text-align: center;
       margin-top: -60px;
-      @include md {
+      @include media.md {
         margin-top: -60px;
       }
       h2 {
@@ -139,7 +102,7 @@ $screen-xl-min: 1200px;
         line-height: 22px;
         color: #f7f7f7;
         padding-bottom: 10px;
-        @include sm {
+        @include media.sm {
           font-size: 22px;
           line-height: 28px;
         }
@@ -149,7 +112,7 @@ $screen-xl-min: 1200px;
         line-height: 14px;
         font-family: 'space-grotesk-light';
         color: #f7f7f7;
-        @include md {
+        @include media.md {
           font-size: 13px;
           line-height: 18px;
         }
@@ -168,7 +131,7 @@ $screen-xl-min: 1200px;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    @include sm {
+    @include media.sm {
       width: 660px;
       height: 660px;
     }
@@ -179,7 +142,7 @@ $screen-xl-min: 1200px;
       max-width: 55%;
       align-items: center;
       text-align: center;
-      @include sm {
+      @include media.sm {
         max-width: 45%;
       }
       h2 {
@@ -188,7 +151,7 @@ $screen-xl-min: 1200px;
         line-height: 22px;
         color: black;
         padding: 10px 15px 5px 15px;
-        @include sm {
+        @include media.sm {
           padding: 10px 35px;
           font-size: 22px;
           line-height: 28px;
@@ -199,7 +162,7 @@ $screen-xl-min: 1200px;
         color: black;
         font-size: 9px;
         line-height: 14px;
-        @include md {
+        @include media.md {
           font-size: 13px;
           line-height: 18px;
         }
@@ -216,7 +179,7 @@ $screen-xl-min: 1200px;
         font-family: 'space-grotesk-bold';
         border-radius: 40px;
         margin-top: 5px;
-        @include md {
+        @include media.md {
           padding: 9px 25px;
           font-size: 12px;
           margin-top: 15px;
@@ -239,7 +202,7 @@ $screen-xl-min: 1200px;
     position: relative;
     padding: 10px 15px;
     justify-content: center;
-    @include md {
+    @include media.md {
       width: calc(20% - 30px);
     }
     .contributor-pic {
