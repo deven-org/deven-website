@@ -190,8 +190,77 @@
 }
 
 .contributors {
+  h2 {
+    font-family: 'november';
+    font-size: 50px;
+    line-height: normal;
+    text-align: center;
+    padding: 2rem 0 0.5rem 0;
+    color: #f1de00;
+    letter-spacing: 0.05em;
+  }
+}
+
+.special-thanks {
+  margin: 2rem auto 3rem;
+  max-width: 800px;
+  padding-inline: 2rem;
+
+  align-items: center;
+  color: #f7f7f7;
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 2rem;
+
+  @include media.sm {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .thanked-person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+
+    @include media.sm {
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .thanked-info {
+          text-align: right;
+        }
+      }
+    }
+
+    .thanked-pic {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+    }
+
+    .thanked-info {
+      text-align: left;
+    }
+
+    .thanked-name {
+      font-family: 'space-grotesk-bold';
+      font-size: 1rem;
+    }
+
+    .thanked-for {
+      font-family: 'space-grotesk-light';
+      font-size: 1rem;
+    }
+  }
+}
+
+.contributor-list {
   max-width: 1200px;
-  margin: 5rem auto 5rem auto;
+  margin: 2rem auto 5rem auto;
   position: relative;
   display: flex;
   flex-wrap: wrap;

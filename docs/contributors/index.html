@@ -81,12 +81,51 @@
     </div>
   </div>
 </section>
-<section aria-label="List of GitHub contributors">
+<section class="contributors">
+  <h2>Special Thanks to...</h2>
+  <div class="special-thanks"><div class="thanked-person">
+              <img src="/assets/images/simon.jpg" alt="" class="thanked-pic">
+              <div class="thanked-info">
+                  <h3 class="thanked-name">Simon Novak</h3>
+                  <p class="thanked-for">for Product Ownership </p>
+              </div>
+          </div><div class="thanked-person">
+              <img src="/assets/images/giordana.jpg" alt="" class="thanked-pic">
+              <div class="thanked-info">
+                  <h3 class="thanked-name">Giordana Furquim</h3>
+                  <p class="thanked-for">for Technical Product Ownership</p>
+              </div>
+          </div><div class="thanked-person">
+              <img src="/assets/images/ross.jpg" alt="" class="thanked-pic">
+              <div class="thanked-info">
+                  <h3 class="thanked-name">Ross DiLiegro</h3>
+                  <p class="thanked-for">for Product Engineering</p>
+              </div>
+          </div><div class="thanked-person">
+              <img src="/assets/images/david.jpg" alt="" class="thanked-pic">
+              <div class="thanked-info">
+                  <h3 class="thanked-name">David Kennedy</h3>
+                  <p class="thanked-for">for Product Engineering</p>
+              </div>
+          </div><div class="thanked-person">
+              <img src="/assets/images/kundan.jpg" alt="" class="thanked-pic">
+              <div class="thanked-info">
+                  <h3 class="thanked-name">Kundan Pawar</h3>
+                  <p class="thanked-for">for Product Engineering</p>
+              </div>
+          </div><div class="thanked-person">
+              <img src="/assets/images/ania.jpg" alt="" class="thanked-pic">
+              <div class="thanked-info">
+                  <h3 class="thanked-name">Ania Bui</h3>
+                  <p class="thanked-for">for Product Design</p>
+              </div>
+          </div></div>
+  <h2>GitHub Contributors</h2>
   <div class="fetch-status" id="contributors-fetch-status">
     <span class="status-loading" id="contributors-status-loading">Loading Contributors… ⏳</span>
     <span aria-live="polite" hidden class="status-error" id="contributors-status-error">Could not load GitHub Contributors 😔</span>
   </div>
-  <div class="contributors" id="contributors" hidden>
+  <div class="contributor-list" id="contributors" hidden>
     
   </div>
 </section>
@@ -114,6 +153,8 @@
       }
     */
     const cachedUsers = JSON.parse(localStorage.getItem(LOCAL_STORAGE_CACHE_KEY));
+
+    console.log(cachedUsers);
 
     if (!cachedUsers || cachedUsers.version !== 1) {
       return null;
