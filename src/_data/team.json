@@ -6,44 +6,14 @@
   },
 
   {
-    "name": "Simon Novak",
-    "role": "Product Owner",
-    "imageUrl": "/assets/images/simon.jpg"
-  },
-
-  {
-    "name": "Giordana Furquim",
-    "role": "Technical Product Owner",
-    "imageUrl": "/assets/images/giordana.jpg"
-  },
-
-  {
     "name": "Raffaele Pizzari",
     "role": "Lead Product Engineer",
     "imageUrl": "/assets/images/raffaele.jpg"
   },
 
   {
-    "name": "Ross DiLiegro",
+    "name": "Remmy Cat Stock",
     "role": "Product Engineer",
-    "imageUrl": "/assets/images/ross.jpg"
-  },
-
-  {
-    "name": "David Kennedy",
-    "role": "Product Engineer",
-    "imageUrl": "/assets/images/david.jpg"
-  },
-
-  {
-    "name": "Kundan Pawar",
-    "role": "Product Engineer",
-    "imageUrl": "/assets/images/kundan.jpg"
-  },
-
-  {
-    "name": "Ania Bui",
-    "role": "Product Designer",
-    "imageUrl": "/assets/images/ania.jpg"
+    "imageUrl": "/assets/images/remmy.jpg"
   }
 ]

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Simon Novak",
+    "thanks": "for Product Ownership ",
+    "imageUrl": "/assets/images/simon.jpg"
+  },
+
+  {
+    "name": "Giordana Furquim",
+    "thanks": "for Technical Product Ownership",
+    "imageUrl": "/assets/images/giordana.jpg"
+  },
+
+  {
+    "name": "Ross DiLiegro",
+    "thanks": "for Product Engineering",
+    "imageUrl": "/assets/images/ross.jpg"
+  },
+
+  {
+    "name": "David Kennedy",
+    "thanks": "for Product Engineering",
+    "imageUrl": "/assets/images/david.jpg"
+  },
+
+  {
+    "name": "Kundan Pawar",
+    "thanks": "for Product Engineering",
+    "imageUrl": "/assets/images/kundan.jpg"
+  },
+
+  {
+    "name": "Ania Bui",
+    "thanks": "for Product Design",
+    "imageUrl": "/assets/images/ania.jpg"
+  }
+]
