@@ -17,7 +17,7 @@ templateClass: tmpl-blog
     </svg>
   </div>
   <div class="blog-posts-wrapper">
-    {% for post in collections.posts %}
+    {% for post in collections.posts | reverse %}
       {{ postExcerpt(postUrl=post.url, postTitle=post.data.title, postImgSrc=post.data.imageUrl, authorName=post.data.author, authorImgSrc=post.data.authorImageUrl) }}
     {% endfor %}
   </div>

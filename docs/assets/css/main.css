@@ -1,7 +1,8 @@
 @font-face {
   font-family: "november";
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
+  font-synthesis: none;
   font-display: auto;
   src: url("../fonts/november.ttf");
 }
@@ -37,8 +38,8 @@ body {
 .content-wrapper {
   min-height: 100vh;
   max-width: 1440px;
-  /* Equal to height of footer */
-  margin-bottom: -40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .navi {
@@ -56,7 +57,7 @@ body {
 
 main {
   margin-bottom: 30px;
-  min-height: calc(100vh - 80px);
+  flex-grow: 1;
 }
 
 .navi {
@@ -115,9 +116,10 @@ main {
   color: #000;
   cursor: pointer;
   border-radius: 100px;
-  width: 158px;
+  min-width: 158px;
   margin: 0 auto;
   text-decoration: none;
+  white-space: nowrap;
 }
 .cta-btn a {
   font-family: "space-grotesk-bold";
@@ -132,13 +134,14 @@ main {
   transition: background-color 500ms;
 }
 
-.buttons-inline {
-  margin-top: 2rem;
+.buttons-group {
   justify-content: flex-start;
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-.buttons-inline .cta-btn {
-  margin: 0px 2rem 0px 0px;
+.buttons-group .cta-btn {
+  margin: 0;
 }
 
 .nav {
@@ -333,7 +336,6 @@ main {
 
 em {
   font-weight: 900;
-  font-style: underline;
 }
 
 .footer {
@@ -345,28 +347,18 @@ em {
   justify-content: flex-end;
 }
 
-.footer-circle {
-  height: auto;
-  background-image: radial-gradient(circle at bottom, #2154d6 50%, transparent 50%);
-  background-size: 100% 200%;
-  background-repeat: no-repeat;
-  background-position: 0px -58vh;
-}
-@media (min-width: 768px) {
-  .footer-circle {
-    background-position: 0px -65vh;
-  }
-}
-
 .footer-content {
   border-top: 1px solid #f7f7f7;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 930px;
-  margin: 0px auto;
+  margin-inline: 32px;
+}
+@media (min-width: 768px) {
+  .footer-content {
+    margin-inline: 60px;
+  }
 }
 .footer-content p,
 .footer-content a {
@@ -425,132 +417,6 @@ em {
 .nav-item a {
   color: black;
   text-decoration: none;
-}
-
-.tools {
-  background: #f7f7f7;
-  position: relative;
-  border-radius: 30px;
-  margin: 0rem auto 0px auto;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  display: block;
-}
-@media (min-width: 768px) {
-  .tools {
-    width: 60%;
-    padding: 2rem 5rem;
-  }
-}
-.tools h2 {
-  font-family: "november";
-  font-size: 50px;
-  line-height: normal;
-  text-align: center;
-  padding: 2rem 0 0.5rem 0;
-}
-.tools ul {
-  margin-top: 1rem;
-  padding: 2rem 1.5rem;
-}
-@media (min-width: 768px) {
-  .tools ul {
-    margin-top: 0rem;
-  }
-}
-.tools ul li {
-  padding: 20px 0px;
-  border-bottom: 1px solid #000000;
-}
-.tools ul li a {
-  display: flex;
-  color: inherit;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-}
-.tools ul li a h3 {
-  font-family: "space-grotesk-bold";
-  font-size: 1.5rem;
-  line-height: 1.7rem;
-  text-align: left;
-}
-@media (min-width: 768px) {
-  .tools ul li a h3 {
-    font-size: 1.7rem;
-    line-height: 2.7rem;
-  }
-}
-@media (min-width: 992px) {
-  .tools ul li a h3 {
-    font-size: 2.1rem;
-    line-height: 2.9rem;
-  }
-}
-@media (min-width: 1200px) {
-  .tools ul li a h3 {
-    font-size: 2.7rem;
-    line-height: 3.4rem;
-  }
-}
-.tools ul li a .arrow-circle {
-  background: #2154d6;
-  color: #f7f7f7;
-  height: 50px;
-  width: 50px;
-  border: none;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .tools ul li a .arrow-circle {
-    height: 75px;
-    width: 75px;
-  }
-}
-.tools ul li a .arrow-circle .animated-arrow {
-  position: relative;
-  width: 200%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.tools ul li a:hover {
-  color: #8e8e8e;
-}
-.tools ul li a:hover .animated-arrow {
-  -webkit-animation: slideArrows 0.75s forwards;
-  animation: slideArrows 0.75s forwards;
-  animation-iteration-count: 1;
-}
-@media (prefers-reduced-motion: reduce) {
-  .tools ul li a:hover .animated-arrow {
-    -webkit-animation: none;
-    animation: none;
-  }
-}
-@-webkit-keyframes slideArrows {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideArrows {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.tools ul li:nth-child(even) .arrow-circle {
-  background: #f1de00;
-  color: blacK;
 }
 
 .coming-soon-text {

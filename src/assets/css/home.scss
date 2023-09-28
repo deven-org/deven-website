@@ -1,6 +1,49 @@
 @use 'styles/media';
 
-.intro-container {
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  row-gap: 200px;
+
+  @include media.md {
+    row-gap: 250px;
+  }
+
+  margin-bottom: 200px;
+
+  section {
+    margin-inline: 32px;
+
+    @include media.md {
+      margin-inline: 60px;
+    }
+
+    h2 {
+      font-family: 'november';
+      font-size: 2rem;
+      line-height: normal;
+
+      // better readability for november font
+      letter-spacing: 0.05em;
+      text-transform: lowercase;
+
+      text-align: center;
+
+      @include media.md {
+        font-size: 2.5rem;
+      }
+
+      @include media.lg {
+        font-size: 3.1rem;
+      }
+    }
+  }
+}
+
+section.abstract-header {
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,16 +52,12 @@
   gap: 40px 0px;
   margin-top: 0%;
   padding: 70px 0 0 0;
-  @include media.md {
-    padding: 70px 10px 0px 10px;
-  }
 }
 
 h1.deven-headtext {
   position: relative;
   font-family: 'november';
   font-style: normal;
-  font-weight: 400;
   font-size: 7rem;
   line-height: 5rem;
   text-align: center;
@@ -43,7 +82,6 @@ h1.deven-headtext {
   @include media.md {
     padding-top: 1rem;
     max-width: 1050px;
-    padding-bottom: 5rem;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -275,127 +313,66 @@ h1.deven-headtext {
   padding: 2%;
 }
 
-.initial-text {
-  font-size: 3rem;
-  @include media.md {
-    font-size: 5rem;
-  }
-}
-
-.rest-text {
-  font-family: 'space-grotesk-bold';
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  @include media.md {
-    font-size: 1.3rem;
-    line-height: 1.7rem;
-  }
-  .emoji-circle {
-    width: 33px;
-    position: relative;
-    height: 33px;
-    line-height: 33px;
-    border-radius: 50%;
-    font-size: 20px;
-    display: inline-block;
-    text-align: center;
-    background: #2154d6;
-  }
-}
-
-.intro {
+section.intro {
+  align-self: stretch;
+  margin-inline: 0;
   background: #f7f7f7;
-  width: 100%;
+  box-sizing: border-box;
   color: #000000;
-  line-height: 130%;
-  letter-spacing: 0.01em;
-  position: relative;
   border-radius: 20px;
-}
-
-.intro div {
   padding: 15% 18%;
-}
-
-.statement {
-  width: 100%;
-  background: #f7f7f7;
-  border-radius: 20px;
   position: relative;
-  transform: none;
-  @include media.md {
-    width: 400px;
-    background: f7f7f7;
-    border-radius: 20px;
-    position: relative;
-    padding: 5%;
-    transform: translate(30%, -70%);
-  }
+
   p {
-    padding: 5%;
-    font-family: 'space-grotesk-bold';
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.3;
     letter-spacing: 0.01em;
-    color: #000000;
+
+    font-family: 'space-grotesk-light';
+    font-size: 1.1rem;
+    line-height: 1.3;
+
     @include media.md {
       font-size: 1.3rem;
-      line-height: 1.7rem;
+    }
+
+    @include media.lg {
+      font-size: 1.75rem;
+    }
+
+    strong {
+      font-size: 1.2em;
+      line-height: 1;
+      font-family: 'november';
+      vertical-align: middle;
+    }
+
+    &:first-child strong:first-child {
+      vertical-align: baseline;
+      font-size: 3em;
+      line-height: 1;
+      @include media.md {
+        font-size: 5rem;
+      }
+    }
+
+    em {
+      font-family: 'space-grotesk-bold';
+    }
+
+    + p {
+      margin-top: 0.7em;
     }
   }
 }
 
-.cool-stuff-star {
-  position: relative;
-  display: flex;
-  transform: none;
-  justify-content: center;
-  margin: 0px auto -1rem auto;
-  z-index: 1;
-  @include media.md {
-    position: relative;
-    margin: 0px auto 30px auto;
-    transform: translate(-60%, 0%);
-  }
-  svg {
-    position: relative;
-    height: 300px;
-    width: 300px;
-    @include media.md {
-      width: 408px;
-      height: 408px;
-    }
-  }
-  text {
-    z-index: 2;
-    width: max-content;
-    font-family: 'space-grotesk-bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    color: #000;
-  }
-}
-
-.team-members {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin: 10% auto 8% auto;
-}
-
-.vision-mission {
+section.vision-mission {
   // We use negative margin on the circles for the overlapping effect
   --circle-overlap-y: 70px;
 
   position: relative;
 
-  margin: 5rem 2rem;
-
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
   flex-direction: column;
 
   @include media.md {
@@ -407,86 +384,355 @@ h1.deven-headtext {
     --circle-overlap-x: 100px;
     flex-direction: row;
   }
+
+  h2 {
+    padding-block: 0.8em 0.4em;
+  }
+
+  .circle {
+    max-width: 640px;
+    // not percentual to have overflow-situation have rounded rects, not ovals
+    border-radius: 320px;
+    text-align: center;
+
+    &::before {
+      // Padding aspect ratio trick instead of "aspect-ratio", to only set
+      // a minimum aspect ratio / let circle grow into rounded rect.
+      // The trick works because padding percentage is based on parent _width_,
+      // even for padding-top/bottom
+      padding-bottom: 100%; /* Minimum aspect ratio */
+      content: '';
+      float: left;
+    }
+
+    svg {
+      display: block;
+      margin: 0 auto;
+      width: 40%;
+      height: auto;
+      padding-top: 10%;
+    }
+
+    &.mission {
+      color: black;
+      background-color: #f7f7f7;
+    }
+
+    &.vision {
+      margin-block-start: calc(-1 * var(--circle-overlap-y, 0px));
+      margin-inline-start: calc(-1 * var(--circle-overlap-x, 0px));
+      color: white;
+      background-color: #2154d6;
+    }
+  }
+
+  .circle-content {
+    // box-sizing: border-box;
+    // approximation of the text-safe zone given the circle shape and overlap
+    padding-inline: calc(var(--circle-overlap-x, 5%) + 1rem);
+    padding-bottom: calc(var(--circle-overlap-y, 10%) + 1rem);
+
+    @include media.sm {
+      padding-inline: calc(var(--circle-overlap-x, 10%) + 1rem);
+    }
+
+    p {
+      font-family: 'space-grotesk-light';
+      letter-spacing: 0.01em;
+
+      font-size: 1rem;
+      line-height: 1.3;
+
+      @include media.sm {
+        font-size: 1.1rem;
+      }
+
+      @include media.lg {
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
 
-.mission,
-.vision {
+section.mission-statement {
+  position: relative;
+  isolation: isolate;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 640px;
-  // not percentual to have overflow-situation have rounded rects, not ovals
-  border-radius: 320px;
-  text-align: center;
-  aspect-ratio: 1/1;
+  box-sizing: border-box;
+  max-width: 1100px;
 
-  svg {
-    // eye scales with circle width
-    width: 40%;
+  svg.cool-stuff-star {
+    z-index: 1;
+    width: 100%;
     height: auto;
-    padding-top: 10%;
+    margin-bottom: -25px;
+
+    @include media.md {
+      align-self: flex-start;
+      width: 60%;
+      margin-bottom: -17%;
+    }
+
+    text {
+      color: black;
+      font-family: 'space-grotesk-bold';
+      font-style: normal;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: 0.01em;
+      width: max-content;
+      z-index: 2;
+    }
+  }
+
+  .statement {
+    width: 100%;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    border-radius: 20px;
+
+    @include media.md {
+      align-self: flex-end;
+      width: 60%;
+      padding: 54px;
+    }
+
+    p {
+      padding: 32px;
+      font-family: 'space-grotesk-bold';
+      font-size: 1.3rem;
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+      color: #000000;
+
+      @include media.md {
+      }
+
+      @include media.lg {
+        font-size: 1.5rem;
+      }
+
+      @include media.xl {
+        font-size: 1.8rem;
+      }
+
+      strong {
+        font-family: 'november';
+      }
+    }
   }
 }
 
-.mission {
+section.tools {
+  background: #f7f7f7;
   color: black;
-  background-color: #f7f7f7;
-}
+  position: relative;
+  border-radius: 30px;
+  align-self: stretch;
 
-.vision {
-  // column layout
-  margin-block-start: calc(-1 * var(--circle-overlap-y, 0px));
-  margin-inline-start: calc(-1 * var(--circle-overlap-x, 0px));
-  color: white;
-  background-color: #2154d6;
-}
+  padding: 40px 35px 60px;
+  text-align: center;
+  display: block;
 
-.circle-content {
-  // approximation of the text-safe zone given the circle shape and overlap
-  padding-top: 0.5rem;
-  padding-inline: calc(var(--circle-overlap-x, 5%) + 1rem);
-  padding-bottom: calc(var(--circle-overlap-y, 10%) + 1rem);
-
-  @include media.sm {
-    padding-inline: calc(var(--circle-overlap-x, 10%) + 1rem);
+  @include media.md {
+    padding: 60px 55px 100px;
   }
 
-  .circle-title {
-    font-size: 2rem;
-    line-height: 2rem;
-    text-align: center;
-    padding: 0.5rem 0 1rem 0;
+  @include media.xxl {
+    padding: 80px 75px 130px;
+  }
+
+  ul {
+    margin-top: 3rem;
     @include media.md {
-      font-size: 2.5rem;
-      line-height: 2.5rem;
-      padding: 1.5rem 0 1.5rem 0;
+      margin-top: 4rem;
+    }
+    li {
+      padding: 20px 0px;
+      border-bottom: 1px solid #000000;
+      a {
+        display: flex;
+        color: inherit;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+
+        h3 {
+          font-family: 'space-grotesk-bold';
+          font-size: 1.5rem;
+          line-height: 1.7rem;
+          text-align: left;
+          @include media.md {
+            font-size: 1.7rem;
+            line-height: 2.7rem;
+          }
+          @include media.lg {
+            font-size: 2.1rem;
+            line-height: 2.9rem;
+          }
+          @include media.xl {
+            font-size: 2.7rem;
+            line-height: 3.4rem;
+          }
+        }
+        .arrow-circle {
+          background: #2154d6;
+          color: #f7f7f7;
+          height: 50px;
+          width: 50px;
+          border: none;
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative;
+          @include media.md {
+            height: 75px;
+            width: 75px;
+          }
+          .animated-arrow {
+            position: relative;
+            width: 200%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          }
+        }
+
+        &:hover {
+          color: #8e8e8e;
+
+          .animated-arrow {
+            -webkit-animation: slideArrows 0.75s forwards;
+            animation: slideArrows 0.75s forwards;
+            animation-iteration-count: 1;
+
+            @include media.reduced-motion {
+              -webkit-animation: none;
+              animation: none;
+            }
+
+            // translate percentage works relative to the current element size.
+            // Since the element is twice as wide as the parent, 50% equals the full
+            // parent width.
+
+            @-webkit-keyframes slideArrows {
+              0% {
+                transform: translateX(-50%);
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+
+            @keyframes slideArrows {
+              0% {
+                transform: translateX(-50%);
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        .arrow-circle {
+          background: #f1de00;
+          color: blacK;
+        }
+      }
+    }
+  }
+}
+
+section.current-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  h2 {
+    color: #f1de00;
+  }
+
+  .team-member-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-block: 6rem 4.5rem;
+
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 10px 30px 10px;
+
+      .member-pic {
+        border-radius: 50%;
+        width: 170px;
+        height: 170px;
+      }
+
+      .member-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        text-align: center;
+
+        .member-name {
+          font-family: 'space-grotesk-bold';
+          font-size: 16px;
+          margin: 0;
+          color: #f7f7f7;
+        }
+
+        .member-title {
+          font-family: 'space-grotesk-light';
+          font-size: 16px;
+          margin: 0;
+          color: #f7f7f7;
+        }
+      }
+    }
+  }
+}
+
+section.latest-news {
+  h2 {
+    color: #f1de00;
+  }
+
+  .blog-posts-wrapper {
+    margin-block: 6rem 4.5rem;
+
+    // no multiline posts
+    .blog-post-tiles:nth-child(2) {
+      display: none;
+
+      @include media.md {
+        display: initial;
+      }
     }
 
-    @include media.lg {
-      font-size: 3rem;
+    .blog-post-tiles:nth-child(3) {
+      display: none;
+
+      @include media.lg {
+        display: initial;
+      }
     }
   }
 
-  .circle-text {
-    font-family: 'space-grotesk-light';
-    text-align: center;
-    letter-spacing: 0.01em;
-
-    font-size: 0.9rem;
-    line-height: 1.2;
-
-    @include media.sm {
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-
-    @include media.md {
-      font-size: 1.1rem;
-    }
-
-    @include media.lg {
-      font-size: 1.2rem;
-    }
+  .buttons-group {
+    justify-content: center;
   }
 }
