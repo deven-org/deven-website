@@ -1,8 +1,9 @@
 ---
 layout: layouts/base.njk
 templateClass: tmpl-home
-comingSoonClass: footer-circle
 ---
+{% from "../macros/postExcerpt.njk" import postExcerpt %}
+
 <div>
     <div class="main-header white-circle">
     </div>
@@ -136,5 +137,18 @@ comingSoonClass: footer-circle
             <span>Contributors <span aria-hidden="true">→</span></span>
         </a>
     </div>
+
+    <section aria-label="Latest News" class="blog-content" id="latest-news">
+        <div class="blog no-blog-margin">
+            <div class="blog-posts-wrapper">
+            {% for post in collections.posts %}
+                {{ postExcerpt(postUrl=post.url, postTitle=post.data.title, postImgSrc=post.data.imageUrl, authorName=post.data.author, authorImgSrc=post.data.authorImageUrl) }}
+            {% endfor %}
+            </div>
+            <div class="cta-btn">
+            <a href="./feed/feed.xml" title="Subscribe via RSS Feed">Subscribe via RSS</a>
+            </div>
+        </div>
+    </section>
 </div>
 
