@@ -101,7 +101,7 @@ comingSoonClass: footer-circle
         </svg>
 
         <ul>
-            {%- for tool in collections.tool -%}
+            {%- for tool in collections.tool | sort(attribute="data.toolOrder") -%}
                 <li>
                     <a href="{{ tool.url }}">
                         <h3>{{ tool.data.title }}</h3>
