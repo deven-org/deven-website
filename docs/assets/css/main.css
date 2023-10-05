@@ -372,9 +372,9 @@ em {
   justify-content: center;
 }
 .imprint-container .imprint-box {
+  width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .imprint-container .imprint-box h1 {
   color: #f7f7f7;
@@ -387,6 +387,11 @@ em {
 }
 .imprint-container .imprint-box p strong {
   font-family: "space-grotesk-bold";
+}
+@media (min-width: 576px) {
+  .imprint-container .imprint-box {
+    align-items: center;
+  }
 }
 
 .nav-item {
