@@ -345,21 +345,6 @@ em {
   justify-content: flex-end;
 }
 
-.footer-circle {
-  height: auto;
-  background-image: radial-gradient(
-    circle at bottom,
-    #2154d6 50%,
-    transparent 50%
-  );
-  background-size: 100% 200%;
-  background-repeat: no-repeat;
-  background-position: 0px -58vh;
-  @include media.md {
-    background-position: 0px -65vh;
-  }
-}
-
 .footer-content {
   border-top: 1px solid #f7f7f7;
   height: 40px;
@@ -378,14 +363,6 @@ em {
   a {
     text-decoration: none;
   }
-}
-
-// Headline
-.log-title {
-  font-family: 'november';
-  font-size: 2.5em;
-  line-height: 3.2em;
-  text-align: center;
 }
 
 .imprint-container {
