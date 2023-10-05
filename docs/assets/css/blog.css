@@ -1,14 +1,9 @@
-.blue-circle {
-  background-image: radial-gradient(circle at top, #2154d6 50%, transparent 50%);
-}
-
 .blog {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-top: 12%;
   padding-bottom: 3rem;
 }
 
@@ -17,9 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
-  margin-top: 0%;
-  padding: 70px 10px 0px 10px;
+  padding-inline: 10px;
 }
 .project-wrapper .project-title {
   font-family: "november";
@@ -50,7 +43,7 @@
 .project-wrapper .project-info.highlight {
   box-sizing: border-box;
   padding: 4rem;
-  margin-block: 120px;
+  margin-bottom: 120px;
   color: black;
   background: #fff;
   border-radius: 20px;

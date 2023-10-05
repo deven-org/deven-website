@@ -119,7 +119,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 4rem auto;
+  margin: 0 auto;
   padding: 0 1rem;
 }
 @media (min-width: 768px) {

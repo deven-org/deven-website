@@ -3,7 +3,8 @@
 @font-face {
   font-family: 'november';
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
+  font-synthesis: none;
   font-display: auto;
   src: url('../fonts/november.ttf');
 }
@@ -45,6 +46,91 @@ body {
   margin-bottom: -40px;
 }
 
+header.background-circle {
+  position: relative;
+  margin-inline: 32px;
+  // nav height estimate
+  padding-top: 75px;
+
+  // this is just to prevent accidentally not setting a color
+  --background: red;
+
+  &.yellow {
+    --background: #f1de00;
+    --foreground: black;
+  }
+
+  &.offwhite {
+    --background: #f7f7f7;
+    --foreground: black;
+  }
+
+  &.blue {
+    --background: #2154d6;
+    --foreground: white;
+  }
+
+  @include media.md {
+    margin-inline: 60px;
+  }
+
+  .header-content {
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-block: 1em;
+
+    min-height: 200px;
+
+    @include media.sm {
+      min-height: min(20vw, 320px);
+    }
+  }
+
+  h1 {
+    // h1 should never leave background circle
+    // This is a fallback if this does happen, and also so that our
+    // accessibility tests understand our design. (no contrast false positive)
+    text-shadow: var(--background) -2px -2px, var(--background) 2px -2px,
+      var(--background) 2px 2px, var(--background) -2px 2px;
+    border-radius: 100px;
+    color: var(--foreground);
+    font-family: 'november';
+    letter-spacing: 0.01em;
+    font-style: normal;
+    font-size: 3.1rem;
+    text-align: center;
+    line-height: 1.3;
+
+    svg {
+      padding-top: 0.5em;
+      display: block;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    transform: translate(-50%, calc(-50% + 150px));
+    border-radius: 0 0 100% 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--background);
+
+    min-width: 600px;
+
+    @include media.sm {
+      min-width: 800px;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 .navi {
   background-position: center -200px;
   background-size: 100% 100%;
@@ -59,6 +145,7 @@ body {
 }
 
 main {
+  isolation: isolate;
   margin-bottom: 30px;
   min-height: calc(100vh - 80px);
 }
@@ -93,22 +180,6 @@ main {
   @include media.xl {
     height: 560px;
   }
-}
-
-.white-circle {
-  background-image: radial-gradient(
-    circle at top,
-    #f7f7f7 50%,
-    transparent 50%
-  );
-}
-
-.blue-circle {
-  background-image: radial-gradient(
-    circle at top,
-    #2154d6 50%,
-    transparent 50%
-  );
 }
 
 .cta-btn {
@@ -538,17 +609,6 @@ em {
   @include media.md {
     font-size: 3rem;
     line-height: 3.2rem;
-  }
-}
-
-.blog-eye {
-  svg {
-    width: auto;
-    height: 100px;
-    @include media.md {
-      width: auto;
-      height: 138px;
-    }
   }
 }
 

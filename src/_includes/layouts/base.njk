@@ -17,47 +17,51 @@
     <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="stylesheet" href="/assets/css/contributors.css">
     <link rel="stylesheet" href="/assets/css/blog.css">
-    <link rel="stylesheet" href="/assets/css/404.css">
     <link rel="stylesheet" href="/assets/css/richtext.css">
     <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
     <link rel="alternate" href="{{ metadata.feed.path }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
   <body>
     <div class='content-wrapper'>
-      <header class="navi">
-        <nav class="nav" role="navigation" aria-label="Main">
-          <ul class="nav-links">
-            <li class="nav-item logo" >
-              <a href="/">Deven</a>
-            </li>
-            <li class="nav-item subnav" id="subnav" >
-              <button class="subnav-toggle" id="subnav-toggle" aria-expanded="false" onclick="toggleSubnav()">Discover<div class="subnav-chevron"></div>
-              </button>
-              <div class="subnav-container">
-                <ul>
-                  <li class="subnav-item">
-                    <a href="/#about-deven">About</a>
-                  </li>
-                  <li class="subnav-item">
-                    <a href="/#tools">Tools</a>
-                  </li>
-                  <li class="subnav-item">
-                    <a href="/#team">Team</a>
-                  </li>
-                  <li class="subnav-item">
-                    <a href="/#latest-news">Latest News</a>
-                  </li>
-                </ul>
-                <button class="close-btn" onclick="closeSubnav()"><span class="visually-hidden">Close Discover menu</span></button>
-              </div>
-            </li>
-            {%- for nav in collections.navItems | sort(attribute="data.navOrder") -%}
-              <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}>
-                <a href="{{ nav.url }}">{{ nav.data.title }}</a>
+      <header {% if headerBackground %}class="background-circle {{ headerBackground }}"{% endif %}>
+        <div class="navi">
+          <nav class="nav" role="navigation" aria-label="Main">
+            <ul class="nav-links">
+              <li class="nav-item logo" >
+                <a href="/">Deven</a>
               </li>
-            {%- endfor -%}
-          </ul>
-        </nav>
+              <li class="nav-item subnav" id="subnav" >
+                <button class="subnav-toggle" id="subnav-toggle" aria-expanded="false" onclick="toggleSubnav()">Discover<div class="subnav-chevron"></div>
+                </button>
+                <div class="subnav-container">
+                  <ul>
+                    <li class="subnav-item">
+                      <a href="/#about-deven">About</a>
+                    </li>
+                    <li class="subnav-item">
+                      <a href="/#tools">Tools</a>
+                    </li>
+                    <li class="subnav-item">
+                      <a href="/#team">Team</a>
+                    </li>
+                    <li class="subnav-item">
+                      <a href="/#latest-news">Latest News</a>
+                    </li>
+                  </ul>
+                  <button class="close-btn" onclick="closeSubnav()"><span class="visually-hidden">Close Discover menu</span></button>
+                </div>
+              </li>
+              {%- for nav in collections.navItems | sort(attribute="data.navOrder") -%}
+                <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page"{% endif %}>
+                  <a href="{{ nav.url }}">{{ nav.data.title }}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </nav>
+        </div>
+        <div class="header-content">
+          {% slot header %}<h1>{{title}}</h1>{% endslot %}
+        </div>
       </header>
       <main{% if templateClass %} class="{{ templateClass }} home"{% endif %}>
         {{ content | safe }}

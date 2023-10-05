@@ -76,6 +76,18 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.setNunjucksEnvironmentOptions({ throwOnUndefined: true })
 
+  // Adapted from https://github.com/11ty/eleventy/issues/853
+  // Recreates Nunjucks "block" concept to send child content to a parent
+  eleventyConfig.addPairedShortcode('slot', function (fallbackContent, name) {
+    return (this.page.slots || {})[name] || fallbackContent
+  })
+
+  eleventyConfig.addPairedShortcode('slotcontent', function (content, name) {
+    if (!this.page.slots) this.page.slots = {}
+    this.page.slots[name] = content
+    return ''
+  })
+
   // Adds SCSS compiling
   eleventyConfig.addTemplateFormats('scss')
 
