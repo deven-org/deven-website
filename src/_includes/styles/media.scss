@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
 // Small tablets (portrait view)
@@ -35,6 +37,33 @@ $screen-xxl-min: 1440px;
 
 @mixin xxl {
   @media (min-width: #{$screen-xxl-min} ) {
+    @content;
+  }
+}
+
+// Some breakpoints based on font-size, to be used in layouts that
+// depend a lot on the font-size
+// mostly used for the shape-jumble™️
+
+@function calculateRem($size) {
+  $remSize: math.div($size, 16px);
+  @return #{$remSize}rem;
+}
+
+@mixin sm-rem {
+  @media (min-width: #{calculateRem($screen-sm-min)}) {
+    @content;
+  }
+}
+
+@mixin md-rem {
+  @media (min-width: #{calculateRem($screen-md-min)}) {
+    @content;
+  }
+}
+
+@mixin lg-rem {
+  @media (min-width: #{calculateRem($screen-lg-min)}) {
     @content;
   }
 }
