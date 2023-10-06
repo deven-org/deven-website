@@ -24,6 +24,9 @@
   <body>
     <div class='content-wrapper'>
       <header {% if headerBackground %}class="background-circle {{ headerBackground }}"{% endif %}>
+        {% if headerBackground %}
+          <div class="circle-container"></div>
+        {% endif %}
         <div class="navi">
           <nav class="nav" role="navigation" aria-label="Main">
             <ul class="nav-links">

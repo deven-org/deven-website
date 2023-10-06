@@ -37,6 +37,11 @@ body {
   line-height: 1.8em;
   font-size: 1em;
   font-family: 'AVF';
+  --content-margin: 32px;
+
+  @include media.md {
+    --content-margin: 60px;
+  }
 }
 
 .content-wrapper {
@@ -48,7 +53,6 @@ body {
 
 header.background-circle {
   position: relative;
-  margin-inline: 32px;
   // nav height estimate
   padding-top: 75px;
 
@@ -70,10 +74,6 @@ header.background-circle {
     --foreground: white;
   }
 
-  @include media.md {
-    margin-inline: 60px;
-  }
-
   .header-content {
     isolation: isolate;
     display: flex;
@@ -84,6 +84,8 @@ header.background-circle {
     padding-block: 1em;
 
     min-height: 200px;
+
+    margin-inline: var(--content-margin);
 
     @include media.sm {
       min-height: min(20vw, 320px);
@@ -111,22 +113,39 @@ header.background-circle {
     }
   }
 
-  &::before {
-    content: '';
+  .circle-container {
     position: absolute;
-    left: 50%;
     top: 0;
+    left: 0;
     width: 100%;
-    transform: translate(-50%, calc(-50% + 150px));
-    border-radius: 0 0 100% 100%;
-    aspect-ratio: 1/1;
-    background-color: var(--background);
+    min-height: 100%;
+    overflow: hidden;
 
-    min-width: 600px;
+    transform: translateY(calc(-50% + 150px));
 
     @include media.sm {
-      min-width: 800px;
-      transform: translate(-50%, -50%);
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      content: '';
+      position: relative;
+      left: 50%;
+      top: 0;
+      display: block;
+      // 100% - content margin * 2
+      width: calc(100% - var(--content-margin));
+      transform: translateX(-50%);
+      border-radius: 0 0 100% 100%;
+      aspect-ratio: 1/1;
+      background-color: var(--background);
+
+      min-width: 600px;
+
+      @include media.sm {
+        min-width: 800px;
+        transform: translateX(-50%);
+      }
     }
   }
 }

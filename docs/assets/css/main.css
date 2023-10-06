@@ -33,6 +33,12 @@ body {
   line-height: 1.8em;
   font-size: 1em;
   font-family: "AVF";
+  --content-margin: 32px;
+}
+@media (min-width: 768px) {
+  body {
+    --content-margin: 60px;
+  }
 }
 
 .content-wrapper {
@@ -44,7 +50,6 @@ body {
 
 header.background-circle {
   position: relative;
-  margin-inline: 32px;
   padding-top: 75px;
   --background: red;
 }
@@ -60,11 +65,6 @@ header.background-circle.blue {
   --background: #2154d6;
   --foreground: white;
 }
-@media (min-width: 768px) {
-  header.background-circle {
-    margin-inline: 60px;
-  }
-}
 header.background-circle .header-content {
   isolation: isolate;
   display: flex;
@@ -73,6 +73,7 @@ header.background-circle .header-content {
   justify-content: center;
   padding-block: 1em;
   min-height: 200px;
+  margin-inline: var(--content-margin);
 }
 @media (min-width: 576px) {
   header.background-circle .header-content {
@@ -94,22 +95,37 @@ header.background-circle h1 svg {
   padding-top: 0.5em;
   display: block;
 }
-header.background-circle::before {
-  content: "";
+header.background-circle .circle-container {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  transform: translateY(calc(-50% + 150px));
+}
+@media (min-width: 576px) {
+  header.background-circle .circle-container {
+    transform: translateY(-50%);
+  }
+}
+header.background-circle .circle-container::before {
+  content: "";
+  position: relative;
   left: 50%;
   top: 0;
-  width: 100%;
-  transform: translate(-50%, calc(-50% + 150px));
+  display: block;
+  width: calc(100% - var(--content-margin));
+  transform: translateX(-50%);
   border-radius: 0 0 100% 100%;
   aspect-ratio: 1/1;
   background-color: var(--background);
   min-width: 600px;
 }
 @media (min-width: 576px) {
-  header.background-circle::before {
+  header.background-circle .circle-container::before {
     min-width: 800px;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
 }
 
