@@ -380,7 +380,7 @@ em {
 .imprint-container .imprint-box h1 {
   color: #f7f7f7;
   font-family: "space-grotesk-bold";
-  font-size: 25px;
+  font-size: 1.6rem;
   padding-bottom: 20px;
 }
 .imprint-container .imprint-box p {
@@ -389,9 +389,12 @@ em {
 .imprint-container .imprint-box p strong {
   font-family: "space-grotesk-bold";
 }
+.imprint-container .imprint-box p span {
+  display: inline-block;
+}
 @media (min-width: 576px) {
   .imprint-container .imprint-box {
-    align-items: center;
+    text-align: center;
   }
 }
 

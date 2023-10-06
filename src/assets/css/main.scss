@@ -379,7 +379,7 @@ em {
     h1 {
       color: #f7f7f7;
       font-family: 'space-grotesk-bold';
-      font-size: 25px;
+      font-size: 1.6rem;
       padding-bottom: 20px;
     }
     p {
@@ -387,9 +387,12 @@ em {
       strong {
         font-family: 'space-grotesk-bold';
       }
+      span {
+        display: inline-block;
+      }
     }
     @include media.sm {
-      align-items: center;
+      text-align: center;
     }
   }
 }
