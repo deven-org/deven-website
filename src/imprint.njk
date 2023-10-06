@@ -6,12 +6,18 @@ title: Imprint
 
 <div class='imprint-container'>
   <div class='imprint-box'>
-    <h1 class="imprint-title">{{ title }}</h1>
+    <h1>{{ title }}</h1>
     <p>
-      <strong>Responsible contact person:</strong> Ola Gasidlo-Braendel</p>
+      <span><strong>Responsible contact person:</strong> </span>
+      <span>{{ metadata.imprint.name }}</span>
+    </p>
     <p>
-      <strong>Email address:</strong> ola.gasidlo-braendel@accenture.com</p>
+      <span><strong>Email address:</strong> </span>
+      <span>{{ metadata.imprint.email }}</span>
+    </p>
     <p>
-      <strong>Telephone number:</strong> +49 (0) 151 2041801</p>
+      <span><strong>Telephone number:</strong> </span>
+      <span>{{ metadata.imprint.phone }}</span>
+    </p>
   </div>
 </div>
