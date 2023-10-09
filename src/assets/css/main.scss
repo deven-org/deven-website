@@ -85,8 +85,6 @@ header.background-circle {
 
     min-height: 200px;
 
-    margin-inline: var(--content-margin);
-
     @include media.sm {
       min-height: min(20vw, 320px);
     }

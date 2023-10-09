@@ -14,250 +14,249 @@ header h1.deven-headtext {
   }
 }
 
-.shapes-container {
-  padding-top: 60px;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  color: red;
+.shape-jumble {
+  display: grid;
+  overflow: hidden;
+  box-sizing: border-box;
   width: 100%;
-  flex-wrap: wrap;
-  @include media.md {
-    max-width: 1050px;
-    padding-bottom: 5rem;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+  font-family: 'space-grotesk-bold';
+  font-size: 0.875rem;
+
+  // If you have to edit these: I'm so sorry.
+  // Also you'll want to check out the rendered grids in a browser to understand what's going on.
+  // (Activate the grid layout view in the developer tools)
+  grid-template-columns:
+    minmax(2px, var(--content-margin))
+    1fr
+    [prod-start stand-start jump dev]
+    min-content
+    [enable]
+    min-content
+    [prod-end stand-end]
+    minmax(0, 20px)
+    2fr
+    [hacker os]
+    min-content
+    1fr
+    minmax(2px, var(--content-margin));
+
+  grid-template-rows:
+    [prod hacker] auto
+    [stand os-start] 0.8fr
+    [dev] 0.8fr
+    [os-end jump enable] auto;
+
+  @include media.md-rem {
+    margin-top: -6rem;
+    font-size: 1rem;
+    grid-template-columns:
+      1fr
+      [prod stand] min-content
+      1fr
+      [hacker] min-content
+      1fr
+      [dev jump] min-content
+      [enable os] minmax(17.5em, 22.5em);
+    grid-template-rows:
+      [os-start] 1fr
+      [prod hacker dev] 1fr
+      [os-end stand jump enable] auto;
   }
-  @include media.lg {
-    padding-top: 120px;
+
+  @include media.lg-rem {
+    font-size: 1.25rem;
   }
-  .intro-jumble {
-    width: 50%;
-    margin-top: -1rem;
-    margin-left: 1rem;
-    @include media.md {
-      margin-top: -1rem;
-      margin-left: 2rem;
-      width: 200px;
-    }
-  }
-  .open-source-star {
+
+  .star {
+    aspect-ratio: 1 / 1;
     position: relative;
-    z-index: 1;
-    margin-left: 0;
-    margin-top: -2rem;
-    margin-bottom: 8rem;
-    overflow: hidden;
-    width: 45%;
-    display: flex;
-    justify-content: flex-end;
+
     svg {
-      width: 200px;
-      height: 200px;
+      width: 100%;
+      height: 100%;
+      display: block;
     }
-    @include media.md {
-      margin-bottom: 14rem;
-      margin-left: 3rem;
-      margin-top: -13rem;
+
+    span {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .pill {
+    text-align: center;
+    padding: 0.8em 2em;
+    border-radius: 100px;
+    white-space: nowrap;
+    min-width: min-content;
+    max-width: max-content;
+
+    @include media.sm-rem {
+      padding: 1.4em 3.5em;
+    }
+  }
+
+  .circle,
+  .rounded-square {
+    min-width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    aspect-ratio: 1/1;
+    padding: 1em;
+  }
+
+  .circle {
+    border-radius: 500px;
+  }
+
+  .rounded-square {
+    border-radius: 1.5em;
+  }
+
+  .product-engineering {
+    grid-area: prod;
+    justify-self: flex-start; // x-axis
+    align-self: flex-end; // y-axis
+    margin-top: 3em;
+    transform-origin: 40% 80%;
+    transform: rotate(-17.807deg);
+    background-color: #2154d6;
+    color: #f7f7f7;
+  }
+
+  .standardization {
+    grid-area: stand;
+    justify-self: flex-start; // x-axis
+    align-self: flex-start; // y-axis
+    margin-inline-start: 2.5em;
+
+    transform: rotate(7.818deg);
+    background-color: #f7f7f7;
+    color: black;
+
+    @include media.sm-rem {
+      margin-inline-start: 4.5em;
+    }
+  }
+
+  .hacker {
+    grid-area: hacker;
+    font-size: 2.5em;
+    line-height: 1;
+
+    width: 2.4em;
+    justify-self: center; // x-axis
+    align-self: flex-start; // y-axis
+
+    margin-left: -50px;
+
+    background-color: black;
+    color: #f7f7f7;
+    padding: 0.4em;
+    text-align: center;
+
+    @include media.sm-rem {
+      margin-inline: -0.8em;
+    }
+  }
+
+  .open-source {
+    grid-area: os;
+    aspect-ratio: 1 / 1;
+    justify-self: stretch; // x-axis
+    align-self: center; // y-axis
+    position: relative;
+
+    min-width: 240px;
+    margin-inline: -130px -50px;
+    margin-block: 5px -10px;
+
+    .star {
+      width: 100%;
       svg {
-        width: 300px;
-        height: 300px;
+        color: #f1de00;
+      }
+      span {
+        color: black;
       }
     }
-    text {
-      z-index: 2;
-      width: max-content;
-      font-family: 'space-grotesk-bold';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      color: #000;
+
+    @include media.md-rem {
+      margin-block: 0 -70px;
+      margin-inline: 50px 0;
+
+      .star {
+        width: 100%;
+        svg {
+          color: #f7f7f7;
+        }
+      }
     }
   }
-}
 
-.pe-pill {
-  background-color: #2154d6;
-  border-radius: 100px;
-  text-align: center;
-  width: 18em;
-  height: 65px;
-  line-height: 65px;
-  transform: rotate(-17.81deg);
-  color: #f7f7f7;
-  border: none;
-  font-family: 'space-grotesk-bold';
-  font-size: 12px;
-}
+  .developer {
+    grid-area: dev;
+    width: 8em;
 
-.standardization-pill {
-  background-color: #f7f7f7;
-  border-radius: 100px;
-  text-align: center;
-  width: 16em;
-  height: 70px;
-  line-height: 70px;
-  transform: rotate(7.82deg);
-  color: #000000;
-  z-index: 1;
-  margin-top: 9px;
-  margin-left: 60px;
-  border: none;
-  font-family: 'space-grotesk-bold';
-  font-size: 12px;
-  @include media.md {
-    font-size: 13px;
+    justify-self: flex-end; // x-axis
+    align-self: flex-end; // y-axis
+
+    background-color: #2154d6;
+    color: #f7f7f7;
+    transform-origin: 100% 0;
+    transform: rotate(-20.32deg);
+
+    margin-bottom: -1.5em;
+
+    @include media.sm-rem {
+      width: 10em;
+      margin-bottom: -2.5em;
+    }
+  }
+
+  .enablement {
+    grid-area: enable;
+    box-sizing: border-box;
+    width: 8em;
+    justify-self: flex-start; // x-axis
+    align-self: center; // y-axis
+    margin-left: -1em;
+
+    background-color: #f7f7f7;
+    color: black;
+    text-align: center;
+    transform-origin: center center;
+    transform: rotate(12.743deg);
+
+    @include media.sm-rem {
+      width: 10em;
+    }
+  }
+
+  .jump-button {
+    grid-area: jump;
+    align-self: center; // y-axis
+    isolation: isolate;
+    background-color: #f1de00;
+    color: black;
+    align-items: center;
+    width: 6em;
+
+    svg {
+      display: block;
+    }
   }
 }
 
 .button-group {
   position: relative;
   margin-top: 12rem;
-}
-
-.abstract-text-span {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: max-content;
-  left: 50%;
-  font-family: 'space-grotesk-bold';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 20px;
-  @include media.md {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  svg {
-    height: 26px;
-    @include media.md {
-      height: 37px;
-    }
-  }
-}
-
-.contributor-jumble {
-  position: relative;
-  width: 50%;
-  margin-top: 2.3rem;
-  margin-left: 1rem;
-  @include media.md {
-    margin-left: 0rem;
-    margin-top: 3rem;
-    width: auto;
-  }
-  .dev-square {
-    position: absolute;
-    background-color: #2154d6;
-    border-radius: 10%;
-    text-align: center;
-    width: 120px;
-    height: 120px;
-    transform: rotate(-20.32deg);
-    color: #f7f7f7;
-    margin-bottom: 25px;
-    left: 1rem;
-
-    @include media.md {
-      width: 160px;
-      height: 160px;
-      left: 0;
-    }
-
-    @include media.lg {
-      width: 200px;
-      height: 200px;
-    }
-  }
-  .link-button {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #f1de00;
-    width: 65px;
-    height: 65px;
-    top: 7rem;
-    left: 0.4rem;
-
-    @include media.md {
-      width: 90px;
-      height: 90px;
-      top: 9rem;
-      left: 0rem;
-    }
-
-    @include media.lg {
-      width: 120px;
-      height: 120px;
-      top: 10rem;
-    }
-  }
-  .enable-circle {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #f7f7f7;
-    width: 120px;
-    height: 120px;
-    top: 4rem;
-    left: 7rem;
-    text-align: center;
-    transform: rotate(12.74deg);
-    @include media.md {
-      width: 150px;
-      height: 150px;
-      left: 8.3rem;
-      top: 4rem;
-    }
-    @include media.lg {
-      width: 200px;
-      height: 200px;
-      left: 10rem;
-    }
-    span {
-      color: #000;
-    }
-  }
-}
-
-.emoji-ellipse {
-  background-color: #000;
-  border-radius: 50%;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
-  margin-right: 1rem;
-  margin-top: -4rem;
-  @include media.md {
-    width: 120px;
-    height: 120px;
-    margin: -2rem 3rem 0 6rem;
-  }
-  span {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: max-content;
-    left: 50%;
-    font-size: 30px;
-    line-height: 26px;
-    @include media.md {
-      font-size: 45px;
-      line-height: 26px;
-    }
-  }
-}
-
-.four-point-star {
-  position: relative;
-  z-index: 1;
-  margin-left: 21rem;
-  margin-top: -3rem;
-}
-
-.blog-content {
-  padding: 2%;
 }
 
 .initial-text {
@@ -289,6 +288,7 @@ header h1.deven-headtext {
 }
 
 .intro {
+  margin-top: 100px;
   background: #f7f7f7;
   width: 100%;
   color: #000000;
