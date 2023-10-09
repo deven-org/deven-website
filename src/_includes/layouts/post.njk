@@ -5,6 +5,10 @@ templateClass: tmpl-post
 
 {% from "../macros/byline.njk" import byline %}
 
+{% slotcontent header %}
+{# Nothing - h1 is in article #}
+{% endslotcontent %}
+
 <article>
 	<header class="post-header">
 		<div class="post-header-img">

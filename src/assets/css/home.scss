@@ -1,39 +1,21 @@
 @use 'styles/media';
 
-.intro-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 70px;
-  gap: 40px 0px;
-  margin-top: 0%;
-  padding: 70px 0 0 0;
-  @include media.md {
-    padding: 70px 10px 0px 10px;
+header h1.deven-headtext {
+  letter-spacing: normal;
+  font-size: 130px;
+  line-height: 1.1;
+  padding-top: 100px;
+  padding-inline: 20px;
+  @include media.sm {
+    padding-top: 7%;
   }
-}
-
-h1.deven-headtext {
-  position: relative;
-  font-family: 'november';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 7rem;
-  line-height: 5rem;
-  text-align: center;
-  justify-content: center;
-  padding: 40px 0px 80px 0px;
-  color: #f1de00;
-  top: 20%;
-  @include media.md {
-    font-size: 8rem;
-    padding: 70px 0px 80px 0px;
+  @include media.lg {
+    font-size: 200px;
   }
 }
 
 .shapes-container {
-  padding-top: 0;
+  padding-top: 60px;
   padding-bottom: 0;
   display: flex;
   justify-content: space-between;
@@ -41,11 +23,13 @@ h1.deven-headtext {
   width: 100%;
   flex-wrap: wrap;
   @include media.md {
-    padding-top: 1rem;
     max-width: 1050px;
     padding-bottom: 5rem;
     flex-wrap: nowrap;
     justify-content: space-between;
+  }
+  @include media.lg {
+    padding-top: 120px;
   }
   .intro-jumble {
     width: 50%;
@@ -242,6 +226,7 @@ h1.deven-headtext {
   position: relative;
   width: 80px;
   height: 80px;
+  flex-shrink: 0;
   margin-right: 1rem;
   margin-top: -4rem;
   @include media.md {
