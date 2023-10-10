@@ -223,49 +223,44 @@ header h1.deven-headtext {
   margin-inline: 0;
 }
 
-.initial-text {
-  font-size: 3rem;
-}
-@media (min-width: 768px) {
-  .initial-text {
-    font-size: 5rem;
-  }
-}
-
-.rest-text {
-  font-family: "space-grotesk-bold";
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-}
-@media (min-width: 768px) {
-  .rest-text {
-    font-size: 1.3rem;
-    line-height: 1.7rem;
-  }
-}
-.rest-text .emoji-circle {
-  width: 33px;
-  position: relative;
-  height: 33px;
-  line-height: 33px;
-  border-radius: 50%;
-  font-size: 20px;
-  display: inline-block;
-  text-align: center;
-  background: #2154d6;
-}
-
-.intro {
+.home > section.intro {
   background: #f7f7f7;
-  color: #000000;
-  line-height: 130%;
-  letter-spacing: 0.01em;
-  position: relative;
+  color: black;
   border-radius: 20px;
+  padding: max(10%, 20px);
+  font-family: "space-grotesk-light";
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  font-size: 1.1rem;
 }
-
-.intro div {
-  padding: 15% 18%;
+@media (min-width: 768px) {
+  .home > section.intro {
+    font-size: 1.3rem;
+    padding-inline: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .home > section.intro {
+    font-size: 1.75rem;
+  }
+}
+.home > section.intro .first-word {
+  font-size: 3em;
+  line-height: 1;
+  font-family: "november";
+  vertical-align: baseline;
+}
+.home > section.intro strong {
+  font-family: "november";
+  font-size: 1.2em;
+  line-height: 1;
+  vertical-align: middle;
+}
+.home > section.intro em {
+  font-family: "space-grotesk-bold";
+}
+.home > section.intro p + p {
+  margin-top: 0.7em;
 }
 
 .statement {
@@ -445,16 +440,6 @@ header h1.deven-headtext {
   .circle-content .circle-text {
     font-size: 1.2rem;
   }
-}
-
-.dev-enable {
-  display: inline-block;
-  background: #f1de00;
-  border-radius: 10px;
-  padding: 2px;
-  font-size: 16px;
-  padding: 0px 5px;
-  vertical-align: bottom;
 }
 
 .november-font {
