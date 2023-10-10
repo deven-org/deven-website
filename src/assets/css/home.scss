@@ -254,9 +254,24 @@ header h1.deven-headtext {
   }
 }
 
-.button-group {
-  position: relative;
-  margin-top: 12rem;
+.home {
+  display: flex;
+  flex-direction: column;
+  row-gap: 200px;
+  margin-block: 100px;
+  align-items: center;
+
+  > section {
+    margin-inline: var(--content-margin);
+
+    &.stretch {
+      align-self: stretch;
+    }
+
+    &.no-margin {
+      margin-inline: 0;
+    }
+  }
 }
 
 .initial-text {
@@ -288,9 +303,7 @@ header h1.deven-headtext {
 }
 
 .intro {
-  margin-top: 100px;
   background: #f7f7f7;
-  width: 100%;
   color: #000000;
   line-height: 130%;
   letter-spacing: 0.01em;
@@ -375,8 +388,6 @@ header h1.deven-headtext {
   --circle-overlap-y: 70px;
 
   position: relative;
-
-  margin: 5rem 2rem;
 
   display: flex;
   align-items: center;
@@ -494,11 +505,6 @@ header h1.deven-headtext {
 
 .mission-statement {
   position: relative;
-  margin: 8rem auto 0px auto;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
 }
 
 .cool-stuff-star text {
@@ -513,10 +519,8 @@ header h1.deven-headtext {
 .current-team {
   position: relative;
   max-width: 70%;
-  margin: 8rem auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: #fff;
 }
