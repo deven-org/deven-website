@@ -272,6 +272,25 @@ header h1.deven-headtext {
       margin-inline: 0;
     }
   }
+
+  h2 {
+    font-family: 'november';
+    font-size: 2rem;
+    line-height: normal;
+
+    // better readability for november font
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    text-align: center;
+
+    @include media.md {
+      font-size: 2.5rem;
+    }
+
+    @include media.lg {
+      font-size: 3.1rem;
+    }
+  }
 }
 
 .home > section.intro {
@@ -314,6 +333,102 @@ header h1.deven-headtext {
 
   p + p {
     margin-top: 0.7em;
+  }
+}
+
+.home > section.vision-mission {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  // We use negative margin for the overlapping effect.
+  // Its value is defined for either x (inline) or y (block) axis depending on
+  // current flex layout.
+  --circle-overlap-y: 70px;
+
+  @include media.md {
+    --circle-overlap-y: 100px;
+  }
+
+  @include media.xl {
+    --circle-overlap-y: unset;
+    --circle-overlap-x: 100px;
+    flex-direction: row;
+  }
+
+  .circle {
+    max-width: 640px;
+    // not percentual to have overflow-situation have rounded rects, not ovals
+    border-radius: 320px;
+    text-align: center;
+
+    &::before {
+      // Padding aspect ratio trick instead of "aspect-ratio", to only set
+      // a minimum aspect ratio / let circle grow into rounded rect, without
+      // relying on obscure flex + aspect-ratio behavior
+      padding-bottom: 100%; /* Minimum aspect ratio */
+      content: '';
+      float: left;
+    }
+
+    svg {
+      display: block;
+      margin: 0 auto;
+      width: 40%;
+      height: auto;
+      padding-top: 10%;
+    }
+
+    &.mission {
+      color: black;
+      background-color: #f7f7f7;
+    }
+
+    &.vision {
+      color: white;
+      background-color: #2154d6;
+    }
+
+    &:not(:first-child) {
+      margin-inline-start: calc(-1 * var(--circle-overlap-x, 0px));
+      margin-block-start: calc(-1 * var(--circle-overlap-y, 0px));
+    }
+
+    .circle-content {
+      // approximation of the text-safe zone given the circle shape and overlap
+      padding-inline: calc(var(--circle-overlap-x, 5%) + 1rem);
+      padding-bottom: calc(var(--circle-overlap-y, 10%) + 1rem);
+
+      @include media.sm {
+        padding-inline: calc(var(--circle-overlap-x, 10%) + 1rem);
+      }
+
+      h2 {
+        margin-block: 15px;
+      }
+
+      p {
+        font-family: 'space-grotesk-light';
+        text-align: center;
+        letter-spacing: 0.01em;
+
+        font-size: 0.9rem;
+        line-height: 1.2;
+
+        @include media.sm {
+          font-size: 1rem;
+          line-height: 1.4;
+        }
+
+        @include media.md {
+          font-size: 1.1rem;
+        }
+
+        @include media.lg {
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 }
 
@@ -383,110 +498,6 @@ header h1.deven-headtext {
   flex-wrap: wrap;
   max-width: 100%;
   margin: 10% auto 8% auto;
-}
-
-.vision-mission {
-  // We use negative margin on the circles for the overlapping effect
-  --circle-overlap-y: 70px;
-
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  @include media.md {
-    --circle-overlap-y: 100px;
-  }
-
-  @include media.xl {
-    --circle-overlap-y: unset;
-    --circle-overlap-x: 100px;
-    flex-direction: row;
-  }
-}
-
-.mission,
-.vision {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 640px;
-  // not percentual to have overflow-situation have rounded rects, not ovals
-  border-radius: 320px;
-  text-align: center;
-  aspect-ratio: 1/1;
-
-  svg {
-    // eye scales with circle width
-    width: 40%;
-    height: auto;
-    padding-top: 10%;
-  }
-}
-
-.mission {
-  color: black;
-  background-color: #f7f7f7;
-}
-
-.vision {
-  // column layout
-  margin-block-start: calc(-1 * var(--circle-overlap-y, 0px));
-  margin-inline-start: calc(-1 * var(--circle-overlap-x, 0px));
-  color: white;
-  background-color: #2154d6;
-}
-
-.circle-content {
-  // approximation of the text-safe zone given the circle shape and overlap
-  padding-top: 0.5rem;
-  padding-inline: calc(var(--circle-overlap-x, 5%) + 1rem);
-  padding-bottom: calc(var(--circle-overlap-y, 10%) + 1rem);
-
-  @include media.sm {
-    padding-inline: calc(var(--circle-overlap-x, 10%) + 1rem);
-  }
-
-  .circle-title {
-    font-size: 2rem;
-    line-height: 2rem;
-    text-align: center;
-    padding: 0.5rem 0 1rem 0;
-    @include media.md {
-      font-size: 2.5rem;
-      line-height: 2.5rem;
-      padding: 1.5rem 0 1.5rem 0;
-    }
-
-    @include media.lg {
-      font-size: 3rem;
-    }
-  }
-
-  .circle-text {
-    font-family: 'space-grotesk-light';
-    text-align: center;
-    letter-spacing: 0.01em;
-
-    font-size: 0.9rem;
-    line-height: 1.2;
-
-    @include media.sm {
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-
-    @include media.md {
-      font-size: 1.1rem;
-    }
-
-    @include media.lg {
-      font-size: 1.2rem;
-    }
-  }
 }
 
 .november-font {
