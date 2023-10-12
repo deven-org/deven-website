@@ -20,7 +20,10 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({
     'src/assets/favicon/favicon.ico': '/favicon.ico',
   })
-  // eleventyConfig.setDataDeepMerge(true);
+
+  // This would merge assembled page data (e.g. arrays in front matter data)
+  // instead of overwriting them. There was no need for this so far.
+  // eleventyConfig.setDataDeepMerge(true)
 
   // Adds RSS Feed
   eleventyConfig.addPlugin(pluginRss)
@@ -86,6 +89,16 @@ module.exports = (eleventyConfig) => {
     if (!this.page.slots) this.page.slots = {}
     this.page.slots[name] = content
     return ''
+  })
+
+  eleventyConfig.addShortcode('usesvg', function (id) {
+    if (!this.page.svgIds) this.page.svgIds = new Set()
+    this.page.svgIds.add(id)
+    return `<use href="#${id}" />`
+  })
+
+  eleventyConfig.addShortcode('bail', function (error) {
+    throw new Error(error)
   })
 
   // Adds SCSS compiling
