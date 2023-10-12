@@ -75,7 +75,7 @@
   }
   @include media.md-rem {
     padding: 0;
-    overflow: inherit;
+    overflow: visible;
   }
   .heart {
     position: relative;
