@@ -155,7 +155,14 @@
   top: 0;
   left: 0;
   z-index: -1;
+  -webkit-animation: pulse 2s linear infinite alternate;
   animation: pulse 2s linear infinite alternate;
+}
+@media (prefers-reduced-motion: reduce) {
+  .contribute .heart::before {
+    -webkit-animation: none;
+    animation: none;
+  }
 }
 @media (min-width: 576px) {
   .contribute .heart {
@@ -216,7 +223,14 @@
   top: 0;
   left: 0;
   z-index: -1;
-  animation: rotateStar 50s infinite alternate;
+  -webkit-animation: rotateStar 60s infinite alternate;
+  animation: rotateStar 60s infinite alternate;
+}
+@media (prefers-reduced-motion: reduce) {
+  .contribute .star::before {
+    -webkit-animation: none;
+    animation: none;
+  }
 }
 @media (min-width: 576px) {
   .contribute .star {
@@ -364,7 +378,7 @@
 }
 @media (min-width: 768px) {
   .contributor-list .image-container {
-    width: calc(20% - 30px);
+    width: calc(20% - 2rem);
   }
 }
 .contributor-list .image-container .contributor-pic {

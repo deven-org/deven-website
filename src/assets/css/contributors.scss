@@ -96,7 +96,12 @@
       top: 0;
       left: 0;
       z-index: -1;
+      -webkit-animation: pulse 2s linear infinite alternate;
       animation: pulse 2s linear infinite alternate;
+      @include media.reduced-motion {
+        -webkit-animation: none;
+        animation: none;
+      }
     }
     @include media.sm {
       min-width: 32rem;
@@ -151,7 +156,12 @@
       top: 0;
       left: 0;
       z-index: -1;
-      animation: rotateStar 50s infinite alternate;
+      -webkit-animation: rotateStar 60s infinite alternate;
+      animation: rotateStar 60s infinite alternate;
+      @include media.reduced-motion {
+        -webkit-animation: none;
+        animation: none;
+      }
     }
     @include media.sm {
       margin-top: -6rem;
@@ -297,7 +307,7 @@
     padding: 10px 15px;
     justify-content: center;
     @include media.md {
-      width: calc(20% - 30px);
+      width: calc(20% - 2rem);
     }
     .contributor-pic {
       border-radius: 50%;
