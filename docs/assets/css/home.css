@@ -16,6 +16,23 @@ header h1.deven-headtext {
   }
 }
 
+.four-point-star {
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.four-point-star svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.four-point-star span {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .shape-jumble {
   display: grid;
   overflow: hidden;
@@ -38,22 +55,6 @@ header h1.deven-headtext {
   .shape-jumble {
     font-size: 1.25rem;
   }
-}
-.shape-jumble .star {
-  aspect-ratio: 1/1;
-  position: relative;
-}
-.shape-jumble .star svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.shape-jumble .star span {
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .shape-jumble .pill {
   text-align: center;
@@ -137,13 +138,13 @@ header h1.deven-headtext {
   margin-inline: -130px -50px;
   margin-block: 5px -10px;
 }
-.shape-jumble .open-source .star {
+.shape-jumble .open-source .four-point-star {
   width: 100%;
 }
-.shape-jumble .open-source .star svg {
+.shape-jumble .open-source .four-point-star svg {
   color: #f1de00;
 }
-.shape-jumble .open-source .star span {
+.shape-jumble .open-source .four-point-star span {
   color: black;
 }
 @media (min-width: 48rem) {
@@ -151,10 +152,10 @@ header h1.deven-headtext {
     margin-block: 0 -70px;
     margin-inline: 50px 0;
   }
-  .shape-jumble .open-source .star {
+  .shape-jumble .open-source .four-point-star {
     width: 100%;
   }
-  .shape-jumble .open-source .star svg {
+  .shape-jumble .open-source .four-point-star svg {
     color: #f7f7f7;
   }
 }
@@ -324,6 +325,9 @@ header h1.deven-headtext {
   color: white;
   background-color: #2154d6;
 }
+.home > section.vision-mission .circle.vision svg {
+  color: black;
+}
 .home > section.vision-mission .circle:not(:first-child) {
   margin-inline-start: calc(-1 * var(--circle-overlap-x, 0px));
   margin-block-start: calc(-1 * var(--circle-overlap-y, 0px));
@@ -397,39 +401,31 @@ header h1.deven-headtext {
 }
 
 .cool-stuff-star {
-  position: relative;
   display: flex;
-  transform: none;
   justify-content: center;
   margin: 0px auto -1rem auto;
   z-index: 1;
-}
-@media (min-width: 768px) {
-  .cool-stuff-star {
-    position: relative;
-    margin: 0px auto 30px auto;
-    transform: translate(-60%, 0%);
-  }
-}
-.cool-stuff-star svg {
-  position: relative;
-  height: 300px;
   width: 300px;
-}
-@media (min-width: 768px) {
-  .cool-stuff-star svg {
-    width: 408px;
-    height: 408px;
-  }
-}
-.cool-stuff-star text {
-  z-index: 2;
-  width: max-content;
   font-family: "space-grotesk-bold";
   font-style: normal;
   font-weight: 700;
+  line-height: 1.2;
   font-size: 20px;
-  color: #000;
+  letter-spacing: 0.01em;
+}
+.cool-stuff-star svg {
+  color: #f1de00;
+}
+.cool-stuff-star span {
+  color: black;
+}
+@media (min-width: 768px) {
+  .cool-stuff-star {
+    font-size: 30px;
+    width: 408px;
+    margin: 0px auto 30px auto;
+    transform: translate(-60%, 0%);
+  }
 }
 
 .team-members {
@@ -448,15 +444,6 @@ header h1.deven-headtext {
 
 .mission-statement {
   position: relative;
-}
-
-.cool-stuff-star text {
-  font-family: "space-grotesk-bold";
-  font-size: 25px;
-  line-height: 120%;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #000000;
 }
 
 .current-team {

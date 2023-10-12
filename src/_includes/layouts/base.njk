@@ -1,3 +1,5 @@
+{%- from "macros/svgDefinitions.njk" import svgDefinitions -%}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,6 +24,9 @@
     <link rel="alternate" href="{{ metadata.feed.path }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
   <body>
+    {% if page.svgIds -%}
+      {{ svgDefinitions(page.svgIds) }}
+    {%- endif -%}
     <div class='content-wrapper'>
       <header {% if headerBackground %}class="background-circle {{ headerBackground }}"{% endif %}>
         {% if headerBackground %}
