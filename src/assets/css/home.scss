@@ -254,52 +254,182 @@ header h1.deven-headtext {
   }
 }
 
-.button-group {
-  position: relative;
-  margin-top: 12rem;
-}
+.home {
+  display: flex;
+  flex-direction: column;
+  row-gap: 200px;
+  margin-block: 100px;
+  align-items: center;
 
-.initial-text {
-  font-size: 3rem;
-  @include media.md {
-    font-size: 5rem;
+  > section {
+    margin-inline: var(--content-margin);
+
+    &.stretch {
+      align-self: stretch;
+    }
+
+    &.no-margin {
+      margin-inline: 0;
+    }
+  }
+
+  h2 {
+    font-family: 'november';
+    font-size: 2rem;
+    line-height: normal;
+
+    // better readability for november font
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    text-align: center;
+
+    @include media.md {
+      font-size: 2.5rem;
+    }
+
+    @include media.lg {
+      font-size: 3.1rem;
+    }
   }
 }
 
-.rest-text {
-  font-family: 'space-grotesk-bold';
+.home > section.intro {
+  background: #f7f7f7;
+  color: black;
+  border-radius: 20px;
+  padding: max(10%, 20px);
+
+  font-family: 'space-grotesk-light';
+  letter-spacing: 0.01em;
+  line-height: 1.3;
   font-size: 1.1rem;
-  line-height: 1.5rem;
+
   @include media.md {
     font-size: 1.3rem;
-    line-height: 1.7rem;
+    padding-inline: 20%;
   }
-  .emoji-circle {
-    width: 33px;
-    position: relative;
-    height: 33px;
-    line-height: 33px;
-    border-radius: 50%;
-    font-size: 20px;
-    display: inline-block;
+
+  @include media.lg {
+    font-size: 1.75rem;
+  }
+
+  .first-word {
+    font-size: 3em;
+    line-height: 1;
+    font-family: 'november';
+    vertical-align: baseline;
+  }
+
+  strong {
+    font-family: 'november';
+    font-size: 1.2em;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  em {
+    font-family: 'space-grotesk-bold';
+  }
+
+  p + p {
+    margin-top: 0.7em;
+  }
+}
+
+.home > section.vision-mission {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  // We use negative margin for the overlapping effect.
+  // Its value is defined for either x (inline) or y (block) axis depending on
+  // current flex layout.
+  --circle-overlap-y: 70px;
+
+  @include media.md {
+    --circle-overlap-y: 100px;
+  }
+
+  @include media.xl {
+    --circle-overlap-y: unset;
+    --circle-overlap-x: 100px;
+    flex-direction: row;
+  }
+
+  .circle {
+    max-width: 640px;
+    // not percentual to have overflow-situation have rounded rects, not ovals
+    border-radius: 320px;
     text-align: center;
-    background: #2154d6;
+
+    &::before {
+      // Padding aspect ratio trick instead of "aspect-ratio", to only set
+      // a minimum aspect ratio / let circle grow into rounded rect, without
+      // relying on obscure flex + aspect-ratio behavior
+      padding-bottom: 100%; /* Minimum aspect ratio */
+      content: '';
+      float: left;
+    }
+
+    svg {
+      display: block;
+      margin: 0 auto;
+      width: 40%;
+      height: auto;
+      padding-top: 10%;
+    }
+
+    &.mission {
+      color: black;
+      background-color: #f7f7f7;
+    }
+
+    &.vision {
+      color: white;
+      background-color: #2154d6;
+    }
+
+    &:not(:first-child) {
+      margin-inline-start: calc(-1 * var(--circle-overlap-x, 0px));
+      margin-block-start: calc(-1 * var(--circle-overlap-y, 0px));
+    }
+
+    .circle-content {
+      // approximation of the text-safe zone given the circle shape and overlap
+      padding-inline: calc(var(--circle-overlap-x, 5%) + 1rem);
+      padding-bottom: calc(var(--circle-overlap-y, 10%) + 1rem);
+
+      @include media.sm {
+        padding-inline: calc(var(--circle-overlap-x, 10%) + 1rem);
+      }
+
+      h2 {
+        margin-block: 15px;
+      }
+
+      p {
+        font-family: 'space-grotesk-light';
+        text-align: center;
+        letter-spacing: 0.01em;
+
+        font-size: 0.9rem;
+        line-height: 1.2;
+
+        @include media.sm {
+          font-size: 1rem;
+          line-height: 1.4;
+        }
+
+        @include media.md {
+          font-size: 1.1rem;
+        }
+
+        @include media.lg {
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
-}
-
-.intro {
-  margin-top: 100px;
-  background: #f7f7f7;
-  width: 100%;
-  color: #000000;
-  line-height: 130%;
-  letter-spacing: 0.01em;
-  position: relative;
-  border-radius: 20px;
-}
-
-.intro div {
-  padding: 15% 18%;
 }
 
 .statement {
@@ -370,122 +500,6 @@ header h1.deven-headtext {
   margin: 10% auto 8% auto;
 }
 
-.vision-mission {
-  // We use negative margin on the circles for the overlapping effect
-  --circle-overlap-y: 70px;
-
-  position: relative;
-
-  margin: 5rem 2rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  @include media.md {
-    --circle-overlap-y: 100px;
-  }
-
-  @include media.xl {
-    --circle-overlap-y: unset;
-    --circle-overlap-x: 100px;
-    flex-direction: row;
-  }
-}
-
-.mission,
-.vision {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 640px;
-  // not percentual to have overflow-situation have rounded rects, not ovals
-  border-radius: 320px;
-  text-align: center;
-  aspect-ratio: 1/1;
-
-  svg {
-    // eye scales with circle width
-    width: 40%;
-    height: auto;
-    padding-top: 10%;
-  }
-}
-
-.mission {
-  color: black;
-  background-color: #f7f7f7;
-}
-
-.vision {
-  // column layout
-  margin-block-start: calc(-1 * var(--circle-overlap-y, 0px));
-  margin-inline-start: calc(-1 * var(--circle-overlap-x, 0px));
-  color: white;
-  background-color: #2154d6;
-}
-
-.circle-content {
-  // approximation of the text-safe zone given the circle shape and overlap
-  padding-top: 0.5rem;
-  padding-inline: calc(var(--circle-overlap-x, 5%) + 1rem);
-  padding-bottom: calc(var(--circle-overlap-y, 10%) + 1rem);
-
-  @include media.sm {
-    padding-inline: calc(var(--circle-overlap-x, 10%) + 1rem);
-  }
-
-  .circle-title {
-    font-size: 2rem;
-    line-height: 2rem;
-    text-align: center;
-    padding: 0.5rem 0 1rem 0;
-    @include media.md {
-      font-size: 2.5rem;
-      line-height: 2.5rem;
-      padding: 1.5rem 0 1.5rem 0;
-    }
-
-    @include media.lg {
-      font-size: 3rem;
-    }
-  }
-
-  .circle-text {
-    font-family: 'space-grotesk-light';
-    text-align: center;
-    letter-spacing: 0.01em;
-
-    font-size: 0.9rem;
-    line-height: 1.2;
-
-    @include media.sm {
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-
-    @include media.md {
-      font-size: 1.1rem;
-    }
-
-    @include media.lg {
-      font-size: 1.2rem;
-    }
-  }
-}
-
-.dev-enable {
-  display: inline-block;
-  background: #f1de00;
-  border-radius: 10px;
-  padding: 2px;
-  font-size: 16px;
-  padding: 0px 5px;
-  vertical-align: bottom;
-}
-
 .november-font {
   font-family: 'november';
   font-style: normal;
@@ -494,11 +508,6 @@ header h1.deven-headtext {
 
 .mission-statement {
   position: relative;
-  margin: 8rem auto 0px auto;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
 }
 
 .cool-stuff-star text {
@@ -513,10 +522,8 @@ header h1.deven-headtext {
 .current-team {
   position: relative;
   max-width: 70%;
-  margin: 8rem auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: #fff;
 }
