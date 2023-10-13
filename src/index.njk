@@ -113,7 +113,7 @@ templateClass: home
     <h2>Latest News</h2>
     <div class="post-list single-row">
         {% for post in collections.posts | reverse | batch(3) | first %}
-            {{ postLink(post) }}
+            {{ postLink(post, "h3") }}
         {% endfor %}
     </div>
     <div class="button-group">

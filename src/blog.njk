@@ -24,7 +24,7 @@ headerBackground: yellow
 <div class="blog">
   <div class="post-list">
     {% for post in collections.posts | reverse %}
-      {{ postLink(post) }}
+      {{ postLink(post, "h2") }}
     {% endfor %}
   </div>
   <a class="cta-button" href="./feed/feed.xml" title="Subscribe via RSS Feed">Subscribe via RSS</a>

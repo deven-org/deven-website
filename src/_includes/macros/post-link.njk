@@ -1,12 +1,12 @@
 {% from "./byline.njk" import byline %}
 
-{% macro postLink(post) %}
+{% macro postLink(post, headingLevel="h2") %}
   <article>
     <a class="post-link" href={{ post.url }} aria-label="{{post.data.title}} - {{post.data.description}}">
         <img src="{{ post.data.imageUrl }}" alt="{{ post.data.imageDescription or "" }}" />
         <div class="content">
           {{ byline(authorName=post.data.author, authorImgSrc=post.data.authorImageUrl) }}
-          <h3>{{ post.data.title }}</h3>
+          <{{headingLevel}} class="title">{{ post.data.title }}</{{headingLevel}}>
           <p>{{post.data.description}}</p>
         </div>
     </a>

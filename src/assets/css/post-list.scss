@@ -69,7 +69,7 @@
   .content {
     padding: 40px 44px;
 
-    h3 {
+    .title {
       margin-top: 20px;
       display: block;
       width: 100%;
@@ -89,7 +89,7 @@
   }
 
   &:hover {
-    h3,
+    .title,
     p {
       color: #8e8e8e;
     }
