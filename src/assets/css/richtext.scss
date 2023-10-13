@@ -69,7 +69,7 @@
     }
   }
 
-  a:not(.bookmark) {
+  a:not(.bookmark):not(.cta-button) {
     font-family: inherit;
     color: inherit;
     font-size: inherit;
@@ -130,5 +130,9 @@
       border-radius: 0;
       white-space: inherit;
     }
+  }
+
+  * + .button-group {
+    margin-top: 2rem;
   }
 }

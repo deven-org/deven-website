@@ -1,0 +1,14 @@
+{% from "./byline.njk" import byline %}
+
+{% macro postLink(post) %}
+  <article>
+    <a class="post-link" href={{ post.url }} aria-label="{{post.data.title}} - {{post.data.description}}">
+        <img src="{{ post.data.imageUrl }}" alt="{{ post.data.imageDescription or "" }}" />
+        <div class="content">
+          {{ byline(authorName=post.data.author, authorImgSrc=post.data.authorImageUrl) }}
+          <h3>{{ post.data.title }}</h3>
+          <p>{{post.data.description}}</p>
+        </div>
+    </a>
+  </article>
+{% endmacro %}

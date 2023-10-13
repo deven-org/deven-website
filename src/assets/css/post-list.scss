@@ -1,0 +1,97 @@
+@use 'styles/media';
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(var(--post-columns, 1), 1fr);
+  grid-auto-rows: 1fr;
+  gap: 40px;
+
+  @include media.sm {
+    --post-columns: 2;
+  }
+
+  @include media.lg {
+    --post-columns: 3;
+  }
+
+  > article {
+    // this wrapper is only here for semantic reasons
+    display: contents;
+  }
+
+  &.single-row > article {
+    // By default, hide all children with index > 1.
+    &:not(:first-child) {
+      display: none;
+    }
+
+    // it would be nice to define these selectors based on --post-columns,
+    // but the variable cannot be evaluated as part of a selector
+    @include media.sm {
+      &:nth-child(2) {
+        display: contents;
+      }
+    }
+    @include media.lg {
+      &:nth-child(3) {
+        display: contents;
+      }
+    }
+  }
+}
+
+.post-list a.post-link {
+  // undo link styles
+  display: block;
+  text-decoration: inherit;
+  font: inherit;
+
+  color: black;
+  background: #f7f7f7;
+
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+
+  > img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    background-color: #d9d9d9;
+
+    aspect-ratio: 3/2;
+
+    @include media.md {
+      aspect-ratio: 1/1;
+    }
+  }
+
+  .content {
+    padding: 40px 44px;
+
+    h3 {
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+      font-family: 'space-grotesk-bold';
+      font-size: 1.2rem;
+      font-style: normal;
+      text-decoration: none;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+      color: black;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 0.3em;
+    }
+  }
+
+  &:hover {
+    h3,
+    p {
+      color: #8e8e8e;
+    }
+  }
+}

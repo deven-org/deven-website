@@ -55,13 +55,13 @@
 :is(ol, ul, img, p, pre, code) + .richtext h6 {
   margin-top: 40px;
 }
-.richtext a:not(.bookmark) {
+.richtext a:not(.bookmark):not(.cta-button) {
   font-family: inherit;
   color: inherit;
   font-size: inherit;
   cursor: pointer;
 }
-.richtext a:not(.bookmark):hover {
+.richtext a:not(.bookmark):not(.cta-button):hover {
   color: #8e8e8e;
 }
 .richtext ul,
@@ -107,4 +107,7 @@ li .richtext ol {
   padding: 0;
   border-radius: 0;
   white-space: inherit;
+}
+.richtext * + .button-group {
+  margin-top: 2rem;
 }
