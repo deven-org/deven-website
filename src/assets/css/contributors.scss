@@ -119,7 +119,7 @@
         max-width: 67%;
       }
       h2 {
-        font-family: 'space-grotesk-bold';
+        font-weight: bold;
         line-height: 1.4;
         max-width: 67%;
         color: #f7f7f7;
@@ -131,7 +131,6 @@
       }
       p {
         line-height: 1.2;
-        font-family: 'space-grotesk-light';
         color: #f7f7f7;
       }
     }
@@ -181,7 +180,7 @@
         max-width: 45%;
       }
       h2 {
-        font-family: 'space-grotesk-bold';
+        font-weight: bold;
         line-height: 1.4;
         max-width: 55%;
         color: black;
@@ -193,7 +192,6 @@
         }
       }
       p {
-        font-family: 'space-grotesk-light';
         color: #f7f7f7;
         line-height: 1.2;
         @include media.sm {
@@ -208,7 +206,7 @@
         position: relative;
         display: block;
         border: none;
-        font-family: 'space-grotesk-bold';
+        font-weight: bold;
         border-radius: 40px;
         margin-top: 0.75rem;
         @include media.sm {
@@ -282,12 +280,11 @@
     }
 
     .thanked-name {
-      font-family: 'space-grotesk-bold';
+      font-weight: bold;
       font-size: 1rem;
     }
 
     .thanked-for {
-      font-family: 'space-grotesk-light';
       font-size: 1rem;
     }
   }
@@ -319,7 +316,7 @@
 }
 
 .fetch-status {
-  font-family: 'space-grotesk-bold';
+  font-weight: bold;
   margin: 5rem auto 5rem auto;
   text-align: center;
   font-size: 2rem;

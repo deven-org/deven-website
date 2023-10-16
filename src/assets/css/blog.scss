@@ -18,7 +18,6 @@
   padding-inline: 10px;
   .project-title {
     font-family: 'november';
-    font-weight: 400;
     font-size: 45px;
     line-height: 5rem;
     text-align: center;
@@ -69,7 +68,6 @@
 
 .coming-soon {
   font-family: 'november';
-  font-weight: 400;
   font-size: 45px;
   line-height: 5rem;
   text-align: center;
@@ -92,9 +90,8 @@
   }
 
   .post-header-title {
-    font-family: 'space-grotesk-bold';
     font-size: 28px;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 1.2;
     margin: 25px 0px;
   }
@@ -165,10 +162,8 @@
 }
 
 .byline {
-  font-size: 16px;
-  font-family: 'space-grotesk-light';
-
-  line-height: 32px;
+  font-size: 1rem;
+  line-height: 2;
 
   > * {
     vertical-align: middle;

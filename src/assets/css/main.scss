@@ -6,37 +6,27 @@
   font-weight: bold;
   font-synthesis: none;
   font-display: auto;
-  src: url('../fonts/november.ttf');
+  src: url('../fonts/Hey November.woff2') format('woff2'),
+    url('../fonts/Hey November.otf') format('opentype'),
+    url('../fonts/Hey November.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: 'AVF';
-  font-style: light;
-  font-weight: 300;
-  font-display: auto;
-  src: url('../fonts/AVF.ttf');
-}
-@font-face {
-  font-family: 'space-grotesk-light';
+  font-family: 'SpaceGrotesk';
   font-style: normal;
-  font-weight: 300;
-  font-display: auto;
-  src: url('../fonts/space-grotesk.ttf');
-}
-@font-face {
-  font-family: 'space-grotesk-bold';
-  font-style: normal;
-  font-weight: 700;
-  font-display: auto;
-  src: url('../fonts/space-grotesk.ttf');
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url('../fonts/SpaceGrotesk.woff2') format('woff2'),
+    url('../fonts/SpaceGrotesk.ttf') format('truetype');
 }
 
 body {
   background: black;
-  //max-width: 960px;
   margin: 0 auto;
   line-height: 1.8em;
   font-size: 1em;
-  font-family: 'AVF';
+  font-family: 'SpaceGrotesk', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
   --content-margin: 32px;
 
   @include media.md {
@@ -203,7 +193,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'space-grotesk-bold';
+  font-weight: bold;
   background-color: #f1de00;
   color: #000;
   cursor: pointer;
@@ -256,7 +246,6 @@ main {
     align-items: center;
     .nav-item {
       display: inline-block;
-      font-family: 'space-grotesk-light';
       .nav .nav-links .nav-item {
         margin: 0px 15px;
       }
@@ -264,7 +253,7 @@ main {
         margin: 0px 15px;
       }
       &.nav-item-active {
-        font-family: 'space-grotesk-bold';
+        font-weight: bold;
       }
       &.logo {
         font-family: 'november';
@@ -359,9 +348,8 @@ main {
             display: inline-block;
             margin-right: 8px;
             font-size: 10px;
-            font-family: 'space-grotesk-light';
             &.subnav-item-active {
-              font-family: 'space-grotesk-bold';
+              font-weight: bold;
             }
             @include media.md {
               margin-right: 2em;
@@ -426,8 +414,7 @@ main {
 }
 
 em {
-  font-weight: 900;
-  font-style: underline;
+  font-weight: bold;
 }
 
 .footer {
@@ -471,14 +458,14 @@ em {
     flex-direction: column;
     h1 {
       color: #f7f7f7;
-      font-family: 'space-grotesk-bold';
+      font-weight: bold;
       font-size: 1.6rem;
       padding-bottom: 20px;
     }
     p {
       color: #f7f7f7;
       strong {
-        font-family: 'space-grotesk-bold';
+        font-weight: bold;
       }
       span {
         display: inline-block;
@@ -542,7 +529,7 @@ em {
         text-decoration: none;
 
         h3 {
-          font-family: 'space-grotesk-bold';
+          font-weight: bold;
           font-size: 1.5rem;
           line-height: 1.7rem;
           text-align: left;
