@@ -38,7 +38,7 @@ header h1.deven-headtext {
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;
-  font-family: "space-grotesk-bold";
+  font-weight: bold;
   font-size: 0.875rem;
   grid-template-columns: minmax(2px, var(--content-margin)) 1fr [prod-start stand-start jump dev] min-content [enable] min-content [prod-end stand-end] minmax(0, 20px) 2fr [hacker os] min-content 1fr minmax(2px, var(--content-margin));
   grid-template-rows: [prod hacker] auto [stand os-start] 0.8fr [dev] 0.8fr [os-end jump enable] auto;
@@ -247,7 +247,6 @@ header h1.deven-headtext {
   color: black;
   border-radius: 20px;
   padding: max(10%, 20px);
-  font-family: "space-grotesk-light";
   letter-spacing: 0.01em;
   line-height: 1.3;
   font-size: 1.1rem;
@@ -276,7 +275,7 @@ header h1.deven-headtext {
   vertical-align: middle;
 }
 .home > section.intro em {
-  font-family: "space-grotesk-bold";
+  font-weight: bold;
 }
 .home > section.intro p + p {
   margin-top: 0.7em;
@@ -345,7 +344,6 @@ header h1.deven-headtext {
   margin-block: 15px;
 }
 .home > section.vision-mission .circle .circle-content p {
-  font-family: "space-grotesk-light";
   text-align: center;
   letter-spacing: 0.01em;
   font-size: 0.9rem;
@@ -387,7 +385,7 @@ header h1.deven-headtext {
 }
 .statement p {
   padding: 5%;
-  font-family: "space-grotesk-bold";
+  font-weight: bold;
   font-size: 1.1rem;
   line-height: 1.5rem;
   letter-spacing: 0.01em;
@@ -406,9 +404,7 @@ header h1.deven-headtext {
   margin: 0px auto -1rem auto;
   z-index: 1;
   width: 300px;
-  font-family: "space-grotesk-bold";
-  font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.2;
   font-size: 20px;
   letter-spacing: 0.01em;
@@ -438,8 +434,6 @@ header h1.deven-headtext {
 
 .november-font {
   font-family: "november";
-  font-style: normal;
-  font-weight: 400;
 }
 
 .mission-statement {
@@ -483,14 +477,13 @@ header h1.deven-headtext {
 }
 
 .member-name {
-  font-family: "space-grotesk-bold";
+  font-weight: bold;
   font-size: 16px;
   margin: 0;
   color: #f7f7f7;
 }
 
 .member-title {
-  font-family: "space-grotesk-light";
   font-size: 16px;
   margin: 0;
   color: #f7f7f7;
