@@ -101,6 +101,7 @@ li .richtext ol {
   padding: 1rem 1.5rem;
   margin: 20px auto;
   display: block;
+  overflow-x: auto;
 }
 .richtext pre code {
   background-color: transparent;
