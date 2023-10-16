@@ -8,7 +8,7 @@ templateClass: tmpl-blog
 headerBackground: yellow
 ---
 
-{% from "./_includes/macros/postExcerpt.njk" import postExcerpt %}
+{% from "./_includes/macros/post-link.njk" import postLink %}
 
 {% slotcontent header %}
   <h1>
@@ -22,12 +22,10 @@ headerBackground: yellow
 {% endslotcontent %}
 
 <div class="blog">
-  <div class="blog-posts-wrapper">
-    {% for post in collections.posts %}
-      {{ postExcerpt(postUrl=post.url, postTitle=post.data.title, postImgSrc=post.data.imageUrl, authorName=post.data.author, authorImgSrc=post.data.authorImageUrl) }}
+  <div class="post-list">
+    {% for post in collections.posts | reverse %}
+      {{ postLink(post, "h2") }}
     {% endfor %}
   </div>
-  <div class="cta-btn">
-    <a href="./feed/feed.xml" title="Subscribe via RSS Feed">Subscribe via RSS</a>
-  </div>
+  <a class="cta-button" href="./feed/feed.xml" title="Subscribe via RSS Feed">Subscribe via RSS</a>
 </div>

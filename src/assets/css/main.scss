@@ -199,40 +199,45 @@ main {
   }
 }
 
-.cta-btn {
+.cta-button {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'space-grotesk-bold';
-  padding: 14px 20px;
   background-color: #f1de00;
   color: #000;
   cursor: pointer;
-  border-radius: 100px;
-  width: 158px;
-  margin: 0 auto;
   text-decoration: none;
-  a {
-    font-family: 'space-grotesk-bold';
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-    margin-right: 5px;
-    line-height: 140%;
-  }
+  white-space: pre-wrap;
+
+  // Border radius should be have a single-line button size and accurate, so it
+  // doesn't get a massive radius when the text wraps
+  $block-padding: 14px;
+  $line-height: 1.4;
+  line-height: $line-height;
+  padding: $block-padding 20px;
+  border-radius: calc(#{$block-padding} + #{$line-height * 0.5}em);
+
   &:hover {
     background-color: #f7f7f7;
     transition: background-color 500ms;
   }
+
+  @include media.sm {
+    min-width: 158px;
+  }
 }
 
-.buttons-inline {
-  margin-top: 2rem;
-  justify-content: flex-start;
+.button-group {
   display: flex;
+  max-width: max-content;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 20px;
 
-  .cta-btn {
-    margin: 0px 2rem 0px 0px;
+  @include media.sm {
+    flex-direction: row;
   }
 }
 
@@ -622,16 +627,6 @@ em {
         }
       }
     }
-  }
-}
-
-.coming-soon-text {
-  color: #f7f7f7;
-  font-size: 2.5rem;
-  line-height: 2.8rem;
-  @include media.md {
-    font-size: 3rem;
-    line-height: 3.2rem;
   }
 }
 

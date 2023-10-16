@@ -559,3 +559,17 @@ header h1.deven-headtext {
   margin: 0;
   color: #f7f7f7;
 }
+
+.home > section.latest-news {
+  h2 {
+    color: #f1de00;
+  }
+
+  .post-list {
+    margin: 80px auto;
+  }
+
+  .button-group {
+    margin: 0 auto;
+  }
+}

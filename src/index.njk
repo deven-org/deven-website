@@ -5,7 +5,7 @@ headerBackground: yellow
 templateClass: home
 ---
 
-{% from "macros/postExcerpt.njk" import postExcerpt %}
+{% from "macros/post-link.njk" import postLink %}
 
 {% slotcontent header %}    
     <h1 class="deven-headtext">DEVEN</h1>
@@ -106,20 +106,18 @@ templateClass: home
             </div>
         {%- endfor -%}
     </div>
-    <a href='./contributors' class="cta-btn">
-        <span>Contributors <span aria-hidden="true">→</span></span>
-    </a>
+    <a href='./contributors' class="cta-button">Contributors <span aria-hidden="true">→</span></a>
 </section>
 
-<section aria-label="Latest News" class="blog-content" id="latest-news">
-    <div class="blog no-blog-margin">
-        <div class="blog-posts-wrapper">
-        {% for post in collections.posts %}
-            {{ postExcerpt(postUrl=post.url, postTitle=post.data.title, postImgSrc=post.data.imageUrl, authorName=post.data.author, authorImgSrc=post.data.authorImageUrl) }}
+<section class="latest-news" id="latest-news">
+    <h2>Latest News</h2>
+    <div class="post-list single-row">
+        {% for post in collections.posts | reverse | batch(3) | first %}
+            {{ postLink(post, "h3") }}
         {% endfor %}
-        </div>
-        <div class="cta-btn">
-        <a href="./feed/feed.xml" title="Subscribe via RSS Feed">Subscribe via RSS</a>
-        </div>
+    </div>
+    <div class="button-group">
+        <a class="cta-button" href="./feed/feed.xml">Subscribe via RSS</a>
+        <a class="cta-button" href='./blog'>Blog <span aria-hidden="true">→</span></a>
     </div>
 </section>

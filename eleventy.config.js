@@ -77,7 +77,9 @@ module.exports = (eleventyConfig) => {
     return content
   })
 
-  eleventyConfig.setNunjucksEnvironmentOptions({ throwOnUndefined: true })
+  // This would be nice for detecting accidental missing values, but
+  // unfortunately it produces unintelligible misleading errors.
+  // eleventyConfig.setNunjucksEnvironmentOptions({ throwOnUndefined: true })
 
   // Adapted from https://github.com/11ty/eleventy/issues/853
   // Recreates Nunjucks "block" concept to send child content to a parent
