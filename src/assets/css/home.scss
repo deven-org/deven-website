@@ -261,6 +261,10 @@ header h1.deven-headtext {
   margin-block: 100px;
   align-items: center;
 
+  @include media.xl {
+    row-gap: 300px;
+  }
+
   > section {
     margin-inline: var(--content-margin);
 
@@ -433,58 +437,85 @@ header h1.deven-headtext {
   }
 }
 
-.statement {
-  width: 100%;
-  background: #f7f7f7;
-  border-radius: 20px;
-  position: relative;
-  transform: none;
+.home > section.mission-statement {
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include media.md {
-    width: 400px;
-    background: f7f7f7;
-    border-radius: 20px;
-    position: relative;
-    padding: 5%;
-    transform: translate(30%, -70%);
+    max-width: calc(100% - 2 * var(--content-margin));
+    width: 800px;
   }
-  p {
-    padding: 5%;
+
+  @include media.xl {
+    width: 1200px;
+  }
+
+  .cool-stuff-star {
+    margin-bottom: -20px;
+    z-index: 1;
+    width: 300px;
+
     font-weight: bold;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.2;
+    font-size: 20px;
     letter-spacing: 0.01em;
-    color: #000000;
+
+    svg {
+      color: #f1de00;
+    }
+    span {
+      color: black;
+    }
+
     @include media.md {
-      font-size: 1.3rem;
-      line-height: 1.7rem;
+      width: 450px;
+      font-size: 30px;
+      margin-bottom: -150px;
+      align-self: flex-start;
+    }
+
+    @include media.xl {
+      width: 600px;
+      font-size: 40px;
     }
   }
-}
 
-.cool-stuff-star {
-  display: flex;
-  justify-content: center;
-  margin: 0px auto -1rem auto;
-  z-index: 1;
-  width: 300px;
+  .statement {
+    background: #f7f7f7;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    transform: none;
 
-  font-weight: bold;
-  line-height: 1.2;
-  font-size: 20px;
-  letter-spacing: 0.01em;
+    @include media.md {
+      width: min(400px, 40vw);
+      padding: 40px;
+      align-self: flex-end;
+    }
 
-  svg {
-    color: #f1de00;
-  }
-  span {
-    color: black;
-  }
+    @include media.xl {
+      width: min(630px, 45vw);
+      padding: 50px;
+      border-radius: 30px;
+    }
 
-  @include media.md {
-    font-size: 30px;
-    width: 408px;
-    margin: 0px auto 30px auto;
-    transform: translate(-60%, 0%);
+    p {
+      font-weight: bold;
+      font-size: 1.1rem;
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+      color: #000000;
+
+      @include media.md {
+        font-size: 1.3rem;
+      }
+
+      @include media.xl {
+        font-size: 1.8rem;
+      }
+    }
   }
 }
 
