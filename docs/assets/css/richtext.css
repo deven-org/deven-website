@@ -9,11 +9,10 @@
   }
 }
 .richtext p {
-  font-size: 16px;
   margin-block: 20px;
 }
 .richtext h2 {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.3;
   letter-spacing: 0.28px;
@@ -28,7 +27,7 @@
   margin-top: 40px;
 }
 .richtext h3 {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: bold;
   line-height: 1.4;
   letter-spacing: 0.2px;
@@ -76,7 +75,6 @@ li .richtext ol {
   list-style: decimal;
 }
 .richtext li {
-  font-size: 16px;
   padding: 5px 0;
 }
 .richtext code {
