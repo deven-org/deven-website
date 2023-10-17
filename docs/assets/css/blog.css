@@ -8,69 +8,6 @@
   margin-inline: var(--content-margin);
 }
 
-.project-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-inline: 10px;
-}
-.project-wrapper .project-title {
-  font-family: "november";
-  font-size: 45px;
-  line-height: 5rem;
-  text-align: center;
-  color: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  padding: 100px 0px 0 0px;
-}
-.project-wrapper .project-title.not-found {
-  color: #000000;
-}
-.project-wrapper .project-title.wide-letters {
-  letter-spacing: 0.1em;
-}
-.project-wrapper .project-info {
-  width: 100%;
-  line-height: 1.3;
-  letter-spacing: 0.01em;
-  position: relative;
-  max-width: 40rem;
-  margin: 0px auto;
-  color: #f7f7f7;
-}
-.project-wrapper .project-info.highlight {
-  box-sizing: border-box;
-  padding: 1.5rem;
-  margin-bottom: 120px;
-  color: black;
-  background: #f7f7f7;
-  border-radius: 20px;
-}
-.project-wrapper .project-info.highlight p {
-  margin-block: 10px;
-}
-.project-wrapper .project-info.highlight .cta-button:hover {
-  background-color: #e2c81e;
-}
-@media (min-width: 576px) {
-  .project-wrapper .project-info.highlight {
-    padding: 4rem;
-  }
-}
-
-.coming-soon {
-  font-family: "november";
-  font-size: 45px;
-  line-height: 5rem;
-  text-align: center;
-  color: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 60px;
-}
-
 .post-header {
   margin: 150px auto 20px auto;
   padding-inline: 20px;
