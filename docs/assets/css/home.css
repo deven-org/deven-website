@@ -213,6 +213,7 @@ header h1.deven-headtext {
   row-gap: 200px;
   margin-block: 100px;
   align-items: center;
+  margin-inline: var(--content-margin);
 }
 @media (min-width: 1200px) {
   .home {
@@ -220,13 +221,13 @@ header h1.deven-headtext {
   }
 }
 .home > section {
-  margin-inline: var(--content-margin);
+  max-width: 100%;
 }
 .home > section.stretch {
   align-self: stretch;
 }
 .home > section.no-margin {
-  margin-inline: 0;
+  margin-inline: calc(-1 * var(--content-margin));
 }
 .home h2 {
   font-family: "november";
@@ -379,7 +380,6 @@ header h1.deven-headtext {
 }
 @media (min-width: 768px) {
   .home > section.mission-statement {
-    max-width: calc(100% - 2 * var(--content-margin));
     width: 800px;
   }
 }
@@ -445,6 +445,9 @@ header h1.deven-headtext {
   letter-spacing: 0.01em;
   color: #000000;
 }
+.home > section.mission-statement .statement p .november-font {
+  font-family: "november";
+}
 @media (min-width: 768px) {
   .home > section.mission-statement .statement p {
     font-size: 1.3rem;
@@ -464,7 +467,6 @@ header h1.deven-headtext {
   padding-inline: 24px;
   padding: 30px 24px 50px;
   text-align: center;
-  align-self: stretch;
 }
 @media (min-width: 768px) {
   .home > section.tools {
@@ -584,67 +586,46 @@ header h1.deven-headtext {
   color: blacK;
 }
 
-.team-members {
+.home > section.current-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+@media (min-width: 768px) {
+  .home > section.current-team {
+    gap: 120px;
+  }
+}
+.home > section.current-team h2 {
+  color: #f1de00;
+}
+.home > section.current-team ul {
+  color: #f7f7f7;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100%;
-  margin: 10% auto 8% auto;
+  list-style: none;
+  gap: 20px;
 }
-
-.november-font {
-  font-family: "november";
+@media (min-width: 768px) {
+  .home > section.current-team ul {
+    gap: 40px;
+  }
 }
-
-.mission-statement {
-  position: relative;
+.home > section.current-team ul li {
+  display: block;
+  text-align: center;
 }
-
-.current-team {
-  position: relative;
-  max-width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-}
-
-.team-title {
-  color: #f1de00;
-  font-size: 50px;
-  line-height: 55px;
-}
-
-.team-member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 10px 30px 10px;
-}
-
-.member-pic {
+.home > section.current-team ul li img {
   border-radius: 50%;
+  object-fit: cover;
   width: 170px;
   height: 170px;
 }
-
-.member-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.member-name {
+.home > section.current-team ul li h3 {
   font-weight: bold;
-  margin: 0;
-  color: #f7f7f7;
-}
-
-.member-title {
-  margin: 0;
-  color: #f7f7f7;
 }
 
 .home > section.latest-news h2 {
