@@ -519,6 +519,138 @@ header h1.deven-headtext {
   }
 }
 
+.home > section.tools {
+  background: #f7f7f7;
+  position: relative;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-inline: 24px;
+  padding: 30px 24px 50px;
+  text-align: center;
+  align-self: stretch;
+
+  @include media.md {
+    padding: 50px 60px 80px;
+  }
+
+  @include media.xl {
+    padding: 80px 75px 130px;
+  }
+
+  ul {
+    margin-top: 1rem;
+
+    @include media.md {
+      margin-top: 90px;
+    }
+
+    li {
+      padding: 20px 0px;
+      border-bottom: 1px solid #000000;
+      a {
+        display: flex;
+        color: inherit;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+
+        h3 {
+          font-weight: bold;
+          font-size: 1.5rem;
+          line-height: 1.4;
+          text-align: left;
+          @include media.md {
+            font-size: 2.1rem;
+          }
+          @include media.xl {
+            font-size: 3.2rem;
+          }
+        }
+        .arrow-circle {
+          background: #2154d6;
+          color: #f7f7f7;
+          height: 50px;
+          width: 50px;
+          border: none;
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative;
+          @include media.md {
+            height: 75px;
+            width: 75px;
+
+            svg {
+              width: 28px;
+              height: auto;
+            }
+          }
+          @include media.xl {
+            height: 100px;
+            width: 100px;
+
+            svg {
+              width: 35px;
+              height: auto;
+            }
+          }
+          .animated-arrow {
+            position: relative;
+            width: 200%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          }
+        }
+
+        &:hover {
+          color: #8e8e8e;
+
+          .animated-arrow {
+            -webkit-animation: slideArrows 0.75s forwards;
+            animation: slideArrows 0.75s forwards;
+            animation-iteration-count: 1;
+
+            @include media.reduced-motion {
+              -webkit-animation: none;
+              animation: none;
+            }
+
+            // translate percentage works relative to the current element size.
+            // Since the element is twice as wide as the parent, 50% equals the full
+            // parent width.
+
+            @-webkit-keyframes slideArrows {
+              0% {
+                transform: translateX(-50%);
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+
+            @keyframes slideArrows {
+              0% {
+                transform: translateX(-50%);
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        .arrow-circle {
+          background: #f1de00;
+          color: blacK;
+        }
+      }
+    }
+  }
+}
+
 .team-members {
   display: flex;
   justify-content: center;
