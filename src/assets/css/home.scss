@@ -261,15 +261,21 @@ header h1.deven-headtext {
   margin-block: 100px;
   align-items: center;
 
+  @include media.xl {
+    row-gap: 300px;
+  }
+
+  margin-inline: var(--content-margin);
+
   > section {
-    margin-inline: var(--content-margin);
+    max-width: 100%;
 
     &.stretch {
       align-self: stretch;
     }
 
     &.no-margin {
-      margin-inline: 0;
+      margin-inline: calc(-1 * var(--content-margin));
     }
   }
 
@@ -433,122 +439,265 @@ header h1.deven-headtext {
   }
 }
 
-.statement {
-  width: 100%;
-  background: #f7f7f7;
-  border-radius: 20px;
-  position: relative;
-  transform: none;
+.home > section.mission-statement {
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include media.md {
-    width: 400px;
-    background: f7f7f7;
-    border-radius: 20px;
-    position: relative;
-    padding: 5%;
-    transform: translate(30%, -70%);
+    width: 800px;
   }
-  p {
-    padding: 5%;
+
+  @include media.xl {
+    width: 1200px;
+  }
+
+  .cool-stuff-star {
+    margin-bottom: -20px;
+    z-index: 1;
+    width: 300px;
+
     font-weight: bold;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.2;
+    font-size: 20px;
     letter-spacing: 0.01em;
-    color: #000000;
+
+    svg {
+      color: #f1de00;
+    }
+    span {
+      color: black;
+    }
+
     @include media.md {
-      font-size: 1.3rem;
-      line-height: 1.7rem;
+      width: 450px;
+      font-size: 30px;
+      margin-bottom: -150px;
+      align-self: flex-start;
+    }
+
+    @include media.xl {
+      width: 600px;
+      font-size: 40px;
+    }
+  }
+
+  .statement {
+    background: #f7f7f7;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    transform: none;
+
+    @include media.md {
+      width: min(400px, 40vw);
+      padding: 40px;
+      align-self: flex-end;
+    }
+
+    @include media.xl {
+      width: min(630px, 45vw);
+      padding: 50px;
+      border-radius: 30px;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 1.1rem;
+      line-height: 1.3;
+      letter-spacing: 0.01em;
+      color: #000000;
+
+      .november-font {
+        font-family: 'november';
+      }
+
+      @include media.md {
+        font-size: 1.3rem;
+      }
+
+      @include media.xl {
+        font-size: 1.8rem;
+      }
     }
   }
 }
 
-.cool-stuff-star {
-  display: flex;
-  justify-content: center;
-  margin: 0px auto -1rem auto;
-  z-index: 1;
-  width: 300px;
-
-  font-weight: bold;
-  line-height: 1.2;
-  font-size: 20px;
-  letter-spacing: 0.01em;
-
-  svg {
-    color: #f1de00;
-  }
-  span {
-    color: black;
-  }
+.home > section.tools {
+  background: #f7f7f7;
+  position: relative;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-inline: 24px;
+  padding: 30px 24px 50px;
+  text-align: center;
 
   @include media.md {
-    font-size: 30px;
-    width: 408px;
-    margin: 0px auto 30px auto;
-    transform: translate(-60%, 0%);
+    padding: 50px 60px 80px;
+  }
+
+  @include media.xl {
+    padding: 80px 75px 130px;
+  }
+
+  ul {
+    margin-top: 1rem;
+
+    @include media.md {
+      margin-top: 90px;
+    }
+
+    li {
+      padding: 20px 0px;
+      border-bottom: 1px solid #000000;
+      a {
+        display: flex;
+        color: inherit;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+
+        h3 {
+          font-weight: bold;
+          font-size: 1.5rem;
+          line-height: 1.4;
+          text-align: left;
+          @include media.md {
+            font-size: 2.1rem;
+          }
+          @include media.xl {
+            font-size: 3.2rem;
+          }
+        }
+        .arrow-circle {
+          background: #2154d6;
+          color: #f7f7f7;
+          height: 50px;
+          width: 50px;
+          border: none;
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative;
+          @include media.md {
+            height: 75px;
+            width: 75px;
+
+            svg {
+              width: 28px;
+              height: auto;
+            }
+          }
+          @include media.xl {
+            height: 100px;
+            width: 100px;
+
+            svg {
+              width: 35px;
+              height: auto;
+            }
+          }
+          .animated-arrow {
+            position: relative;
+            width: 200%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          }
+        }
+
+        &:hover {
+          color: #8e8e8e;
+
+          .animated-arrow {
+            -webkit-animation: slideArrows 0.75s forwards;
+            animation: slideArrows 0.75s forwards;
+            animation-iteration-count: 1;
+
+            @include media.reduced-motion {
+              -webkit-animation: none;
+              animation: none;
+            }
+
+            // translate percentage works relative to the current element size.
+            // Since the element is twice as wide as the parent, 50% equals the full
+            // parent width.
+
+            @-webkit-keyframes slideArrows {
+              0% {
+                transform: translateX(-50%);
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+
+            @keyframes slideArrows {
+              0% {
+                transform: translateX(-50%);
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        .arrow-circle {
+          background: #f1de00;
+          color: blacK;
+        }
+      }
+    }
   }
 }
 
-.team-members {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin: 10% auto 8% auto;
-}
-
-.november-font {
-  font-family: 'november';
-}
-
-.mission-statement {
-  position: relative;
-}
-
-.current-team {
-  position: relative;
-  max-width: 70%;
+.home > section.current-team {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
-}
+  gap: 60px;
 
-.team-title {
-  color: #f1de00;
-  font-size: 50px;
-  line-height: 55px;
-}
+  @include media.md {
+    gap: 120px;
+  }
 
-.team-member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 10px 30px 10px;
-}
+  h2 {
+    color: #f1de00;
+  }
 
-.member-pic {
-  border-radius: 50%;
-  width: 170px;
-  height: 170px;
-}
+  ul {
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    list-style: none;
+    gap: 20px;
 
-.member-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-  text-align: center;
-}
+    @include media.md {
+      gap: 40px;
+    }
 
-.member-name {
-  font-weight: bold;
-  margin: 0;
-  color: #f7f7f7;
-}
+    li {
+      display: block;
+      text-align: center;
 
-.member-title {
-  margin: 0;
-  color: #f7f7f7;
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 170px;
+        height: 170px;
+      }
+
+      h3 {
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 .home > section.latest-news {

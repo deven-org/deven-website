@@ -58,21 +58,18 @@ templateClass: home
 </section>
 
 <section class="mission-statement">
-    <div>
         <div class="four-point-star cool-stuff-star">
             <svg aria-hidden="true" width="300">{% usesvg "shape-four-point-star" %}</svg>
             <span>Cool stuff,<br>right?</span>
         </div>
         <div class="statement">
             <p>
-                So how do we plan to <span class="november-font">make it happen?</span> We have developed tooling and are working on establishing processes to help us get there. So, check them out and discover how you can make the most out of them in your projects.
+                So how do we plan to <span class="november-font">make it happen?</span><br>We have developed tooling and are working on establishing processes to help us get there. So, check them out and discover how you can make the most out of them in your projects.
             </p>
         </div>
-    </div>
 </section>
 
-
-<section class="tools" id='tools'>
+<section class="tools stretch" id='tools'>
     <h2>Tools</h2>
     <ul>
         {%- for tool in collections.tool | sort(attribute="data.toolOrder") -%}
@@ -92,20 +89,16 @@ templateClass: home
 </section>
 
 <section class="current-team" id='team'>
-    <div class="team-title"> 
-        <h2 class="november-font">current team</h2>
-    </div>
-    <div class="team-members">
+    <h2>Current Team</h2>
+    <ul role="list">
         {%- for member in team -%}
-            <div class="team-member">
-                <img src="{{ member.imageUrl }}" alt="" class="member-pic">
-                <div class="member-info">
-                    <h3 class="member-name">{{ member.name }}</h3>
-                    <p class="member-title">{{ member.role }}</p>
-                </div>
-            </div>
+            <li role="listitem">
+                <img src="{{ member.imageUrl }}" alt="">
+                <h3>{{ member.name }}</h3>
+                <p>{{ member.role }}</p>
+            </li>
         {%- endfor -%}
-    </div>
+    </ul>
     <a href='./contributors' class="cta-button">Contributors <span aria-hidden="true">→</span></a>
 </section>
 
