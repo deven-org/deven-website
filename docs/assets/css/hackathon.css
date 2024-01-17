@@ -1,0 +1,156 @@
+.content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hackathon-ideas-headline {
+  color: #f1de00;
+  padding-bottom: 15px;
+}
+
+section.details {
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  section.details {
+    width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  section.details {
+    width: 1200px;
+  }
+}
+section.details .cool-stuff-star {
+  margin-bottom: -20px;
+  z-index: 1;
+  width: 300px;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+}
+section.details .cool-stuff-star svg {
+  color: #f1de00;
+}
+section.details .cool-stuff-star span {
+  color: black;
+}
+@media (min-width: 768px) {
+  section.details .cool-stuff-star {
+    width: 450px;
+    font-size: 30px;
+    margin-bottom: -150px;
+    align-self: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  section.details .cool-stuff-star {
+    width: 600px;
+    font-size: 40px;
+  }
+}
+section.details .statement {
+  background: #f7f7f7;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  transform: none;
+}
+@media (min-width: 768px) {
+  section.details .statement {
+    width: min(400px, 40vw);
+    padding: 40px;
+    align-self: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  section.details .statement {
+    width: min(630px, 45vw);
+    padding: 50px;
+    border-radius: 30px;
+  }
+}
+section.details .statement p {
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+section.details .statement p .november-font {
+  font-family: "november";
+  display: block;
+  text-align: center;
+  font-size: xx-large;
+}
+@media (min-width: 768px) {
+  section.details .statement p {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  section.details .statement p {
+    font-size: 1.8rem;
+  }
+}
+
+.hackathon-ideas {
+  --border: 3px solid black;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  color: black;
+  /* Important values for rounded corners */
+  border-spacing: 0;
+  border-collapse: separate;
+  border: var(--border);
+  overflow: hidden;
+  /* Apply a border to the right of all but the last column */
+  /* Apply a border to the bottom of all but the last row */
+}
+.hackathon-ideas strong {
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.hackathon-ideas thead {
+  background: #f1de00;
+  color: black;
+}
+.hackathon-ideas tbody tr:hover {
+  background-color: #dbdbdb;
+}
+.hackathon-ideas tbody tr:nth-child(even):hover {
+  background-color: rgba(33, 84, 214, 0.9176470588);
+}
+.hackathon-ideas th {
+  border-bottom: var(--border);
+}
+.hackathon-ideas td,
+.hackathon-ideas th {
+  padding: 7px;
+}
+.hackathon-ideas tr:nth-child(even) {
+  background: #2154d6;
+  color: #f7f7f7;
+}
+.hackathon-ideas th:not(:last-child),
+.hackathon-ideas td:not(:last-child) {
+  border-right: var(--border);
+}
+.hackathon-ideas > thead > tr:not(:last-child) > th,
+.hackathon-ideas > thead > tr:not(:last-child) > td,
+.hackathon-ideas > tbody > tr:not(:last-child) > th,
+.hackathon-ideas > tbody > tr:not(:last-child) > td,
+.hackathon-ideas > tfoot > tr:not(:last-child) > th,
+.hackathon-ideas > tfoot > tr:not(:last-child) > td,
+.hackathon-ideas > tr:not(:last-child) > td,
+.hackathon-ideas > tr:not(:last-child) > th,
+.hackathon-ideas > thead:not(:last-child),
+.hackathon-ideas > tbody:not(:last-child),
+.hackathon-ideas > tfoot:not(:last-child) {
+  border-bottom: var(--border);
+}

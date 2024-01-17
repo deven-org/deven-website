@@ -1,0 +1,87 @@
+{# This layour has no menu and should be used for standalone pages #}
+{%- from "macros/svg-definitions.njk" import svgDefinitions -%}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    {#
+      Per recommendation from: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+      favicon.ico is accessible at the root, as set up in the eleventy config
+    #}
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="preload" as="font" href="/assets/fonts/Hey November.woff2" type="font/woff2">
+    <link rel="preload" as="font" href="/assets/fonts/SpaceGrotesk.woff2" type="font/woff2">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/hackathon.css">
+    <link rel="stylesheet" href="/assets/css/richtext.css">
+    <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="{{ metadata.feed.path }}" type="application/rss+xml" title="{{ metadata.title }}">
+  </head>
+  <body>
+    {% if page.svgIds -%}
+      {{ svgDefinitions(page.svgIds) }}
+    {%- endif -%}
+    <div class='content-wrapper'>
+      <header {% if headerBackground %}class="background-circle {{ headerBackground }}"{% endif %}>
+        {% if headerBackground %}
+          <div class="circle-container"></div>
+        {% endif %}
+        <div class="header-content">
+          {% slot header %}<h1>{{title}}</h1>{% endslot %}
+        </div>
+      </header>
+      <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+        {{ content | safe }}
+      </main>
+      <footer class="footer-content">
+        <p id="copyright"></p>
+        <a href='/imprint'>Imprint</a>
+      </footer>
+    </div>
+    <script>
+      document
+        .getElementById('copyright')
+        .innerHTML = `&copy DEVEN ${new Date().getFullYear()}. All rights reserved.`;
+
+      // Subnav handling
+      //
+      // Since we have to update aria-expanded anyway, we can use it as our
+      // source of truth for the state (in JS and CSS).
+
+      document.addEventListener('click', function (event) {
+        // listen to outside clicks (only) to close subnav automatically
+        const isOutside = !document.getElementById("subnav").contains(event.target);
+        const subnavToggle = document.getElementById('subnav-toggle');
+
+        if (isOutside && subnavToggle.getAttribute("aria-expanded") !== "false") {
+          subnavToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      function toggleSubnav() {
+        const subnavToggle = document.getElementById('subnav-toggle');
+
+        if (subnavToggle.getAttribute("aria-expanded") === "false") {
+          subnavToggle.setAttribute("aria-expanded", "true");
+        } else {
+          subnavToggle.setAttribute("aria-expanded", "false");
+        }
+      }
+
+      function closeSubnav() {
+        document
+          .getElementById('subnav-toggle')
+          .setAttribute("aria-expanded", "false");
+      }
+    </script>
+
+  </body>
+</html>

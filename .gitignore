@@ -28,3 +28,6 @@ testem.log
 
 # System Files
 .DS_Store
+
+# data source files
+/src/_data/*.xlsx
