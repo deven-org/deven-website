@@ -1,0 +1,64 @@
+---
+layout: layouts/standalone.njk
+title: DEVEN HACKATHON
+headerBackground: yellow
+templateClass: home
+eleventyExcludeFromCollections: true
+---
+
+{% slotcontent header %}    
+    <h1 class="deven-headtext">DEVEN HACKATHON</h1>
+    <div class="shape-jumble">
+        <div class="product-engineering pill">Accenture Song</div>
+        <div class="standardization pill">innovation</div>
+        <div class="hacker circle">👩‍💻</div>
+        <div class="open-source">
+            <div class="four-point-star">
+                <svg aria-hidden="true">{% usesvg "shape-four-point-star" %}</svg>
+                <span>Open Source</span>
+            </div>
+        </div>
+        <div class="developer rounded-square">empowerment</div>
+        <div class="enablement circle">fun</div>
+        <a class="jump-button circle" href="#summary">
+            <span class="visually-hidden">Jump to ideas</span>
+            <svg aria-hidden="true" width="37" height="37">{% usesvg "icon-arrow-down" %}</svg>
+        </a>
+    </div>
+{% endslotcontent %}
+<section id="summary" class="intro stretch no-margin">
+    {% renderFile "src/_includes/content/hackathon/intro.md" %}
+</section>
+<section id="details" class="details">
+        <div class="four-point-star cool-stuff-star">
+            <svg aria-hidden="true" width="300">{% usesvg "shape-four-point-star" %}</svg>
+            <span>When?<br>Where?</span>
+        </div>
+        <div class="statement">
+            <p>
+                <span class="november-font center">WHEN</span>Thursday 17.04 1pm – Friday 18.04 1pm  
+</p><p>
+                <span class="november-font">WHERE</span>Remote, your hub -> you decide  
+            </p>
+        </div>
+</section>
+<section id="ideas">
+    <h2 class="hackathon-ideas-headline">Innovation Oasis: Diverse Ideas Table</h2>
+    <table class="hackathon-ideas">
+        <thead>
+            <tr>
+                <th><strong>Team</strong></th>
+                <th><strong>Idea</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            {%- for ideas in hackthondata -%}
+                <tr>
+                    <td>{{ ideas["Team Name"] }}</td>
+                    <td>{{ ideas["Idea"] }}</td>
+                </tr>
+            {%- endfor -%}
+        </tbody>
+    </table>
+</section>
+
