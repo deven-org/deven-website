@@ -105,3 +105,6 @@ li .richtext ol {
 .richtext * + .button-group {
   margin-top: 2rem;
 }
+.richtext .cta-button.single {
+  margin-top: 2rem;
+}

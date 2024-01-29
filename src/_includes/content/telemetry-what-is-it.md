@@ -4,4 +4,7 @@ We know that keeping track of engineering processes in large organizations is ha
 
 That's why we developed Telemetry - a tool that uses Git SaaS-based bots to track anonymized data and help us identify areas where we can improve our processes. It helps us confirm our assumptions and identify areas that need improvement, so our engineers can focus on more valuable tasks.
 
-If you're interested in improving your own projects, consider implementing a similar tool.
+If you're interested in improving your own projects, consider to fork the GitHub repo.
+
+
+  <a class="cta-button single" href="https://github.com/deven-org/telemetry-functions" target="_blank">View on GitHub <span aria-hidden="true">→</span></a>
