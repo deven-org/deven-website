@@ -133,4 +133,10 @@
   * + .button-group {
     margin-top: 2rem;
   }
+
+  .cta-button {
+    &.single {
+      margin-top: 2rem;
+    }
+  }
 }
