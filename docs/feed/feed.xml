@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://thedeven.org/" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>DEVEN - Developer Enhancement</title>
+		<title>DEVEN - Developer Enablement</title>
 		<link>https://thedeven.org/</link>
 		<atom:link href="https://thedeven.org/feed/feed.xml" rel="self" type="application/rss+xml" />
 		<description>Developer for Developer to make your (work) life easier!</description>
