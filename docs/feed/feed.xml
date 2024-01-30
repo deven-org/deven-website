@@ -5,128 +5,345 @@
 		<link>https://thedeven.org/</link>
 		<atom:link href="https://thedeven.org/feed/feed.xml" rel="self" type="application/rss+xml" />
 		<description>Developer for Developer to make your (work) life easier!</description>
-		<pubDate>Tue, 04 Apr 2017 02:00:00 +0000</pubDate>
+		<pubDate>Tue, 18 Apr 2023 02:00:00 +0000</pubDate>
 		<managingEditor>ogb@fastmail.com (Ola Gasidlo-Brändel)</managingEditor>
 			
 			<item>
-				<title>Key to Productivity</title>
-				<link>https://thedeven.org/posts/20170404-key-to-productivity/</link>
-				<description>&lt;p&gt;One of the first things people learn about me, I have a pretty busy life.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I am a engineer who works full-time on Firefox.&lt;/li&gt;
-&lt;li&gt;I speak frequently at conferences.&lt;/li&gt;
-&lt;li&gt;I mentor people and help to organize events.&lt;/li&gt;
-&lt;li&gt;I am a solo mom of a 5 y/o.&lt;/li&gt;
-&lt;li&gt;I am a human being, with a need for breaks and social interactions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;img src=&quot;https://media.giphy.com/media/JYkfr7F6d31hC/giphy-downsized.gif&quot; alt=&quot;Wait what?&quot; /&gt;
-&lt;p&gt;All those things add up to enormous amount of tasks.&lt;/p&gt;
-&lt;p&gt;When I finish with a bug fix, three new issues appear and five people came up with questions already. Team meetings, refactors, new features.
-Laundry, grocery shopping, cooking, cleaning.
-Incoming speaking requests and related questions, requests, travel organization (which includes to organize someone who takes her of my little one) and actually research plus writing the talk.
-Keeping up with the little ones schedule and taking care of all her appointments, from kiddo birthdays to playdates, swimming classes and the regular checkups, also enjoying my time being a mom and hang out with the kiddo. Not to mention the additional chaos when she gets sick, not even to mention when I do… A day has still just 24 hours and there is this thing called sleep, even &lt;strong&gt;I&lt;/strong&gt; need.&lt;/p&gt;
-&lt;p&gt;This all feels like an everyday fight against a hydra. Everytime one todo is done, it seems like two new ones appear. But this is also a life I chose and most of the times I am pretty happy with it.&lt;/p&gt;
-&lt;p&gt;So, how do I deal with all of this without being burned out in a short amount of time? Well... it is not easy, but its somekind of doable. After three burnouts in my 20s (before I had a kid) I changed a lot how I handeled things.
-Following, I&#39;ll mention the things that helped me the most.&lt;/p&gt;
-&lt;h2 id=&quot;organize-%26%26-plan-ahead&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170404-key-to-productivity/#organize-%26%26-plan-ahead&quot;&gt;&lt;span&gt;Organize &amp;amp;&amp;amp; plan ahead&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;img src=&quot;https://media.giphy.com/media/xUOxf5B4tGwIh6WOw8/giphy-downsized.gif&quot; alt=&quot;Planner for 2017&quot; /&gt;
-&lt;p&gt;Lists, notes and a calender can be a life saver. Start with the &amp;quot;bigger picture&amp;quot;. What lays ahead of you in the next 3 - 6 months? What do you need to do to make those things happen? Are there any deadlines you should be aware of? Make a plan, todo list and a schedule that&#39;ll help you navigate through the next few months.&lt;/p&gt;
-&lt;p&gt;The go on with the &amp;quot;smaller view&amp;quot;. Grab the next tasks or the ones that have the closest deadlines. If your time is short, don&#39;t be scared of downgrading tasks and putting them at the end of your list. They might become obsolete or you&#39;ll have time for it later or it becomes more pressuing and gets a bump up on your list. (This is also what makes you flexible.) Just make sure to work focused on one task after another.&lt;/p&gt;
-&lt;h2 id=&quot;stick-to-your-hours-%26%26-decisions&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170404-key-to-productivity/#stick-to-your-hours-%26%26-decisions&quot;&gt;&lt;span&gt;Stick to your hours &amp;amp;&amp;amp; decisions&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;img src=&quot;https://media.giphy.com/media/l0MYGtCMbPTYWOzaU/giphy-tumblr.gif&quot; alt=&quot;Sherlock lookig at his watch&quot; /&gt;
-&lt;p&gt;When you create a loose schedule it&#39;s all about balance. Make sure to add time for all important todos, but also for this thing called life... as life happens to all of us from time to time, right? Don&#39;t cut hours from your family time on a regular basis just because work comes up. Schedule more time in advance or leave it, but stick to your decisions.&lt;/p&gt;
-&lt;p&gt;Being really productive is not about working 24/7 or being available all the time. It’s about using your time right. Your are working? Work! Stop slacking on Youtube or Facebook. If you take a break like a chat with your colleagues allow it to yourself. Don&#39;t stress about it. But be aware of your time, the break and enjoy it.&lt;/p&gt;
-&lt;h2 id=&quot;let-it-go...&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170404-key-to-productivity/#let-it-go...&quot;&gt;&lt;span&gt;Let it go...&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Enough is enough. Stop overthinging it. F*ck perfection. Ask for help. Stop blaming others or you. Just learn from it, find a solution and move on. Often you don&#39;t need to be the only person who works on the task. Document it and let it go if you have to.&lt;/p&gt;
-&lt;h2 id=&quot;know-your-limits!&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170404-key-to-productivity/#know-your-limits!&quot;&gt;&lt;span&gt;Know your limits!&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;img src=&quot;https://media.giphy.com/media/yxZlvexI0DyHI2Dyrf/giphy.gif&quot; alt=&quot;Power Puff Girl with circle eyes&quot; /&gt;
-&lt;p&gt;How much sleep do you need to feel creative, productive, good about yourself?
-How are you making sure you do hydrate yourself enough during the day? Did you eat something healthy? Or greasy because you need it right now? Which workout works for you or do you prefer to take a long bath? Hanging out with friends or enjoying alone time?&lt;/p&gt;
-&lt;p&gt;Be aware what recharges your batteries, physically AND emotionally. Don&#39;t compromise on that or even cut time down. You might increase your productivity for some time but its just for a short run.&lt;/p&gt;
-&lt;h2 id=&quot;learn-to-say-no&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170404-key-to-productivity/#learn-to-say-no&quot;&gt;&lt;span&gt;Learn to say NO&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;img src=&quot;https://media.giphy.com/media/EVbEdEW3kuu0o/giphy.gif&quot; alt=&quot;David Tennant as Doctor Who shakes his head.&quot; /&gt;
-&lt;p&gt;Don&#39;t work on demand which means schedule fixed times for replying to messages like mails or direct messages. Review your notification settings. A thing I&#39;ve learned in the past few years is that there is no reply so important to drop whatever you do right now.&lt;/p&gt;
-&lt;p&gt;You don&#39;t need to save this world all by yourself. Learn to say no. Know who you can count on. Ask for help. Delegate requests to other people who might be intrested and have resources. But mostly important check in with yourself... Do you have the time, the energy or see any benefit for you before saying yes. This might sound selfish but as a close friend once told me &amp;quot;You have to take care of yourself, before you can take care of others.&amp;quot;... And he is right.&lt;/p&gt;
-&lt;p&gt;Schedule time for yourself or your family, friends. No mails during that time. No talking about work or thinking about issues to solve. You need a break from things as everyone else does. This is what keeps you productive and gives you a fresh point of view.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;I feel like being aware of yourself, your life&#39;s requirements and challenges also your time and your always changing energy levels is... the key to productivity.&lt;/strong&gt;&lt;/p&gt;
+				<title>Newsletter 010</title>
+				<link>https://thedeven.org/posts/20230418-newsletter-010/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230418-newsletter-010/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Good day everyone,&lt;/p&gt;
+&lt;p&gt;Here are 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day. No matter if you are a learner, a doer, a thinker, two or all of them, we hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230418-newsletter-010/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A Complete Guide to CSS Cascade Layers &lt;br /&gt;
+&lt;a href=&quot;https://css-tricks.com/css-cascade-layers/&quot;&gt;https://css-tricks.com/css-cascade-layers/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Inside look at modern web browser&lt;br /&gt;
+&lt;a href=&quot;https://developer.chrome.com/blog/inside-browser-part1/&quot;&gt;https://developer.chrome.com/blog/inside-browser-part1/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Resilience, Flexibility, And Immediacy: Working With Headless Systems&lt;br /&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2022/05/resilience-flexibility-immediacy-headless-systems/&quot;&gt;https://www.smashingmagazine.com/2022/05/resilience-flexibility-immediacy-headless-systems/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230418-newsletter-010/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;GPT + DALL-E + WhatsApp = AI Assistant 🚀&lt;br /&gt;
+&lt;a href=&quot;https://github.com/askrella/whatsapp-chatgpt&quot;&gt;https://github.com/askrella/whatsapp-chatgpt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#CodePenChallenge: Round&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/collection/NqyoLd&quot;&gt;https://codepen.io/collection/NqyoLd&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230418-newsletter-010/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How will AIs like ChatGPT change our way of working, and how will it change user interactions?&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;p&gt;If you have any resources you think your colleagues should know about, please hit reply and let us know, so we can add it to a future newsletter.&lt;br /&gt;
+Julian &amp;amp; Ola from DEVEN&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you!&lt;/p&gt;
+&lt;p&gt;🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with other/your juniors and trainees, with your team or even your cactus. 🌵&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/jcs2/pen/JjaGReW&quot;&gt;&amp;gt;&amp;gt; link to challenge &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
 </description>
-				<pubDate>Tue, 04 Apr 2017 02:00:00 +0000</pubDate>
-				<dc:creator>User 5</dc:creator>
-				<guid>https://thedeven.org/posts/20170404-key-to-productivity/</guid>
+				<pubDate>Tue, 18 Apr 2023 02:00:00 +0000</pubDate>
+				<dc:creator>Julian Cebulla</dc:creator>
+				<guid>https://thedeven.org/posts/20230418-newsletter-010/</guid>
 			</item>
 			
 			<item>
-				<title>Why do we need Web Compatibility</title>
-				<link>https://thedeven.org/posts/20170116-why-do-we-need-web-compatibility/</link>
-				<description>&lt;p&gt;Last week, I published the first part of this blog post called &lt;a href=&quot;https://zoepage.github.io/posts/20170110-what-is-web-compatibility/index.html&quot;&gt;What is Web Compatibility&lt;/a&gt;? It explained what web compatibility is (Does it work in most browsers? Is the bug appearing in just this one?) and how you can report it.&lt;/p&gt;
-&lt;h3 id=&quot;but-why-do-we-need-web-compatibility%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170116-why-do-we-need-web-compatibility/#but-why-do-we-need-web-compatibility%3F&quot;&gt;&lt;span&gt;But why do we need Web Compatibility?&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;There are a so many things I&#39;ve heard from people why they do not report bugs.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;quot;I know this bug already.&amp;quot;&lt;/li&gt;
-&lt;li&gt;&amp;quot;I can make this work in what... like 5 minutes.&amp;quot;&lt;/li&gt;
-&lt;li&gt;&amp;quot;It&#39;s such an easy hack!&amp;quot;&lt;/li&gt;
-&lt;li&gt;&amp;quot;Reporting that bug will take FOREVER!!!!&amp;quot;&lt;/li&gt;
-&lt;/ul&gt;
+				<title>Newsletter 009</title>
+				<link>https://thedeven.org/posts/20230221-newsletter-009/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230221-newsletter-009/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Good day everyone,
+Here are 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day. No matter if you are a learner, a doer, a thinker, two or all of them, I hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230221-newsletter-009/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The ‘scrollend’ event is coming &lt;br /&gt;
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollend_event&quot;&gt;https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollend_event&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;💡🎁 JavaScript Visualized: Generators and Iterators &lt;br /&gt;
+&lt;a href=&quot;https://lnkd.in/gXFM9puE&quot;&gt;https://lnkd.in/gXFM9puE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How To Give Effective Feedback Remotely &lt;br /&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2022/05/give-effective-feedback-remotely/&quot;&gt;https://www.smashingmagazine.com/2022/05/give-effective-feedback-remotely/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230221-newsletter-009/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Validate and visualize dependencies. Your rules. JavaScript, TypeScript, CoffeeScript. ES6, CommonJS, AMD. &lt;br /&gt;
+&lt;a href=&quot;https://github.com/sverweij/dependency-cruiser&quot;&gt;https://github.com/sverweij/dependency-cruiser&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Interactive puppy, it wants to fetch your cursor 🦴🐶 &lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/Ma5a/pen/MWBGbOb&quot;&gt;https://codepen.io/Ma5a/pen/MWBGbOb&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230221-newsletter-009/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What are your primary goals, professionally and privately, for this new year? Who and what can help you to achieve them?&lt;/p&gt;
 &lt;br /&gt;
-&lt;p&gt;&lt;strong&gt;&amp;quot;To be accepted as a full standard, a spec must have two independent and interoperable implementations.&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;p&gt;If you have any resources you think your colleagues should know about, please hit reply and let us know, so we can add it to a future newsletter.&lt;br /&gt;
+Julian &amp;amp; Ola from DEVEN&lt;/p&gt;
 &lt;br /&gt;
-&lt;p&gt;&lt;em&gt;Web Compatibility is what we need when the Web interoperability process failed in some fashion. And here I&#39;m not talking only about standard organisations, but when different vendors failed to reach an agreement and it creates issues for the end users. Then you have to understand the issue and what is the best way to adjust the path. The power of a technological proposal is influenced a lot by the market shares of the vendor product.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt; If a vendor implements a tool to be able to reload part of a document without making a HTTP request for the full document AND has a very large market share… you get XMLHttpRequest which was created by IE (initially as an activeX mechanism) and that other browsers were forced to implement (with its own twisted history). &lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt; Web SQL and IndexedDB is a twisted history of Apple which had vested interests in another technology.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/karlcow&quot;&gt;@karlcow&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;please%2C-stop...&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170116-why-do-we-need-web-compatibility/#please%2C-stop...&quot;&gt;&lt;span&gt;Please, stop...&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;We need to stop hacking things. Your voice matters to show browser vendors that we need interoperable specs, not different implementations. We as developers need tools that work from the get go in the right way.&lt;/p&gt;
-&lt;img src=&quot;https://media.giphy.com/media/wpoLqr5FT1sY0/giphy.gif&quot; alt=&quot;Dog typing on keyboard.&quot; /&gt;
-&lt;p&gt;Clean code is valuable for everyone. Not just because updating hacked code is hard and you get yourself in a bigger mess everytime you do something. But also, because it takes us forever to find those browser quirks and learn things, we shouldn&#39;t need to know. Just think about how much time and frustration you had to go through, while you fought with those type of bugs?!&lt;/p&gt;
-&lt;p&gt;We should have a web that works for everyone. Make it not just user-, but developer-friendly.&lt;/p&gt;
-&lt;h3 id=&quot;benefits-of-reporting-%3C3&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170116-why-do-we-need-web-compatibility/#benefits-of-reporting-%3C3&quot;&gt;&lt;span&gt;Benefits of reporting &amp;lt;3&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;You might assume the bug was already reported, because other developers do that all the time, right?
-Well... most likely? No. If you ask at a meetup, conference or where ever you meet other developers how many of them reported a bug before, 1-2 hands will go up. &lt;em&gt;If&lt;/em&gt; you&#39;re lucky!&lt;/p&gt;
-&lt;p&gt;And &lt;em&gt;what if&lt;/em&gt; it was &lt;em&gt;already&lt;/em&gt; reported? There is no dragon standing in front of the bug tracker and eat you alive, just because you dared to raise your voice and say a word about that bug...&lt;/p&gt;
-&lt;img src=&quot;https://media.giphy.com/media/SIClNyzUQv5Vm/giphy.gif&quot; alt=&quot;Cute dragon scratching himself.&quot; /&gt;
-&lt;p&gt;&lt;small&gt;(Okay, maybe just a very cute one, who is actually really nice and would love to give you a hug!)&lt;/small&gt;&lt;/p&gt;
-&lt;p&gt;The more developers report bugs, the higher is the chance to get all of them covered. PLUS it makes specific bugs so much more visible and the fact how annoyed developers are by &amp;quot;this specific one&amp;quot;, so browser vendors will prioritize it higher and fix it sooner.&lt;/p&gt;
-&lt;p&gt;Your experience, knowledge and voice is what is the most important thing. Browser vendors need you! Your input. You are the ones building the web, shaping up the web.&lt;/p&gt;
-&lt;h3 id=&quot;how-can-i-help-beyond-just-reporting-bugs%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170116-why-do-we-need-web-compatibility/#how-can-i-help-beyond-just-reporting-bugs%3F&quot;&gt;&lt;span&gt;How can I help beyond just reporting bugs?&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;With reporting, you already did the biggest part on helping make the web accessible for everyone.
-But you can help also with checking out bugs, finding solutions or share your knowledge... You can find more about the how at &lt;a href=&quot;https://webcompat.com/contributors&quot;&gt;https://webcompat.com/contributors&lt;/a&gt;.&lt;/p&gt;
-&lt;img src=&quot;https://media.giphy.com/media/tnivTK2URZm7e/giphy.gif&quot; alt=&quot;Care bears sending hearts out of their bellies.&quot; /&gt;
-&lt;p&gt;&lt;strong&gt;Thank you &amp;lt;3&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;&lt;em&gt;This is the second part of a two part blog post.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you!&lt;/p&gt;
+&lt;p&gt;🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with other/your juniors and trainees, with your team or even your cactus. 🌵&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/jcs2/pen/abjjPZP&quot;&gt;&amp;gt;&amp;gt; link to challenge &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
 </description>
-				<pubDate>Mon, 16 Jan 2017 01:00:00 +0000</pubDate>
-				<dc:creator>User 2</dc:creator>
-				<guid>https://thedeven.org/posts/20170116-why-do-we-need-web-compatibility/</guid>
+				<pubDate>Tue, 21 Feb 2023 01:00:00 +0000</pubDate>
+				<dc:creator>Julian Cebulla</dc:creator>
+				<guid>https://thedeven.org/posts/20230221-newsletter-009/</guid>
 			</item>
 			
 			<item>
-				<title>What is Web Compatibility</title>
-				<link>https://thedeven.org/posts/20170110-what-is-web-compatibility/</link>
-				<description>&lt;p&gt;One week ago, I’ve started my job as Web Compatibility Engineer at Mozilla and it’s been wonderful so far!
-It’s a very welcoming place here in Berlin and my team is superb! So, summed up in one GIF?&lt;/p&gt;
-&lt;img src=&quot;https://media.giphy.com/media/10uJ0IFxlCA06I/giphy.gif&quot; alt=&quot;Hands make a heart&quot; /&gt;
-&lt;p&gt;When people ask me, what I actually do, the conversations mostly go like this…&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;A: “So, Web Compatibility Engineer? Huh... What do you do exactly?”&lt;/strong&gt;&lt;br /&gt;
-B: “We make sure websites work in the same way on every platform.”&lt;br /&gt;
-&lt;strong&gt;A: ”So, I can report a bug when I find one?”&lt;/strong&gt;&lt;br /&gt;
-B: ”Yes, please! Just hop over to &lt;a href=&quot;https://webcompat.com/&quot;&gt;webcompat.com&lt;/a&gt; and let us know what you’ve found! We’ll help to fix it.”&lt;br /&gt;
-&lt;strong&gt;A: “Oh, great. So you can fix my broken website, right?”&lt;/strong&gt;&lt;br /&gt;
-B: “Well, it depends… Is your bug appearing in one browser, but not another? Then it is a webcompat bug and you should totally report it.”&lt;/p&gt;
-&lt;img src=&quot;https://media.giphy.com/media/c4Nc0v0g15g9G/giphy.gif&quot; alt=&quot;Jake thinks this is interesting.&quot; /&gt;
-&lt;h2 id=&quot;what-is-a-webcompat-bug%3F&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20170110-what-is-web-compatibility/#what-is-a-webcompat-bug%3F&quot;&gt;&lt;span&gt;What is a WebCompat bug?&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;If you find a bug on a web site, just ask yourself… Is this happening just in one browser or in all of them?
-&lt;strong&gt;If it’s in more than three common browsers, please report the bug to the website youre browsing.&lt;/strong&gt; They’ll be happy about some good pointers how to reproduce the bug and which system / browser you are running etc, because everyone deserves good bug reports. ;)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;If this is happening in just one or two browsers, this is pretty likely a WebCompat bug, which you should report over at &lt;a href=&quot;https://webcompat.com/&quot;&gt;webcompat.com&lt;/a&gt;.&lt;/strong&gt;
-This could be e.g. a prefix the website is using, but just for one browser and others are left out. Maybe the prefix isn’t even needed anymore. Or the specs are not implemented in a correct way into the browser. (Specs just say &lt;em&gt;what&lt;/em&gt; should be implemented, but not &lt;em&gt;how&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;Your experience, knowledge and voice is what is the most important thing. Browser vendors need you! Your input. You are the ones building the web, shaping up the web.&lt;/p&gt;
-&lt;img src=&quot;https://media.giphy.com/media/tnivTK2URZm7e/giphy.gif&quot; alt=&quot;Care bears sending hearts out of their bellies.&quot; /&gt;
-&lt;p&gt;&lt;strong&gt;Thank you &amp;lt;3&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://zoepage.github.io/posts/20170116-why-do-we-need-web-compatibility/index.html&quot;&gt;Hop over to the second part!&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;&lt;em&gt;This is the first part of a two part blog post.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+				<title>Newsletter 008</title>
+				<link>https://thedeven.org/posts/20230110-newsletter-008/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230110-newsletter-008/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Happy new year 🎉
+With the new year we also start a new season of our newsletter to send you 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day. No matter if you are a learner, a doer, a thinker, two or all of them, I hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230110-newsletter-008/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;⏱️ Precise Timing With Web Animations API&lt;br /&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2022/06/precise-timing-web-animations-api/&quot;&gt;https://www.smashingmagazine.com/2022/06/precise-timing-web-animations-api/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How To Avoid Bias In Computer Vision Models&lt;br /&gt;
+&lt;a href=&quot;https://blog.roboflow.com/how-to-avoid-bias-in-computer-vision-models/&quot;&gt;https://blog.roboflow.com/how-to-avoid-bias-in-computer-vision-models/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Microservices vs Monolithic Architecture: A Practical Approach&lt;br /&gt;
+&lt;a href=&quot;https://dev.to/lovepreetsingh/microservices-vs-monolithic-architecture-a-practical-approach-4m06&quot;&gt;https://dev.to/lovepreetsingh/microservices-vs-monolithic-architecture-a-practical-approach-4m06&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230110-newsletter-008/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Scroll Snap Type - Set snap points on scroll containers&lt;br /&gt;
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type&quot;&gt;https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SVG Gradient Wave Generator&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/supah/pen/prVVOx&quot;&gt;https://codepen.io/supah/pen/prVVOx&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20230110-newsletter-008/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;If you take a moment to reflect on what you accomplished in 2022, what are you the most proud of?&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;p&gt;If you have any resources you think your colleagues should know about, please hit reply and let us know, so we can add it to a future newsletter.&lt;/p&gt;
+&lt;p&gt;We wish you all a great start into the new year, let your dreams take flight in 2023!&lt;br /&gt;
+Julian &amp;amp; Ola from DEVEN&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: As promised we continue the coding challenges, this time we have one from @KrasimirTsonev who created a dedicated website with challenges.&lt;br /&gt;
+&lt;a href=&quot;https://iloveweb.dev/?q=UURSUuiKiG&quot;&gt;Add a HTML element that allows the user to pick a colour&lt;/a&gt;&lt;/p&gt;
 </description>
-				<pubDate>Mon, 16 Jan 2017 01:00:00 +0000</pubDate>
-				<dc:creator>User 1</dc:creator>
-				<guid>https://thedeven.org/posts/20170110-what-is-web-compatibility/</guid>
+				<pubDate>Tue, 10 Jan 2023 01:00:00 +0000</pubDate>
+				<dc:creator>Julian Cebulla</dc:creator>
+				<guid>https://thedeven.org/posts/20230110-newsletter-008/</guid>
+			</item>
+			
+			<item>
+				<title>Newsletter 007</title>
+				<link>https://thedeven.org/posts/20221213-newsletter-007/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-another-round-of-3-2-1-treats.%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20221213-newsletter-007/#%E2%9C%A8-another-round-of-3-2-1-treats.%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Another round of 3-2-1 treats.✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every few weeks, you will get 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day. No matter if you are a learner, a doer, a thinker, two or all of them… I hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20221213-newsletter-007/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How do I make sure my work is visible?&lt;br /&gt;
+&lt;a href=&quot;https://www.theengineeringmanager.com/qa/how-do-i-make-sure-my-work-is-visible/&quot;&gt;https://www.theengineeringmanager.com/qa/how-do-i-make-sure-my-work-is-visible/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An interactive guide to colour &amp;amp; contrast:&lt;br /&gt;
+&lt;a href=&quot;https://colorandcontrast.com/&quot;&gt;https://colorandcontrast.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;✨♻️ JavaScript Visualised: Event Loop &lt;br /&gt;
+&lt;a href=&quot;https://lnkd.in/gVBuzDsg&quot;&gt;https://lnkd.in/gVBuzDsg&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20221213-newsletter-007/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;VueUse - Collection of Vue Composition Utilities&lt;br /&gt;
+&lt;a href=&quot;https://vueuse.org/&quot;&gt;https://vueuse.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;11ty - A simple static site generator&lt;br /&gt;
+&lt;a href=&quot;https://www.11ty.dev/&quot;&gt;https://www.11ty.dev&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20221213-newsletter-007/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What can you do to take better care of yourself?&lt;/p&gt;
+&lt;br /&gt; 
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;p&gt;This is the last newsletter for this year, but no worries it will continue next year with even more  things to learn, do and think about. 🎉&lt;/p&gt;
+&lt;p&gt;If you have any resources you think your colleagues should know about, please hit reply and let us know, so we can add it to a future newsletter.&lt;/p&gt;
+&lt;p&gt;We wish you all happy holidays, take a break and enjoy the quiet time at the end of the year. ♥️&lt;br /&gt;
+Ola &amp;amp; Julian from DEVEN&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: We’ll skip the coding challenge this time as we want you to take a break. We will continue them with the next newsletter, promised.&lt;/p&gt;
+&lt;p&gt;But we do have an ask… if you are up to it: show appreciation to your colleagues for what they did this year, spread some love 💌&lt;/p&gt;
+</description>
+				<pubDate>Tue, 13 Dec 2022 01:00:00 +0000</pubDate>
+				<dc:creator>Julian Cebulla</dc:creator>
+				<guid>https://thedeven.org/posts/20221213-newsletter-007/</guid>
+			</item>
+			
+			<item>
+				<title>Newsletter 006</title>
+				<link>https://thedeven.org/posts/20220920-newsletter-006/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-another-round-of-3-2-1-treats.%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220920-newsletter-006/#%E2%9C%A8-another-round-of-3-2-1-treats.%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Another round of 3-2-1 treats.✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every 2 weeks, you will get 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day. No matter if you are a learner, a doer, a thinker, two or all of them… I hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220920-newsletter-006/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;⚡️⛓JavaScript Visualized: Scope (Chain)&lt;br /&gt;
+&lt;a href=&quot;https://lnkd.in/gEjUXsXu&quot;&gt;https://lnkd.in/gEjUXsXu&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Basics of package.json &lt;br /&gt;
+&lt;a href=&quot;https://nodesource.com/blog/the-basics-of-package-json&quot;&gt;https://nodesource.com/blog/the-basics-of-package-json&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hiring technical talent: An exercise in clarity, patience, and preparation &lt;br /&gt;&lt;a href=&quot;https://github.com/readme/guides/hiring-technical-talent&quot;&gt;https://github.com/readme/guides/hiring-technical-talent&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220920-newsletter-006/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A GitHub repo with a lot of weird bash examples you can run on your computer&lt;br /&gt;
+&lt;a href=&quot;https://github.com/jvns/shell-examples&quot;&gt;https://github.com/jvns/shell-examples&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Common error types in one infographic &lt;br /&gt;
+&lt;a href=&quot;https://twitter.com/sumusiriwardana/status/1546399074244386818&quot;&gt;https://twitter.com/sumusiriwardana/status/1546399074244386818&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220920-newsletter-006/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What defines your self-worth?&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading!
+You’d love to participate, but to not know how. Simple… Hit reply!&lt;/p&gt;
+&lt;p&gt;Talk soon! ♥️&lt;br /&gt;
+Ola&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you!&lt;/p&gt;
+&lt;p&gt;🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with other/your juniors and trainees, with your team or even your cactus. 🌵&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/misprintedtype-the-weird/pen/RwMmPyJ&quot;&gt;&amp;gt;&amp;gt; link to codepen &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 20 Sep 2022 02:00:00 +0000</pubDate>
+				<dc:creator>Ola Gasidlo-Brändel</dc:creator>
+				<guid>https://thedeven.org/posts/20220920-newsletter-006/</guid>
+			</item>
+			
+			<item>
+				<title>Newsletter 005</title>
+				<link>https://thedeven.org/posts/20220906-newsletter-005/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-another-round-of-3-2-1-treats.%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220906-newsletter-005/#%E2%9C%A8-another-round-of-3-2-1-treats.%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Another round of 3-2-1 treats.✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every 2 weeks, you will get 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day. No matter if you are a learner, a doer, a thinker, two or all of them… I hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220906-newsletter-005/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How do I make sure my work is visible? &lt;br /&gt;
+&lt;a href=&quot;https://www.theengineeringmanager.com/qa/how-do-i-make-sure-my-work-is-visible/&quot;&gt;https://www.theengineeringmanager.com/qa/how-do-i-make-sure-my-work-is-visible/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An interactive guide to colour &amp;amp; contrast:&lt;br /&gt;
+&lt;a href=&quot;https://colorandcontrast.com/&quot;&gt;https://colorandcontrast.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;✨♻️ JavaScript Visualized: Event Loop&lt;br /&gt;
+&lt;a href=&quot;https://lnkd.in/gVBuzDsg&quot;&gt;https://lnkd.in/gVBuzDsg&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220906-newsletter-005/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Finds bugs in your shell scripts&lt;br /&gt;
+&lt;a href=&quot;https://www.shellcheck.net/&quot;&gt;https://www.shellcheck.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;VueUse - Collection of Vue Composition Utilities &lt;br /&gt;
+&lt;a href=&quot;https://vueuse.org/&quot;&gt;https://vueuse.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220906-newsletter-005/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Having issues changing your habit of using “guys” when addressing a group of people? Changing habits is hard. Put a post-it on your computer with synonyms like “folks, team, peeps…” as a reminder.&lt;/p&gt;
+&lt;br /&gt; 
+&lt;p&gt;Thank you for reading, but also for your feedback! Some of you mentioned, you’d love to participate, but to not know how. Simple… Hit reply!&lt;/p&gt;
+&lt;p&gt;Talk soon! ♥️&lt;br /&gt;
+Ola&lt;/p&gt;
+&lt;br /&gt; 
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you!&lt;/p&gt;
+&lt;p&gt;🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with other/your juniors and trainees, with your team or even your cactus. 🌵&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/misprintedtype-the-weird/pen/wvmOLLq&quot;&gt;&amp;gt;&amp;gt; link to codepen &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 06 Sep 2022 02:00:00 +0000</pubDate>
+				<dc:creator>Ola Gasidlo-Brändel</dc:creator>
+				<guid>https://thedeven.org/posts/20220906-newsletter-005/</guid>
+			</item>
+			
+			<item>
+				<title>Newsletter 004</title>
+				<link>https://thedeven.org/posts/20220823-newsletter-004/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-welcome-to-our-series-3-2-1-treats.%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220823-newsletter-004/#%E2%9C%A8-welcome-to-our-series-3-2-1-treats.%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Welcome to our series 3-2-1 treats.✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every 2 weeks, you will get 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day. No matter if you are a learner, a doer, a thinker, two or all of them… I hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220823-newsletter-004/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Your future self will thank you: Building your personal documentation - &lt;br /&gt;
+&lt;a href=&quot;https://github.com/readme/guides/private-documentation&quot;&gt;https://github.com/readme/guides/private-documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Manage Accessible Design System Themes With CSS Color-Contrast()&lt;br /&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2022/05/accessible-design-system-themes-css-color-contrast/&quot;&gt;https://www.smashingmagazine.com/2022/05/accessible-design-system-themes-css-color-contrast/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Things I Wish I’d Known Earlier In My Career&lt;br /&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2022/06/things-to-know-earlier-in-your-career/&quot;&gt;https://www.smashingmagazine.com/2022/06/things-to-know-earlier-in-your-career/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220823-newsletter-004/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Smoothly interpolate between variations of SVG paths&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Minibrams/svg-path-morph&quot;&gt;https://github.com/Minibrams/svg-path-morph&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Parallax pure CSS&lt;br /&gt;
+&lt;a href=&quot;https://www.netlify.com/blog/fun-parallax-scrolling-css-for-matterday/&quot;&gt;https://www.netlify.com/blog/fun-parallax-scrolling-css-for-matterday/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220823-newsletter-004/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How much downtime do you allow yourself without doom scrolling or binge-watching?&lt;/p&gt;
+&lt;br /&gt; 
+&lt;p&gt;Thank you for reading! Now it’s your turn! What excites you at the moment? What did you enjoy today?
+Hit reply and let me know!&lt;/p&gt;
+&lt;p&gt;Talk soon! ♥️ &lt;br /&gt;
+Ola&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you!&lt;/p&gt;
+&lt;p&gt;🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with other/your juniors and trainees, with your team or even your cactus. 🌵&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/misprintedtype-the-weird/pen/MWVQdQp&quot;&gt;&amp;gt;&amp;gt; link to codepen &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 23 Aug 2022 02:00:00 +0000</pubDate>
+				<dc:creator>Ola Gasidlo-Brändel</dc:creator>
+				<guid>https://thedeven.org/posts/20220823-newsletter-004/</guid>
+			</item>
+			
+			<item>
+				<title>Newsletter 003</title>
+				<link>https://thedeven.org/posts/20220809-newsletter-003/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-welcome-to-our-series-3-2-1-treats.%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220809-newsletter-003/#%E2%9C%A8-welcome-to-our-series-3-2-1-treats.%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Welcome to our series 3-2-1 treats.✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every 2 weeks, you will get 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day. No matter if you are a learner, a doer, a thinker, two or all of them… I hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220809-newsletter-003/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Software Engineering - The Soft Parts &lt;br /&gt;
+&lt;a href=&quot;https://addyosmani.com/blog/software-engineering-soft-parts/&quot;&gt;https://addyosmani.com/blog/software-engineering-soft-parts/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;State is hard: why SPAs will persist&lt;br /&gt;
+&lt;a href=&quot;https://nolanlawson.com/2022/05/29/state-is-hard-why-spas-will-persist/&quot;&gt;https://nolanlawson.com/2022/05/29/state-is-hard-why-spas-will-persist/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Best practices for inclusive CLIs&lt;br /&gt;
+&lt;a href=&quot;https://seirdy.one/posts/2022/06/10/cli-best-practices/&quot;&gt;https://seirdy.one/posts/2022/06/10/cli-best-practices/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220809-newsletter-003/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Practical CSS and design tips that helps in building future-proof user interfaces.&lt;br /&gt;
+&lt;a href=&quot;https://defensivecss.dev/&quot;&gt;https://defensivecss.dev/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A collection of bad practices in HTML, copied from real websites.&lt;br /&gt;
+&lt;a href=&quot;https://www.htmhell.dev/&quot;&gt;https://www.htmhell.dev/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220809-newsletter-003/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What scares you the most about making decisions?&lt;/p&gt;
+&lt;br /&gt; 
+&lt;p&gt;Thank you for reading! Now it’s your turn! What excites you at the moment? What did you enjoy today?
+Hit reply and let me know!&lt;/p&gt;
+&lt;p&gt;Talk soon! ♥️&lt;br /&gt;
+Ola&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you!&lt;/p&gt;
+&lt;p&gt;🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with other/your juniors and trainees, with your team or even your cactus. 🌵&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/misprintedtype-the-weird/pen/qBoVJqL&quot;&gt;&amp;gt;&amp;gt; link to codepen &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 09 Aug 2022 02:00:00 +0000</pubDate>
+				<dc:creator>Ola Gasidlo-Brändel</dc:creator>
+				<guid>https://thedeven.org/posts/20220809-newsletter-003/</guid>
+			</item>
+			
+			<item>
+				<title>Newsletter 002</title>
+				<link>https://thedeven.org/posts/20220726-newsletter-002/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-welcome-to-our-series-3-2-1-treats.%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220726-newsletter-002/#%E2%9C%A8-welcome-to-our-series-3-2-1-treats.%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Welcome to our series 3-2-1 treats.✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every 2 weeks, you will get 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day. No matter if you are a learner, a doer, a thinker, two or all of them… I hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220726-newsletter-002/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;ECMA International approves ECMAScript 2022: What’s new? &lt;br /&gt;
+&lt;a href=&quot;https://2ality.com/2022/06/ecmascript-2022.html&quot;&gt;https://2ality.com/2022/06/ecmascript-2022.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Don’t Sink Your Website With Third Parties &lt;br /&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2022/06/dont-sink-website-third-parties/&quot;&gt;https://www.smashingmagazine.com/2022/06/dont-sink-website-third-parties/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Simplify Your Color Palette With CSS Color-Mix() &lt;br /&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2022/06/simplify-color-palette-css-color-mix/&quot;&gt;https://www.smashingmagazine.com/2022/06/simplify-color-palette-css-color-mix/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220726-newsletter-002/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Everything you need to know about mono repos, and the tools to build them. &lt;br /&gt;
+&lt;a href=&quot;https://monorepo.tools/&quot;&gt;https://monorepo.tools/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;#HEXWORDS - Why bother with a random green when you can choose to be a #BADA55!&lt;br /&gt;
+&lt;a href=&quot;https://hexwords.netlify.app/&quot;&gt;https://hexwords.netlify.app/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220726-newsletter-002/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I know, projects are very often pretty stressful. Together, everything seems easier.&lt;br /&gt;
+So, ask yourself… How can we support others?&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading! Now it’s your turn! What are you working on? What’s the last thing you learned? What excites you at the moment?&lt;br /&gt;
+Hit reply and let me know!&lt;/p&gt;
+&lt;p&gt;Talk soon! ♥️ &lt;br /&gt;
+Ola&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you!&lt;/p&gt;
+&lt;p&gt;🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with other/your juniors and trainees, with your team or even your cactus. 🌵&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/url?q=https://codepen.io/misprintedtype-the-lessful/pen/VwXMZVK&amp;amp;sa=D&amp;amp;source=editors&amp;amp;ust=1681804078388562&amp;amp;usg=AOvVaw3ftfEkfmD7o88oO5rX0i4c&quot;&gt;&amp;gt;&amp;gt; link to challenge codepen &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 26 Jul 2022 02:00:00 +0000</pubDate>
+				<dc:creator>Ola Gasidlo-Brändel</dc:creator>
+				<guid>https://thedeven.org/posts/20220726-newsletter-002/</guid>
+			</item>
+			
+			<item>
+				<title>Newsletter 001</title>
+				<link>https://thedeven.org/posts/20220712-newsletter-001/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-welcome-to-our-new-series-called-3-2-1-treats.%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220712-newsletter-001/#%E2%9C%A8-welcome-to-our-new-series-called-3-2-1-treats.%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Welcome to our new series called 3-2-1 treats.✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every 2 weeks, you will get 3 things for learners, 2 things for doers, and 1 question for thinkers to sprinkle some glitter on your day.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220712-newsletter-001/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How to break the cycle of tech debt.&lt;br /&gt;
+&lt;a href=&quot;https://leaddev.com/legacy-technical-debt-migrations/how-break-cycle-tech-debt&quot;&gt;https://leaddev.com/legacy-technical-debt-migrations/how-break-cycle-tech-debt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Avoiding &lt;img /&gt; layout shifts: aspect-ratio vs width &amp;amp; height attributes.&lt;br /&gt;
+&lt;a href=&quot;https://jakearchibald.com/2022/img-aspect-ratio/&quot;&gt;https://jakearchibald.com/2022/img-aspect-ratio/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Future Of Frontend Build Tools.&lt;br /&gt;
+&lt;a href=&quot;https://www.smashingmagazine.com/2022/06/future-frontend-build-tools/&quot;&gt;https://www.smashingmagazine.com/2022/06/future-frontend-build-tools/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220712-newsletter-001/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/nolimits4web/atropos&quot;&gt;Touch friendly 3D parallax hover effects.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.browsers.fyi/&quot;&gt;browsers.fyi - Current browser versions and release notes as site, feed or API.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20220712-newsletter-001/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Do you remember your best mentor so far? What can you learn from this experience?
+Do you remember your worse mentor so far? What can you learn from this experience?&lt;/em&gt;&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading! Now it’s your turn! What are you working on? What’s the last thing you learned? What excites you at the moment?
+Hit reply and let me know!&lt;/p&gt;
+&lt;p&gt;Talk soon! ♥️&lt;br /&gt;
+Ola&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: You love to challenge yourself a bit? Here is a small gift for you!
+🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with your/other juniors and trainees, with your team or even your cactus. 🌵 &lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/misprintedtype-the-weird/pen/MWVjKPj&quot;&gt;&amp;gt;&amp;gt; link to codepen &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 12 Jul 2022 02:00:00 +0000</pubDate>
+				<dc:creator>Ola Gasidlo-Brändel</dc:creator>
+				<guid>https://thedeven.org/posts/20220712-newsletter-001/</guid>
 			</item>
 	</channel>
 </rss>
