@@ -1,19 +1,23 @@
 [
   {
     "name": "Ola Gasidlo-Brändel",
-    "role": "Project Lead",
+    "role": "Creator & Active Founder",
     "imageUrl": "/assets/images/ola.jpg"
   },
 
   {
-    "name": "Raffaele Pizzari",
-    "role": "Lead Product Engineer",
-    "imageUrl": "/assets/images/raffaele.jpg"
+    "name": "Julian Cebulla",
+    "role": "Project Lead",
+    "imageUrl": "/assets/images/julian.jpg"
   },
-
   {
     "name": "Remmy Cat Stock",
     "role": "Product Engineer",
     "imageUrl": "/assets/images/remmy.jpg"
+  },
+  {
+    "name": "Kathrin Krämer",
+    "role": "Product Engineer",
+    "imageUrl": "/assets/images/kathi.png"
   }
 ]

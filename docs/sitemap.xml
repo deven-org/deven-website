@@ -39,19 +39,8 @@
       
     
       
-    
-      
-    
-      
           <url>
               <loc>/blog/</loc>
-              <lastmod>2023-12-08T13:51:50.626Z</lastmod>
-          </url>
-        
-    
-      
-          <url>
-              <loc>/boiler/</loc>
               <lastmod>2023-12-08T13:51:50.626Z</lastmod>
           </url>
         
@@ -74,22 +63,33 @@
     
       
           <url>
-              <loc>/</loc>
-              <lastmod>2023-12-08T13:51:50.627Z</lastmod>
+              <loc>/contributors/</loc>
+              <lastmod>2024-01-16T08:38:20.476Z</lastmod>
           </url>
         
+    
+      
     
       
           <url>
               <loc>/telemetry/</loc>
-              <lastmod>2023-12-08T13:51:50.628Z</lastmod>
+              <lastmod>2024-01-29T15:49:39.456Z</lastmod>
           </url>
         
     
       
           <url>
-              <loc>/contributors/</loc>
-              <lastmod>2024-01-16T08:38:20.476Z</lastmod>
+              <loc>/</loc>
+              <lastmod>2024-01-30T06:47:44.941Z</lastmod>
+          </url>
+        
+    
+      
+    
+      
+          <url>
+              <loc>/boiler/</loc>
+              <lastmod>2024-01-30T09:18:07.977Z</lastmod>
           </url>
         
     

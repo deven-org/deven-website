@@ -93,7 +93,7 @@ templateClass: home
     <ul role="list">
         {%- for member in team -%}
             <li role="listitem">
-                <img src="{{ member.imageUrl }}" alt="">
+                <img src="{{ member.imageUrl }}" alt="Avatar of {{member.name}}">
                 <h3>{{ member.name }}</h3>
                 <p>{{ member.role }}</p>
             </li>
