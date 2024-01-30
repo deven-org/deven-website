@@ -11,6 +11,9 @@
 .richtext p {
   margin-block: 20px;
 }
+.richtext strong {
+  font-weight: bold;
+}
 .richtext h2 {
   font-size: 1.75rem;
   font-weight: bold;
