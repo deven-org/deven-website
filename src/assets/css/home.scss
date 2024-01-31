@@ -660,6 +660,7 @@ header h1.deven-headtext {
   flex-direction: column;
   align-items: center;
   gap: 60px;
+  --avatar-size: 170px;
 
   @include media.md {
     gap: 120px;
@@ -689,8 +690,12 @@ header h1.deven-headtext {
       img {
         border-radius: 50%;
         object-fit: cover;
-        width: 170px;
-        height: 170px;
+        width: var(--avatar-size);
+        height: var(--avatar-size);
+      }
+
+      p {
+        max-width: var(--avatar-size);
       }
 
       h3 {
