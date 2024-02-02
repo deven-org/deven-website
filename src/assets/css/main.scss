@@ -20,6 +20,13 @@
     url('../fonts/SpaceGrotesk.ttf') format('truetype');
 }
 
+:root {
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+  scroll-padding-top: 100px;
+}
+
 body {
   background: black;
   margin: 0 auto;
