@@ -13,6 +13,15 @@
   font-display: swap;
   src: url("../fonts/SpaceGrotesk.woff2") format("woff2"), url("../fonts/SpaceGrotesk.ttf") format("truetype");
 }
+:root {
+  scroll-padding-top: 100px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background: black;
   margin: 0 auto;
