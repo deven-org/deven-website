@@ -22,4 +22,4 @@ Overall, B01LER is a powerful tool that helps you work smarter, not harder. By s
 - [Download our Figma File](https://boilerds.com/B01LER%20%20%5Bv0.1%20-%20alpha%20release%5D.fig) (Accenture-internal: [View on Figma](https://www.figma.com/file/zPHgVJFeLAhdM4MdOymhPb/B01LER--%5Bv0.1---alpha-release%5D?type=design&node-id=8941%3A1818&mode=design&t=owVepZzAwdrehnmL-1))
 - [Check out our code](https://github.com/deven-org/B01LER-Kitchen)
 - [Have a look at our components in Storybook](https://b01ler.onrender.com/)
-- [Use our sales deck (Accenture access only)](https://ts.accenture.com/:p:/r/sites/SongBuildNewBiz/_layouts/15/Doc.aspx?sourcedoc=%7B54296720-9A69-4244-8F4D-E4EEC58007C1%7D&file=B01LER_SalesDeck.pptx)
+- [Use our community deck](/assets/tools/boiler/20240702_B01LER_CommunityDeck.pdf)
