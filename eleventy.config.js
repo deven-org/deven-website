@@ -6,6 +6,7 @@ const { DateTime } = require('luxon')
 
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const mila = require("markdown-it-link-attributes");
 
 const {
   EleventyHtmlBasePlugin,
@@ -127,6 +128,18 @@ module.exports = (eleventyConfig) => {
       }
     },
   })
+
+  // add target="blank" and rel="noopener" to all external links (all links that start with https)
+  const milaOptions = {
+    matcher(href) {
+      return href.match(/^https?:\/\//);
+    },
+    attrs: {
+      target: "_blank",
+      rel: "noopener",
+    },
+  };
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(mila, milaOptions));
 
   return {
     templateFormats: ['md', 'html', 'njk'],
