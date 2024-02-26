@@ -14,7 +14,7 @@ const {
 } = require('@11ty/eleventy')
 
 module.exports = (eleventyConfig) => {
-  ;['src/assets/fonts/', 'src/assets/images/', 'src/assets/tools/', 'src/assets/favicon/'].forEach(
+  ;['src/assets/fonts/', 'src/assets/images/', 'src/assets/tools/', 'src/assets/js/', 'src/assets/favicon/'].forEach(
     (path) => eleventyConfig.addPassthroughCopy(path)
   )
   // favicon.ico also gets copied to the root for compatibility reasons
