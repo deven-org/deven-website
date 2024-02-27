@@ -8,5 +8,5 @@ On top of that, it makes collaboration between engineering and design teams much
 
 <div class="button-group">
   <a class="cta-button" href="https://boilerds.com/">Visit Page <span aria-hidden="true">→</span></a>
-  <a class="cta-button" href="https://github.com/deven-org/B01LER-Kitchen" target="_blank">View on GitHub <span aria-hidden="true">→</span></a>
+  <a class="cta-button" href="https://github.com/deven-org/boiler" target="_blank">View on GitHub <span aria-hidden="true">→</span></a>
   </div>
