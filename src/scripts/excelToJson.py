@@ -6,7 +6,7 @@ from enum import Enum
 # The script needs to be called with at least the input parameter and then either output or dryrun
 # The source xlsx file should be copied into the _data folder, git will ignore xlsx files in that folder.
 # to run the script navigate in the terminal to the script folder and execute:
-# 'python3 excelToJson.py -i '../_data/Hackathon-Collection.xlsx' -o '../_data/hackthondata.json''
+# 'python3 excelToJson.py -i '../_data/Hackathon-Collection.xlsx' -o '../_data/hackathondata.json''
 
 Parameters = Enum("Parameters", ["INPUT", "OUTPUT", "DRYRUN"])
 
@@ -62,7 +62,7 @@ def checkOptions(argv: list[str]) -> dict[Parameters, str]:
 params = checkOptions(sys.argv)
 
 excel_data_df = pandas.read_excel(params[Parameters.INPUT], sheet_name='Sheet1', header=2)
-excel_data_df = excel_data_df.drop(['Who (Accenture ID)','Which Area Does It Effect', 'What Does It Improve', 'Link To Result'], axis=1)
+excel_data_df = excel_data_df.drop(['Explorer (idea giver) [Accenture ID]','Lead/Contact [Accenture ID]','Team Size','Which Area Does It Effect', 'What Does It Improve', 'Link To Result', ], axis=1)
 json_str = excel_data_df.to_json(orient='records')
 
 if params[Parameters.DRYRUN]:
