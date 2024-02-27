@@ -2,7 +2,7 @@
 
 B01LER is a fully customisable design system (DS) that enables you to easily create cohesive and consistent digital products across multiple platforms and brands.
 
-B01LER provides pre-built components that exist **as designs** in the form of a [component library in Figma](https://boilerds.com/B01LER%20%20%5Bv0.1%20-%20alpha%20release%5D.fig), and **as code** in the form of a [forkable repository](https://github.com/deven-org/B01LER-Kitchen).
+B01LER provides pre-built components that exist **as designs** in the form of a [component library in Figma](https://boilerds.com/boilerds/B01LER%20%5Bv0.2%20-alpha%20release%5D.fig), and **as code** in the form of a [forkable repository](https://github.com/deven-org/boiler).
 
 The design and code implementations of the components are connected via a shared **token system**. A token system is a collection of values which represent the visual properties of a design system, such as typography, color and spacing.
 
@@ -19,7 +19,7 @@ Overall, B01LER is a powerful tool that helps you work smarter, not harder. By s
 
 ## Resources
 - [Browse through our website](https://boilerds.com/)
-- [Download our Figma File](https://boilerds.com/B01LER%20%20%5Bv0.1%20-%20alpha%20release%5D.fig) (Accenture-internal: [View on Figma](https://www.figma.com/file/zPHgVJFeLAhdM4MdOymhPb/B01LER--%5Bv0.1---alpha-release%5D?type=design&node-id=8941%3A1818&mode=design&t=owVepZzAwdrehnmL-1))
-- [Check out our code](https://github.com/deven-org/B01LER-Kitchen)
+- [Download our Figma File](https://boilerds.com/boilerds/B01LER%20%5Bv0.2%20-alpha%20release%5D.fig) (Accenture-internal: [View on Figma](https://www.figma.com/file/kG44mSWhEp2VcMvMqbJrRY/B01LER-%5Bv0.2--alpha-release%5D?type=design&node-id=1134%3A44297&mode=design&t=D8whh5YvFTH1immB-1))
+- [Check out our code](https://github.com/deven-org/boiler)
 - [Have a look at our components in Storybook](https://b01ler.onrender.com/)
-- [Use our community deck](/assets/tools/boiler/20240702_B01LER_CommunityDeck.pdf)
+- [Use our community deck](/assets/tools/boiler/20240226_B01LER_CommunityDeck.pdf)
