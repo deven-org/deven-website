@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
     {#
-          Per recommendation from: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
-          favicon.ico is accessible at the root, as set up in the eleventy config
-        #}
+                              Per recommendation from: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+                              favicon.ico is accessible at the root, as set up in the eleventy config
+                            #}
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
@@ -25,7 +25,12 @@
     <link rel="stylesheet" href="/assets/css/richtext.css">
     <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
     <link rel="alternate" href="{{ metadata.feed.path }}" type="application/rss+xml" title="{{ metadata.title }}">
-    <script async src="/assets/js/umami.js" data-host-url="https://umami-gray-beta.vercel.app/" data-website-id="ebc3938a-02c7-4277-8789-cc133e8138f5" data-domains="thedeven.org"></script>
+    <script
+      defer=""
+      data-website-id="ebc3938a-02c7-4277-8789-cc133e8138f5"
+      data-host-url="https://umami-gray-beta.vercel.app/"
+      data-domains="thedeven.org"
+      src="/assets/js/umami.js"></script>
   </head>
   <body>
     {% if page.svgIds -%}
@@ -114,7 +119,10 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        //regx to identify posts links and extract post name
+        if (typeof(umami) === 'undefined') { // if umami is not loaded return early
+          return;
+        }
+        // regx to identify posts links and extract post name
         const regExp = /(\/posts\/)(.*)/;
         const match = window
           .location
@@ -122,9 +130,7 @@
           .match(regExp);
         if (match && match[1] == "/posts/") {
           const linkElements = document.querySelector("article").querySelectorAll("a");
-          console.log(linkElements)
           for (let step = 0; step <= linkElements.length - 1; step++) {
-            console.log(`${linkElements[step]}`)
             linkElements[step].onclick = () => {
               umami.track(`blog-link-${
                 match[2]

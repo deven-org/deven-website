@@ -29,7 +29,7 @@ headerBackground: offwhite
     <div class="inner">
       <h2>How to join DEVEN org on GitHub?</h2>
       <p>If you're an Accenture employee with an Accenture email address, you're in luck! You can join our organization to get all the details on what we're currently working on, ways to get involved, and other cool stuff. We have contribution guidelines and other resources waiting for you. Let's link up and see you on the other side!</p>
-      <a href='https://github.com/deven-org' target="_blank" class="access-btn">Request access →</a>
+      <a href='https://github.com/deven-org' target="_blank" class="access-btn" rel="noopener">Request access →</a>
     </div>
   </div>
 </section>
@@ -180,6 +180,8 @@ headerBackground: offwhite
       const userLink = document.createElement("a");
       userLink.classList.add("image-container");
       userLink.href = user.html_url;
+      userLink.target = "_blank"
+      userLink.rel = "noopener"
 
       const image = document.createElement("img");
       image.src = user.avatar_url;
