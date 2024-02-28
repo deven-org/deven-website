@@ -76,6 +76,21 @@ Blog posts are written in [markdown](https://www.markdownguide.org/cheat-sheet/)
 
 When writing a blog post please make sure to use inclusive and simple language to make the posts as accessible as possible.
 
+To see your blog post you can run the command
+```bash
+npm run start
+```
+
+Note: if this is your first time working with the project you need to run first
+```bash
+npm i
+```
+in the project folder.
+
+When the `start` command is running a local server is started and one of the replies of the command is the local address, likely [http://localhost:8080/](http://localhost:8080/).
+
+When you follow the address you can navigate to your blog post. Every time you save the markdown file the page reloads automatically.
+
 ### Add Cover Image
 Every post in our blog needs a cover image.
 
@@ -100,7 +115,7 @@ Now you have a cover image, please give it a fitting name, e.g. the keyword you 
 
 The image can now be added to the post images folder under `src/assets/images/posts`.
 
-To use the cover image the image path needs to be added to the [metadata](#metadata) of the posts.
+To use the cover image the image path needs to be added to the [metadata](#add-metadata) of the posts.
 
 ### Add Author Image
 If you are the first time contributing a post to this blog you should add yourself as an author.
@@ -122,7 +137,7 @@ Once you have uploaded your image you
 
 Now your author image is ready and can be saved under `src/assets/images/authors`. The name of the image should be your author name, first name is sufficient right now.
 
-To set the author image for your posts please follow the instructions under [Add Metadata](#add-metadata)
+To set the author image for your posts please follow the instructions under [Add Metadata](#add-metadata).
 
 ### Add metadata
 
@@ -135,11 +150,11 @@ For example:
 ---
 title: Why do we need Web Compatibility
 description: Why do we need standards for a healthy web
-imageUrl: https://placekitten.com/g/600/600
+imageUrl: /assets/images/posts/YOUR_COVER_IMAGE.webp
 imageDescription: A black and white photo of a kitten contemplating Web Compatibility
 date: 2017-01-16
 author: User 2
-authorImageUrl: https://placehold.co/64
+authorImageUrl: /assets/images/authors/YOUR_NAME.webp
 ---
 
 This is where the content of your blogpost goes
@@ -214,11 +229,11 @@ git push
 
 In the output of the command you should see a URL under `Create a pull request for 'YOUR_BRANCH' on GitHub by visiting:` which you can click to create a PR on Github. If you do not see the link visit the [GitHub page](https://github.com/deven-org/deven-website/pulls) and press `New pull request`.
 
-Once the PR is created please share it with the team for a review. You can do that by posting it in the internal Slack channel or tag @Jumace as a reviewer.
+Once the PR is created please share it with the team for a review. You can do that by posting it in the internal Slack channel or tag [@Jumace](https://github.com/Jumace) as a reviewer.
 
 ### Merge the PR
 
-After the PR is approved you can merge it. This will trigger an automatic deployment of the DEVEN website and the article will be visible on the website a few minutes after
+After the PR is approved you can merge it. This will trigger an automatic deployment of the DEVEN website and the article will be visible on the website a few minutes after.
 
 ## Support
 
