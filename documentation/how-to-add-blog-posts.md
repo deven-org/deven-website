@@ -103,11 +103,13 @@ A good source for images that we can use is [Pexels](https://www.pexels.com/)
 
 Once you selected an image we need to make sure it has the right ratio and format.
 
-The ratio is 2:3 and the format is `webp`.
+The ratio is 3:2 and the format is `webp`.
 
 A good website to convert your selected image into the right ratio and format is [RedKetchup](https://redketchup.io/image-resizer).
 
 On that page you first upload your image, then select as `Aspect Ratio` the value `3:2`. If the current ratio is not 3:2 you can select the portion of the image that will be used in the preview above ratio selection.
+
+For the resizing please select a width of 768 pixels and a height of 512 pixels.
 
 Then under `Export As` you select `WEBP` and press `Download`. A new layer opens where you need to click on `Download` again in the left top corner.
 
