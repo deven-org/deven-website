@@ -5,8 +5,47 @@
 		<link>https://thedeven.org/</link>
 		<atom:link href="https://thedeven.org/feed/feed.xml" rel="self" type="application/rss+xml" />
 		<description>Developer for Developer to make your (work) life easier!</description>
-		<pubDate>Tue, 02 Apr 2024 02:00:00 +0000</pubDate>
+		<pubDate>Tue, 23 Apr 2024 02:00:00 +0000</pubDate>
 		<managingEditor>ogb@fastmail.com (Ola Gasidlo-Brändel)</managingEditor>
+			
+			<item>
+				<title>Newsletter 013</title>
+				<link>https://thedeven.org/posts/20240423-newsletter-013/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240423-newsletter-013/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Good day everyone,&lt;/p&gt;
+&lt;p&gt;It is time for another round of our newsletter.&lt;/p&gt;
+&lt;p&gt;Did you know that on the 23.04.2005 (19 years ago) the first ever YouTube video was uploaded?
+It is called &lt;a href=&quot;https://en.wikipedia.org/wiki/Me_at_the_zoo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;me at the zoo&lt;/a&gt; and features YouTubes co-founder Jawed Karim.&lt;/p&gt;
+&lt;p&gt;This time I prepared 3 things for learners, 2 things for doers, and 1 question for thinkers all about the topic of videos and animations. No matter if you are a learner, a doer, a thinker, two or all of them, we hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240423-newsletter-013/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Optimize video delivery&lt;br /&gt;
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/Performance/video&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://developer.mozilla.org/en-US/docs/Learn/Performance/video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Incredible scroll-based animations with CSS-only&lt;br /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=UmzFk68Bwdk&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=UmzFk68Bwdk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Index images, videos and news with specialized sitemaps&lt;br /&gt;
+&lt;a href=&quot;https://www.stefanjudis.com/today-i-learned/image-video-news-sitemaps/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.stefanjudis.com/today-i-learned/image-video-news-sitemaps/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240423-newsletter-013/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;CSS animation kit&lt;br /&gt;
+&lt;a href=&quot;https://angrytools.com/css/animation/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://angrytools.com/css/animation/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Video and Audio APIs (Tutorial on how to use native video/audio HTML elements with custom controls)&lt;br /&gt;
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240423-newsletter-013/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What are disadvantages of videos and animations on websites and how can we make sure every user has the best possible experience?&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;p&gt;If you have any resources you think your colleagues should know about, please let me know, so it can be added to a future newsletter.&lt;br /&gt;
+Julian from DEVEN&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you!&lt;/p&gt;
+&lt;p&gt;🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with others/your juniors and trainees, with your team or even your cactus. 🌵&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/jumace-the-dev/pen/GRLPZMP?editors=1100&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;gt;&amp;gt; link to challenge &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This time I also include an advanced challenge which builds on the first one&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/jumace-the-dev/pen/ZEZVWqe?editors=1100&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;gt;&amp;gt; link to second challenge &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Tue, 23 Apr 2024 02:00:00 +0000</pubDate>
+				<dc:creator>Julian Cebulla</dc:creator>
+				<guid>https://thedeven.org/posts/20240423-newsletter-013/</guid>
+			</item>
 			
 			<item>
 				<title>Newsletter 012</title>
