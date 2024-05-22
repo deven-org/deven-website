@@ -5,8 +5,48 @@
 		<link>https://thedeven.org/</link>
 		<atom:link href="https://thedeven.org/feed/feed.xml" rel="self" type="application/rss+xml" />
 		<description>Developer for Developer to make your (work) life easier!</description>
-		<pubDate>Tue, 23 Apr 2024 02:00:00 +0000</pubDate>
+		<pubDate>Wed, 22 May 2024 02:00:00 +0000</pubDate>
 		<managingEditor>ogb@fastmail.com (Ola Gasidlo-Brändel)</managingEditor>
+			
+			<item>
+				<title>Newsletter 014</title>
+				<link>https://thedeven.org/posts/20240522-newsletter-014/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240522-newsletter-014/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Good day everyone,&lt;/p&gt;
+&lt;p&gt;It is time for another round of our newsletter.&lt;/p&gt;
+&lt;p&gt;Did you know that this week 180 years ago, on the 24.05.1884, &lt;a href=&quot;https://www.loc.gov/item/mmorse000107&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;the first ever standardized &amp;quot;network&amp;quot; message was send&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;Samuel Morse send the first message using his morse code via telegraph over a distance of over 60km.&lt;/p&gt;
+&lt;p&gt;Since then networks have changed drastically and for us as web developers it is important to understand the basics to create the best solutions possible.&lt;/p&gt;
+&lt;p&gt;This time I prepared 3 things for learners, 2 things for doers, and 1 question for thinkers all about the topic of networks. No matter if you are a learner, a doer, a thinker, two or all of them, we hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240522-newsletter-014/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Latency numbers for frontend development &lt;br /&gt;
+&lt;a href=&quot;https://vercel.com/blog/latency-numbers-every-web-developer-should-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://vercel.com/blog/latency-numbers-every-web-developer-should-know&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TCP - A story about hope, (pkg) loss &amp;amp;&amp;amp; the missing link&lt;br /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=aOPgTWVtX78&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=aOPgTWVtX78&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Networking ACK! - a zine about computer networking&lt;br /&gt;
+&lt;a href=&quot;https://wizardzines.com/zines/networking/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://wizardzines.com/zines/networking/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240522-newsletter-014/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How to use the network tab in the browser&lt;br /&gt;
+For &lt;a href=&quot;https://developer.chrome.com/docs/devtools/network&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Chrome&lt;/a&gt; and &lt;a href=&quot;https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Firefox&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;How DNS can be used to tunnel IP traffic&lt;br /&gt;
+&lt;a href=&quot;https://sarwiki.informatik.hu-berlin.de/IPoverDNS&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://sarwiki.informatik.hu-berlin.de/IPoverDNS&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240522-newsletter-014/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How are you using the internet and intend to use it in the future?&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;p&gt;If you have any resources you think your colleagues should know about, please let me know, so it can be added to a future newsletter.&lt;br /&gt;
+Julian from DEVEN&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you!&lt;/p&gt;
+&lt;p&gt;🎁 Below you will find a small coding challenge in every newsletter. Feel free to discuss the challenge with others/your juniors and trainees, with your team or even your cactus. 🌵&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/jumace-the-dev/pen/vYwGoJb?editors=1011&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;gt;&amp;gt; link to challenge &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This time I also include an advanced challenge which builds on the first one&lt;br /&gt;
+&lt;a href=&quot;https://codepen.io/jumace-the-dev/pen/XWwKrLv?editors=1010&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;gt;&amp;gt; link to second challenge &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Wed, 22 May 2024 02:00:00 +0000</pubDate>
+				<dc:creator>Julian Cebulla</dc:creator>
+				<guid>https://thedeven.org/posts/20240522-newsletter-014/</guid>
+			</item>
 			
 			<item>
 				<title>Newsletter 013</title>
