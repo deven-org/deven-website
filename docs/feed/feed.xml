@@ -5,8 +5,45 @@
 		<link>https://thedeven.org/</link>
 		<atom:link href="https://thedeven.org/feed/feed.xml" rel="self" type="application/rss+xml" />
 		<description>Developer for Developer to make your (work) life easier!</description>
-		<pubDate>Wed, 22 May 2024 02:00:00 +0000</pubDate>
+		<pubDate>Wed, 26 Jun 2024 02:00:00 +0000</pubDate>
 		<managingEditor>ogb@fastmail.com (Ola Gasidlo-Brändel)</managingEditor>
+			
+			<item>
+				<title>Newsletter 015</title>
+				<link>https://thedeven.org/posts/20240626-newsletter-015/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240626-newsletter-015/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Good day everyone,&lt;/p&gt;
+&lt;p&gt;It is time for another round of our newsletter.&lt;/p&gt;
+&lt;p&gt;Did you know that this week 41 years ago, on the 26.06.1983, &lt;a href=&quot;https://www.wired.com/2011/06/0623dns-domain-name-system-tested/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;the first successful test of DNS happened&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;The Domain Name System played a major role in the commercialization of the internet by giving the possibility to navigate the web over names.&lt;/p&gt;
+&lt;p&gt;As developers we know one thing for sure though, &lt;a href=&quot;https://martinfowler.com/bliki/TwoHardThings.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;naming things is hard&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This time I prepared 3 things for learners, 2 things for doers, and 1 question for thinkers all about the topic of DNS and naming things. No matter if you are a learner, a doer, a thinker, two or all of them, we hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240626-newsletter-015/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How DNS works &lt;br /&gt;
+&lt;a href=&quot;https://wizardzines.com/zines/dns/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://wizardzines.com/zines/dns/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;On the Importance of Naming in Programming&lt;br /&gt;
+&lt;a href=&quot;https://wasp-lang.dev/blog/2023/10/12/on-importance-of-naming-in-programming&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://wasp-lang.dev/blog/2023/10/12/on-importance-of-naming-in-programming&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Which Case is Best for Your Coding Style&lt;br /&gt;
+&lt;a href=&quot;https://dev.to/tijan_io/which-case-is-best-for-your-coding-style-135o&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://dev.to/tijan_io/which-case-is-best-for-your-coding-style-135o&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240626-newsletter-015/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;VS Code Extension for spell checking&lt;br /&gt;
+&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;VS Code Extension for Case Changing&lt;br /&gt;
+&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240626-newsletter-015/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How important is consistency in naming for you in your day to day work?&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;p&gt;If you have any resources you think your colleagues should know about, please let me know, so it can be added to a future newsletter.&lt;br /&gt;
+Julian from DEVEN&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: This time there is no CodePen coding challenge. Instead we want to challenge you to have a look at the code of your current project. Is the naming of variables, functions and files consistent?&lt;/p&gt;
+&lt;p&gt;If that is not the case (pun intended) start a conversation with your fellow developers to align an a standard for your project. It is possible to follow different conventions for different use cases, e.g. camelCase for variables and snake_case for file name.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 26 Jun 2024 02:00:00 +0000</pubDate>
+				<dc:creator>Julian Cebulla</dc:creator>
+				<guid>https://thedeven.org/posts/20240626-newsletter-015/</guid>
+			</item>
 			
 			<item>
 				<title>Newsletter 014</title>
