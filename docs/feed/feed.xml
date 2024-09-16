@@ -5,13 +5,53 @@
 		<link>https://thedeven.org/</link>
 		<atom:link href="https://thedeven.org/feed/feed.xml" rel="self" type="application/rss+xml" />
 		<description>Developer for Developer to make your (work) life easier!</description>
-		<pubDate>Thu, 22 Aug 2024 02:00:00 +0000</pubDate>
+		<pubDate>Tue, 17 Sep 2024 02:00:00 +0000</pubDate>
 		<managingEditor>ogb@fastmail.com (Ola Gasidlo-Brändel)</managingEditor>
 			
 			<item>
+				<title>Newsletter 017</title>
+				<link>https://thedeven.org/posts/20240917-newsletter-017/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240917-newsletter-017/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Good day everyone,&lt;/p&gt;
+&lt;p&gt;It is time for another round of our newsletter.&lt;/p&gt;
+&lt;p&gt;One of the most iconic cyber movies in history, at least in my humble opinion, celebrated recently its 29th anniversary. On the 15.09.1995 the magnificent movie &lt;a href=&quot;https://en.wikipedia.org/wiki/Hackers_(film)&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hackers&lt;/a&gt; was released.&lt;/p&gt;
+&lt;p&gt;The movie is still celebrated by many tech folks, especially in the &lt;a href=&quot;https://www.vice.com/en/article/real-hackers-tell-us-why-they-love-the-movie-hackers/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;security sector&lt;/a&gt; and that for a good reason if you ask me.&lt;/p&gt;
+&lt;p&gt;If you never saw the movie, plan it for your next movie night, it is highly recommended.&lt;/p&gt;
+&lt;p&gt;Please enjoy the 3 things for learners, 2 things for doers, and 1 question for thinkers all about the topic security and hacking, as a tribute to the movie. No matter if you are a learner, a doer, a thinker, two or all of them, we hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240917-newsletter-017/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A Guide to Common Web Application Security Vulnerabilities and Mitigation&lt;br /&gt;
+&lt;a href=&quot;https://www.webdevstory.com/web-application-security-vulnerabilities/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.webdevstory.com/web-application-security-vulnerabilities/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;World&#39;s Biggest Data Breaches &amp;amp; Hacks (visualization takes time to load)&lt;br /&gt;
+&lt;a href=&quot;https://github.blog/news-insights/research/the-state-of-open-source-and-ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.blog/news-insights/research/the-state-of-open-source-and-ai/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GitHub comments abused to push malware via Microsoft repo URLs&lt;br /&gt;
+&lt;a href=&quot;https://www.bleepingcomputer.com/news/security/github-comments-abused-to-push-malware-via-microsoft-repo-urls/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.bleepingcomputer.com/news/security/github-comments-abused-to-push-malware-via-microsoft-repo-urls/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240917-newsletter-017/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Check if a service you use offers 2FA&lt;br /&gt;
+&lt;a href=&quot;https://2fa.directory/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://2fa.directory&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WebAuthn: Enhancing Security with Minimal Effort&lt;br /&gt;
+&lt;a href=&quot;https://begin.com/blog/posts/2024-07-02-webauthn-with-arc&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://begin.com/blog/posts/2024-07-02-webauthn-with-arc&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240917-newsletter-017/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Where you ever hacked? If so what can you do in the future to prevent it from happening again?&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;p&gt;If you have any resources you think your colleagues should know about, please let me know, so it can be added to a future newsletter.&lt;br /&gt;
+Julian from DEVEN&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: This time there is no CodePen coding challenge. Instead we want to share a playground where you can do multiple challenges regarding web security.&lt;/p&gt;
+&lt;p&gt;Go to the interactive cyber security platform and try out a few sessions:&lt;br /&gt;
+&lt;a href=&quot;https://defendtheweb.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://defendtheweb.net/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you are stuck at any level feel free to share it with your peers and try to find a solution together.&lt;/p&gt;
+&lt;p&gt;Hack the planet 🤘&lt;/p&gt;
+</description>
+				<pubDate>Tue, 17 Sep 2024 02:00:00 +0000</pubDate>
+				<dc:creator>Julian Cebulla</dc:creator>
+				<guid>https://thedeven.org/posts/20240917-newsletter-017/</guid>
+			</item>
+			
+			<item>
 				<title>Newsletter 016</title>
-				<link>https://thedeven.org/posts/20240626-newsletter-016/</link>
-				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240626-newsletter-016/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+				<link>https://thedeven.org/posts/20240822-newsletter-016/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240822-newsletter-016/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Good day everyone,&lt;/p&gt;
 &lt;p&gt;It is time for another round of our newsletter.&lt;/p&gt;
 &lt;p&gt;This week is &lt;a href=&quot;https://home.cern/news/news/computing/internaut-day-and-world-wide-web&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Internaut Day&lt;/a&gt;. The 23.08.1991 is generally seen as the day the World Wide Web went public.&lt;/p&gt;
@@ -19,19 +59,19 @@
 For most people a life without the open web would be drastically different.&lt;/p&gt;
 &lt;p&gt;That is why this edition of the newsletter will focus on open standards and software in the public domain.&lt;/p&gt;
 &lt;p&gt;As usual I prepared 3 things for learners, 2 things for doers, and 1 question for thinkers all about the topic open source and open standards. No matter if you are a learner, a doer, a thinker, two or all of them, we hope you’ll find something to enjoy.&lt;/p&gt;
-&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240626-newsletter-016/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240822-newsletter-016/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;How open source software powers modern filmmaking &lt;br /&gt;
 &lt;a href=&quot;https://github.com/readme/featured/open-source-filmmaking&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/readme/featured/open-source-filmmaking&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Octoverse: The state of open source and rise of AI in 2023&lt;br /&gt;
 &lt;a href=&quot;https://github.blog/news-insights/research/the-state-of-open-source-and-ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.blog/news-insights/research/the-state-of-open-source-and-ai/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Scaling standards and community in your organization &lt;br /&gt;
 &lt;a href=&quot;https://github.com/readme/guides/federated-model&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/readme/guides/federated-model&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240626-newsletter-016/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240822-newsletter-016/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Use open source to improve your projects documentation&lt;br /&gt;
 &lt;a href=&quot;https://thedeven.org/documentation-skeleton/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://thedeven.org/documentation-skeleton/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;How to Contribute to Open Source&lt;br /&gt;
 &lt;a href=&quot;https://opensource.guide/how-to-contribute/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://opensource.guide/how-to-contribute/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240626-newsletter-016/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20240822-newsletter-016/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Would coding standards make your day to day work better?&lt;/p&gt;
 &lt;br /&gt;
 &lt;p&gt;Thank you for reading!&lt;/p&gt;
@@ -39,13 +79,13 @@ For most people a life without the open web would be drastically different.&lt;/
 Julian from DEVEN&lt;/p&gt;
 &lt;br /&gt;
 &lt;p&gt;P.S.: This time there is no CodePen coding challenge. Instead we want to challenge you to contribute to a open source software of your choice.&lt;/p&gt;
-&lt;p&gt;If you do not know where to start you can follow the second link under the &lt;a href=&quot;https://thedeven.org/posts/20240626-newsletter-016/#2-things-for-doers&quot;&gt;2 things for doers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you do not know where to start you can follow the second link under the &lt;a href=&quot;https://thedeven.org/posts/20240822-newsletter-016/#2-things-for-doers&quot;&gt;2 things for doers&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Any kind of contribution that improves a project is a good and worthwhile time investment. This does not need to be a code change, it can also include documentation updates, fixing typos and others.&lt;/p&gt;
 &lt;p&gt;Happy contributing 🧑‍🚀&lt;/p&gt;
 </description>
 				<pubDate>Thu, 22 Aug 2024 02:00:00 +0000</pubDate>
 				<dc:creator>Julian Cebulla</dc:creator>
-				<guid>https://thedeven.org/posts/20240626-newsletter-016/</guid>
+				<guid>https://thedeven.org/posts/20240822-newsletter-016/</guid>
 			</item>
 			
 			<item>
