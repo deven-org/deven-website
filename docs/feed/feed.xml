@@ -5,8 +5,48 @@
 		<link>https://thedeven.org/</link>
 		<atom:link href="https://thedeven.org/feed/feed.xml" rel="self" type="application/rss+xml" />
 		<description>Developer for Developer to make your (work) life easier!</description>
-		<pubDate>Tue, 08 Oct 2024 02:00:00 +0000</pubDate>
+		<pubDate>Thu, 31 Oct 2024 01:00:00 +0000</pubDate>
 		<managingEditor>ogb@fastmail.com (Ola Gasidlo-Brändel)</managingEditor>
+			
+			<item>
+				<title>Newsletter 019</title>
+				<link>https://thedeven.org/posts/20241031-newsletter-019/</link>
+				<description>&lt;h2 id=&quot;%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20241031-newsletter-019/#%E2%9C%A8-happy-3-2-1-treats-day!%E2%9C%A8&quot;&gt;&lt;span&gt;✨ Happy 3-2-1 treats day!✨&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Good day everyone,&lt;/p&gt;
+&lt;p&gt;It is spooky season and time for another round of our newsletter. 👻🎃&lt;/p&gt;
+&lt;p&gt;Lots of scary things are happening around this time of the year, from a &lt;a href=&quot;https://en.wikipedia.org/wiki/The_War_of_the_Worlds_(1938_radio_drama)&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;radio broadcasts in 1938 about an alien invasion&lt;/a&gt; or the &lt;a href=&quot;https://smartermsp.com/tech-time-warp-arpanet-crash-1980/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;first crash of the ARPANET in 1980&lt;/a&gt; caused by a real &lt;a href=&quot;https://en.wikipedia.org/wiki/Imp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Imp&lt;/a&gt; (Interface Message Processor).&lt;/p&gt;
+&lt;p&gt;Similar haunting is AI for a lot of folks, the way it is often times portrayed in movies, like &lt;a href=&quot;https://en.wikipedia.org/wiki/HAL_9000&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;HAL 9000&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/Skynet_(Terminator)&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Skynet&lt;/a&gt; is chilling at best.&lt;/p&gt;
+&lt;p&gt;AI is here to stay though and we need to learn how and where to use it and what new challenges are ahead of us.&lt;/p&gt;
+&lt;p&gt;Please enjoy the 3 things for learners, 2 things for doers, and 1 question for thinkers all about the topic of AI. No matter if you are a learner, a doer, a thinker, two or all of them, I hope you’ll find something to enjoy.&lt;/p&gt;
+&lt;h2 id=&quot;3-things-for-learners&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20241031-newsletter-019/#3-things-for-learners&quot;&gt;&lt;span&gt;3 things for learners&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Prompt Engineering Learning Roadmap&lt;br /&gt;
+&lt;a href=&quot;https://roadmap.sh/prompt-engineering&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://roadmap.sh/prompt-engineering&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Discover what’s new with v0 (generative user interface system)&lt;br /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=IACBZDjVW3k&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.youtube.com/watch?v=IACBZDjVW3k&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Will AI Help or Hurt Sustainability? Yes&lt;br /&gt;
+&lt;a href=&quot;https://sloanreview.mit.edu/article/will-ai-help-or-hurt-sustainability-yes/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://sloanreview.mit.edu/article/will-ai-help-or-hurt-sustainability-yes/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-things-for-doers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20241031-newsletter-019/#2-things-for-doers&quot;&gt;&lt;span&gt;2 things for doers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Open Source LLM Engineering Platform&lt;br /&gt;
+&lt;a href=&quot;https://langfuse.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://langfuse.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Free AI Tools Directory&lt;br /&gt;
+&lt;a href=&quot;https://www.aixploria.com/en/free-ai/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.aixploria.com/en/free-ai/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-question-for-thinkers&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20241031-newsletter-019/#1-question-for-thinkers&quot;&gt;&lt;span&gt;1 question for thinkers&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;How will you be influenced by the &lt;a href=&quot;https://www.oreilly.com/radar/rift-between-junior-and-senior-developers/?ref=dailydev&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Rift Between Junior and Senior Developers&lt;/a&gt; and what can you do to close that rift?&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;p&gt;If you have any resources you think other people should know about, please &lt;a href=&quot;https://forms.gle/d2jHNTzdZsQxRrhw5&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;let me know&lt;/a&gt;, so it can be added to a future newsletter.&lt;br /&gt;
+Julian from DEVEN&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;P.S.: Do you love to challenge yourself a bit? Here is a small gift for you! 🎁&lt;/p&gt;
+&lt;p&gt;This time it is not a coding challenge directly.
+Try to install a local LLM and use it to help you with day to day tasks. Keep in mind though that even when the LLM is local some data you input might still be shared.&lt;/p&gt;
+&lt;p&gt;Here one guide on how to use a local LLM to assist with coding:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dev.to/manjushsh/configuring-ollama-and-continue-vs-code-extension-for-local-coding-assistant-48li&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&amp;gt;&amp;gt; Local Coding Assistant &amp;lt;&amp;lt;&lt;/a&gt;&lt;/p&gt;
+</description>
+				<pubDate>Thu, 31 Oct 2024 01:00:00 +0000</pubDate>
+				<dc:creator>Julian Cebulla</dc:creator>
+				<guid>https://thedeven.org/posts/20241031-newsletter-019/</guid>
+			</item>
 			
 			<item>
 				<title>Newsletter 018</title>
