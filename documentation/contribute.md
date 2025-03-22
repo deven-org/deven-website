@@ -105,9 +105,9 @@ Or, if you want to create a new component, page, or improvement
 Scan through our [existing issues](https://github.com/deven-org/deven-website/issues) to find one that interests you.
 If you find an issue that needs work, feel free to open a merge request with a fix.
 
-## Create and publish a new blog post
+## Create a new blog post
 
-If you want to create and publish a new blog post, please read our [How to add blog posts](./how-to-add-blog-posts.md) guidelines and instructions.
+If you want to create a new blog post, please read our [How to add blog posts](./how-to-add-blog-posts.md) guidelines and instructions.
 
 ## Prerequisites
 
