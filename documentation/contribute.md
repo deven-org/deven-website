@@ -15,7 +15,7 @@
 ### Installation
 
 1. First, open a terminal and navigate to the folder you want to fork or clone this project
-  ```sh
+   ```sh
    $ cd git_projects
    ```
 2. In you want to contribute to this repository, the first step is to clone the repository:
@@ -24,10 +24,10 @@
    ```
 3. Install dependencies and run build:
    ```sh
-  $ npm install && run build
+   $ npm install && run build
    ```
 4. Run
- ```sh
+  ```sh
   $ npm serve
    ```
 
