@@ -27,8 +27,8 @@
    $ npm install && run build
    ```
 4. Run
-  ```sh
-  $ npm serve
+   ```sh
+   $ npm serve
    ```
 
 ### :file_folder: File Structure
