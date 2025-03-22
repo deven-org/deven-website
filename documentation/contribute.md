@@ -41,8 +41,12 @@
     └── src
         └── _data         // 
         └── _includes     // 
-        └── assets       // 
+          └── content     // content of every page
+          └── layouts     // standard layout of every page
+          └── macros     // 
+          └── styles     // media settings
+        └── assets       // where css files images, fonts, favicon are stored
         └── feed        // 
-        └── posts       // 
+        └── posts       // newsletter
         └── scripts       // 
 
