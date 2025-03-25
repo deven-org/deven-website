@@ -53,23 +53,22 @@ Users and contributors are responsible for knowing and abiding by these rules.
    ```
 
 ### :file_folder: File Structure
-
     .
-    └── .github             // 
-    └── .vscode            // 
-    └── dist               // source that generate html files
-    └── docs              // documentation of the project
-    └── src
-        └── _data         // 
-        └── _includes     // 
-          └── content     // content of every page
-          └── layouts     // standard layout of every page
-          └── macros     // 
-          └── styles     // media settings
-        └── assets       // where css files images, fonts, favicon are stored
-        └── feed        // 
-        └── posts       // newsletter
-        └── scripts       //
+    └── .github            // GitHub templates for bugs, tickets and wiki
+    └── .vscode            // settings for Visual Studio Code editor
+    └── dist               // output of the generated html files
+    └── docs               // documentation of the project
+    └── src                // source files of the website
+        └── _data          // JSON data for the website, i.e. the team 
+        └── _includes      // collection of website building blocks
+          └── content      // content of every page
+          └── layouts      // nunjucks template layouts
+          └── macros       // nunjucks macros
+          └── styles       // CSS media settings
+        └── assets         // files/folders which are accessed on the webpage, e.g. CSS, fonts and more
+        └── feed           // nunjucks template for RSS
+        └── posts          // blog of the website
+        └── scripts        // scripts to transform local data to JSON data
 
 ## Issues
 
