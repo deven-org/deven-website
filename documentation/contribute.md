@@ -2,6 +2,7 @@
 
 ## Content
 
+
 ## :gear: Requirements
 1. First you need to install Git. Git is needed to clone the project to your local machine. If you don't have it
    installed yet you can follow this
@@ -34,10 +35,10 @@
 ### :file_folder: File Structure
 
     .
-    └── .github            // 
-    └── .vscode           // 
-    └── docs            // documentation of the project
-    └── documentation           // documentation of the project
+    └── .github             // 
+    └── .vscode            // 
+    └── dist               // source that generate html files
+    └── docs              // documentation of the project
     └── src
         └── _data         // 
         └── _includes     // 
