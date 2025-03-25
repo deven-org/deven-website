@@ -11,6 +11,9 @@ Please, read our [Code of Conduct](#code_of_conduct) to keep our community appro
 - [Getting started](#getting_started)
    - [Installation](#installation)
    - [File Structure](#file_structure)
+- [Issues](#issues)
+   - [Create a new issue](#create-a-new-issue)
+   - [Solve an issue](#solve-an-issue)
 
 ## Code of Conduct
 
@@ -68,6 +71,35 @@ Users and contributors are responsible for knowing and abiding by these rules.
         └── posts       // newsletter
         └── scripts       //
 
+## Issues
+
+#### Create a new issue
+
+If you encounter a problem with the component or documentation, please search for an existing issue. If a related issue doesn't exist, you can open a new issue from the same page.
+
+Or, if you want to create a new component, page, or improvement
+
+<details>
+<summary>How to write a useful issue?</summary>
+<br />
+
+###### For bugs 
+- It should be _reproducible_. It should contain all the instructions needed to reproduce the same outcome.
+
+- It should be _specific_. It's important that it addresses one specific problem.
+
+###### For new component or page or improvement
+
+- It should be _justified_. A clear description of why the new component or page is needed and how it will improve the project.
+
+- It should be _well-defined_. Clear scope of what the component or page should do, including key features and expectation of behavior.
+
+</details>
+
+### Solve an issue
+
+Scan through our [existing issues](https://github.com/deven-org/deven-website/issues) to find one that interests you.
+If you find an issue that needs work, feel free to open a merge request with a fix.
 
 
 
