@@ -1,7 +1,24 @@
 # Welcome to our docs contributing guide
 
+Thank you for investing your time in contributing to our project! We sincerely appreciate it. :sparkles:.
+Please, read our [Code of Conduct](#code_of_conduct) to keep our community approachable and respectable.
+
 ## Content
 
+- [Welcome to our docs contributing guide](#welcome-to-our-docs-contributing-guide)
+- [Code of Conduct](#code_of_conduct)
+- [Requirements](#requirement)
+- [Getting started](#getting_started)
+   - [Installation](#installation)
+   - [File Structure](#file_structure)
+
+## Code of Conduct
+
+Our team is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, age, race, or religion. We do not tolerate harassment of users, contributors and maintainers in any form, including physical or verbal abuse, stalking, or unwelcome advances.
+
+This code of conduct applies to the project's Github Page as well as the Slack and Teams channels. Anyone who violates this code of conduct may be expelled from these spaces at the discretion of the core team.
+
+Users and contributors are responsible for knowing and abiding by these rules.
 
 ## :gear: Requirements
 1. First you need to install Git. Git is needed to clone the project to your local machine. If you don't have it
@@ -49,5 +66,9 @@
         └── assets       // where css files images, fonts, favicon are stored
         └── feed        // 
         └── posts       // newsletter
-        └── scripts       // 
+        └── scripts       //
+
+
+
+
 
