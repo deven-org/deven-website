@@ -14,6 +14,7 @@ Please, read our [Code of Conduct](#code_of_conduct) to keep our community appro
 - [Issues](#issues)
    - [Create a new issue](#create-a-new-issue)
    - [Solve an issue](#solve-an-issue)
+         - [Commits](#commits)
 
 ## Code of Conduct
 
@@ -100,10 +101,6 @@ Or, if you want to create a new component, page, or improvement
 
 Scan through our [existing issues](https://github.com/deven-org/deven-website/issues) to find one that interests you.
 If you find an issue that needs work, feel free to open a merge request with a fix.
-
-#### Prerequisites
-
-Please, before submitting any merge request, be sure that your branch is passing all requirements.
 
 #### Commits
 
