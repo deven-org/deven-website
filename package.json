@@ -2,7 +2,7 @@
   "name": "deven-website",
   "version": "0.1.0",
   "description": "This repository contains DEVENs website",
-  "main": "docs/index.html",
+  "main": "dist/index.html",
   "scripts": {
     "start": "NODE_ENV=development eleventy --serve",
     "build": "rimraf ./docs && NODE_ENV=production npx eleventy",
