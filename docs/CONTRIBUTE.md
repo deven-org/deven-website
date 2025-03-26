@@ -18,18 +18,6 @@ Please, read our [Code of Conduct](#code_of_conduct) to keep our community appro
   - [Option 1: Creating a Branch from the Terminal](#option-1:-creating-a-branch-from-the-terminal)
   - [Option 2: Creating a Branch from a GitHub Issue](#option-2:-creating-a-branch-from-the-github-issue)
 - [Create a new blog post](#create-a-new-blog-post)
-  - [Create the File for the Blog Post](#create-the-file-for-the-blog-post)
-  - [Write the Post](#write-the-post)
-  - [Add Cover Image](#add-cover-image)
-  - [Add Author Image](#add-author-image)
-  - [Add metadata](#add-metadata)
-    - [title](#title)
-    - [description](#description)
-    - [imageUrl](#imageurl)
-    - [imageDescription](#imagedescription)
-    - [date](#date)
-    - [author](#author)
-    - [authorImageUrl](#authorimageurl)
 - [Prerequisites](#prerequisites)
    - [Build](#build)
    - [Commits](#commits)
@@ -208,6 +196,19 @@ When writing a blog post please make sure to use inclusive and simple language t
 
 <details>
 <summary>Guidance on Creating a New Blog Post</summary>
+
+- [Create the File for the Blog Post](#create-the-file-for-the-blog-post)
+  - [Write the Post](#write-the-post)
+  - [Add Cover Image](#add-cover-image)
+  - [Add Author Image](#add-author-image)
+  - [Add metadata](#add-metadata)
+    - [title](#title)
+    - [description](#description)
+    - [imageUrl](#imageurl)
+    - [imageDescription](#imagedescription)
+    - [date](#date)
+    - [author](#author)
+    - [authorImageUrl](#authorimageurl)
 
 ### Add Cover Image
 Every post in our blog needs a cover image.
