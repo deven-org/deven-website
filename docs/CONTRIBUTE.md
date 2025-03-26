@@ -177,6 +177,19 @@ After creating a new branch for your new post. Follow this guide to create and p
 <details>
 <summary>Guide to Creating a New Blog Post</summary>
 
+- [Create the File for the Blog Post](#create-the-file-for-the-blog-post)
+  - [Write the Post](#write-the-post)
+  - [Add Cover Image](#add-cover-image)
+  - [Add Author Image](#add-author-image)
+  - [Add metadata](#add-metadata)
+    - [title](#title)
+    - [description](#description)
+    - [imageUrl](#imageurl)
+    - [imageDescription](#imagedescription)
+    - [date](#date)
+    - [author](#author)
+    - [authorImageUrl](#authorimageurl)
+
 ### Create the File for the Blog Post
 
 Blog posts are stored as [markdown](https://www.markdownguide.org/cheat-sheet/) files.
@@ -196,19 +209,6 @@ publishing)
 Blog posts are written in [markdown](https://www.markdownguide.org/cheat-sheet/).
 
 When writing a blog post please make sure to use inclusive and simple language to make the posts as accessible as possible.
-
-- [Create the File for the Blog Post](#create-the-file-for-the-blog-post)
-  - [Write the Post](#write-the-post)
-  - [Add Cover Image](#add-cover-image)
-  - [Add Author Image](#add-author-image)
-  - [Add metadata](#add-metadata)
-    - [title](#title)
-    - [description](#description)
-    - [imageUrl](#imageurl)
-    - [imageDescription](#imagedescription)
-    - [date](#date)
-    - [author](#author)
-    - [authorImageUrl](#authorimageurl)
 
 ### Add Cover Image
 Every post in our blog needs a cover image.
