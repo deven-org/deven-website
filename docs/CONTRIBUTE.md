@@ -174,6 +174,9 @@ git checkout YOUR_BRANCH_NAME
 
 After creating a new branch for your new post. Follow this guide to create and publish a new blog post.
 
+<details>
+<summary>Guide to Creating a New Blog Post</summary>
+
 ### Create the File for the Blog Post
 
 Blog posts are stored as [markdown](https://www.markdownguide.org/cheat-sheet/) files.
@@ -193,9 +196,6 @@ publishing)
 Blog posts are written in [markdown](https://www.markdownguide.org/cheat-sheet/).
 
 When writing a blog post please make sure to use inclusive and simple language to make the posts as accessible as possible.
-
-<details>
-<summary>Guidance on Creating a New Blog Post</summary>
 
 - [Create the File for the Blog Post](#create-the-file-for-the-blog-post)
   - [Write the Post](#write-the-post)
