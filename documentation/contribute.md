@@ -58,6 +58,7 @@ Users and contributors are responsible for knowing and abiding by these rules.
     └── .vscode            // settings for Visual Studio Code editor
     └── dist               // output of the generated html files
     └── docs               // documentation of the project
+    └── documentation      // documentation skeleton
     └── src                // source files of the website
         └── _data          // JSON data for the website, i.e. the team 
         └── _includes      // collection of website building blocks
@@ -99,6 +100,14 @@ Or, if you want to create a new component, page, or improvement
 
 Scan through our [existing issues](https://github.com/deven-org/deven-website/issues) to find one that interests you.
 If you find an issue that needs work, feel free to open a merge request with a fix.
+
+#### Prerequisites
+
+Please, before submitting any merge request, be sure that your branch is passing all requirements.
+
+#### Commits
+
+The commits must be compliant with the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
 
 
 
