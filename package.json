@@ -2,10 +2,13 @@
   "name": "deven-website",
   "version": "0.1.0",
   "description": "This repository contains DEVENs website",
-  "main": "docs/index.html",
+  "main": "dist/index.html",
   "scripts": {
     "start": "NODE_ENV=development eleventy --serve",
-    "build": "rimraf ./docs && NODE_ENV=production npx eleventy"
+    "build": "rimraf ./dist && NODE_ENV=production npx eleventy",
+    "doc:install": "deven-documentation-skeleton install",
+    "doc:check": "deven-documentation-skeleton check",
+    "doc:update": "deven-documentation-skeleton update"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@deven-org/documentation-skeleton": "^3.0.0",
     "luxon": "^3.4.4",
     "markdown-it": "^14.0.0",
     "markdown-it-anchor": "^8.6.7",
