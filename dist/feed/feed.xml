@@ -5,76 +5,8 @@
 		<link>https://thedeven.org/</link>
 		<atom:link href="https://thedeven.org/feed/feed.xml" rel="self" type="application/rss+xml" />
 		<description>Developer for Developer to make your (work) life easier!</description>
-		<pubDate>Thu, 27 Feb 2025 01:00:00 +0000</pubDate>
+		<pubDate>Tue, 10 Dec 2024 01:00:00 +0000</pubDate>
 		<managingEditor>ogb@fastmail.com (Ola Gasidlo-Brändel)</managingEditor>
-			
-			<item>
-				<title>Standards</title>
-				<link>https://thedeven.org/posts/20250227-standards/</link>
-				<description>&lt;h1 id=&quot;standards-in-engineering-in-times-of-ai&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#standards-in-engineering-in-times-of-ai&quot;&gt;&lt;span&gt;Standards in Engineering in Times of AI&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;
-&lt;h2 id=&quot;the-importance-of-standardization-in-the-age-of-ai&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#the-importance-of-standardization-in-the-age-of-ai&quot;&gt;&lt;span&gt;The Importance of Standardization in the Age of AI&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;As artificial intelligence (AI) continues to transform the engineering landscape, the need for robust and well-defined standards has become increasingly critical. Standardized data structures, processes, and practices are the foundation upon which AI-powered automation can thrive.&lt;/p&gt;
-&lt;h2 id=&quot;the-role-of-data-structures-in-enabling-ai&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#the-role-of-data-structures-in-enabling-ai&quot;&gt;&lt;span&gt;The Role of Data Structures in Enabling AI&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;standardized-data-formats&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#standardized-data-formats&quot;&gt;&lt;span&gt;Standardized Data Formats&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Importance of consistent data structures&lt;/li&gt;
-&lt;li&gt;Benefits of structured data for AI model training&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;data-interoperability&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#data-interoperability&quot;&gt;&lt;span&gt;Data Interoperability&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Ensuring seamless data exchange between systems&lt;/li&gt;
-&lt;li&gt;Importance of adhering to industry-wide standards&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;data-quality-and-governance&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#data-quality-and-governance&quot;&gt;&lt;span&gt;Data Quality and Governance&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Maintaining data integrity through standardized practices&lt;/li&gt;
-&lt;li&gt;Establishing data quality control measures&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;standardizing-engineering-processes-for-ai-integration&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#standardizing-engineering-processes-for-ai-integration&quot;&gt;&lt;span&gt;Standardizing Engineering Processes for AI Integration&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;workflow-optimization&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#workflow-optimization&quot;&gt;&lt;span&gt;Workflow Optimization&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Identifying and streamlining repeatable processes&lt;/li&gt;
-&lt;li&gt;Automating routine tasks through AI-powered tools&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;quality-assurance-and-testing&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#quality-assurance-and-testing&quot;&gt;&lt;span&gt;Quality Assurance and Testing&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Implementing standardized testing protocols&lt;/li&gt;
-&lt;li&gt;Ensuring AI-powered systems meet performance and safety requirements&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;change-management&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#change-management&quot;&gt;&lt;span&gt;Change Management&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Adapting to the evolving role of engineers in an AI-driven landscape&lt;/li&gt;
-&lt;li&gt;Establishing standard procedures for integrating new technologies&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;the-impact-of-ai-on-engineering-standards&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#the-impact-of-ai-on-engineering-standards&quot;&gt;&lt;span&gt;The Impact of AI on Engineering Standards&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;evolving-standards-to-accommodate-ai&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#evolving-standards-to-accommodate-ai&quot;&gt;&lt;span&gt;Evolving Standards to Accommodate AI&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updating existing standards to address AI-specific requirements&lt;/li&gt;
-&lt;li&gt;Developing new standards to govern the use of AI in engineering&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;collaboration-and-standard-setting&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#collaboration-and-standard-setting&quot;&gt;&lt;span&gt;Collaboration and Standard-Setting&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fostering industry-wide cooperation in standard development&lt;/li&gt;
-&lt;li&gt;Ensuring standards keep pace with the rapid advancements in AI&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;conclusion%3A-embracing-standardization-for-ai-powered-engineering&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#conclusion%3A-embracing-standardization-for-ai-powered-engineering&quot;&gt;&lt;span&gt;Conclusion: Embracing Standardization for AI-Powered Engineering&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;unlocking-the-full-potential-of-ai&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#unlocking-the-full-potential-of-ai&quot;&gt;&lt;span&gt;Unlocking the Full Potential of AI&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Streamlining processes through standardized data and workflows&lt;/li&gt;
-&lt;li&gt;Enhancing efficiency, quality, and innovation in engineering&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;the-way-forward&quot; tabindex=&quot;-1&quot;&gt;&lt;a class=&quot;bookmark&quot; href=&quot;https://thedeven.org/posts/20250227-standards/#the-way-forward&quot;&gt;&lt;span&gt;The Way Forward&lt;/span&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Continued investment in standardization efforts&lt;/li&gt;
-&lt;li&gt;Collaboration between engineers, AI experts, and industry bodies&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Call to Action:
-Embrace the power of standardization to unlock the full potential of AI in engineering. Stay informed, engage with industry peers, and be a driving force in shaping the future of AI-powered engineering.&lt;/p&gt;
-</description>
-				<pubDate>Thu, 27 Feb 2025 01:00:00 +0000</pubDate>
-				<dc:creator>OGB</dc:creator>
-				<guid>https://thedeven.org/posts/20250227-standards/</guid>
-			</item>
 			
 			<item>
 				<title>Newsletter 020</title>
