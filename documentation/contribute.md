@@ -63,7 +63,6 @@ Users and contributors are responsible for knowing and abiding by these rules.
     └── dist               // output of the generated html files
     └── docs               // documentation of the project
     └── documentation      // documentation skeleton
-    └── documentation      // documentation skeleton
     └── src                // source files of the website
         └── _data          // JSON data for the website, i.e. the team 
         └── _includes      // collection of website building blocks
@@ -106,31 +105,9 @@ Or, if you want to create a new component, page, or improvement
 Scan through our [existing issues](https://github.com/deven-org/deven-website/issues) to find one that interests you.
 If you find an issue that needs work, feel free to open a merge request with a fix.
 
-## Create and publish a new blog post
-
-If you want to create and publish a new blog post, please read our [How to add blog posts](./how-to-add-blog-posts.md) guidelines and instructions.
-
-## Prerequisites
-
-Before submitting a merge request, ensure that your branch meets all requirements.
-
-### Build
-
-1. If there are changes in the src folder, please run:
-
-```bash
-npm run build
-```
-
-2. The build process may generate automatic changes. Make sure to commit and push these changes before submitting your merge request.
-
-### Commits
-
-The commits must be compliant with the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
-
 ## Create a new blog post
 
-If you want to create a new blog post, please read our [How to add blog posts](./how-to-add-blog-posts.md) guidelines and instructions.
+If you want to create and publish a new blog post, please read our [How to add blog posts](./how-to-add-blog-posts.md) guidelines and instructions.
 
 ## Prerequisites
 
