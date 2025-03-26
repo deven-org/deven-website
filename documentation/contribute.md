@@ -1,4 +1,4 @@
-# Welcome to our docs contributing guide
+# Welcome to our contributing guide
 
 Thank you for investing your time in contributing to our project! We sincerely appreciate it. :sparkles:.
 Please, read our [Code of Conduct](#code_of_conduct) to keep our community approachable and respectable.
