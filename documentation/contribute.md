@@ -14,7 +14,10 @@ Please, read our [Code of Conduct](#code_of_conduct) to keep our community appro
 - [Issues](#issues)
    - [Create a new issue](#create-a-new-issue)
    - [Solve an issue](#solve-an-issue)
-         - [Commits](#commits)
+- [Create a new blog post](#create-a-new-blog-post)
+- [Prerequisites](#prerequisites)
+   - [Build](#build)
+   - [Commits](#commits)
 
 ## Code of Conduct
 
@@ -102,7 +105,25 @@ Or, if you want to create a new component, page, or improvement
 Scan through our [existing issues](https://github.com/deven-org/deven-website/issues) to find one that interests you.
 If you find an issue that needs work, feel free to open a merge request with a fix.
 
-#### Commits
+## Create and publish a new blog post
+
+If you want to create and publish a new blog post, please read our [How to add blog posts](./how-to-add-blog-posts.md) guidelines and instructions.
+
+## Prerequisites
+
+Before submitting a merge request, ensure that your branch meets all requirements.
+
+### Build
+
+1. If there are changes in the src folder, please run:
+
+```bash
+npm run build
+```
+
+2. The build process may generate automatic changes. Make sure to commit and push these changes before submitting your merge request.
+
+### Commits
 
 The commits must be compliant with the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
 
