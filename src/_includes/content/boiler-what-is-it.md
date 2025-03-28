@@ -6,7 +6,7 @@ That's why we've put our heads together to create B01LER - a user-friendly, toke
 
 On top of that, it makes collaboration between engineering and design teams much easier and clearer. With B01LER, your teams can work smarter and create better products in less time.
 
-<div class="button-group">
-  <a class="cta-button" href="https://boilerds.com/">Visit Page <span aria-hidden="true">→</span></a>
-  <a class="cta-button" href="https://github.com/deven-org/boiler" target="_blank">View on GitHub <span aria-hidden="true">→</span></a>
-  </div>
+<div>
+  <a href="https://boilerds.com/">Visit Page </a>
+  <a href="https://github.com/deven-org/boiler" target="_blank">View on GitHub</a>
+</div>

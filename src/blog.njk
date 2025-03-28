@@ -5,27 +5,21 @@ tags:
 navOrder: 10
 title: Blog
 templateClass: tmpl-blog
-headerBackground: yellow
 ---
 
 {% from "./_includes/macros/post-link.njk" import postLink %}
 
 {% slotcontent header %}
   <h1>
-    <span>{{title}}</span>
-    <svg role="img" width="250">
-      <title>Illustration of an eye with a pencil-shaped pupil</title>
-      {% usesvg "shape-eye" %}
-      {% usesvg "shape-pupil-pencil" %}
-    </svg>
+    {{title}}
   </h1>
 {% endslotcontent %}
 
-<div class="blog">
-  <div class="post-list">
+<div>
+  <div>
     {% for post in collections.posts | reverse %}
       {{ postLink(post, "h2") }}
     {% endfor %}
   </div>
-  <a class="cta-button" href="/feed/feed.xml" title="Subscribe via RSS Feed">Subscribe via RSS</a>
+  <a href="/feed/feed.xml" title="Subscribe via RSS Feed">Subscribe via RSS</a>
 </div>

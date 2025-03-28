@@ -6,5 +6,4 @@ That's why we developed Telemetry - a tool that uses Git SaaS-based bots to trac
 
 If you're interested in improving your own projects, consider to fork the GitHub repo.
 
-
-  <a class="cta-button single" href="https://github.com/deven-org/telemetry-functions" target="_blank">View on GitHub <span aria-hidden="true">→</span></a>
+  <a href="https://github.com/deven-org/telemetry-functions" target="_blank">View on GitHub</a>
