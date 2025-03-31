@@ -13,8 +13,24 @@
   font-display: swap;
   src: url("../fonts/SpaceGrotesk.woff2") format("woff2"), url("../fonts/SpaceGrotesk.ttf") format("truetype");
 }
+@font-face {
+  font-family: "source sans 3";
+  font-style: normal;
+  font-weight: 100 900;
+  font-synthesis: none;
+  font-display: auto;
+  src: url("../fonts/SourceSans3-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-synthesis: none;
+  font-display: auto;
+  src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans";
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -76,6 +92,7 @@ body {
   justify-content: space-evenly;
 }
 .header-bg .navbar .nav-links .nav-item a {
+  font-family: "source sans 3";
   font-size: 18px;
   font-weight: 700;
   color: #E1AE00;
