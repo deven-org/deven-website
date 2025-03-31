@@ -1,4 +1,5 @@
 @use 'styles/media';
+@import './colour.scss';
 
 @font-face {
   font-family: 'november';
@@ -20,8 +21,76 @@
     url('../fonts/SpaceGrotesk.ttf') format('truetype');
 }
 
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 :root {
   @media (prefers-reduced-motion: no-preference) {
     scroll-behavior: smooth;
   }
 }
+
+
+.content-wrapper {
+  background-color: $black;
+}
+
+.header-main {
+  padding: 26px 30px;
+}
+.header-bg {
+  background-color: $primary;
+  height: 100%;
+  border-radius: 8px 8px 0px 0px;
+  
+  .header-top {
+    background-color: $black;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .header-top-left{
+      background-color: $primary;
+      width: 100%;
+      border-radius: 8px 8px 0px 0px;
+    }
+    .logo {
+      background-color: $black;
+      padding: 24px 104px 32px 52.26px;
+      
+      a {
+        color: $primary-text;
+        font-family: november;
+        font-size: 37px;
+        text-decoration: none;
+        
+        :visited {
+          color: inherit;
+        }
+      }
+
+      
+    }
+  }
+
+  .navbar {
+      background-color: $black;
+      height: 52px;
+      width: 100%;
+      rotate: -1.63deg;
+      color: $primary-text;
+      align-content: center;
+
+      .nav-links {
+        display: flex;
+        justify-content: space-evenly;
+        .nav-item a {
+          font-size: 18px;
+          font-weight: 700; 
+          color: $primary-text;
+          text-decoration: none;
+        }
+      }
+  }
+  }

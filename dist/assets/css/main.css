@@ -13,8 +13,68 @@
   font-display: swap;
   src: url("../fonts/SpaceGrotesk.woff2") format("woff2"), url("../fonts/SpaceGrotesk.ttf") format("truetype");
 }
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
+}
+
+.content-wrapper {
+  background-color: #121212;
+}
+
+.header-main {
+  padding: 26px 30px;
+}
+
+.header-bg {
+  background-color: #E0AE00;
+  height: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+.header-bg .header-top {
+  background-color: #121212;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-bg .header-top .header-top-left {
+  background-color: #E0AE00;
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+.header-bg .header-top .logo {
+  background-color: #121212;
+  padding: 24px 104px 32px 52.26px;
+}
+.header-bg .header-top .logo a {
+  color: #E1AE00;
+  font-family: november;
+  font-size: 37px;
+  text-decoration: none;
+}
+.header-bg .header-top .logo a :visited {
+  color: inherit;
+}
+.header-bg .navbar {
+  background-color: #121212;
+  height: 52px;
+  width: 100%;
+  rotate: -1.63deg;
+  color: #E1AE00;
+  align-content: center;
+}
+.header-bg .navbar .nav-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-bg .navbar .nav-links .nav-item a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #E1AE00;
+  text-decoration: none;
 }
