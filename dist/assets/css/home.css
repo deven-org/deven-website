@@ -1,0 +1,39 @@
+.hero {
+  background-color: #E0AE00;
+  height: 100%;
+  margin: 0px 30px;
+  padding: 120px 0px 276px 173px;
+}
+.hero .hero-main {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.hero .hero-main .headline {
+  font-size: 9.375rem;
+  font-weight: 700;
+  line-height: 101%;
+  padding-bottom: 12px;
+}
+.hero .hero-main .headline-2nd-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  line-height: 101%;
+}
+.hero .hero-main .headline-2nd-row .mission {
+  font-size: 9.375rem;
+  font-weight: 700;
+  margin-right: 16px;
+}
+.hero .hero-main .headline-2nd-row .subtext {
+  font-size: 1.4238rem;
+  width: 393px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 157%;
+}
+.hero .hero-main .headline-2nd-row .subtext p {
+  padding-bottom: 24px;
+}
