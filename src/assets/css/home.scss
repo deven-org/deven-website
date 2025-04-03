@@ -8,45 +8,40 @@
   padding: 120px 0px 276px 173px;
   
   .hero-main {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0px;
+    width: 80%;
+
+
     .headline {
       font-size: 9.375rem;
       font-weight: 700;
       line-height: 101%;
-      padding-bottom: 12px;
-    }
-    // 120px
-    
-    .headline-2nd-row {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      line-height: 101%;
+      color: $black;
+      grid-area: 1 / 1 / 3 / 6;
       
-      .mission {
-        font-size: 9.375rem;
-        font-weight: 700;
-        margin-right: 16px;
-      }
-      
+    }  
       .subtext {
+        display:inline-block;
         font-size: 1.4238rem;
-        width: 393px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        // width: 393px;
         line-height: 157%;
+        color: $black;
+        // text-align: right;
+        grid-area: 2 / 2 / 3 / 4;
+        justify-self: end;
+        align-content:center;
         
-        p {
-          padding-bottom: 24px;
-
-        }
+      p {
+        margin-bottom: 12px;
       }
+
     }
-  
+
+
   }
  
  }
