@@ -1,8 +1,14 @@
 .hero {
-  background-color: #E0AE00;
-  height: 100%;
   margin: 0px 30px;
-  padding: 120px 0px 276px 173px;
+  position: relative;
+  overflow: hidden;
+}
+.hero svg {
+  color: #E0AE00;
+  display: block;
+  z-index: 0;
+  width: 100%;
+  height: 2000px;
 }
 .hero .hero-main {
   display: grid;
@@ -11,6 +17,10 @@
   grid-column-gap: 0;
   grid-row-gap: 0px;
   width: 80%;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translate(5%, -50%);
 }
 .hero .hero-main .headline {
   font-size: 9.375rem;
@@ -30,4 +40,11 @@
 }
 .hero .hero-main .subtext p {
   margin-bottom: 12px;
+}
+
+#hero-bg {
+  color: #E0AE00;
+  width: 100%;
+  height: 100%;
+  display: block;
 }

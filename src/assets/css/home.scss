@@ -2,10 +2,19 @@
 @import './colour.scss';
 
 .hero {
-  background-color: $primary;
-  height: 100%;
   margin: 0px 30px;  
-  padding: 120px 0px 276px 173px;
+  // padding: 120px 0px 276px 173px;
+  position: relative;
+  overflow: hidden;
+
+  svg {
+    color: $primary;
+    display: block;
+    z-index: 0;
+    width: 100%;
+    height: 2000px;
+  }
+
   
   .hero-main {
     display: grid;
@@ -14,7 +23,10 @@
     grid-column-gap: 0;
     grid-row-gap: 0px;
     width: 80%;
-
+    z-index: 1;
+    position: absolute;
+    top:50%;
+    transform: translate(5%, -50%);
 
     .headline {
       font-size: 9.375rem;
@@ -44,4 +56,11 @@
 
   }
  
+ }
+
+ #hero-bg {
+  color: $primary;
+  width: 100%;
+  height: 100%;
+  display: block;
  }
