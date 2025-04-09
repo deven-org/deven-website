@@ -3,19 +3,13 @@
 
 .hero {
   margin: 0px 30px;  
-  // padding: 120px 0px 276px 173px;
-  position: relative;
-  overflow: hidden;
+  padding: 120px 0px 276px 173px;
+  width: auto;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1454 682' fill='%23E0AE00' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0V461.66C0 465.805 2.55715 469.52 6.42884 471L556.587 681.341C557.727 681.777 558.938 682 560.158 682H790.835C792.948 682 794.963 681.136 797.02 680.652C797.181 680.614 797.345 680.58 797.51 680.552L1124.92 624.354C1129.28 623.606 1133.29 626.55 1133.88 630.928L1139.61 673.339C1140.28 678.299 1144.51 682 1149.52 682H1221.88C1225.9 682 1229.52 679.599 1231.09 675.902L1286.84 544.366C1288.56 540.298 1293.3 538.279 1297.43 539.857L1440.43 594.529C1446.98 597.033 1454 592.198 1454 585.189V0H0Z' fill='%23E0AE00'/%3E%3Cpath d='M0 604.883C0 597.874 7.02404 593.039 13.5712 595.542L189.12 662.659C199.485 666.622 196.645 682 185.548 682H10C4.47715 682 0 677.523 0 672V604.883Z'/%3E%3C/svg%3E%0A");
 
-  svg {
-    color: $primary;
-    display: block;
-    z-index: 0;
-    width: 100%;
-    height: 2000px;
-  }
-
-  
   .hero-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -23,10 +17,6 @@
     grid-column-gap: 0;
     grid-row-gap: 0px;
     width: 80%;
-    z-index: 1;
-    position: absolute;
-    top:50%;
-    transform: translate(5%, -50%);
 
     .headline {
       font-size: 9.375rem;
@@ -35,11 +25,10 @@
       color: $black;
       grid-area: 1 / 1 / 3 / 6;
       
-    }  
+     }  
       .subtext {
         display:inline-block;
         font-size: 1.4238rem;
-        // width: 393px;
         line-height: 157%;
         color: $black;
         // text-align: right;
@@ -51,10 +40,9 @@
         margin-bottom: 12px;
       }
 
+      }
+
     }
-
-
-  }
  
  }
 
