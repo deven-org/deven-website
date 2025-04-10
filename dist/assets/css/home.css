@@ -1,6 +1,6 @@
 .hero {
-  margin: 0px 30px;
-  padding: 120px 0px 276px 173px;
+  margin: -0.5rem 1.875rem;
+  padding: 10% 0% 20% 10%;
   width: auto;
   height: auto;
   background-color: #E0AE00;
@@ -12,17 +12,18 @@
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
+  mask-size: auto 100%;
 }
 .hero .hero-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0;
-  grid-row-gap: 0px;
+  grid-row-gap: 0;
   width: 80%;
 }
 .hero .hero-main .headline {
-  font-size: 9.375rem;
+  font-size: 7.5rem;
   font-weight: 700;
   line-height: 101%;
   color: #121212;
@@ -38,7 +39,7 @@
   align-content: center;
 }
 .hero .hero-main .subtext p {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 #hero-bg {

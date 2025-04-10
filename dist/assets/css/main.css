@@ -39,38 +39,6 @@ body {
   }
 }
 
-.primary-cta {
-  display: flex;
-  align-items: center;
-  position: relative;
-  background-color: transparent;
-  border: none;
-}
-.primary-cta:hover {
-  cursor: pointer;
-}
-.primary-cta::before {
-  content: "";
-  width: 140px;
-  height: 2px;
-  background: #121212;
-  display: block;
-  margin-right: -16px;
-  border-radius: 99px;
-}
-.primary-cta::after {
-  content: "";
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 6px;
-  border-top-right-radius: 2px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 2px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
 .content-wrapper {
   background-color: #121212;
 }
@@ -129,4 +97,71 @@ body {
   font-weight: 700;
   color: #E1AE00;
   text-decoration: none;
+}
+
+.primary-cta {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.primary-cta:hover {
+  cursor: pointer;
+}
+
+.primary-cta::before {
+  content: "";
+  width: 140px;
+  height: 2px;
+  background: #121212;
+  display: block;
+  margin-right: -16px;
+  border-radius: 99px;
+}
+
+.primary-cta::after {
+  content: "";
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 6px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 2px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.primary-cta {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+.primary-cta:hover {
+  cursor: pointer;
+}
+.primary-cta::before {
+  content: "";
+  width: 140px;
+  height: 2px;
+  background: #121212;
+  display: block;
+  margin-right: -16px;
+  border-radius: 99px;
+}
+.primary-cta::after {
+  content: "";
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 6px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 2px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }

@@ -156,8 +156,6 @@
       
     
       
-    
-      
           <url>
               <loc>/blog/</loc>
               <lastmod>2025-03-28T10:25:45.705Z</lastmod>
@@ -201,8 +199,8 @@
     
       
           <url>
-              <loc>/</loc>
-              <lastmod>2025-02-26T09:09:14.643Z</lastmod>
+              <loc>/telemetry/</loc>
+              <lastmod>2025-03-28T10:25:45.727Z</lastmod>
           </url>
         
     
@@ -214,11 +212,9 @@
     
       
           <url>
-              <loc>/telemetry/</loc>
-              <lastmod>2025-02-26T09:09:14.646Z</lastmod>
+              <loc>/</loc>
+              <lastmod>2025-04-03T09:21:58.365Z</lastmod>
           </url>
         
-    
-      
     
 </urlset>
