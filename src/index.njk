@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: DEVENorg
-templateClass: home
+templateClass: home main
 ---
 
 {% from "macros/post-link.njk" import postLink %}
@@ -19,6 +19,16 @@ templateClass: home
         </a>
     </div>
 {% endslotcontent %}
+
+<section class="hero">
+    <article class="hero-main">
+        <h1 class="headline">we are on a mission</h1>
+        <span class="subtext">
+            <p >your partner to enhance engineering for everyone.</p>
+            <a href="#" class="primary-cta" target="_blank" aria-label="check out more about us"></a>
+        </span>
+    </article>
+</section>
 
 <section>
     {% renderFile "src/_includes/content/home/intro.md" %}
