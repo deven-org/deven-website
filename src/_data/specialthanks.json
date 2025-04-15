@@ -49,5 +49,11 @@
     "name": "Ania Bui",
     "thanks": "for Product Design",
     "imageUrl": "/assets/images/ania.jpg"
+  },
+
+  {
+    "name": "Ada Neo",
+    "thanks": "for Product Engineering",
+    "imageUrl": "/assets/images/ada.jpg"
   }
 ]
