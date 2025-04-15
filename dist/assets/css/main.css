@@ -150,12 +150,12 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding: 20px;
 }
 .footer-component .footer-content .footer-logo {
   font-family: november;
   font-size: 2.25rem;
   color: #E1AE00;
+  margin-bottom: 16px;
 }
 .footer-component .footer-content .footer-mugshot {
   display: flex;
@@ -185,7 +185,7 @@ body {
   color: inherit;
 }
 .footer-link a:hover {
-  color: #f0b904;
+  color: #fdce30;
   font-size: 102%;
 }
 
@@ -196,12 +196,13 @@ body {
   display: flex;
   justify-content: flex-end;
   font-size: 1rem;
-  color: #FFFDC7;
+  font-weight: 300;
+  color: #E1AE00;
   gap: 32px;
 }
 .footer-small .footer-small-list a {
   text-decoration: none;
-  color: #FFFDC7;
+  color: #E1AE00;
 }
 .footer-small .footer-small-list a :visited {
   color: inherit;
