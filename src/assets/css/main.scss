@@ -1,6 +1,5 @@
 @use 'styles/media';
 @import './colour.scss';
-@import './colour.scss';
 
 @font-face {
   font-family: 'november';
@@ -111,6 +110,7 @@ body {
         .nav-item a {
           font-family: 'source sans 3';
           font-size: 1.125rem;
+          font-size: 1.125rem;
           font-weight: 700; 
           color: $primary-text;
           text-decoration: none;
@@ -118,7 +118,7 @@ body {
       }
   }
   }
-  
+
 .primary-cta {
   display: flex;
   align-items: center;
@@ -133,14 +133,14 @@ body {
   content: "";
   width: 140px;
   height: 2px;
-  background: #121212;
+  background: $black;
   display: block;
   margin-right: -16px;
   border-radius: 99px;
 }
 .primary-cta::after {
   content: "";
-  border: solid black;
+  border: solid $black;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 6px;
@@ -150,3 +150,99 @@ body {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+.footer-component {  
+  margin: 0 1.875rem;
+  
+  // **IMPORTANT**
+  // The SVG used in `background-image` is hardcoded with a HEX colour (e.g. #E0AE00).
+  // This colour is NOT dynamically updated with $primary.
+  // If the $primary colour is changed, be sure to manually update the colour here as well.
+  //  The SVG contains two <path> elements - make sure to update the fill value for each one, if present.
+  
+  .footer-background {
+      padding: 15% 0% 15% 20%;
+      background-image: url("data:image/svg+xml,%3Csvg width='1360' height='479' viewBox='0 0 1360 479' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M684.318 479L224.005 479L258.856 392.493C260.301 388.907 264.379 387.171 267.965 388.615L426.661 452.549L450.856 392.493C452.301 388.907 456.379 387.171 459.965 388.615L684.318 479Z' fill='%23E0AE00' /%3E%3Cpath d='M1360 95.2409V359.77L1238.5 310.82C1234.91 309.375 1233.17 305.297 1234.62 301.711L1256.39 247.677L1192.72 222.028C1189.13 220.583 1187.4 216.505 1188.84 212.919L1222.86 128.493C1224.3 124.907 1228.38 123.171 1231.97 124.615L1321.41 160.651L1346.86 97.4925C1348.3 93.9066 1352.38 92.1707 1355.97 93.6154L1360 95.2409Z' fill='%23E0AE00' /%3E%3Cpath d='M923.539 7.80279e-05L1064.01 16.0844C1067.85 16.5242 1070.61 19.9944 1070.17 23.8353L1062.22 93.277C1061.78 97.1179 1058.31 99.875 1054.47 99.4352L358.654 19.7627L204.249 18.3466C206.131 20.2725 206.808 23.2008 205.737 25.8587L156.499 148.077C155.054 151.663 150.976 153.399 147.39 151.955L0 92.5758L5.38275e-06 31.0041C6.87971e-06 13.881 13.881 -1.49695e-06 31.0041 0L160.283 1.13019e-05L161.869 0.638919L201.285 1.0004C200.843 0.712068 200.438 0.375865 200.075 1.47806e-05L923.539 7.80279e-05Z' fill='%23E0AE00' /%3E%3C/svg%3E%0A");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: auto;
+    }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+
+    .footer-logo {
+      font-family: november;
+      font-size: 2.25rem;
+      color: $primary-text;
+      margin-bottom: 16px;
+    }
+    
+    .footer-mugshot {
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+
+      .mugshot-frame {
+        width: 53px; 
+        height: 53px; 
+        border-radius: 50%; 
+        border: 2px solid $primary; 
+        overflow: hidden;
+        object-fit: cover;
+        margin-right: -1%;
+      }
+    }
+  }
+  
+}
+
+.footer-link{
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding-bottom: 12px;
+  
+  a{
+    text-decoration: none;
+    color: $primary-text;
+
+    :visited {
+      color: inherit;
+    }
+
+    &:hover {
+      color: $primary-hover;
+      font-size: 102%;
+    }
+  }
+}
+
+.footer-small { 
+  padding: 1.813rem 1.813rem 2rem 0;
+
+
+  .footer-small-list{
+    display: flex;
+    justify-content:flex-end;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $primary-text;
+    gap: 32px;
+
+    
+    a {
+      text-decoration: none;
+      color: $primary-text;
+
+      :visited {
+        color: inherit;
+      }
+    }
+  }
+
+}
+
