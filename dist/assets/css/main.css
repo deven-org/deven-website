@@ -45,7 +45,6 @@ body {
 
 .header-main {
   padding: 1.625rem 1.875rem 0px;
-  padding: 1.625rem 1.875rem 0px;
 }
 
 .header-bg {
@@ -95,6 +94,7 @@ body {
 .header-bg .navbar .nav-links .nav-item a {
   font-family: "source sans 3";
   font-size: 1.125rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #E1AE00;
   text-decoration: none;
@@ -124,7 +124,7 @@ body {
 
 .primary-cta::after {
   content: "";
-  border: solid black;
+  border: solid #121212;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 6px;
