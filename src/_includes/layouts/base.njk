@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
     {#
-                              Per recommendation from: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
-                              favicon.ico is accessible at the root, as set up in the eleventy config
-                            #}
+      Per recommendation from: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
+      favicon.ico is accessible at the root, as set up in the eleventy config
+    #}
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="/assets/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
@@ -19,9 +19,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="stylesheet" href="/assets/css/contributors.css">
-    <link rel="stylesheet" href="/assets/css/project.css">
     <link rel="stylesheet" href="/assets/css/blog.css">
-    <link rel="stylesheet" href="/assets/css/post-list.css">
     <link rel="stylesheet" href="/assets/css/richtext.css">
     <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
     <link rel="alternate" href="{{ metadata.feed.path }}" type="application/rss+xml" title="{{ metadata.title }}">
@@ -37,58 +35,84 @@
       {{ svgDefinitions(page.svgIds) }}
     {%- endif -%}
     <div class='content-wrapper'>
-      <header {% if headerBackground %} class="background-circle {{ headerBackground }}" {% endif %}>
-        {% if headerBackground %}
-          <div class="circle-container"></div>
-        {% endif %}
-        <div class="navi">
-          <nav class="nav" role="navigation" aria-label="Main">
-            <ul class="nav-links">
-              <li class="nav-item logo">
-                <a href="/">Deven</a>
-              </li>
-              <li class="nav-item subnav" id="subnav">
-                <button class="subnav-toggle" id="subnav-toggle" aria-expanded="false" onclick="toggleSubnav()">Discover<div class="subnav-chevron"></div>
-                </button>
-                <div class="subnav-container">
-                  <ul>
-                    <li class="subnav-item">
-                      <a href="/#about-deven">About</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#tools">Tools</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#team">Team</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#latest-news">Latest News</a>
-                    </li>
-                  </ul>
-                  <button class="close-btn" onclick="closeSubnav()">
-                    <span class="visually-hidden">Close Discover menu</span>
-                  </button>
-                </div>
-              </li>
-              {%- for nav in collections.navItems | sort(attribute="data.navOrder") -%}
-                <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page" {% endif %}>
-                  <a href="{{ nav.url }}">{{ nav.data.title }}</a>
-                </li>
-              {%- endfor -%}
-            </ul>
-          </nav>
-        </div>
-        <div class="header-content">
-          {% slot header %}<h1>{{ title }}</h1>
-          {% endslot %}
-        </div>
+      <header class="header-main">
+        <div class="header-bg">
+          <div class="header-top">
+            <div class="header-top-left"></div>
+            <div class="logo"> <a href="/">DEVEN</a></div>
+          </div>
+          <div class="navbar">
+            <nav role="navigation" aria-label="Main">
+              <ul class="nav-links">
+                {%- for nav in collections.navItems | sort(attribute="data.navOrder") -%}
+                  <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}" {% if nav.url == page.url %} aria-current="page" {% endif %}>
+                    <a href="{{ nav.url }}">{{ nav.data.title }}</a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </nav>
+          </div>
       </header>
       <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>
         {{ content | safe }}
       </main>
-      <footer class="footer-content">
-        <p id="copyright"></p>
-        <a href='/imprint'>Imprint</a>
+      <footer class="footer-component">
+        <section class="footer-background">
+          <ul class="footer-content">
+            <ul class="first-footer-column">
+              <li class="footer-logo">
+                DEVEN
+              </li>
+              <li class="footer-mugshot">
+                <img class="mugshot-frame" src="/assets/images/ola.jpg" alt="ola_mugshot">
+                <img class="mugshot-frame" src="/assets/images/julian.webp" alt="_mugshot">
+              </li>
+            </ul>
+            <ul class="second-footer-column">
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to why choosing Deven page">Why Deven?</a>
+              </li>
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to products overview page">Our Products</a>
+              </li>
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to blog page">Blog</a>
+              </li>        
+            </ul>
+            <ul class="third-footer-column">
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to about Deven">About us</a>
+              </li>
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to contributor page">Contributors</a>
+              </li>      
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to contact us page">Contact us</a>
+              </li>      
+            </ul>
+            <ul class="forth-footer-column">
+              <li class="footer-link">
+                <a href="https://github.com/deven-org"  target="_blank" aria-label="Go to Github page">Github</a>
+              </li>  
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to deven's instagram page">Instagram</a>
+              </li>  
+            </ul>
+          </ul>
+        </section>
+        <section class="footer-small">
+          <ul class="footer-small-list">
+            <li> 
+              <p class="copyright">© 2024 Deven </p> 
+            </li>
+            <li>
+                <a href="#"  target="_blank" aria-label="Go to support page">Support</a>
+            </li> 
+            <li>
+                <a href="#"  target="_blank" aria-label="Go to deven's imprint">Imprint</a>
+            </li> 
+          </ul>
+        </section>  
       </footer>
     </div>
     <script>

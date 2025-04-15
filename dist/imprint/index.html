@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="stylesheet" href="/assets/css/contributors.css">
-    <link rel="stylesheet" href="/assets/css/project.css">
     <link rel="stylesheet" href="/assets/css/blog.css">
-    <link rel="stylesheet" href="/assets/css/post-list.css">
     <link rel="stylesheet" href="/assets/css/richtext.css">
     <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
     <link rel="alternate" href="/feed/feed.xml" type="application/rss+xml" title="DEVEN - Developer Enablement">
@@ -30,58 +28,31 @@
   </head>
   <body>
     <div class='content-wrapper'>
-      <header >
-        
-        <div class="navi">
-          <nav class="nav" role="navigation" aria-label="Main">
-            <ul class="nav-links">
-              <li class="nav-item logo">
-                <a href="/">Deven</a>
-              </li>
-              <li class="nav-item subnav" id="subnav">
-                <button class="subnav-toggle" id="subnav-toggle" aria-expanded="false" onclick="toggleSubnav()">Discover<div class="subnav-chevron"></div>
-                </button>
-                <div class="subnav-container">
-                  <ul>
-                    <li class="subnav-item">
-                      <a href="/#about-deven">About</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#tools">Tools</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#team">Team</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#latest-news">Latest News</a>
-                    </li>
-                  </ul>
-                  <button class="close-btn" onclick="closeSubnav()">
-                    <span class="visually-hidden">Close Discover menu</span>
-                  </button>
-                </div>
-              </li><li class="nav-item" >
-                  <a href="/blog/">Blog</a>
-                </li><li class="nav-item" >
-                  <a href="/contributors/">Contributors</a>
-                </li></ul>
-          </nav>
-        </div>
-        <div class="header-content">
-          
-
-
-        </div>
+      <header class="header-main">
+        <div class="header-bg">
+          <div class="header-top">
+            <div class="header-top-left"></div>
+            <div class="logo"> <a href="/">DEVEN</a></div>
+          </div>
+          <div class="navbar">
+            <nav role="navigation" aria-label="Main">
+              <ul class="nav-links"><li class="nav-item" >
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item" >
+                    <a href="/contributors/">Contributors</a>
+                  </li></ul>
+            </nav>
+          </div>
       </header>
       <main >
         
 
 
-<div class='imprint-container'>
-  <div class='imprint-box'>
+<div>
+  <div>
     <h1>Imprint</h1>
     <p>
-      <span><strong>Responsible contact person:</strong> </span>
+      <span><strong>Responsible contact person:</strong></span>
       <span>Ola Gasidlo-Braendel</span>
     </p>
     <p>
@@ -95,9 +66,63 @@
   </div>
 </div>
       </main>
-      <footer class="footer-content">
-        <p id="copyright"></p>
-        <a href='/imprint'>Imprint</a>
+      <footer class="footer-component">
+        <section class="footer-background">
+          <ul class="footer-content">
+            <ul class="first-footer-column">
+              <li class="footer-logo">
+                DEVEN
+              </li>
+              <li class="footer-mugshot">
+                <img class="mugshot-frame" src="/assets/images/ola.jpg" alt="ola_mugshot">
+                <img class="mugshot-frame" src="/assets/images/julian.webp" alt="_mugshot">
+              </li>
+            </ul>
+            <ul class="second-footer-column">
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to why choosing Deven page">Why Deven?</a>
+              </li>
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to products overview page">Our Products</a>
+              </li>
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to blog page">Blog</a>
+              </li>        
+            </ul>
+            <ul class="third-footer-column">
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to about Deven">About us</a>
+              </li>
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to contributor page">Contributors</a>
+              </li>      
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to contact us page">Contact us</a>
+              </li>      
+            </ul>
+            <ul class="forth-footer-column">
+              <li class="footer-link">
+                <a href="https://github.com/deven-org"  target="_blank" aria-label="Go to Github page">Github</a>
+              </li>  
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to deven's instagram page">Instagram</a>
+              </li>  
+            </ul>
+          </ul>
+        </section>
+        <section class="footer-small">
+          <ul class="footer-small-list">
+            <li> 
+              <p class="copyright">© 2024 Deven </p> 
+            </li>
+            <li>
+                <a href="#"  target="_blank" aria-label="Go to support page">Support</a>
+            </li> 
+            <li>
+                <a href="#"  target="_blank" aria-label="Go to deven's imprint">Imprint</a>
+            </li> 
+          </ul>
+        </section>  
       </footer>
     </div>
     <script>

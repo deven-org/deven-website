@@ -1,116 +1,85 @@
 ---
 layout: layouts/base.njk
 title: DEVENorg
-headerBackground: yellow
-templateClass: home
+templateClass: home main
 ---
 
 {% from "macros/post-link.njk" import postLink %}
 
 {% slotcontent header %}    
     <h1 class="deven-headtext">DEVEN</h1>
-    <div class="shape-jumble">
-        <div class="product-engineering pill">product engineering</div>
-        <div class="standardization pill">standardization</div>
-        <div class="hacker circle">👩‍💻</div>
-        <div class="open-source">
-            <div class="four-point-star">
-                <svg aria-hidden="true">{% usesvg "shape-four-point-star" %}</svg>
-                <span>Open Source</span>
-            </div>
-        </div>
-        <div class="developer rounded-square">development</div>
-        <div class="enablement circle">enablement</div>
-        <a class="jump-button circle" href="#about-deven">
-            <span class="visually-hidden">Jump to introduction</span>
-            <svg aria-hidden="true" width="37" height="37">{% usesvg "icon-arrow-down" %}</svg>
+    <div>
+        <div>product engineering</div>
+        <div>standardization</div>
+        <div>Open Source</div>
+        <div>development</div>
+        <div>enablement</div>
+        <a href="#about-deven">
+            About DEVEN        
         </a>
     </div>
 {% endslotcontent %}
 
-<section id="about-deven" class="intro stretch no-margin">
+<section class="hero">
+    <article class="hero-main">
+        <h1 class="headline">we are on a mission</h1>
+        <span class="subtext">
+            <p >your partner to enhance engineering for everyone.</p>
+            <a href="#" class="primary-cta" target="_blank" aria-label="check out more about us"></a>
+        </span>
+    </article>
+</section>
+
+<section>
     {% renderFile "src/_includes/content/home/intro.md" %}
 </section>
 
-<section class="vision-mission">
-    <div class="mission circle">
-        <svg role="img" width="250">
-            <title>Illustration of an eye with a heart-shaped pupil</title>
-            {% usesvg "shape-eye" %}
-            {% usesvg "shape-pupil-heart" %}
-        </svg>
-        <div class="circle-content">
-            <h2>Mission</h2>
-            {% renderFile "src/_includes/content/home/mission.md" %}
-        </div>
-    </div>
-    <div class="vision circle">
-        <svg role="img" width="250">
-            <title>Illustration of an eye with a sun-shaped pupil</title>
-            {% usesvg "shape-eye" %}
-            {% usesvg "shape-pupil-sun" %}
-        </svg>
-        <div class="circle-content">
-            <h2>Vision</h2>
-            {% renderFile "src/_includes/content/home/vision.md" %}
-        </div>
-    </div>
+<section>
+    <h2>Mission</h2>
+    {% renderFile "src/_includes/content/home/mission.md" %}
+
+    <h2>Vision</h2>
+    {% renderFile "src/_includes/content/home/vision.md" %}
 </section>
 
-<section class="mission-statement">
-        <div class="four-point-star cool-stuff-star">
-            <svg aria-hidden="true" width="300">{% usesvg "shape-four-point-star" %}</svg>
-            <span>Cool stuff,<br>right?</span>
-        </div>
-        <div class="statement">
-            <p>
-                So how do we plan to <span class="november-font">make it happen?</span><br>We have developed tooling and are working on establishing processes to help us get there. So, check them out and discover how you can make the most out of them in your projects.
-            </p>
-        </div>
+<section>
+    <p>
+        So how do we plan to <span class="november-font">make it happen?</span><br>We have developed tooling and are working on establishing processes to help us get there. So, check them out and discover how you can make the most out of them in your projects.
+    </p>
 </section>
 
-<section class="tools stretch" id='tools'>
+<section>
     <h2>Tools</h2>
     <ul>
         {%- for tool in collections.tool | sort(attribute="data.toolOrder") -%}
             <li>
                 <a href="{{ tool.url }}">
                     <h3>{{ tool.data.title }}</h3>
-                    <div aria-hidden="true" class="arrow-circle">
-                        <div class="animated-arrow">
-                            <svg width="18" height="18">{% usesvg "icon-arrow-right" %}</svg>
-                            <svg width="18" height="18">{% usesvg "icon-arrow-right" %}</svg>
-                        </div>
-                    </div>
                 </a>
             </li>
         {%- endfor -%}
     </ul>
 </section>
 
-<section class="current-team" id='team'>
+<section>
     <h2>Current Team</h2>
-    <ul role="list">
+    <ul>
         {%- for member in team -%}
-            <li role="listitem">
+            <li>
                 <img src="{{ member.imageUrl }}" alt="Avatar of {{member.name}}">
                 <h3>{{ member.name }}</h3>
                 <p>{{ member.role }}</p>
             </li>
         {%- endfor -%}
     </ul>
-    <a href='./contributors' class="cta-button">Contributors <span aria-hidden="true">→</span></a>
+    <a href='./contributors'>Contributors <span aria-hidden="true">→</span></a>
 </section>
 
-<section class="latest-news" id="latest-news">
+<section>
     <h2>Latest News</h2>
-    <div class="post-list single-row">
-        {% for post in collections.posts | reverse | batch(3) | first %}
-            {{ postLink(post, "h3") }}
-        {% endfor %}
-    </div>
-    <div class="button-group">
-        <a class="cta-button" href="/feed/feed.xml">Subscribe via RSS</a>
-        <a class="cta-button" href='/blog'>Blog <span aria-hidden="true">→</span></a>
-    </div>
+    {% for post in collections.posts | reverse | batch(3) | first %}
+        {{ postLink(post, "h3") }}
+    {% endfor %}
+    <a href="/feed/feed.xml">Subscribe via RSS</a>
+    <a href='/blog'>Blog <span aria-hidden="true">→</span></a>
 </section>

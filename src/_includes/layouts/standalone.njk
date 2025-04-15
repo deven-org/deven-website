@@ -35,10 +35,7 @@
       {{ svgDefinitions(page.svgIds) }}
     {%- endif -%}
     <div class='content-wrapper'>
-      <header {% if headerBackground %} class="background-circle {{ headerBackground }}" {% endif %}>
-        {% if headerBackground %}
-          <div class="circle-container"></div>
-        {% endif %}
+      <header>
         <div class="header-content">
           {% slot header %}<h1>{{ title }}</h1>
           {% endslot %}

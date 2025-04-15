@@ -4,54 +4,40 @@ tags:
   - navItems
 navOrder: 20
 title: Contributors
-headerBackground: offwhite
 ---
 
 {% slotcontent header %}
   <h1>
     <span>{{title}}</span>
-    <svg role="img" width="250">
-      <title>Illustration of an eye with a person-shaped pupil</title>
-      {% usesvg "shape-eye" %}
-      {% usesvg "shape-pupil-person" %}
-    </svg>
   </h1>
 {% endslotcontent %}
 
-<section class="contribute">
-  <div class="heart">
-    <div class="inner">
-      <h2>Want to contribute?</h2>
-      <p>Awesome! Right now, our super talented DEVEN team and other awesome Accenture employees are handling all our current projects. But don't you worry, we'll let you know when there's a chance for you to get in on the action. In the meantime, feel free to check out our open-source projects, such as the documentation skeleton.</p>
-    </div>
-  </div>
-  <div class="star">
-    <div class="inner">
-      <h2>How to join DEVEN org on GitHub?</h2>
-      <p>If you're an Accenture employee with an Accenture email address, you're in luck! You can join our organization to get all the details on what we're currently working on, ways to get involved, and other cool stuff. We have contribution guidelines and other resources waiting for you. Let's link up and see you on the other side!</p>
-      <a href='https://github.com/deven-org' target="_blank" class="access-btn" rel="noopener">Request access →</a>
-    </div>
-  </div>
+<section>
+  <h2>Want to contribute?</h2>
+  <p>Awesome! Right now, our super talented DEVEN team and other awesome Accenture employees are handling all our current projects. But don't you worry, we'll let you know when there's a chance for you to get in on the action. In the meantime, feel free to check out our open-source projects, such as the documentation skeleton.</p>
+  <h2>How to join DEVEN org on GitHub?</h2>
+  <p>If you're an Accenture employee with an Accenture email address, you're in luck! You can join our organization to get all the details on what we're currently working on, ways to get involved, and other cool stuff. We have contribution guidelines and other resources waiting for you. Let's link up and see you on the other side!</p>
+  <a href='https://github.com/deven-org' target="_blank" rel="noopener">Request access →</a>
 </section>
-<section class="contributors">
+<section>
   <h2>Special Thanks to...</h2>
-  <div class="special-thanks">
+  <div>
     {%- for thanked in specialthanks -%}
-          <div class="thanked-person">
-              <img src="{{ thanked.imageUrl }}" alt="" class="thanked-pic">
+          <div>
+              <img src="{{ thanked.imageUrl }}" alt="">
               <div class="thanked-info">
-                  <h3 class="thanked-name">{{ thanked.name }}</h3>
-                  <p class="thanked-for">{{ thanked.thanks }}</p>
+                  <h3>{{ thanked.name }}</h3>
+                  <p>{{ thanked.thanks }}</p>
               </div>
           </div>
     {%- endfor -%}
   </div>
   <h2>GitHub Contributors</h2>
-  <div class="fetch-status" id="contributors-fetch-status">
-    <span class="status-loading" id="contributors-status-loading">Loading Contributors… ⏳</span>
-    <span aria-live="polite" hidden class="status-error" id="contributors-status-error">Could not load GitHub Contributors 😔</span>
+  <div>
+    <span id="contributors-status-loading">Loading Contributors… ⏳</span>
+    <span aria-live="polite" hidden id="contributors-status-error">Could not load GitHub Contributors 😔</span>
   </div>
-  <div class="contributor-list" id="contributors" hidden>
+  <div id="contributors" hidden>
     {# Filled by script #}
   </div>
 </section>

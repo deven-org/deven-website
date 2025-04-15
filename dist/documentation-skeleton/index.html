@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="stylesheet" href="/assets/css/contributors.css">
-    <link rel="stylesheet" href="/assets/css/project.css">
     <link rel="stylesheet" href="/assets/css/blog.css">
-    <link rel="stylesheet" href="/assets/css/post-list.css">
     <link rel="stylesheet" href="/assets/css/richtext.css">
     <link rel="stylesheet" href="/assets/css/prism-base16-monokai.dark.css">
     <link rel="alternate" href="/feed/feed.xml" type="application/rss+xml" title="DEVEN - Developer Enablement">
@@ -30,66 +28,38 @@
   </head>
   <body>
     <div class='content-wrapper'>
-      <header  class="background-circle blue" >
-        
-          <div class="circle-container"></div>
-        
-        <div class="navi">
-          <nav class="nav" role="navigation" aria-label="Main">
-            <ul class="nav-links">
-              <li class="nav-item logo">
-                <a href="/">Deven</a>
-              </li>
-              <li class="nav-item subnav" id="subnav">
-                <button class="subnav-toggle" id="subnav-toggle" aria-expanded="false" onclick="toggleSubnav()">Discover<div class="subnav-chevron"></div>
-                </button>
-                <div class="subnav-container">
-                  <ul>
-                    <li class="subnav-item">
-                      <a href="/#about-deven">About</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#tools">Tools</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#team">Team</a>
-                    </li>
-                    <li class="subnav-item">
-                      <a href="/#latest-news">Latest News</a>
-                    </li>
-                  </ul>
-                  <button class="close-btn" onclick="closeSubnav()">
-                    <span class="visually-hidden">Close Discover menu</span>
-                  </button>
-                </div>
-              </li><li class="nav-item" >
-                  <a href="/blog/">Blog</a>
-                </li><li class="nav-item" >
-                  <a href="/contributors/">Contributors</a>
-                </li></ul>
-          </nav>
-        </div>
-        <div class="header-content">
-          <h1>Documentation Skeleton</h1>
-          
-        </div>
+      <header class="header-main">
+        <div class="header-bg">
+          <div class="header-top">
+            <div class="header-top-left"></div>
+            <div class="logo"> <a href="/">DEVEN</a></div>
+          </div>
+          <div class="navbar">
+            <nav role="navigation" aria-label="Main">
+              <ul class="nav-links"><li class="nav-item" >
+                    <a href="/blog/">Blog</a>
+                  </li><li class="nav-item" >
+                    <a href="/contributors/">Contributors</a>
+                  </li></ul>
+            </nav>
+          </div>
       </header>
       <main >
         
-<div class="project-wrapper">
-  <div class="project-info highlight richtext">
+<div>
+  <div>
     <h2 id="what-is-it%3F" tabindex="-1"><a class="bookmark" href="#what-is-it%3F"><span>What is it?</span></a></h2>
 <p>We have all worked on projects where documentation was either missing or was more confusing than helpful. The team lost all their trust in the docs and didn't update them anymore. And it's totally understandable. They might not have had enough time or experience to create documentation that actually serves its purpose.</p>
 <p>However, when it's time to onboard a new team member or explain how the application works, you need proper documentation.</p>
 <p>That's why we created our documentation skeleton - it's a simple and easy-to-use tool that provides a structure and examples for adding documentation to your project. Give it a try and make your project more human-friendly!</p>
-<div class="button-group">
-  <a class="cta-button" href="https://github.com/deven-org/documentation-skeleton" target="_blank">View on GitHub <span aria-hidden="true">→</span></a>
-  <a class="cta-button" href="https://github.com/deven-org/documentation-skeleton/archive/refs/heads/main.zip">Download as .zip <span aria-hidden="true">→</span></a>
+<div>
+  <a href="https://github.com/deven-org/documentation-skeleton" target="_blank">View on GitHub</a>
+  <a href="https://github.com/deven-org/documentation-skeleton/archive/refs/heads/main.zip">Download as .zip</a>
 </div>
 
   </div>
 
-  <div class="project-info richtext"><h2 id="getting-started" tabindex="-1"><a class="bookmark" href="#getting-started"><span>Getting Started</span></a></h2>
+  <div><h2 id="getting-started" tabindex="-1"><a class="bookmark" href="#getting-started"><span>Getting Started</span></a></h2>
 <p>deven-documentation-skeleton is designed to function in all environments, including those that are not based on NodeJS.</p>
 <p>If you environment is not built on NodeJS, you can fork it - here is how. It enables the cloning of Deven's documentation skeleton into your project, provides details on documentation coverage, and assists in identifying and cloning any missing chapters.</p>
 <h2 id="goals" tabindex="-1"><a class="bookmark" href="#goals"><span>Goals</span></a></h2>
@@ -174,9 +144,63 @@ Then, it will generate a config (<code>./.deven-skeleton-install.config</code>),
 </div>
 </div>
       </main>
-      <footer class="footer-content">
-        <p id="copyright"></p>
-        <a href='/imprint'>Imprint</a>
+      <footer class="footer-component">
+        <section class="footer-background">
+          <ul class="footer-content">
+            <ul class="first-footer-column">
+              <li class="footer-logo">
+                DEVEN
+              </li>
+              <li class="footer-mugshot">
+                <img class="mugshot-frame" src="/assets/images/ola.jpg" alt="ola_mugshot">
+                <img class="mugshot-frame" src="/assets/images/julian.webp" alt="_mugshot">
+              </li>
+            </ul>
+            <ul class="second-footer-column">
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to why choosing Deven page">Why Deven?</a>
+              </li>
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to products overview page">Our Products</a>
+              </li>
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to blog page">Blog</a>
+              </li>        
+            </ul>
+            <ul class="third-footer-column">
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to about Deven">About us</a>
+              </li>
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to contributor page">Contributors</a>
+              </li>      
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to contact us page">Contact us</a>
+              </li>      
+            </ul>
+            <ul class="forth-footer-column">
+              <li class="footer-link">
+                <a href="https://github.com/deven-org"  target="_blank" aria-label="Go to Github page">Github</a>
+              </li>  
+              <li class="footer-link">
+                <a href="#" target="_blank" aria-label="Go to deven's instagram page">Instagram</a>
+              </li>  
+            </ul>
+          </ul>
+        </section>
+        <section class="footer-small">
+          <ul class="footer-small-list">
+            <li> 
+              <p class="copyright">© 2024 Deven </p> 
+            </li>
+            <li>
+                <a href="#"  target="_blank" aria-label="Go to support page">Support</a>
+            </li> 
+            <li>
+                <a href="#"  target="_blank" aria-label="Go to deven's imprint">Imprint</a>
+            </li> 
+          </ul>
+        </section>  
       </footer>
     </div>
     <script>

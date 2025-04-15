@@ -6,7 +6,7 @@ However, when it's time to onboard a new team member or explain how the applicat
 
 That's why we created our documentation skeleton - it's a simple and easy-to-use tool that provides a structure and examples for adding documentation to your project. Give it a try and make your project more human-friendly!
 
-<div class="button-group">
-  <a class="cta-button" href="https://github.com/deven-org/documentation-skeleton" target="_blank">View on GitHub <span aria-hidden="true">→</span></a>
-  <a class="cta-button" href="https://github.com/deven-org/documentation-skeleton/archive/refs/heads/main.zip">Download as .zip <span aria-hidden="true">→</span></a>
+<div>
+  <a href="https://github.com/deven-org/documentation-skeleton" target="_blank">View on GitHub</a>
+  <a href="https://github.com/deven-org/documentation-skeleton/archive/refs/heads/main.zip">Download as .zip</a>
 </div>
