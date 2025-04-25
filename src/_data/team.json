@@ -9,5 +9,10 @@
     "name": "Julian Cebulla",
     "role": "Project Lead",
     "imageUrl": "/assets/images/julian.webp"
+  },
+  {
+    "name": "Sai dev Lakkakula",
+    "role": "Product Engineer",
+    "imageUrl": "/assets/images/saidev.png"
   }
 ]
